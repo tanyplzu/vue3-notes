@@ -1,0 +1,29 @@
+:root {
+  --c-brand: #4569d4;
+  --c-brand-light: #4569d4d9;
+  --c-tip: #4569d4;
+  --c-text:#45526b;
+}
+
+:root {
+  --sidebar-width: 16rem;
+  --content-width: 50rem;
+}
+
+:root {
+  // --code-bg-color: #eff4f9
+}
+
+.sidebar-links {
+  .sidebar-heading {
+    font-weight: 400;
+  }
+
+  a.sidebar-item.sidebar-heading.active {
+    font-weight: 400;
+  }
+
+  a.sidebar-item.active {
+    font-weight: 400;
+  }
+}
