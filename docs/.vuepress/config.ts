@@ -7,7 +7,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 export default defineUserConfig<DefaultThemeOptions>({
   title: '七月有风',
-  dest: '个人vue3笔记项目',
+  dest: 'dist',
   base: '/',
   bundler: '@vuepress/vite',
   bundlerConfig: {
