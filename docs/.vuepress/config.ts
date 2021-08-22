@@ -1,6 +1,5 @@
 import { defineUserConfig } from 'vuepress';
 import type { DefaultThemeOptions } from 'vuepress';
-import { path } from '@vuepress/utils';
 import { navbarConfig, sidebarConfig } from './configs/menu';
 
 const isProd = process.env.NODE_ENV === 'production';
@@ -10,8 +9,12 @@ export default defineUserConfig<DefaultThemeOptions>({
   dest: 'dist',
   base: '/',
   bundler: '@vuepress/vite',
-  bundlerConfig: {
-  },
+  bundlerConfig: {},
+  head: [
+    ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    // ...其他标签
+  ],
 
   themeConfig: {
     logo: '/logo.png',
@@ -33,5 +36,13 @@ export default defineUserConfig<DefaultThemeOptions>({
     },
   },
 
-  plugins: [['@vuepress/plugin-search']],
+  plugins: [
+    ['@vuepress/plugin-search'],
+    [
+      '@vuepress/pwa',
+      {
+        skipWaiting: true,
+      },
+    ],
+  ],
 });
