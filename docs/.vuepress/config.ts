@@ -1,6 +1,7 @@
 import { defineUserConfig } from 'vuepress';
 import type { DefaultThemeOptions } from 'vuepress';
 import { navbarConfig, sidebarConfig } from './configs/menu';
+import { path } from '@vuepress/utils';
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -37,11 +38,24 @@ export default defineUserConfig<DefaultThemeOptions>({
   },
 
   plugins: [
+    // ['@vuepress/plugin-debug'],
     ['@vuepress/plugin-search'],
+    ['@vuepress/plugin-pwa'],
     [
-      '@vuepress/pwa',
+      '@vuepress/plugin-pwa-popup',
       {
-        skipWaiting: true,
+        locales: {
+          '/zh/': {
+            message: '发现新内容可用',
+            buttonText: '刷新',
+          },
+        },
+      },
+    ],
+    [
+      '@vuepress/plugin-register-components',
+      {
+        componentsDir: path.resolve(__dirname, './components'),
       },
     ],
   ],
