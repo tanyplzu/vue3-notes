@@ -15,7 +15,10 @@ export const sidebarConfig: any = {
   '/sourceCode/': [
     { text: 'Introduction', link: '/sourceCode/' },
     '/sourceCode/componentRender',
-    '/sourceCode/setup'
+    '/sourceCode/setup',
+    '/sourceCode/reactivity',
+    '/sourceCode/reactivity.cjs',
+    
   ],
   '/elementPlus/': [
     { text: 'Introduction', link: '/elementPlus/' },
