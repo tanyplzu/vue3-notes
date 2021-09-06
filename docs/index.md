@@ -11,5 +11,3 @@
 - [VueConf 2021](https://www.yuque.com/vueconf/mkwv0c)
 - [深入理解 Vue3 Reactivity API](https://zhuanlan.zhihu.com/p/146097763)
 - [Vue Mastery](https://github.com/orgs/Code-Pop/repositories)
-
-<IframeVideo ihtml="https://www.bilibili.com/video/BV1x54y1V7H6?from=search&seid=1152161250143388809Copyright&cid=155380603&page=1&danmaku=0&high_quality=1"></IframeVideo>

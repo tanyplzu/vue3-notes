@@ -18,9 +18,14 @@ export const sidebarConfig: any = {
     '/sourceCode/setup',
     '/sourceCode/reactivity',
     '/sourceCode/reactivity.cjs',
-    
+    {
+      text: 'Deep Dive',
+      children: [
+        '/sourceCode/DeepDive/Render-function',
+        '/sourceCode/DeepDive/creating-a-mini-vue',
+        '/sourceCode/DeepDive/useFetch',
+      ],
+    },
   ],
-  '/elementPlus/': [
-    { text: 'Introduction', link: '/elementPlus/' },
-  ],
+  '/elementPlus/': [{ text: 'Introduction', link: '/elementPlus/' }],
 };
