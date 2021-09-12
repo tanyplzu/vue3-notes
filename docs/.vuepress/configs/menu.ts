@@ -3,6 +3,7 @@ export const navbarConfig: any = [
   { text: 'Vue3基础', link: '/vue3Basic/' },
   { text: '源码解读', link: '/sourceCode/' },
   { text: 'ElementPlus', link: '/elementPlus/' },
+  { text: '生态系统', children: [{ text: 'Vuex', link: '/vuex/' }] },
 ];
 
 export const sidebarConfig: any = {
@@ -28,4 +29,9 @@ export const sidebarConfig: any = {
     },
   ],
   '/elementPlus/': [{ text: 'Introduction', link: '/elementPlus/' }],
+  '/vuex/': [
+    { text: 'Introduction', link: '/vuex/' },
+    { text: '应用', link: '/vuex/application' },
+    { text: '源码解读', link: '/vuex/sourceCode' },
+  ],
 };

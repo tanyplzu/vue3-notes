@@ -40,23 +40,23 @@ export default defineUserConfig<DefaultThemeOptions>({
   plugins: [
     // ['@vuepress/plugin-debug'],
     ['@vuepress/plugin-search'],
-    ['@vuepress/plugin-pwa'],
-    [
-      '@vuepress/plugin-pwa-popup',
-      {
-        locales: {
-          '/zh/': {
-            message: '发现新内容可用',
-            buttonText: '刷新',
-          },
-        },
-      },
-    ],
-    [
-      '@vuepress/plugin-register-components',
-      {
-        componentsDir: path.resolve(__dirname, './components'),
-      },
-    ],
+    // ['@vuepress/plugin-pwa'],
+    // [
+    //   '@vuepress/plugin-pwa-popup',
+    //   {
+    //     locales: {
+    //       '/zh/': {
+    //         message: '发现新内容可用',
+    //         buttonText: '刷新',
+    //       },
+    //     },
+    //   },
+    // ],
+    // [
+    //   '@vuepress/plugin-register-components',
+    //   {
+    //     componentsDir: path.resolve(__dirname, './components'),
+    //   },
+    // ],
   ],
 });
