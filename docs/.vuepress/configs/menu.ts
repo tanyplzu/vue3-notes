@@ -3,7 +3,15 @@ export const navbarConfig: any = [
   { text: 'Vue3基础', link: '/vue3Basic/' },
   { text: '源码解读', link: '/sourceCode/' },
   { text: 'ElementPlus', link: '/elementPlus/' },
-  { text: '生态系统', children: [{ text: 'Vuex', link: '/vuex/' }] },
+  {
+    text: '生态系统',
+    children: [
+      { text: 'Vuex', link: '/vuex/' },
+      { text: 'Vue Router', link: '/vueRouter/' },
+      { text: 'Vite', link: '/vite/' },
+      { text: 'VuePress', link: '/vuePress/' },
+    ],
+  },
 ];
 
 export const sidebarConfig: any = {
@@ -33,5 +41,20 @@ export const sidebarConfig: any = {
     { text: 'Introduction', link: '/vuex/' },
     { text: '应用', link: '/vuex/application' },
     { text: '源码解读', link: '/vuex/sourceCode' },
+  ],
+  '/vueRouter/': [
+    { text: 'Introduction', link: '/vueRouter/' },
+    { text: '应用', link: '/vueRouter/application' },
+    { text: '源码解读', link: '/vueRouter/sourceCode' },
+  ],
+  '/vite/': [
+    { text: 'Introduction', link: '/vite/' },
+    { text: '应用', link: '/vite/application' },
+    { text: '源码解读', link: '/vite/sourceCode' },
+  ],
+  '/vuePress/': [
+    { text: 'Introduction', link: '/vuePress/' },
+    { text: '应用', link: '/vuePress/application' },
+    { text: '源码解读', link: '/vuePress/sourceCode' },
   ],
 };

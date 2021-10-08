@@ -24,7 +24,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     editLinks: true,
     editLinkText: '',
     sidebarDepth: 1,
-
+    darkMode: false,
     navbar: navbarConfig,
     sidebar: sidebarConfig,
   },

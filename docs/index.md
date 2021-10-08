@@ -11,3 +11,6 @@
 - [VueConf 2021](https://www.yuque.com/vueconf/mkwv0c)
 - [深入理解 Vue3 Reactivity API](https://zhuanlan.zhihu.com/p/146097763)
 - [Vue Mastery](https://github.com/orgs/Code-Pop/repositories)
+
+
+> 学习知识要善于思考，思考，再思考。—爱因斯坦
