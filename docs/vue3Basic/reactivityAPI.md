@@ -6,6 +6,8 @@ sidebarDepth: 1
 
 [[toc]]
 
+- [深入理解 Vue3 Reactivity API](https://zhuanlan.zhihu.com/p/146097763)
+
 ## reactive
 
 ```js
@@ -41,6 +43,8 @@ export default {
 
 ## computed
 
+### 用法
+
 ```js
 export default {
   name: 'App',
@@ -62,21 +66,17 @@ export default {
 ```
 
 ```js
-const count = ref(0);
-const obj = reactive({
-  count,
-});
-
-console.log(obj.count); // 0
-
-obj.count++;
-console.log(obj.count); // 1
-console.log(count.value); // 1
-
+const count = ref(1);
+const plusOne = computed(() => count.value + 1);
+console.log(plusOne.value); // 2
+plusOne.value++; // error
 count.value++;
-console.log(obj.count); // 2
-console.log(count.value); // 2
+console.log(plusOne.value); // 3
 ```
+
+> 直接修改 plusOne.value 会报一个错误，这是因为如果我们传递给 computed 的是一个函数，那么这就是一个 getter 函数，我们只能获取它的值，而不能直接修改它。
+
+有时候我们也希望能够直接修改 computed 的返回值，那么我们可以给 computed 传入一个对象：
 
 computed 第二个参数作为 setter 来创建
 
@@ -90,6 +90,9 @@ const writableComputed = computed(
     count.value = val - 1;
   }
 );
+
+writableComputed.value = 1;
+console.log(count.value); // 0
 ```
 
 ## watchEffect

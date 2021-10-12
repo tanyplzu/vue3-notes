@@ -1,4 +1,4 @@
-# reactivity
+# 手写reactivity
 
 [[toc]]
 
@@ -65,8 +65,8 @@ track('quantity');
 effect();
 // console.log(total)
 
-// product.quantity = 3
-// trigger('quantity')
+product.quantity = 3
+trigger('quantity')
 // console.log(total)
 ```
 
@@ -110,10 +110,12 @@ let effect = () => {
 };
 track(product, 'quantity');
 effect();
-// console.log(total)
-// product.quantity = 3
-// trigger(product, 'quantity')
-// console.log(total)
+console.log(total)
+
+
+product.quantity = 3
+trigger(product, 'quantity')
+console.log(total)
 ```
 
 ## Proxy and Reflect

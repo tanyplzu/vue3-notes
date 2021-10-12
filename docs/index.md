@@ -12,5 +12,7 @@
 - [深入理解 Vue3 Reactivity API](https://zhuanlan.zhihu.com/p/146097763)
 - [Vue Mastery](https://github.com/orgs/Code-Pop/repositories)
 
+工具：
+- [vue-next-template-explorer](https://vue-next-template-explorer.netlify.app/)
 
-> 学习知识要善于思考，思考，再思考。—爱因斯坦
+> 学习知识要善于思考，思考，再思考。——爱因斯坦

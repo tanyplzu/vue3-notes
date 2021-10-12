@@ -27,6 +27,7 @@ export const sidebarConfig: any = {
     '/sourceCode/setup',
     '/sourceCode/reactivity',
     '/sourceCode/reactivity.cjs',
+    '/sourceCode/computed',
     {
       text: 'Deep Dive',
       children: [
@@ -35,6 +36,7 @@ export const sidebarConfig: any = {
         '/sourceCode/DeepDive/useFetch',
       ],
     },
+    '/sourceCode/miniVue',
   ],
   '/elementPlus/': [{ text: 'Introduction', link: '/elementPlus/' }],
   '/vuex/': [
