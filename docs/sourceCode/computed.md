@@ -66,3 +66,10 @@ function computed(getterOrOptions) {
   return computed;
 }
 ```
+
+computed 计算属性有两个特点：
+
+- 延时计算，只有当我们访问计算属性的时候，它才会真正运行 computed getter 函数计算；
+- 缓存，它的内部会缓存上次的计算结果 value，而且只有 dirty 为 true 时才会重新计算。如果访问计算属性时 dirty 为 false，那么直接返回这个 value。
+
+计算属性的优势是：只要依赖不变化，就可以使用缓存的 value 而不用每次在渲染组件的时候都执行函数去计算，这是典型的空间换时间的优化思想。
