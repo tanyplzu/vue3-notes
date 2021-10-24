@@ -43,6 +43,7 @@ export const sidebarConfig: any = {
     { text: 'Introduction', link: '/vuex/' },
     { text: '应用', link: '/vuex/application' },
     { text: '源码解读', link: '/vuex/sourceCode' },
+    { text: 'Vuex v4.0.2', link: '/vuex/vuexCode' },
   ],
   '/vueRouter/': [
     { text: 'Introduction', link: '/vueRouter/' },
