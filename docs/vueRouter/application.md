@@ -77,7 +77,7 @@ methods: {
 -hasRoute
 -getRoutes
 
-## 导航守卫可以返回值而不是 next
+## 导航守卫
 
 通常用于检查用户是否有权限访问某个页面，验证动态路由参数，或者销毁监听器。
 
@@ -94,3 +94,5 @@ router.beforeEach((to, from, next) => {
 // Vue Router 4
 router.beforeEach(() => isAuthenticated);
 ```
+
+导航守卫可以返回值而不是 next

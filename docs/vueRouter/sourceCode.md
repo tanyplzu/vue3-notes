@@ -118,9 +118,11 @@ app.provide(routeLocationKey, reactive(reactiveRoute));
 app.provide(routerViewLocationKey, currentRoute);
 ```
 
+此处的代码是拼凑的。
+
 ## currentRoute
 
-其实就是当前浏览器的路径信息
+其实就是当前浏览器的路径信息。
 
 ```js
 const START_LOCATION_NORMALIZED = {
@@ -148,7 +150,7 @@ function replace(to: RouteLocationRaw | RouteLocationNormalized) {
 }
 ```
 
-pushWithRedirect
+### pushWithRedirect
 
 ```js
 function pushWithRedirect(to, redirectedFrom) {
@@ -192,6 +194,9 @@ function pushWithRedirect(to, redirectedFrom) {
     });
 }
 ```
+
+- navigate 执行导航守卫函数
+- finalizeNavigation 最终的路径切换
 
 ### navigate
 
@@ -349,11 +354,15 @@ function finalizeNavigation(toLocation, from, isPush, replace, data) {
 const routerHistory = options.history;
 ```
 
-routerHistory 是 history 中的 routerHistory，history 在 createRouter 时传入。history 包括：createWebHistory、createWebHashHistory、createMemoryHistory 创建的对象。
+routerHistory 是 history 中的 routerHistory，history 在 createRouter 时传入。history 是 createWebHistory、createWebHashHistory、createMemoryHistory 创建的对象。
 
+## history 的模式
+
+::: tip 问题
 每当我们切换路由的时候，会发现浏览器的 URL 发生了变化，但是页面却没有刷新，它是怎么做的呢？
+:::
 
-### history 的模式
+### createWebHistory
 
 ```js
 function createWebHistory(base) {
@@ -390,9 +399,9 @@ function createWebHistory(base) {
 }
 ```
 
-routerHistory 对象而言，它有两个重要的作用，一个是路径的切换，一个是监听路径的变化。
+`routerHistory` 对象而言，它有两个重要的作用，一个是路径的切换，一个是监听路径的变化。
 
-路径切换主要通过 `historyNavigation` 来完成的，它是 `useHistoryStateNavigation` 函数的返回值。监听路径的变化是通过 useHistoryListeners 来实现的。
+路径切换主要通过 `historyNavigation` 来完成的，它是 `useHistoryStateNavigation` 函数的返回值。
 
 ### useHistoryStateNavigation
 
@@ -483,13 +492,11 @@ function useHistoryStateNavigation(base) {
 
 返回的 push 和 replace 函数，会添加给 routerHistory 对象上，因此当我们调用 routerHistory.push 或者是 routerHistory.replace 方法的时候实际上就是在执行这两个函数。
 
-push 和 replace 方法内部都是执行了 changeLocation 方法，该函数内部执行了浏览器底层的 history.pushState 或者 history.replaceState 方法，会向当前浏览器会话的历史堆栈中添加一个状态，这样就在不刷新页面的情况下修改了页面的 URL。
+push 和 replace 方法内部都是执行了 `changeLocation` 方法，该函数内部执行了浏览器底层的 `history.pushState` 或者 `history.replaceState` 方法，会向当前浏览器会话的历史堆栈中添加一个状态，这样就在不刷新页面的情况下修改了页面的 URL。
 
 ### useHistoryListeners
 
-假设我们点击浏览器的回退按钮回到上一个 URL，这需要恢复到上一个路径以及更新路由视图，因此我们还需要监听这种 history 变化的行为，做一些相应的处理。
-
-History 变化的监听主要是通过 historyListeners 来完成的，它是 useHistoryListeners 函数的返回值，
+假设我们点击浏览器的回退按钮回到上一个 URL，这需要恢复到上一个路径以及更新路由视图，因此我们还需要监听这种 history 变化的行为，做一些相应的处理。history 变化的监听主要是通过 historyListeners 来完成的，它是 useHistoryListeners 函数的返回值，
 
 ```js
 function useHistoryListeners(base, historyState, currentLocation, replace) {
@@ -560,9 +567,9 @@ function useHistoryListeners(base, historyState, currentLocation, replace) {
 }
 ```
 
-数内部还监听了浏览器底层 Window 的 popstate 事件，当我们点击浏览器的回退按钮或者是执行了 history.back 方法的时候，会触发事件的回调函数 popStateHandler，进而遍历侦听器 listeners，执行每一个侦听器函数。
+数内部还监听了浏览器底层 Window 的 popstate 事件，当我们点击浏览器的回退按钮或者是执行了 history.back 方法的时候，会触发事件的回调函数 `popStateHandler`，进而遍历侦听器 listeners，执行每一个侦听器函数。
 
-Vue Router 是如何添加这些侦听器的呢？原来在安装路由的时候，会执行一次初始化导航，执行了 push 方法进而执行了 finalizeNavigation 方法。
+Vue Router 是如何添加这些侦听器的呢？原来在安装路由的时候，会执行一次初始化导航，执行了 push 方法进而执行了 `finalizeNavigation` 方法。
 
 ### finalizeNavigation
 
@@ -632,8 +639,9 @@ const RouterView = defineComponent({
   },
   setup(props, { attrs, slots }) {
     warnDeprecatedUsage();
-    const injectedRoute = inject(routeLocationKey);
-    const depth = inject(viewDepthKey, 0);
+    // provide：app.provide(routeLocationKey, reactive(reactiveRoute));
+    const injectedRoute = inject(routeLocationKey); // injectedRoute是响应式的
+    const depth = inject(viewDepthKey, 0); // 0 是默认值
     const matchedRouteRef = computed(
       () => (props.route || injectedRoute).matched[depth]
     );
@@ -699,41 +707,21 @@ const RouterView = defineComponent({
 });
 ```
 
-- 由于 setup 函数的返回值是一个函数，那这个函数就是它的渲染函数。
-- depth 就是表示这个 RouterView 的嵌套层级
+- setup 函数的返回值是一个函数，那这个函数就是它的渲染函数。
+- depth 就是表示这个 RouterView 的嵌套层级。
+- 响应式关联逻辑：`RouterView` -> `ViewComponent` -> `matchedRoute && matchedRoute.components[props.name] ` -> `matchedRouteRef` -> `(props.route || injectedRoute).matched[depth]`
+- injectedRoute 就是我们在前面在安装路由时候，注入的响应式 currentRoute 对象，而 depth 就是表示这个 RouterView 的嵌套层级。这里的 injectedRoute 是响应式的。
 - RouterView 的渲染的路由组件和当前路径 currentRoute 的 matched 对象相关，也和 RouterView 自身的嵌套层级相关。
 
-RouterView 主要的思路就是根据路径 route 和当前 RouterView 嵌套的深度来匹配路由配置中对应的路由组件并渲染。
+### matched 的值是怎么在路径切换的情况下更新的
 
-在整个渲染过程中，会访问计算属性 routeToDisplay，它的定义如下：
-
-```js
-const injectedRoute = inject(routerViewLocationKey);
-const routeToDisplay = computed(() => props.route || injectedRoute.value);
-```
-
-routeToDisplay 内部又会访问 injectedRoute，而 injectedRoute 注入的是 key 为 routerViewLocationKey 的数据。
-
-在执行 createRouter 创建路由的时候，内部会创建 currentRoute 响应式变量来维护当前的路径。
+我们执行 `createRouter` 函数创建路由的时候，内部会执行如下代码来创建一个 matcher 对象：
 
 ```js
-const currentRoute = shallowRef(START_LOCATION_NORMALIZED);
-```
-
-然后在执行 createApp(App).use(router) 安装路由的时候，会执行 router 对象提供的 install 方法，其中会把 currentRoute 通过 routerViewLocationKey 提供给应用使用。
-
-```js
-app.provide(routerViewLocationKey, currentRoute);
-```
-
-因此在渲染 RouterView 组件的时候，访问了 routeToDisplay，内部会访问 injectedRoute，进而也就访问到了 currentRoute，而又由于 currentRoute 是响应式对象，进而会触发它的依赖收集过程。
-
-这样当我们执行 router 对象的 push 方法修改路由路径时，内部会执行 finalizeNavigation 方法，然后修改了 currentRoute，就会触发所有的 RouterView 组件的重新渲染。
-
-### matcher 对象
-
-```js
-const matcher = createRouterMatcher(options.routes, options);
+export function createRouter(options: RouterOptions): Router {
+  const matcher = createRouterMatcher(options.routes, options);
+  // ...
+}
 ```
 
 createRouterMatcher
@@ -818,11 +806,129 @@ function createRouterMatcher(routes, globalOptions) {
 }
 ```
 
-createRouterMatcher 函数内部定义了一个 matchers 数组和一些辅助函数
+`createRouterMatcher` 函数内部定义了一个 `matchers` 数组和一些辅助函数
+
+- addRoute
+- resolve
+- removeRoute
+- getRoutes
+- getRecordMatcher
+
+在 createRouterMatcher 函数的最后，会遍历 routes 路径数组调用 addRoute 方法添加初始路径。在 addRoute 函数内部，首先会把 route 对象标准化成一个 record，其实就是给路径对象添加更丰富的属性。
+
+然后再执行 createRouteRecordMatcher 函数，传入标准化的 record 对象
+
+### createRouteRecordMatcher
+
+```js
+function createRouteRecordMatcher(record, parent, options) {
+  const parser = tokensToParser(tokenizePath(record.path), options);
+  {
+    const existingKeys = new Set();
+    for (const key of parser.keys) {
+      if (existingKeys.has(key.name))
+        warn(
+          `Found duplicated params with name "${key.name}" for path "${record.path}". Only the last one will be available on "$route.params".`
+        );
+      existingKeys.add(key.name);
+    }
+  }
+  const matcher = assign(parser, {
+    record,
+    parent,
+    children: [],
+    alias: [],
+  });
+  if (parent) {
+    if (!matcher.record.aliasOf === !parent.record.aliasOf)
+      parent.children.push(matcher);
+  }
+  return matcher;
+}
+```
+
+其实 createRouteRecordMatcher 创建的 matcher 对象不仅仅拥有 record 属性来存储 record，还扩展了一些其他属性，需要注意，如果存在 parent matcher，那么会把当前 matcher 添加到 parent.children 中去，这样就维护了父子关系，构造了树形结构。
+
+<div style='color:red'> matched 的值是怎么在路径切换的情况下更新的? </div>
+
+切换路径会执行 pushWithRedirect 方法，内部会执行一段代码：
+
+```js
+const targetLocation = (pendingLocation = resolve(to));
+```
 
 ### resolve
 
+执行 resolve 函数解析生成 targetLocation，这个 targetLocation 最后也会在 finalizeNavigation 的时候赋值 currentRoute 更新当前路径。
+
+```js
+function resolve(location, currentLocation) {
+  let matcher;
+  let params = {};
+  let path;
+  let name;
+  if ('name' in location && location.name) {
+    matcher = matcherMap.get(location.name);
+    if (!matcher)
+      throw createRouterError(1 /* MATCHER_NOT_FOUND */, {
+        location,
+      });
+    name = matcher.record.name;
+    params = assign(
+      paramsFromLocation(
+        currentLocation.params,
+        matcher.keys.filter((k) => !k.optional).map((k) => k.name)
+      ),
+      location.params
+    );
+    path = matcher.stringify(params);
+  } else if ('path' in location) {
+    path = location.path;
+    if (!path.startsWith('/')) {
+      warn(
+        `The Matcher cannot resolve relative paths but received "${path}". Unless you directly called \`matcher.resolve("${path}")\`, this is probably a bug in vue-router. Please open an issue at https://new-issue.vuejs.org/?repo=vuejs/vue-router-next.`
+      );
+    }
+    matcher = matchers.find((m) => m.re.test(path));
+
+    if (matcher) {
+      params = matcher.parse(path);
+      name = matcher.record.name;
+    }
+  } else {
+    matcher = currentLocation.name
+      ? matcherMap.get(currentLocation.name)
+      : matchers.find((m) => m.re.test(currentLocation.path));
+    if (!matcher)
+      throw createRouterError(1 /* MATCHER_NOT_FOUND */, {
+        location,
+        currentLocation,
+      });
+    name = matcher.record.name;
+    params = assign({}, currentLocation.params, location.params);
+    path = matcher.stringify(params);
+  }
+  const matched = [];
+  let parentMatcher = matcher;
+  while (parentMatcher) {
+    matched.unshift(parentMatcher.record);
+    parentMatcher = parentMatcher.parent;
+  }
+  return {
+    name,
+    path,
+    params,
+    matched,
+    meta: mergeMetaFields(matched),
+  };
+}
+```
+
 resolve 函数主要做的事情就是根据 location 的 name 或者 path 从我们前面创建的 matchers 数组中找到对应的 matcher，然后再顺着 matcher 的 parent 一直找到链路上所有匹配的 matcher，然后获取其中的 record 属性构造成一个 matched 数组，最终返回包含 matched 属性的新的路径对象。
+
+这么做的目的就是让 matched 数组完整记录 record 路径，它的顺序和嵌套的 RouterView 组件顺序一致，也就是 matched 数组中的第 n 个元素就代表着 RouterView 嵌套的第 n 层。
+
+因此 targetLocation 和 to 相比，其实就是多了一个 matched 对象，这样再回到我们的 RouterView 组件，就可以从`injectedRoute.matched[depth] [props.name]`中拿到对应的组件对象定义，去渲染对应的组件了。
 
 ## 导航守卫的实现
 

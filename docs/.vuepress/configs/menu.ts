@@ -46,7 +46,8 @@ export const sidebarConfig: any = {
   ],
   '/vueRouter/': [
     { text: 'Introduction', link: '/vueRouter/' },
-    { text: 'VueRouter特性', link: '/vueRouter/application' },
+    { text: 'VueRouter 特性', link: '/vueRouter/application' },
+    { text: '原生路由', link: '/vueRouter/browserRouter' },
     { text: '源码解读', link: '/vueRouter/sourceCode' },
   ],
   '/vite/': [
