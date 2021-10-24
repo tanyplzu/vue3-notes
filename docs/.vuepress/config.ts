@@ -44,8 +44,14 @@ export default defineUserConfig<DefaultThemeOptions>({
       '@vuepress/plugin-pwa-popup',
       {
         locales: {
-          message: '发现新内容可用',
-          buttonText: '刷新',
+          '/': {
+            message: 'New content is available.',
+            buttonText: 'Refresh',
+          },
+          '/zh/': {
+            message: '发现新内容可用',
+            buttonText: '刷新',
+          },
         },
       },
     ],
