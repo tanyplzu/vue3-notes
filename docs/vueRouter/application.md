@@ -1,6 +1,8 @@
-# Vue Router 笔记
+# Vue Router 4 新特性
 
 [[toc]]
+
+## 使用方法
 
 ```js
 // 1. 定义路由组件.
@@ -18,7 +20,6 @@ const routes = [
 // 3. 创建路由实例并传递 `routes` 配置
 // 你可以在这里输入更多的配置
 const router = VueRouter.createRouter({
-  
   // 4. 内部提供了 history 模式的实现。为了简单起见，我们在这里使用 hash 模式。
   history: VueRouter.createWebHashHistory(),
   routes, // `routes: routes` 的缩写
@@ -55,3 +56,41 @@ export default {
 ```
 
 要在 setup 函数中访问路由，需要调用 useRouter 或 useRoute 函数。
+
+## 动态路由
+
+```js
+methods: {
+  uploadComplete (id) {
+    router.addRoute({
+      path: `/uploads/${id}`,
+      name: `upload-${id}`,
+      component: FileInfo
+    });
+  }
+}
+```
+
+你还可以使用以下相关方法：
+
+-removeRoute
+-hasRoute
+-getRoutes
+
+## 导航守卫可以返回值而不是 next
+
+通常用于检查用户是否有权限访问某个页面，验证动态路由参数，或者销毁监听器。
+
+```js
+// Vue Router 3
+router.beforeEach((to, from, next) => {
+  if (!isAuthenticated) {
+    next(false);
+  } else {
+    next();
+  }
+});
+
+// Vue Router 4
+router.beforeEach(() => isAuthenticated);
+```

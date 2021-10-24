@@ -11,11 +11,11 @@
 }
 
 :root {
-  // --code-bg-color: #eff4f9
+  --code-bg-color: #eff4f9;
 }
 
 a {
-  font-weight: 400
+  font-weight: 400;
 }
 
 .sidebar-links {
@@ -31,3 +31,185 @@ a {
     font-weight: 400;
   }
 }
+
+.theme-default-content pre code,
+.theme-default-content pre[class*='language-'] code {
+  color: #333;
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+  color: #ccc;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*='language-'] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+  background: #2d2d2d;
+}
+
+/* Inline code */
+:not(pre) > code[class*='language-'] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #888;
+}
+
+.token.punctuation {
+  color: #45526b;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+  /* color: #3683d6; */
+  color: #6a46d1;
+}
+
+.token.function-name {
+  color: #6196cc;
+  /* color: red; */
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+  // color: #6a46d1;
+  color: #c25205;
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+  color: #6a46d1;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+  // color: #3683d6;
+  color: #b92dbc;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+  color: #3683d6;
+  /* color:#DD1144; */
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+  /* color: #45526b; */
+  color: #3683d6;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.inserted {
+  color: green;
+}
+
+// ======================= 样式二
+// .token.punctuation {
+//   color: #2d2d2d;
+// }
+
+// .token.tag,
+// .token.attr-name,
+// .token.namespace,
+// .token.deleted {
+//   color: #b2085f;
+// }
+
+// .token.string,
+// .token.char,
+// .token.attr-value,
+// .token.regex,
+// .token.variable {
+//   color: #0a7a34;
+// }
+
+// .token.selector,
+// .token.important,
+// .token.atrule,
+// .token.keyword,
+// .token.builtin {
+//   color: #b92dbc;
+// }
+
+// .token.boolean,
+// .token.number,
+// .token.function {
+//   color: #c25205;
+// }
+
+// .token.property,
+// .token.class-name,
+// .token.constant,
+// .token.symbol {
+//   color: #717c11;
+// }
+
+// .token.operator,
+// .token.entity,
+// .token.url {
+//   color: #0b7e7d;
+// }
+
+// .token.comment,
+// .token.block-comment,
+// .token.prolog,
+// .token.doctype,
+// .token.cdata {
+//   color: #848486;
+// }
+// ======================= 样式二结束

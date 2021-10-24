@@ -6,8 +6,8 @@ export const navbarConfig: any = [
   {
     text: '生态系统',
     children: [
-      { text: 'Vuex', link: '/vuex/' },
       { text: 'Vue Router', link: '/vueRouter/' },
+      { text: 'Vuex', link: '/vuex/' },
       { text: 'Vite', link: '/vite/' },
       { text: 'VuePress', link: '/vuePress/' },
     ],
@@ -46,7 +46,7 @@ export const sidebarConfig: any = {
   ],
   '/vueRouter/': [
     { text: 'Introduction', link: '/vueRouter/' },
-    { text: '应用', link: '/vueRouter/application' },
+    { text: 'VueRouter特性', link: '/vueRouter/application' },
     { text: '源码解读', link: '/vueRouter/sourceCode' },
   ],
   '/vite/': [

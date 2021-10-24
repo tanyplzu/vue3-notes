@@ -38,7 +38,6 @@ export default defineUserConfig<DefaultThemeOptions>({
   },
 
   plugins: [
-    // ['@vuepress/plugin-debug'],
     ['@vuepress/plugin-search'],
     // ['@vuepress/plugin-pwa'],
     // [
@@ -50,12 +49,6 @@ export default defineUserConfig<DefaultThemeOptions>({
     //         buttonText: '刷新',
     //       },
     //     },
-    //   },
-    // ],
-    // [
-    //   '@vuepress/plugin-register-components',
-    //   {
-    //     componentsDir: path.resolve(__dirname, './components'),
     //   },
     // ],
   ],
