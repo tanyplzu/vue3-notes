@@ -7,9 +7,6 @@ function refreshData() {}
 window.addEventListener('hashchange', refreshData);
 ```
 
-- 对 hash 值的读写可以通过 window.location.hash 完成。
-- 可以使用 window.location.replace()方法替换路由。
-
 ## history 模式
 
 - hostory 模式中有两个重要的方法，`pushState` 和 `replaceState`；
@@ -38,3 +35,35 @@ function refreshData(e) {
 }
 window.addEventListener('popstate', refreshData);
 ```
+
+## location
+
+### Location.assign()
+
+加载给定 URL 的内容资源到这个 Location 对象所关联的对象上。
+
+### Location.replace()
+
+用给定的 URL 替换掉当前的资源。与 assign() 方法不同的是用 replace()替换的新页面不会被保存在会话的历史 History 中，这意味着用户将不能用后退按钮转到该页面。
+
+### Location 属性
+
+```js
+var url = document.createElement('a');
+url.href =
+  'https://developer.mozilla.org/en-US/search?q=URL#search-results-close-container';
+console.log(url.href); // https://developer.mozilla.org/en-US/search?q=URL#search-results-close-container
+console.log(url.protocol); // https:
+console.log(url.host); // developer.mozilla.org
+console.log(url.hostname); // developer.mozilla.org
+console.log(url.port); // (blank - https assumes port 443)
+console.log(url.pathname); // /en-US/search
+console.log(url.search); // ?q=URL
+console.log(url.hash); // #search-results-close-container
+console.log(url.origin); // https://developer.mozilla.org
+```
+
+## 其它
+
+- 对 hash 值的读写可以通过 window.location.hash 完成。
+- 对 hash 可以使用 window.location.replace()方法替换路由。

@@ -2,7 +2,7 @@
 sidebarDepth: 1
 ---
 
-# Vue Router 源码
+# Vue Router 源码解读
 
 [[toc]]
 
@@ -358,6 +358,18 @@ routerHistory 是 history 中的 routerHistory，history 在 createRouter 时传
 
 ## history 的模式
 
+### 源码中的方法
+
+- createBaseLocation
+- createCurrentLocation
+- useHistoryListeners
+- buildState
+- useHistoryStateNavigation
+  - changeLocation
+  - replace
+  - push
+- createWebHistory（export）
+
 ::: tip 问题
 每当我们切换路由的时候，会发现浏览器的 URL 发生了变化，但是页面却没有刷新，它是怎么做的呢？
 :::
@@ -427,20 +439,7 @@ function useHistoryStateNavigation(base) {
     );
   }
   function changeLocation(to, state, replace) {
-    const url =
-      createBaseLocation() +
-      // preserve any existing query when base has a hash
-      (base.indexOf('#') > -1 && location.search
-        ? location.pathname + location.search + '#'
-        : base) +
-      to;
-    try {
-      history[replace ? 'replaceState' : 'pushState'](state, '', url);
-      historyState.value = state;
-    } catch (err) {
-      warn('Error with push/replace State', err);
-      location[replace ? 'replace' : 'assign'](url);
-    }
+    // ...
   }
   function replace(to, data) {
     const state = assign(
@@ -493,6 +492,32 @@ function useHistoryStateNavigation(base) {
 返回的 push 和 replace 函数，会添加给 routerHistory 对象上，因此当我们调用 routerHistory.push 或者是 routerHistory.replace 方法的时候实际上就是在执行这两个函数。
 
 push 和 replace 方法内部都是执行了 `changeLocation` 方法，该函数内部执行了浏览器底层的 `history.pushState` 或者 `history.replaceState` 方法，会向当前浏览器会话的历史堆栈中添加一个状态，这样就在不刷新页面的情况下修改了页面的 URL。
+
+### changeLocation
+
+```js
+function changeLocation(to, state, replace) {
+  const hashIndex = base.indexOf('#');
+  const url =
+    hashIndex > -1
+      ? (location.host && document.querySelector('base')
+          ? base
+          : base.slice(hashIndex)) + to
+      : createBaseLocation() + base + to;
+  try {
+    // BROWSER QUIRK
+    // NOTE: Safari throws a SecurityError when calling this function 100 times in 30 seconds
+    history[replace ? 'replaceState' : 'pushState'](state, '', url);
+    historyState.value = state;
+  } catch (err) {
+    {
+      warn('Error with push/replace State', err);
+    }
+    // Force the navigation, this also resets the call count
+    location[replace ? 'replace' : 'assign'](url);
+  }
+}
+```
 
 ### useHistoryListeners
 

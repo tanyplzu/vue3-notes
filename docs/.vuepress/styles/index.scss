@@ -14,6 +14,19 @@
   --code-bg-color: #eff4f9;
 }
 
+:root {
+  --pwa-popup-z-index: 10;
+
+  --pwa-popup-text-color: #2c3e50;
+  --pwa-popup-bg-color: #ffffff;
+  --pwa-popup-border-color: #4569d4;
+  --pwa-popup-shadow: 0 4px 16px var(--pwa-popup-border-color);
+
+  --pwa-popup-btn-text-color: #ffffff;
+  --pwa-popup-btn-bg-color: #4569d4;
+  --pwa-popup-btn-hover-bg-color: #4569d4;
+}
+
 a {
   font-weight: 400;
 }
