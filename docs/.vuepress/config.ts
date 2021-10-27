@@ -1,7 +1,6 @@
 import { defineUserConfig } from 'vuepress';
 import type { DefaultThemeOptions } from 'vuepress';
 import { navbarConfig, sidebarConfig } from './configs/menu';
-import { path } from '@vuepress/utils';
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -14,7 +13,6 @@ export default defineUserConfig<DefaultThemeOptions>({
   head: [
     ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    // ...其他标签
   ],
 
   themeConfig: {
@@ -25,6 +23,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     editLinkText: '',
     sidebarDepth: 1,
     darkMode: false,
+    lastUpdated: false,
     navbar: navbarConfig,
     sidebar: sidebarConfig,
   },

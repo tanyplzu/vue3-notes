@@ -11,6 +11,7 @@
 - [VueConf 2021](https://www.yuque.com/vueconf/mkwv0c)
 - [深入理解 Vue3 Reactivity API](https://zhuanlan.zhihu.com/p/146097763)
 - [Vue Mastery](https://github.com/orgs/Code-Pop/repositories)
+- [[建议收藏] 你想知道的Vue3核心源码这里都有](https://mp.weixin.qq.com/s/71fWC3Tox0DTLOL-Nm-wQg)
 
 工具：
 - [vue-next-template-explorer](https://vue-next-template-explorer.netlify.app/)
