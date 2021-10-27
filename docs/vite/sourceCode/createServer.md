@@ -1,6 +1,6 @@
-# Vue Router 笔记
+# createServer
 
-## 源码目录文件
+[[toc]]
 
 ## createServer
 
@@ -25,6 +25,8 @@ export async function createServer(
   const ws = createWebSocketServer(httpServer, config, httpsOptions)
 
   const { ignored = [], ...watchOptions } = serverConfig.watch || {}
+
+  // 使用chokidar监控root目录，忽略node_modules、.git
   const watcher = chokidar.watch(path.resolve(root), {
     ignored: [
       '**/node_modules/**',
@@ -185,6 +187,7 @@ export async function createServer(
   // proxy
   const { proxy } = serverConfig
   if (proxy) {
+    // 为开发服务器配置代理自定义代理规则
     middlewares.use(proxyMiddleware(httpServer, config))
   }
 
@@ -278,7 +281,153 @@ export async function createServer(
 }
 ```
 
-返回一个 server，具体解释在 ViteDevServer 接口中。下面是一个 createServer 的例子：
+- connect :针对 http 服务的中间件模型，类似 koa
+- chokidar:精简的跨端文件监控库
+- [acorn](https://github.com/acornjs/acorn): js 语法解析器
+- magic-string: js 源码 string 操作 pkg
+
+返回一个 server，具体解释在 ViteDevServer 接口中。
+
+## ViteDevServer
+
+vite 开发服务器
+
+```ts
+export interface ViteDevServer {
+  /**
+   * The resolved vite config object
+   */
+  config: ResolvedConfig;
+  /**
+   * A connect app instance.
+   * - Can be used to attach custom middlewares to the dev server.
+   * - Can also be used as the handler function of a custom http server
+   *   or as a middleware in any connect-style Node.js frameworks
+   *
+   * https://github.com/senchalabs/connect#use-middleware
+   */
+  middlewares: Connect.Server;
+  /**
+   * @deprecated use `server.middlewares` instead
+   */
+  app: Connect.Server;
+  /**
+   * native Node http server instance
+   * will be null in middleware mode
+   */
+  httpServer: http.Server | null;
+  /**
+   * chokidar watcher instance
+   * https://github.com/paulmillr/chokidar#api
+   */
+  watcher: FSWatcher;
+  /**
+   * web socket server with `send(payload)` method
+   */
+  ws: WebSocketServer;
+  /**
+   * Rollup plugin container that can run plugin hooks on a given file
+   */
+  pluginContainer: PluginContainer;
+  /**
+   * Module graph that tracks the import relationships, url to file mapping
+   * and hmr state.
+   */
+  moduleGraph: ModuleGraph;
+  /**
+   * Programmatically resolve, load and transform a URL and get the result
+   * without going through the http request pipeline.
+   */
+  transformRequest(
+    url: string,
+    options?: TransformOptions
+  ): Promise<TransformResult | null>;
+  /**
+   * Apply vite built-in HTML transforms and any plugin HTML transforms.
+   */
+  transformIndexHtml(
+    url: string,
+    html: string,
+    originalUrl?: string
+  ): Promise<string>;
+  /**
+   * Util for transforming a file with esbuild.
+   * Can be useful for certain plugins.
+   *
+   * @deprecated import `transformWithEsbuild` from `vite` instead
+   */
+  transformWithEsbuild(
+    code: string,
+    filename: string,
+    options?: EsbuildTransformOptions,
+    inMap?: object
+  ): Promise<ESBuildTransformResult>;
+  /**
+   * Load a given URL as an instantiated module for SSR.
+   */
+  ssrLoadModule(url: string): Promise<Record<string, any>>;
+  /**
+   * Fix ssr error stacktrace
+   */
+  ssrFixStacktrace(e: Error): void;
+  /**
+   * Start the server.
+   */
+  listen(port?: number, isRestart?: boolean): Promise<ViteDevServer>;
+  /**
+   * Stop the server.
+   */
+  close(): Promise<void>;
+  /**
+   * Print server urls
+   */
+  printUrls(): void;
+  /**
+   * @internal
+   */
+  _optimizeDepsMetadata: DepOptimizationMetadata | null;
+  /**
+   * Deps that are externalized
+   * @internal
+   */
+  _ssrExternals: string[] | null;
+  /**
+   * @internal
+   */
+  _globImporters: Record<
+    string,
+    {
+      module: ModuleNode;
+      importGlobs: {
+        base: string;
+        pattern: string;
+      }[];
+    }
+  >;
+  /**
+   * @internal
+   */
+  _isRunningOptimizer: boolean;
+  /**
+   * @internal
+   */
+  _registerMissingImport:
+    | ((id: string, resolved: string, ssr: boolean | undefined) => void)
+    | null;
+  /**
+   * @internal
+   */
+  _pendingReload: Promise<void> | null;
+  /**
+   * @internal
+   */
+  _pendingRequests: Record<string, Promise<TransformResult | null> | null>;
+}
+```
+
+## 一个例子
+
+下面是一个 createServer 的例子：
 
 ```js
 const fs = require('fs');
@@ -305,52 +454,4 @@ async function createServer() {
 }
 
 createServer();
-```
-
-middlewares
-
-## indexHtml
-
-```js
-function indexHtmlMiddleware(
-  server: ViteDevServer
-): Connect.NextHandleFunction {
-  // Keep the named function. The name is visible in debug logs via `DEBUG=connect:dispatcher ...`
-  return async function viteIndexHtmlMiddleware(req, res, next) {
-    const url = req.url && cleanUrl(req.url);
-    // spa-fallback always redirects to /index.html
-    if (url?.endsWith('.html') && req.headers['sec-fetch-dest'] !== 'script') {
-      const filename = getHtmlFilename(url, server);
-      if (fs.existsSync(filename)) {
-        let html = fs.readFileSync(filename, 'utf-8');
-        html = await server.transformIndexHtml(url, html, req.originalUrl);
-        return send(req, res, html, 'html');
-      }
-    }
-    next();
-  };
-}
-```
-
-> Vite 将 `index.html` 视为源码和模块图的一部分。Vite 解析 `<script type="module" src="...">` ，这个标签指向你的 JavaScript 源码。甚至内联引入 JavaScript 的 `<script type="module" src="...">` 和引用 CSS 的 `<link href>` 也能利用 Vite 特有的功能被解析。另外，`index.html` 中的 URL 将被自动转换，因此不再需要 `%PUBLIC_URL%` 占位符了。
-
-其中的 `server.transformIndexHtml` 就是 `createDevHtmlTransformFn`
-
-## createDevHtmlTransformFn
-
-```js
-export function createDevHtmlTransformFn(
-  server: ViteDevServer
-): (url: string, html: string, originalUrl: string) => Promise<string> {
-  const [preHooks, postHooks] = resolveHtmlTransforms(server.config.plugins);
-
-  return (url: string, html: string, originalUrl: string): Promise<string> => {
-    return applyHtmlTransforms(html, [...preHooks, devHtmlHook, ...postHooks], {
-      path: url,
-      filename: getHtmlFilename(url, server),
-      server,
-      originalUrl,
-    });
-  };
-}
 ```

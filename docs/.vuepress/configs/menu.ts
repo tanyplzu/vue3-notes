@@ -55,7 +55,13 @@ export const sidebarConfig: any = {
   '/vite/': [
     { text: 'Introduction', link: '/vite/' },
     { text: '应用', link: '/vite/application' },
-    { text: '源码解读', link: '/vite/sourceCode' },
+    {
+      text: '源码解读',
+      children: [
+        '/vite/sourceCode/createServer',
+        '/vite/sourceCode/indexHtmlMiddleware',
+      ],
+    },
     { text: 'vue dev server', link: '/vite/vue-dev-server' },
   ],
   '/vuePress/': [
