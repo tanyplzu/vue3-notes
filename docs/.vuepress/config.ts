@@ -11,7 +11,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   bundler: '@vuepress/vite',
   bundlerConfig: {},
   head: [
-    ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
+    // ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
   ],
 
@@ -38,21 +38,21 @@ export default defineUserConfig<DefaultThemeOptions>({
 
   plugins: [
     ['@vuepress/plugin-search'],
-    ['@vuepress/plugin-pwa'],
-    [
-      '@vuepress/plugin-pwa-popup',
-      {
-        locales: {
-          '/': {
-            message: 'New content is available.',
-            buttonText: 'Refresh',
-          },
-          '/zh/': {
-            message: '发现新内容可用',
-            buttonText: '刷新',
-          },
-        },
-      },
-    ],
+    // ['@vuepress/plugin-pwa'],
+    // [
+    //   '@vuepress/plugin-pwa-popup',
+    //   {
+    //     locales: {
+    //       '/': {
+    //         message: 'New content is available.',
+    //         buttonText: 'Refresh',
+    //       },
+    //       '/zh/': {
+    //         message: '发现新内容可用',
+    //         buttonText: '刷新',
+    //       },
+    //     },
+    //   },
+    // ],
   ],
 });
