@@ -1,7 +1,6 @@
 # vuex4 源码解读
 
 [[toc]]
-
 ## createStore
 
 ```js
@@ -111,6 +110,4 @@ function installModule(store, rootState, path, module, hot) {
 ## 参考阅读
 
 - [[源码解读]一文读懂 Vuex4 源码](https://zhuanlan.zhihu.com/p/407011168)
-- [Vuex 源码解析](https://github.com/answershuto/learnVue/blob/master/docs/Vuex%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90.MarkDown)
-- [Vuex 框架原理与源码分析（vue2）-美团技术团队](https://tech.meituan.com/2017/04/27/vuex-code-analysis.html)
-- [Vuex 源码分析 #58](https://github.com/dwqs/blog/issues/58)
+

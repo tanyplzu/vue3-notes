@@ -293,135 +293,57 @@ export async function createServer(
 vite 开发服务器
 
 ```ts
-export interface ViteDevServer {
+interface ViteDevServer {
   /**
-   * The resolved vite config object
+   * 被解析的 vite 配置对象
    */
   config: ResolvedConfig;
   /**
-   * A connect app instance.
-   * - Can be used to attach custom middlewares to the dev server.
-   * - Can also be used as the handler function of a custom http server
-   *   or as a middleware in any connect-style Node.js frameworks
+   * 一个 connect 应用实例
+   * - 可以用于将自定义中间件附加到开发服务器。
+   * - 还可以用作自定义http服务器的处理函数
+      或作为中间件用于任何 connect 风格的 Node.js 框架
    *
    * https://github.com/senchalabs/connect#use-middleware
    */
   middlewares: Connect.Server;
   /**
-   * @deprecated use `server.middlewares` instead
-   */
-  app: Connect.Server;
-  /**
-   * native Node http server instance
-   * will be null in middleware mode
+   * 本机 node http 服务器实例
    */
   httpServer: http.Server | null;
   /**
-   * chokidar watcher instance
+   * chokidar 监听器实例
    * https://github.com/paulmillr/chokidar#api
    */
   watcher: FSWatcher;
   /**
-   * web socket server with `send(payload)` method
+   * web socket 服务器，带有 `send(payload)` 方法
    */
   ws: WebSocketServer;
   /**
-   * Rollup plugin container that can run plugin hooks on a given file
+   * Rollup 插件容器，可以针对给定文件运行插件钩子
    */
   pluginContainer: PluginContainer;
   /**
-   * Module graph that tracks the import relationships, url to file mapping
-   * and hmr state.
+   * 跟踪导入关系、url 到文件映射和 hmr 状态的模块图。
    */
   moduleGraph: ModuleGraph;
   /**
-   * Programmatically resolve, load and transform a URL and get the result
-   * without going through the http request pipeline.
+   * 以代码方式解析、加载和转换 url 并获取结果
+   * 而不需要通过 http 请求管道。
    */
   transformRequest(
     url: string,
     options?: TransformOptions
   ): Promise<TransformResult | null>;
   /**
-   * Apply vite built-in HTML transforms and any plugin HTML transforms.
-   */
-  transformIndexHtml(
-    url: string,
-    html: string,
-    originalUrl?: string
-  ): Promise<string>;
-  /**
-   * Util for transforming a file with esbuild.
-   * Can be useful for certain plugins.
-   *
-   * @deprecated import `transformWithEsbuild` from `vite` instead
-   */
-  transformWithEsbuild(
-    code: string,
-    filename: string,
-    options?: EsbuildTransformOptions,
-    inMap?: object
-  ): Promise<ESBuildTransformResult>;
-  /**
-   * Load a given URL as an instantiated module for SSR.
-   */
-  ssrLoadModule(url: string): Promise<Record<string, any>>;
-  /**
-   * Fix ssr error stacktrace
-   */
-  ssrFixStacktrace(e: Error): void;
-  /**
-   * Start the server.
+   * 启动服务器
    */
   listen(port?: number, isRestart?: boolean): Promise<ViteDevServer>;
   /**
-   * Stop the server.
+   * 停止服务器
    */
   close(): Promise<void>;
-  /**
-   * Print server urls
-   */
-  printUrls(): void;
-  /**
-   * @internal
-   */
-  _optimizeDepsMetadata: DepOptimizationMetadata | null;
-  /**
-   * Deps that are externalized
-   * @internal
-   */
-  _ssrExternals: string[] | null;
-  /**
-   * @internal
-   */
-  _globImporters: Record<
-    string,
-    {
-      module: ModuleNode;
-      importGlobs: {
-        base: string;
-        pattern: string;
-      }[];
-    }
-  >;
-  /**
-   * @internal
-   */
-  _isRunningOptimizer: boolean;
-  /**
-   * @internal
-   */
-  _registerMissingImport:
-    | ((id: string, resolved: string, ssr: boolean | undefined) => void)
-    | null;
-  /**
-   * @internal
-   */
-  _pendingReload: Promise<void> | null;
-  /**
-   * @internal
-   */
-  _pendingRequests: Record<string, Promise<TransformResult | null> | null>;
 }
 ```
 
