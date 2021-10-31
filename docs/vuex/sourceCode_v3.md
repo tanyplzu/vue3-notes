@@ -62,7 +62,7 @@ constructor (options = {}) {
   this._actionSubscribers = []
   this._mutations = Object.create(null)
   this._wrappedGetters = Object.create(null) // 封装后的getters集合对象
-  this._modules = new ModuleCollection(options) // Vuex支持store分模块传入，存储分析后的modules
+  this._modules = new ModuleCollection(options) 
   this._modulesNamespaceMap = Object.create(null)
   this._subscribers = []
   this._watcherVM = new Vue() // Vue组件用于watch监视变化
@@ -203,11 +203,13 @@ _withCommit (fn) {
 }
 ```
 
-`store._committing` 为 false 时，会抛出错误。
+Vuex 中修改 state 的唯一渠道就是执行 commit('xx', payload) 方法，其底层通过执行 `this._withCommit(fn)` 设置 `_committing` 标志变量为 true，然后才能修改 state，修改完毕还需要还原`_committing`变量。外部修改虽然能够直接修改 state，但是并没有修改 `_committing` 标志位，所以只要 watch 一下 state，state change 时判断是否 `_committing` 值为 true，即可判断修改的合法性。
 
 ## ModuleCollection
 
-ModuleCollection 主要将传入的 options 对象整个构造为一个 module 对象，并循环调用 this.register([key], rawModule, false) 为其中的 modules 属性进行模块注册，使其都成为 module 对象，最后 options 对象被构造成一个完整的组件树。\
+ModuleCollection 主要将传入的 options 对象整个构造为一个 module 对象，并循环调用 this.register([key], rawModule, false) 为其中的 modules 属性进行模块注册，使其都成为 module 对象，最后 options 对象被构造成一个完整的组件树。
+
+所有 module 都会有一个 local context，根据配置时的 path 进行匹配。所以执行如 `dispatch('submitOrder', payload)` 这类 action 时，默认的拿到都是 module 的 local state，如果要访问最外层或者是其他 module 的 state，只能从 rootState 按照 path 路径逐步进行访问。
 
 ```js
 // register nested modules
@@ -389,23 +391,6 @@ commit (_type, _payload, _options) {
       'Use the filter functionality in the vue-devtools'
     );
   }
-}
-```
-
-## `_withCommit`
-
-为什么要用`_withCommit`,前面已经说明。
-
-```js
-_withCommit (fn) {
-  // 保存之前的提交状态
-  const committing = this._committing
-  // 进行本次提交，若不设置为true，直接修改state，strict模式下，Vuex将会产生非法修改state的警告
-  this._committing = true
-  // 执行state的修改操作
-  fn()
-  // 修改完成，还原本次修改之前的状态
-  this._committing = committing
 }
 ```
 
