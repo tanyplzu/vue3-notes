@@ -22,6 +22,7 @@
     "@vuepress/plugin-pwa": "^2.0.0-beta.26",
     "@vuepress/plugin-pwa-popup": "^2.0.0-beta.26",
     "@vuepress/plugin-search": "^2.0.0-beta.25",
+    "pushstate-server": "^3.1.0",
     "vuepress": "^2.0.0-beta.25",
     "vuepress-vite": "^2.0.0-beta.25"
   }
