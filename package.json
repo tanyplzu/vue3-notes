@@ -4,6 +4,7 @@
   "description": "vue3 学习笔记",
   "main": "index.js",
   "scripts": {
+    "serve": "server.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "deploy": "sh build.sh"
@@ -19,11 +20,9 @@
   },
   "homepage": "https://github.com/tanyplzu/vue3-notes#readme",
   "devDependencies": {
-    "@vuepress/plugin-pwa": "2.0.0-beta.26",
-    "@vuepress/plugin-pwa-popup": "2.0.0-beta.26",
-    "@vuepress/plugin-search": "2.0.0-beta.25",
-    "pushstate-server": "3.1.0",
-    "vuepress": "2.0.0-beta.25",
-    "vuepress-vite": "2.0.0-beta.25"
+    "@vuepress/plugin-search": "^2.0.0-beta.25",
+    "express": "^4.17.1",
+    "vuepress": "^2.0.0-beta.25",
+    "vuepress-vite": "^2.0.0-beta.25"
   }
 }
