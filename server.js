@@ -1,7 +1,7 @@
 const express = require('express');
 const compression = require('compression');
 // 端口可以自己定义
-const port = process.env.PORT || 3002;
+const port = process.env.PORT || 3000;
 const app = express();
 // 开启 gzip 压缩
 app.use(compression());
