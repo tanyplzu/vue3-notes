@@ -28,6 +28,7 @@ export const sidebarConfig: any = {
     '/sourceCode/reactivity',
     '/sourceCode/reactivity.cjs',
     '/sourceCode/computed',
+    '/sourceCode/createAppAPI',
     {
       text: 'Deep Dive',
       children: [
