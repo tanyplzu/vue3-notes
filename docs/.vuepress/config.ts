@@ -5,7 +5,7 @@ import { navbarConfig, sidebarConfig } from './configs/menu';
 const isProd = process.env.NODE_ENV === 'production';
 
 export default defineUserConfig<DefaultThemeOptions>({
-  title: '七月有风',
+  title: '朝花夕拾',
   dest: 'dist',
   base: '/',
   bundler: '@vuepress/vite',

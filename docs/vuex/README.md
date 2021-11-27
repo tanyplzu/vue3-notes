@@ -139,11 +139,32 @@ computed: {
 }
 ```
 
-### 如果有很多 computed
+### 计算属性 set、get 方式
 
-```html
-<input v-model="message" />
+```vue
+<template>
+  <div>
+    <input v-model="stateValue" />
+  </div>
+</template>
+
+<script>
+export default {
+  computed: {
+    stateValue: {
+      get() {
+        return this.$store.state.stateValue;
+      },
+      set(value) {
+        this.$store.commit('SET_STATE_VALUE', value);
+      },
+    },
+  },
+};
+</script>
 ```
+
+如果有很多个 computed，可以写成这样
 
 ```js
 function mapModel(names) {
@@ -168,7 +189,7 @@ computed: {
 }
 ```
 
-依然比较繁琐。其实在 github vuex 的 Issues 中有好几个类似的问题，但解决方案依然是这个。最简单的办法就是将 vuex 设置成非严格模式，直接修改 store 的值，如果这样使用，可以不用 vuex。
+依然比较繁琐。其实在 github vuex 的 Issues 中有好几个类似的问题，但解决方案依然是这个。最简单的办法就是将 vuex 设置成非严格模式，直接修改 store 的值，如果这样使用，可能不符合 vuex 的一些设计原则。
 
 ## vuex 有关的问题
 
