@@ -13,9 +13,11 @@
 - [Vue Mastery](https://github.com/orgs/Code-Pop/repositories)
 - [[建议收藏] 你想知道的 Vue3 核心源码这里都有](https://mp.weixin.qq.com/s/71fWC3Tox0DTLOL-Nm-wQg)
 - [vue 笔记](https://www.kancloud.cn/wangjiachong/vue_notes/1016421)
+- [Vue3 究竟好在哪里？（和 React Hook 的详细对比）](https://zhuanlan.zhihu.com/p/133819602)
 
 工具：
 
 - [vue-next-template-explorer](https://vue-next-template-explorer.netlify.app/)
+- [Rollup + TS 库（library）开发指南（1）—— 工程搭建](https://www.yuque.com/huajinbo/lxhzqg/susggx)
 
 > 学习知识要善于思考，思考，再思考。——爱因斯坦

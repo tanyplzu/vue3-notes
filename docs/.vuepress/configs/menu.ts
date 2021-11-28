@@ -39,7 +39,20 @@ export const sidebarConfig: any = {
     },
     '/sourceCode/miniVue',
   ],
-  '/elementPlus/': [{ text: 'Introduction', link: '/elementPlus/' }],
+  '/elementPlus/': [
+    { text: 'Introduction', link: '/elementPlus/' },
+    {
+      text: 'components',
+      children: [
+        '/elementPlus/components/input',
+        '/elementPlus/components/input-code',
+      ],
+    },
+    {
+      text: 'hooks',
+      children: ['/elementPlus/hooks/use-attrs'],
+    },
+  ],
   '/vuex/': [
     { text: '应用笔记', link: '/vuex/' },
     { text: '源码解读', link: '/vuex/sourceCode_v4' },
