@@ -1,7 +1,5 @@
 # tree
 
-##
-
 ```vue
 <template>
   <div

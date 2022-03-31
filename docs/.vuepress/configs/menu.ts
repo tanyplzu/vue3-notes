@@ -20,6 +20,8 @@ export const sidebarConfig: any = {
     '/vue3Basic/reactivityAPI',
     '/vue3Basic/vue3optimize',
     '/vue3Basic/Vue3Api',
+    '/vue3Basic/JSX',
+    '/vue3Basic/auth',
   ],
   '/sourceCode/': [
     { text: 'Introduction', link: '/sourceCode/' },
@@ -43,9 +45,12 @@ export const sidebarConfig: any = {
     { text: 'Introduction', link: '/elementPlus/' },
     {
       text: 'components',
+      sidebarDepth: 1,
       children: [
-        '/elementPlus/components/input',
-        '/elementPlus/components/input-code',
+        '/elementPlus/components/input/input',
+        '/elementPlus/components/input/input-code',
+        '/elementPlus/components/table/table',
+        '/elementPlus/components/table/table-column',
       ],
     },
     {
