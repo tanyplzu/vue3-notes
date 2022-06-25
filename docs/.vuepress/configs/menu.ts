@@ -1,7 +1,7 @@
 export const navbarConfig: any = [
   { text: '首页', link: '/' },
   { text: 'Vue3基础', link: '/vue3Basic/' },
-  { text: '源码解读', link: '/sourceCode/' },
+  { text: '核心原理', link: '/sourceCode/' },
   { text: 'ElementPlus', link: '/elementPlus/' },
   {
     text: '生态系统',
@@ -25,12 +25,27 @@ export const sidebarConfig: any = {
   ],
   '/sourceCode/': [
     { text: 'Introduction', link: '/sourceCode/' },
-    '/sourceCode/componentRender',
-    '/sourceCode/setup',
-    '/sourceCode/reactivity',
-    '/sourceCode/reactivity.cjs',
-    '/sourceCode/computed',
-    '/sourceCode/createAppAPI',
+    {
+      text: '响应式系统',
+      children: [
+        '/sourceCode/reactivity/reactivity',
+        '/sourceCode/reactivity/reactivity.cjs',
+        '/sourceCode/reactivity/computed',
+        '/sourceCode/reactivity/watch',
+      ],
+    },
+    {
+      text: '渲染器',
+      children: [
+        '/sourceCode/renderer',
+        '/sourceCode/renderer/createAppAPI',
+        '/sourceCode/renderer/componentRender',
+      ],
+    },
+    {
+      text: '组件化',
+      children: ['/sourceCode/component/setup'],
+    },
     {
       text: 'Deep Dive',
       children: [

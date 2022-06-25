@@ -2,7 +2,7 @@
 
 [[toc]]
 
-实现一个 reactivity
+简单版 reactivity
 
 ## basic
 
@@ -72,7 +72,7 @@ trigger('quantity')
 
 ## targetMap
 
-![reactivity001](./imgs/reactivity001.png)
+![reactivity001](../imgs/reactivity001.png)
 
 ```js
 const targetMap = new WeakMap(); // targetMap stores the effects that each object should re-run when it's updated
