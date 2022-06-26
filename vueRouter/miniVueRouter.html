@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.25">
+    <meta name="theme-color" content="#3eaf7c"><title>miniVueRouter | 朝花夕拾</title><meta name="description" content="">
+    <link rel="modulepreload" href="/assets/app.11f00557.js"><link rel="modulepreload" href="/assets/miniVueRouter.html.057cfd62.js"><link rel="modulepreload" href="/assets/miniVueRouter.html.5b425479.js">
+    <link rel="stylesheet" href="/assets/style.bf8ab0ef.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/" class=""><img class="logo" src="/logo.png" alt="朝花夕拾"><span class="site-name can-hide">朝花夕拾</span></a></span><div class="navbar-links-wrapper" style=""><!--[--><!--]--><nav class="navbar-links can-hide"><!--[--><div class="navbar-links-item"><a href="/" class="nav-link" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/vue3Basic/" class="nav-link" aria-label="Vue3基础"><!--[--><!--]--> Vue3基础 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/sourceCode/" class="nav-link" aria-label="核心原理"><!--[--><!--]--> 核心原理 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/elementPlus/" class="nav-link" aria-label="ElementPlus"><!--[--><!--]--> ElementPlus <!--[--><!--]--></a></div><div class="navbar-links-item"><div class="dropdown-wrapper"><button class="dropdown-title" type="button" aria-label="生态系统"><span class="title">生态系统</span><span class="arrow down"></span></button><button class="mobile-dropdown-title" type="button" aria-label="生态系统"><span class="title">生态系统</span><span class="right arrow"></span></button><!--[--><ul style="display:none;" class="nav-dropdown"><!--[--><li class="dropdown-item"><a href="/vuex/" class="nav-link" aria-label="Vuex"><!--[--><!--]--> Vuex <!--[--><!--]--></a></li><li class="dropdown-item"><a href="/vueRouter/" class="nav-link router-link-active" aria-label="Vue Router"><!--[--><!--]--> Vue Router <!--[--><!--]--></a></li><li class="dropdown-item"><a href="/vite/" class="nav-link" aria-label="Vite"><!--[--><!--]--> Vite <!--[--><!--]--></a></li><li class="dropdown-item"><a href="/vuePress/" class="nav-link" aria-label="VuePress"><!--[--><!--]--> VuePress <!--[--><!--]--></a></li><!--]--></ul><!--]--></div></div><!--]--></nav><!--[--><!--]--><!----><form class="search-box" role="search"><input type="search" autocomplete="off" spellcheck="false" value><!----></form></div></header><div class="sidebar-mask"></div><aside class="sidebar"><nav class="navbar-links"><!--[--><div class="navbar-links-item"><a href="/" class="nav-link" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/vue3Basic/" class="nav-link" aria-label="Vue3基础"><!--[--><!--]--> Vue3基础 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/sourceCode/" class="nav-link" aria-label="核心原理"><!--[--><!--]--> 核心原理 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/elementPlus/" class="nav-link" aria-label="ElementPlus"><!--[--><!--]--> ElementPlus <!--[--><!--]--></a></div><div class="navbar-links-item"><div class="dropdown-wrapper"><button class="dropdown-title" type="button" aria-label="生态系统"><span class="title">生态系统</span><span class="arrow down"></span></button><button class="mobile-dropdown-title" type="button" aria-label="生态系统"><span class="title">生态系统</span><span class="right arrow"></span></button><!--[--><ul style="display:none;" class="nav-dropdown"><!--[--><li class="dropdown-item"><a href="/vuex/" class="nav-link" aria-label="Vuex"><!--[--><!--]--> Vuex <!--[--><!--]--></a></li><li class="dropdown-item"><a href="/vueRouter/" class="nav-link router-link-active" aria-label="Vue Router"><!--[--><!--]--> Vue Router <!--[--><!--]--></a></li><li class="dropdown-item"><a href="/vite/" class="nav-link" aria-label="Vite"><!--[--><!--]--> Vite <!--[--><!--]--></a></li><li class="dropdown-item"><a href="/vuePress/" class="nav-link" aria-label="VuePress"><!--[--><!--]--> VuePress <!--[--><!--]--></a></li><!--]--></ul><!--]--></div></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-links"><!--[--><!--[--><a href="/vueRouter/" class="nav-link router-link-active sidebar-heading sidebar-item" aria-label="Introduction"><!--[--><!--]--> Introduction <!--[--><!--]--></a><!----><!--]--><!--[--><a href="/vueRouter/application" class="nav-link sidebar-heading sidebar-item" aria-label="VueRouter 特性"><!--[--><!--]--> VueRouter 特性 <!--[--><!--]--></a><!----><!--]--><!--[--><a href="/vueRouter/browserRouter" class="nav-link sidebar-heading sidebar-item" aria-label="原生路由"><!--[--><!--]--> 原生路由 <!--[--><!--]--></a><!----><!--]--><!--[--><a href="/vueRouter/sourceCode" class="nav-link sidebar-heading sidebar-item" aria-label="源码解读"><!--[--><!--]--> 源码解读 <!--[--><!--]--></a><!----><!--]--><!--[--><a href="/vueRouter/code" class="nav-link sidebar-heading sidebar-item" aria-label="vue-router v4.0.12"><!--[--><!--]--> vue-router v4.0.12 <!--[--><!--]--></a><!----><!--]--><!--]--></ul><!--[--><!--]--></aside><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><h1 id="minivuerouter" tabindex="-1"><a class="header-anchor" href="#minivuerouter" aria-hidden="true">#</a> miniVueRouter</h1><p>Vue3 中是如何使用路由的</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token comment">// router.js</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createRouter<span class="token punctuation">,</span> createWebHashHistory <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vue-router&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> Login <span class="token keyword">from</span> <span class="token string">&quot;../pages/login.vue&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Home <span class="token keyword">from</span> <span class="token string">&quot;../pages/home.vue&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 定义各个组件的路由地址</span>
+<span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">&quot;/login&quot;</span><span class="token punctuation">,</span>
+    component<span class="token operator">:</span> Login<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">&quot;/home&quot;</span><span class="token punctuation">,</span>
+    component<span class="token operator">:</span> Home<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 创建路由实例</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  history<span class="token operator">:</span> <span class="token function">createWebHashHistory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  routes<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token comment">// App.vue</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">&quot;./App.vue&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> router <span class="token keyword">from</span> <span class="token string">&quot;./router/router&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">createApp</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>router<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">&quot;#app&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>createRouter</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 定义一个路由对象</span>
+  <span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token comment">// 返回路由对象</span>
+  <span class="token keyword">return</span> router<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">createWebHashHistory</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span> createRouter<span class="token punctuation">,</span> createWebHashHistory <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>从 createRouter 的使用中，我们可以看到传入了两个参数：</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 获取传入的两个参数</span>
+  <span class="token keyword">const</span> history <span class="token operator">=</span> params<span class="token punctuation">.</span>history<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> routes <span class="token operator">=</span> params<span class="token punctuation">.</span>routes<span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token punctuation">{</span>
+    history<span class="token punctuation">,</span>
+    routes<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> router<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>因为要根据当前 hash 来动态选择组件渲染，所以 router 实例还需要保存当前的路径 hash。</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> ref <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> history <span class="token operator">=</span> params<span class="token punctuation">.</span>history<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> routes <span class="token operator">=</span> params<span class="token punctuation">.</span>routes<span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token punctuation">{</span>
+    history<span class="token punctuation">,</span>
+    routes<span class="token punctuation">,</span>
+    <span class="token comment">// 增加当前路径hash的响应式变量</span>
+    hash<span class="token operator">:</span> <span class="token function">ref</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>hash<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> router<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>区分路由模式</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">createWebHashHistory</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 区分路由模式</span>
+<span class="token operator">+</span>   <span class="token keyword">return</span> <span class="token string">&#39;WebHashHistory&#39;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> history <span class="token operator">=</span> params<span class="token punctuation">.</span>history<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> routes <span class="token operator">=</span> params<span class="token punctuation">.</span>routes<span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token punctuation">{</span>
+        history<span class="token punctuation">,</span>
+        routes<span class="token punctuation">,</span>
+        <span class="token comment">// 增加当前路径hash的响应式变量</span>
+        hash<span class="token operator">:</span> <span class="token function">ref</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>hash<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 增加监听事件</span>
+<span class="token operator">+</span>   <span class="token keyword">if</span> <span class="token punctuation">(</span>history <span class="token operator">===</span> <span class="token string">&#39;WebHashHistory&#39;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token operator">+</span>        window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&#39;hashchange&#39;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+<span class="token operator">+</span>            <span class="token comment">// hash修改后更新变量</span>
+<span class="token operator">+</span>            router<span class="token punctuation">.</span>hash<span class="token punctuation">.</span>value <span class="token operator">=</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>hash<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">+</span>        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">+</span>    <span class="token punctuation">}</span>
+
+     <span class="token keyword">return</span> router<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><!--]--></div><footer class="page-meta"><!----><!----><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 759227027@qq.com">tanyplzu</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/assets/app.11f00557.js" defer></script>
+  </body>
+</html>
