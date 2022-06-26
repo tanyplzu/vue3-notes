@@ -52,9 +52,9 @@ export const sidebarConfig: any = {
         '/sourceCode/DeepDive/Render-function',
         '/sourceCode/DeepDive/creating-a-mini-vue',
         '/sourceCode/DeepDive/useFetch',
+        '/sourceCode/DeepDive/miniVue',
       ],
     },
-    '/sourceCode/miniVue',
   ],
   '/elementPlus/': [
     { text: 'Introduction', link: '/elementPlus/' },

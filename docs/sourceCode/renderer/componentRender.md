@@ -36,8 +36,22 @@ const vnode = {
 
 ```js
 const CustomComponent = {
-  // 在这里定义组件对象
+  name: 'CustomComponent',
+  props: {
+    msg: String,
+  },
+  render() {
+    return {
+      tag: 'div',
+      props: {
+        onClick: () => alert('hello'),
+      },
+      children: 'click me',
+    };
+  },
 };
+
+
 const vnode = {
   type: CustomComponent,
   props: {
@@ -45,6 +59,8 @@ const vnode = {
   },
 };
 ```
+
+从上面的代码可以看出组件和 vnode 的区别。
 
 ## 那么 vnode 有什么优势
 
@@ -197,7 +213,10 @@ import { Component, createVNode, render } from 'vue';
  * @param props 组件参数
  * @returns 组件实例
  */
-export const renderInstance = (Constructor: Component, props: Record<string, any>) => {
+export const renderInstance = (
+  Constructor: Component,
+  props: Record<string, any>
+) => {
   const container = document.createElement('div');
 
   props.vanish = () => {
