@@ -75,6 +75,7 @@ export const sidebarConfig: any = {
   ],
   '/vuex/': [
     { text: '应用笔记', link: '/vuex/' },
+    { text: '一些问题', link: '/vuex/q&a' },
     { text: 'miniVuex', link: '/vuex/miniVuex' },
     { text: '源码解读', link: '/vuex/sourceCode_v4' },
     { text: 'Vuex v4.0.2', link: '/vuex/vuexCode' },

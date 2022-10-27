@@ -2,7 +2,7 @@
 
 [[toc]]
 
-vue-dev-server 是一个玩具 vite，一下是它的代码：
+vue-dev-server 是一个玩具 vite，以下是它的代码：
 
 ## vue-dev-server
 
