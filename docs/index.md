@@ -19,5 +19,3 @@
 
 - [vue-next-template-explorer](https://vue-next-template-explorer.netlify.app/)
 - [Rollup + TS 库（library）开发指南（1）—— 工程搭建](https://www.yuque.com/huajinbo/lxhzqg/susggx)
-
-> 学习知识要善于思考，思考，再思考。——爱因斯坦
