@@ -4,8 +4,6 @@ sidebarDepth: 1
 
 # 响应式系统 API
 
-[[toc]]
-
 ## reactive
 
 ```js

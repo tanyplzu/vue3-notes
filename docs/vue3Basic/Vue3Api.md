@@ -4,8 +4,6 @@ sidebarDepth: 1
 
 # Vue3 API
 
-[[toc]]
-
 ## hooks
 
 ### vue2 mixins
