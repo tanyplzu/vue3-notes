@@ -3,12 +3,12 @@ export const navbarConfig: any = [
   { text: 'Vue3基础', link: '/vue3Basic/' },
   { text: '核心原理', link: '/sourceCode/' },
   { text: 'ElementPlus', link: '/elementPlus/' },
+  { text: 'Vite', link: '/vite/' },
   {
     text: '生态系统',
     children: [
       { text: 'Vuex', link: '/vuex/' },
       { text: 'Vue Router', link: '/vueRouter/' },
-      { text: 'Vite', link: '/vite/' },
       { text: 'VuePress', link: '/vuePress/' },
     ],
   },
