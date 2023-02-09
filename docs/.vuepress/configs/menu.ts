@@ -70,7 +70,16 @@ export const sidebarConfig: any = {
     },
     {
       text: 'hooks',
-      children: ['/elementPlus/hooks/use-attrs'],
+      children: [
+        '/elementPlus/hooks/use-attrs',
+        '/elementPlus/hooks/use-namespace'
+      ],
+    },
+    {
+      text: 'utils',
+      children: [
+        '/elementPlus/utils/buildProps',
+      ],
     },
   ],
   '/vuex/': [
