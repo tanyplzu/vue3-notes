@@ -81,6 +81,13 @@ export const sidebarConfig: any = {
         '/elementPlus/utils/buildProps',
       ],
     },
+    {
+      text: 'theme-chalk',
+      children: [
+        '/elementPlus/theme-chalk/BEM',
+        '/elementPlus/theme-chalk/scss',
+      ],
+    },
   ],
   '/vuex/': [
     { text: '应用笔记', link: '/vuex/' },
