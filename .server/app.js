@@ -24,29 +24,7 @@ var vueRouter = require("vue-router");
 var vue = require("vue");
 var core = require("@vueuse/core");
 var shared = require("@vuepress/shared");
-var nprogress$1 = require("nprogress");
-var serverRenderer = require("@vue/server-renderer");
-function _interopNamespace(e) {
-  if (e && e.__esModule)
-    return e;
-  var n = { __proto__: null, [Symbol.toStringTag]: "Module" };
-  if (e) {
-    Object.keys(e).forEach(function(k) {
-      if (k !== "default") {
-        var d = Object.getOwnPropertyDescriptor(e, k);
-        Object.defineProperty(n, k, d.get ? d : {
-          enumerable: true,
-          get: function() {
-            return e[k];
-          }
-        });
-      }
-    });
-  }
-  n["default"] = e;
-  return Object.freeze(n);
-}
-var nprogress__namespace = /* @__PURE__ */ _interopNamespace(nprogress$1);
+var serverRenderer = require("vue/server-renderer");
 const ClientOnly = vue.defineComponent({
   setup(_, ctx) {
     const isMounted = vue.ref(false);
@@ -61,189 +39,222 @@ const ClientOnly = vue.defineComponent({
 });
 const pagesComponents = {
   "v-8daa1a0e": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return index_html$j;
+    return index_html$z;
   })),
   "v-00c059b2": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return index_html$i;
+    return index_html$x;
   })),
   "v-39d4ce89": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return tree_html$1;
+    return tree_html$2;
   })),
   "v-c15a97d6": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return rollup_html$1;
+    return rollup_html$2;
   })),
   "v-5dd4be94": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return skill_html$1;
+    return skill_html$2;
+  })),
+  "v-151eacea": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return index_html$v;
   })),
   "v-303438b4": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return Diff_html$1;
+    return Diff_html$2;
   })),
   "v-2c1b37ee": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return index_html$h;
+    return index_html$t;
   })),
   "v-1ab18016": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return vModel_html$1;
-  })),
-  "v-22bb3a7b": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return application_html$5;
+    return vModel_html$2;
   })),
   "v-157350f2": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return index_html$g;
+    return index_html$r;
+  })),
+  "v-22bb3a7b": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return application_html$8;
   })),
   "v-0f6b9545": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return vueDevServer_html$1;
+    return vueDevServer_html$2;
   })),
-  "v-508a9cca": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return auth_html$1;
+  "v-5db951d1": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _______html$2;
   })),
   "v-d618035e": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return JSX_html$1;
-  })),
-  "v-3c9456e8": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return reactivityAPI_html$1;
+    return JSX_html$2;
   })),
   "v-29184f47": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return index_html$f;
+    return index_html$p;
   })),
   "v-bbe7f31a": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return Vue3Api_html$1;
+    return Vue3Api_html$2;
   })),
-  "v-7f6e4968": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return vue3optimize_html$1;
+  "v-508a9cca": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return auth_html$2;
+  })),
+  "v-3c9456e8": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return reactivityAPI_html$2;
   })),
   "v-a42c4298": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return vue3Project_html$1;
+    return vue3Project_html$2;
   })),
-  "v-2dedee22": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return application_html$4;
+  "v-7f6e4968": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return vue3optimize_html$2;
   })),
   "v-3db83299": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return index_html$e;
+    return index_html$n;
+  })),
+  "v-2dedee22": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return application_html$6;
   })),
   "v-6907e510": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return sourceCode_html$3;
-  })),
-  "v-d7f3ee3c": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return application_html$3;
-  })),
-  "v-f66c67fe": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return browserRouter_html$1;
-  })),
-  "v-00fc65d3": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return code_html$1;
-  })),
-  "v-438f331a": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return miniVueRouter_html$1;
+    return sourceCode_html$5;
   })),
   "v-4244654e": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return index_html$d;
+    return index_html$l;
+  })),
+  "v-d7f3ee3c": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return application_html$4;
+  })),
+  "v-f66c67fe": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return browserRouter_html$2;
+  })),
+  "v-00fc65d3": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return code_html$2;
+  })),
+  "v-438f331a": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return miniVueRouter_html$2;
   })),
   "v-08959ab8": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return sourceCode_html$2;
-  })),
-  "v-f5df4e28": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return miniVuex_html$1;
-  })),
-  "v-81d9f8bc": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return plugin_html$1;
+    return sourceCode_html$3;
   })),
   "v-15788f64": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return index_html$c;
+    return index_html$j;
+  })),
+  "v-f5df4e28": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return miniVuex_html$2;
+  })),
+  "v-81d9f8bc": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return plugin_html$2;
+  })),
+  "v-c1f44ade": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return q_a_html$2;
   })),
   "v-73238b6e": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return sourceCode_v3_html$1;
+    return sourceCode_v3_html$2;
   })),
   "v-6fb9da30": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return sourceCode_v4_html$1;
+    return sourceCode_v4_html$2;
   })),
   "v-dad5dad4": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return vuexCode_html$1;
+    return vuexCode_html$2;
   })),
   "v-4ffb9324": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return useAttrs_html$1;
+    return useAttrs_html$2;
   })),
-  "v-7359a5bc": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return setup_html$1;
+  "v-592d0456": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return useNamespace_html$2;
   })),
-  "v-312af42a": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return creatingAMiniVue_html$1;
+  "v-1f48a459": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return BEM_html$2;
   })),
-  "v-5945442a": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return miniVue_html$1;
+  "v-b8062c82": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return scss_html$2;
+  })),
+  "v-5801bab2": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return buildProps_html$2;
   })),
   "v-1b208c8b": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return RenderFunction_html$1;
+    return RenderFunction_html$2;
+  })),
+  "v-312af42a": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return creatingAMiniVue_html$2;
+  })),
+  "v-5945442a": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return miniVue_html$2;
   })),
   "v-154ce3f6": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return useFetch_html$1;
+    return useFetch_html$2;
+  })),
+  "v-7359a5bc": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return setup_html$2;
   })),
   "v-57862f7c": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return index_html$b;
+    return index_html$h;
   })),
   "v-4800f6cd": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return computed_html$1;
+    return computed_html$5;
   })),
   "v-b3dbcc8c": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return reactivity_cjs_html$1;
+    return reactivity_cjs_html$2;
   })),
   "v-f2b64710": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return reactivity_html$1;
+    return reactivity_html$2;
   })),
   "v-38a137ae": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return watch_html$1;
+    return watch_html$5;
   })),
   "v-024bb864": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return componentRender_html$1;
+    return componentRender_html$2;
   })),
   "v-5dd6cdc6": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return createAppAPI_html$1;
+    return createAppAPI_html$2;
   })),
   "v-d8fea8c4": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return index_html$a;
+    return index_html$f;
   })),
   "v-16a9f525": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return createServer_html$1;
+    return createServer_html$2;
   })),
   "v-6818c89c": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return http_html$1;
+    return http_html$2;
   })),
   "v-2d7f1302": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return indexHtmlMiddleware_html$1;
+    return indexHtmlMiddleware_html$2;
+  })),
+  "v-b5fb9518": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return computed_html$3;
+  })),
+  "v-78e6b6ba": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return proxy_html$2;
+  })),
+  "v-2c83fee2": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return watch_html$3;
+  })),
+  "v-256286d0": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return index_html$d;
   })),
   "v-07e8239c": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return asyncValidator_html$1;
+    return asyncValidator_html$2;
   })),
   "v-6b1ab37e": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return formItem_html$1;
+    return formItem_html$2;
   })),
   "v-3095eea6": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return rules_html$1;
+    return rules_html$2;
   })),
   "v-73407006": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return inputCode_html$1;
+    return inputCode_html$2;
   })),
   "v-0233039b": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return input_html$1;
+    return input_html$2;
   })),
   "v-fef4e608": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return tableColumn_html$1;
+    return tableColumn_html$2;
   })),
   "v-46db3393": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return table_html$1;
+    return table_html$2;
   })),
   "v-50482b4f": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return util_html$1;
+    return util_html$2;
   })),
   "v-3706649a": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _404_html$1;
+    return _404_html$2;
   }))
 };
 const pagesData$1 = {
   "v-8daa1a0e": () => Promise.resolve().then(function() {
-    return index_html$9;
+    return index_html$b;
   }).then(({ data: data2 }) => data2),
   "v-00c059b2": () => Promise.resolve().then(function() {
-    return index_html$8;
+    return index_html$a;
   }).then(({ data: data2 }) => data2),
   "v-39d4ce89": () => Promise.resolve().then(function() {
     return tree_html;
@@ -254,53 +265,62 @@ const pagesData$1 = {
   "v-5dd4be94": () => Promise.resolve().then(function() {
     return skill_html;
   }).then(({ data: data2 }) => data2),
+  "v-151eacea": () => Promise.resolve().then(function() {
+    return index_html$9;
+  }).then(({ data: data2 }) => data2),
   "v-303438b4": () => Promise.resolve().then(function() {
     return Diff_html;
   }).then(({ data: data2 }) => data2),
   "v-2c1b37ee": () => Promise.resolve().then(function() {
-    return index_html$7;
+    return index_html$8;
   }).then(({ data: data2 }) => data2),
   "v-1ab18016": () => Promise.resolve().then(function() {
     return vModel_html;
   }).then(({ data: data2 }) => data2),
+  "v-157350f2": () => Promise.resolve().then(function() {
+    return index_html$7;
+  }).then(({ data: data2 }) => data2),
   "v-22bb3a7b": () => Promise.resolve().then(function() {
     return application_html$2;
-  }).then(({ data: data2 }) => data2),
-  "v-157350f2": () => Promise.resolve().then(function() {
-    return index_html$6;
   }).then(({ data: data2 }) => data2),
   "v-0f6b9545": () => Promise.resolve().then(function() {
     return vueDevServer_html;
   }).then(({ data: data2 }) => data2),
-  "v-508a9cca": () => Promise.resolve().then(function() {
-    return auth_html;
+  "v-5db951d1": () => Promise.resolve().then(function() {
+    return _______html;
   }).then(({ data: data2 }) => data2),
   "v-d618035e": () => Promise.resolve().then(function() {
     return JSX_html;
   }).then(({ data: data2 }) => data2),
-  "v-3c9456e8": () => Promise.resolve().then(function() {
-    return reactivityAPI_html;
-  }).then(({ data: data2 }) => data2),
   "v-29184f47": () => Promise.resolve().then(function() {
-    return index_html$5;
+    return index_html$6;
   }).then(({ data: data2 }) => data2),
   "v-bbe7f31a": () => Promise.resolve().then(function() {
     return Vue3Api_html;
   }).then(({ data: data2 }) => data2),
-  "v-7f6e4968": () => Promise.resolve().then(function() {
-    return vue3optimize_html;
+  "v-508a9cca": () => Promise.resolve().then(function() {
+    return auth_html;
+  }).then(({ data: data2 }) => data2),
+  "v-3c9456e8": () => Promise.resolve().then(function() {
+    return reactivityAPI_html;
   }).then(({ data: data2 }) => data2),
   "v-a42c4298": () => Promise.resolve().then(function() {
     return vue3Project_html;
   }).then(({ data: data2 }) => data2),
+  "v-7f6e4968": () => Promise.resolve().then(function() {
+    return vue3optimize_html;
+  }).then(({ data: data2 }) => data2),
+  "v-3db83299": () => Promise.resolve().then(function() {
+    return index_html$5;
+  }).then(({ data: data2 }) => data2),
   "v-2dedee22": () => Promise.resolve().then(function() {
     return application_html$1;
   }).then(({ data: data2 }) => data2),
-  "v-3db83299": () => Promise.resolve().then(function() {
-    return index_html$4;
-  }).then(({ data: data2 }) => data2),
   "v-6907e510": () => Promise.resolve().then(function() {
     return sourceCode_html$1;
+  }).then(({ data: data2 }) => data2),
+  "v-4244654e": () => Promise.resolve().then(function() {
+    return index_html$4;
   }).then(({ data: data2 }) => data2),
   "v-d7f3ee3c": () => Promise.resolve().then(function() {
     return application_html;
@@ -314,11 +334,11 @@ const pagesData$1 = {
   "v-438f331a": () => Promise.resolve().then(function() {
     return miniVueRouter_html;
   }).then(({ data: data2 }) => data2),
-  "v-4244654e": () => Promise.resolve().then(function() {
-    return index_html$3;
-  }).then(({ data: data2 }) => data2),
   "v-08959ab8": () => Promise.resolve().then(function() {
     return sourceCode_html;
+  }).then(({ data: data2 }) => data2),
+  "v-15788f64": () => Promise.resolve().then(function() {
+    return index_html$3;
   }).then(({ data: data2 }) => data2),
   "v-f5df4e28": () => Promise.resolve().then(function() {
     return miniVuex_html;
@@ -326,8 +346,8 @@ const pagesData$1 = {
   "v-81d9f8bc": () => Promise.resolve().then(function() {
     return plugin_html;
   }).then(({ data: data2 }) => data2),
-  "v-15788f64": () => Promise.resolve().then(function() {
-    return index_html$2;
+  "v-c1f44ade": () => Promise.resolve().then(function() {
+    return q_a_html;
   }).then(({ data: data2 }) => data2),
   "v-73238b6e": () => Promise.resolve().then(function() {
     return sourceCode_v3_html;
@@ -341,8 +361,20 @@ const pagesData$1 = {
   "v-4ffb9324": () => Promise.resolve().then(function() {
     return useAttrs_html;
   }).then(({ data: data2 }) => data2),
-  "v-7359a5bc": () => Promise.resolve().then(function() {
-    return setup_html;
+  "v-592d0456": () => Promise.resolve().then(function() {
+    return useNamespace_html;
+  }).then(({ data: data2 }) => data2),
+  "v-1f48a459": () => Promise.resolve().then(function() {
+    return BEM_html;
+  }).then(({ data: data2 }) => data2),
+  "v-b8062c82": () => Promise.resolve().then(function() {
+    return scss_html;
+  }).then(({ data: data2 }) => data2),
+  "v-5801bab2": () => Promise.resolve().then(function() {
+    return buildProps_html;
+  }).then(({ data: data2 }) => data2),
+  "v-1b208c8b": () => Promise.resolve().then(function() {
+    return RenderFunction_html;
   }).then(({ data: data2 }) => data2),
   "v-312af42a": () => Promise.resolve().then(function() {
     return creatingAMiniVue_html;
@@ -350,17 +382,17 @@ const pagesData$1 = {
   "v-5945442a": () => Promise.resolve().then(function() {
     return miniVue_html;
   }).then(({ data: data2 }) => data2),
-  "v-1b208c8b": () => Promise.resolve().then(function() {
-    return RenderFunction_html;
-  }).then(({ data: data2 }) => data2),
   "v-154ce3f6": () => Promise.resolve().then(function() {
     return useFetch_html;
   }).then(({ data: data2 }) => data2),
+  "v-7359a5bc": () => Promise.resolve().then(function() {
+    return setup_html;
+  }).then(({ data: data2 }) => data2),
   "v-57862f7c": () => Promise.resolve().then(function() {
-    return index_html$1;
+    return index_html$2;
   }).then(({ data: data2 }) => data2),
   "v-4800f6cd": () => Promise.resolve().then(function() {
-    return computed_html;
+    return computed_html$1;
   }).then(({ data: data2 }) => data2),
   "v-b3dbcc8c": () => Promise.resolve().then(function() {
     return reactivity_cjs_html;
@@ -369,7 +401,7 @@ const pagesData$1 = {
     return reactivity_html;
   }).then(({ data: data2 }) => data2),
   "v-38a137ae": () => Promise.resolve().then(function() {
-    return watch_html;
+    return watch_html$1;
   }).then(({ data: data2 }) => data2),
   "v-024bb864": () => Promise.resolve().then(function() {
     return componentRender_html;
@@ -378,7 +410,7 @@ const pagesData$1 = {
     return createAppAPI_html;
   }).then(({ data: data2 }) => data2),
   "v-d8fea8c4": () => Promise.resolve().then(function() {
-    return index_html;
+    return index_html$1;
   }).then(({ data: data2 }) => data2),
   "v-16a9f525": () => Promise.resolve().then(function() {
     return createServer_html;
@@ -388,6 +420,18 @@ const pagesData$1 = {
   }).then(({ data: data2 }) => data2),
   "v-2d7f1302": () => Promise.resolve().then(function() {
     return indexHtmlMiddleware_html;
+  }).then(({ data: data2 }) => data2),
+  "v-b5fb9518": () => Promise.resolve().then(function() {
+    return computed_html;
+  }).then(({ data: data2 }) => data2),
+  "v-78e6b6ba": () => Promise.resolve().then(function() {
+    return proxy_html;
+  }).then(({ data: data2 }) => data2),
+  "v-2c83fee2": () => Promise.resolve().then(function() {
+    return watch_html;
+  }).then(({ data: data2 }) => data2),
+  "v-256286d0": () => Promise.resolve().then(function() {
+    return index_html;
   }).then(({ data: data2 }) => data2),
   "v-07e8239c": () => Promise.resolve().then(function() {
     return asyncValidator_html;
@@ -558,17 +602,17 @@ Content.props = {
     required: false
   }
 };
-var OutboundLink$1 = ".icon.outbound {\n  position: relative;\n  display: inline-block;\n  color: #aaa;\n  vertical-align: middle;\n  top: -1px;\n}\n";
+var OutboundLink$1 = "";
 const svg = vue.h("svg", {
-  class: "icon outbound",
-  xmlns: "http://www.w3.org/2000/svg",
-  ariaHidden: "true",
-  focusable: "false",
-  x: "0px",
-  y: "0px",
-  viewBox: "0 0 100 100",
-  width: "15",
-  height: "15"
+  "class": "icon outbound",
+  "xmlns": "http://www.w3.org/2000/svg",
+  "aria-hidden": "true",
+  "focusable": "false",
+  "x": "0px",
+  "y": "0px",
+  "viewBox": "0 0 100 100",
+  "width": "15",
+  "height": "15"
 }, [
   vue.h("path", {
     fill: "currentColor",
@@ -621,7 +665,7 @@ const withBase = (url) => {
   const base = useSiteData().value.base;
   return `${base}${shared.removeLeadingSlash(url)}`;
 };
-var _sfc_main$1b = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$1m = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   props: {
     type: {
@@ -655,11 +699,11 @@ var _sfc_main$1b = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$1b = _sfc_main$1b.setup;
-_sfc_main$1b.setup = (props, ctx) => {
+const _sfc_setup$1m = _sfc_main$1m.setup;
+_sfc_main$1m.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/global/Badge.vue");
-  return _sfc_setup$1b ? _sfc_setup$1b(props, ctx) : void 0;
+  return _sfc_setup$1m ? _sfc_setup$1m(props, ctx) : void 0;
 };
 var CodeGroup = vue.defineComponent({
   name: "CodeGroup",
@@ -752,7 +796,7 @@ function setup$1(__props) {
     _push(`</div>`);
   };
 }
-var _sfc_main$1a = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadValues({}, __default__$1), {
+const _sfc_main$1l = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadValues({}, __default__$1), {
   __ssrInlineRender: true,
   props: {
     title: {
@@ -767,11 +811,11 @@ var _sfc_main$1a = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadVal
   },
   setup: setup$1
 }));
-const _sfc_setup$1a = _sfc_main$1a.setup;
-_sfc_main$1a.setup = (props, ctx) => {
+const _sfc_setup$1l = _sfc_main$1l.setup;
+_sfc_main$1l.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/global/CodeGroupItem.vue");
-  return _sfc_setup$1a ? _sfc_setup$1a(props, ctx) : void 0;
+  return _sfc_setup$1l ? _sfc_setup$1l(props, ctx) : void 0;
 };
 const darkModeSymbol = Symbol("");
 const useDarkMode = () => {
@@ -960,6 +1004,10 @@ const themeData$1 = {
       "link": "/elementPlus/"
     },
     {
+      "text": "Vite",
+      "link": "/vite/"
+    },
+    {
       "text": "\u751F\u6001\u7CFB\u7EDF",
       "children": [
         {
@@ -969,10 +1017,6 @@ const themeData$1 = {
         {
           "text": "Vue Router",
           "link": "/vueRouter/"
-        },
-        {
-          "text": "Vite",
-          "link": "/vite/"
         },
         {
           "text": "VuePress",
@@ -1049,7 +1093,21 @@ const themeData$1 = {
       {
         "text": "hooks",
         "children": [
-          "/elementPlus/hooks/use-attrs"
+          "/elementPlus/hooks/use-attrs",
+          "/elementPlus/hooks/use-namespace"
+        ]
+      },
+      {
+        "text": "utils",
+        "children": [
+          "/elementPlus/utils/buildProps"
+        ]
+      },
+      {
+        "text": "theme-chalk",
+        "children": [
+          "/elementPlus/theme-chalk/BEM",
+          "/elementPlus/theme-chalk/scss"
         ]
       }
     ],
@@ -1057,6 +1115,10 @@ const themeData$1 = {
       {
         "text": "\u5E94\u7528\u7B14\u8BB0",
         "link": "/vuex/"
+      },
+      {
+        "text": "\u4E00\u4E9B\u95EE\u9898",
+        "link": "/vuex/q&a"
       },
       {
         "text": "miniVuex",
@@ -1172,7 +1234,7 @@ const resolveThemeLocaleData = (theme, routeLocale) => {
   return __spreadValues(__spreadValues({}, theme), (_a = theme.locales) === null || _a === void 0 ? void 0 : _a[routeLocale]);
 };
 const useThemeLocaleData = () => useThemeLocaleData$1();
-var _sfc_main$19 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$1k = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const themeLocale = useThemeLocaleData();
@@ -1192,19 +1254,19 @@ var _sfc_main$19 = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$19 = _sfc_main$19.setup;
-_sfc_main$19.setup = (props, ctx) => {
+const _sfc_setup$1k = _sfc_main$1k.setup;
+_sfc_main$1k.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/global/OutboundLink.vue");
-  return _sfc_setup$19 ? _sfc_setup$19(props, ctx) : void 0;
+  return _sfc_setup$1k ? _sfc_setup$1k(props, ctx) : void 0;
 };
-var index = ':root {\n  --c-brand: #3eaf7c;\n  --c-brand-light: #4abf8a;\n  --c-bg: #ffffff;\n  --c-bg-light: #f3f4f5;\n  --c-bg-lighter: #eeeeee;\n  --c-bg-navbar: var(--c-bg);\n  --c-bg-sidebar: var(--c-bg);\n  --c-bg-arrow: #cccccc;\n  --c-text: #2c3e50;\n  --c-text-accent: var(--c-brand);\n  --c-text-light: #3a5169;\n  --c-text-lighter: #4e6e8e;\n  --c-text-lightest: #6a8bad;\n  --c-text-quote: #999999;\n  --c-border: #eaecef;\n  --c-border-dark: #dfe2e5;\n  --c-tip: #42b983;\n  --c-tip-bg: var(--c-bg-light);\n  --c-tip-title: var(--c-text);\n  --c-tip-text: var(--c-text);\n  --c-tip-text-accent: var(--c-text-accent);\n  --c-warning: #e7c000;\n  --c-warning-bg: #fffae3;\n  --c-warning-title: #ad9000;\n  --c-warning-text: #746000;\n  --c-warning-text-accent: var(--c-text);\n  --c-danger: #cc0000;\n  --c-danger-bg: #ffe0e0;\n  --c-danger-title: #990000;\n  --c-danger-text: #660000;\n  --c-danger-text-accent: var(--c-text);\n  --c-details-bg: #eeeeee;\n  --c-badge-tip: var(--c-tip);\n  --c-badge-warning: var(--c-warning);\n  --c-badge-danger: var(--c-danger);\n  --t-color: 0.3s ease;\n  --t-transform: 0.3s ease;\n  --code-bg-color: #282c34;\n  --code-hl-bg-color: rgba(0, 0, 0, 0.66);\n  --code-ln-color: #9e9e9e;\n  --code-ln-wrapper-width: 3.5rem;\n  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,\n    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;\n  --font-family-code: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;\n  --navbar-height: 3.6rem;\n  --navbar-padding-v: 0.7rem;\n  --navbar-padding-h: 1.5rem;\n  --sidebar-width: 20rem;\n  --sidebar-width-mobile: calc(var(--sidebar-width) * 0.82);\n  --content-width: 740px;\n  --homepage-width: 960px;\n}\n\n.back-to-top {\n  --back-to-top-color: var(--c-brand);\n  --back-to-top-color-hover: var(--c-brand-light);\n}\n\n.DocSearch {\n  --docsearch-primary-color: var(--c-brand);\n  --docsearch-text-color: var(--c-text);\n  --docsearch-highlight-color: var(--c-brand);\n  --docsearch-muted-color: var(--c-text-quote);\n  --docsearch-container-background: rgba(9, 10, 17, 0.8);\n  --docsearch-modal-background: var(--c-bg-light);\n  --docsearch-searchbox-background: var(--c-bg-lighter);\n  --docsearch-searchbox-focus-background: var(--c-bg);\n  --docsearch-searchbox-shadow: inset 0 0 0 2px var(--c-brand);\n  --docsearch-hit-color: var(--c-text-light);\n  --docsearch-hit-active-color: var(--c-bg);\n  --docsearch-hit-background: var(--c-bg);\n  --docsearch-hit-shadow: 0 1px 3px 0 var(--c-border-dark);\n  --docsearch-footer-background: var(--c-bg);\n}\n\n.medium-zoom-overlay {\n  --medium-zoom-bg-color: var(--c-bg);\n}\n\n#nprogress {\n  --nprogress-color: var(--c-brand);\n}\n\n.pwa-popup {\n  --pwa-popup-text-color: var(--c-text);\n  --pwa-popup-bg-color: var(--c-bg);\n  --pwa-popup-border-color: var(--c-brand);\n  --pwa-popup-shadow: 0 4px 16px var(--c-brand);\n  --pwa-popup-btn-text-color: var(--c-bg);\n  --pwa-popup-btn-bg-color: var(--c-brand);\n  --pwa-popup-btn-hover-bg-color: var(--c-brand-light);\n}\n\n.search-box {\n  --search-bg-color: var(--c-bg);\n  --search-accent-color: var(--c-brand);\n  --search-text-color: var(--c-text);\n  --search-border-color: var(--c-border);\n  --search-item-text-color: var(--c-text-lighter);\n  --search-item-focus-bg-color: var(--c-bg-light);\n}\n\nhtml.dark {\n  --c-brand: #3aa675;\n  --c-brand-light: #349469;\n  --c-bg: #22272e;\n  --c-bg-light: #2b313a;\n  --c-bg-lighter: #262c34;\n  --c-text: #adbac7;\n  --c-text-light: #96a7b7;\n  --c-text-lighter: #8b9eb0;\n  --c-text-lightest: #8094a8;\n  --c-border: #3e4c5a;\n  --c-border-dark: #34404c;\n  --c-tip: #318a62;\n  --c-warning: #ceab00;\n  --c-warning-bg: #7e755b;\n  --c-warning-title: #ceac03;\n  --c-warning-text: #362e00;\n  --c-danger: #940000;\n  --c-danger-bg: #806161;\n  --c-danger-title: #610000;\n  --c-danger-text: #3a0000;\n  --c-details-bg: #323843;\n  --code-hl-bg-color: #363b46;\n}\n\nhtml.dark .DocSearch {\n  --docsearch-logo-color: var(--c-text);\n  --docsearch-modal-shadow: inset 1px 1px 0 0 #2c2e40, 0 3px 8px 0 #000309;\n  --docsearch-key-shadow: inset 0 -2px 0 0 #282d55, inset 0 0 1px 1px #51577d,\n    0 2px 2px 0 rgba(3, 4, 9, 0.3);\n  --docsearch-key-gradient: linear-gradient(-225deg, #444950, #1c1e21);\n  --docsearch-footer-shadow: inset 0 1px 0 0 rgba(73, 76, 106, 0.5),\n    0 -4px 8px 0 rgba(0, 0, 0, 0.2);\n}\n\nhtml,\nbody {\n  padding: 0;\n  margin: 0;\n  background-color: var(--c-bg);\n  transition: background-color var(--t-color);\n}\n\nhtml.dark {\n  color-scheme: dark;\n}\n\nbody {\n  font-family: var(--font-family);\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 16px;\n  color: var(--c-text);\n}\n\na {\n  font-weight: 500;\n  color: var(--c-text-accent);\n  text-decoration: none;\n  overflow-wrap: break-word;\n}\n\np a code {\n  font-weight: 400;\n  color: var(--c-text-accent);\n}\n\nkbd {\n  font-family: var(--font-family-code);\n  background: var(--c-bg-lighter);\n  border: solid 0.15rem var(--c-border-dark);\n  border-bottom: solid 0.25rem var(--c-border-dark);\n  border-radius: 0.15rem;\n  padding: 0 0.15em;\n}\n\ncode {\n  font-family: var(--font-family-code);\n  color: var(--c-text-lighter);\n  padding: 0.25rem 0.5rem;\n  margin: 0;\n  font-size: 0.85em;\n  background-color: var(--c-bg-light);\n  border-radius: 3px;\n  overflow-wrap: break-word;\n  transition: background-color var(--t-color), color var(--t-color);\n}\n\nblockquote {\n  font-size: 1rem;\n  color: var(--c-text-quote);\n  border-left: 0.2rem solid var(--c-border-dark);\n  margin: 1rem 0;\n  padding: 0.25rem 0 0.25rem 1rem;\n}\nblockquote > p {\n  margin: 0;\n}\n\nul,\nol {\n  padding-left: 1.2em;\n}\n\nstrong {\n  font-weight: 600;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-weight: 600;\n  line-height: 1.25;\n}\nh1:hover .header-anchor,\nh2:hover .header-anchor,\nh3:hover .header-anchor,\nh4:hover .header-anchor,\nh5:hover .header-anchor,\nh6:hover .header-anchor {\n  opacity: 1;\n}\n\nh1 {\n  font-size: 2.2rem;\n}\n\nh2 {\n  font-size: 1.65rem;\n  padding-bottom: 0.3rem;\n  border-bottom: 1px solid var(--c-border);\n  transition: border-color var(--t-color);\n}\n\nh3 {\n  font-size: 1.35rem;\n}\n\nh4 {\n  font-size: 1.15rem;\n}\n\nh5 {\n  font-size: 1.05rem;\n}\n\nh6 {\n  font-size: 1rem;\n}\n\na.header-anchor {\n  font-size: 0.85em;\n  float: left;\n  margin-left: -0.87em;\n  padding-right: 0.23em;\n  margin-top: 0.125em;\n  opacity: 0;\n}\na.header-anchor:hover {\n  text-decoration: none;\n}\na.header-anchor:focus-visible {\n  opacity: 1;\n}\n\np,\nul,\nol {\n  line-height: 1.7;\n}\n\nhr {\n  border: 0;\n  border-top: 1px solid var(--c-border);\n}\n\ntable {\n  border-collapse: collapse;\n  margin: 1rem 0;\n  display: block;\n  overflow-x: auto;\n}\n\ntr {\n  border-top: 1px solid var(--c-border-dark);\n}\ntr:nth-child(2n) {\n  background-color: var(--c-bg-light);\n}\n\nth,\ntd {\n  border: 1px solid var(--c-border-dark);\n  padding: 0.6em 1em;\n}\n\n.arrow {\n  display: inline-block;\n  width: 0;\n  height: 0;\n}\n.arrow.up {\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-bottom: 6px solid var(--c-bg-arrow);\n}\n.arrow.down {\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-top: 6px solid var(--c-bg-arrow);\n}\n.arrow.right {\n  border-top: 4px solid transparent;\n  border-bottom: 4px solid transparent;\n  border-left: 6px solid var(--c-bg-arrow);\n}\n.arrow.left {\n  border-top: 4px solid transparent;\n  border-bottom: 4px solid transparent;\n  border-right: 6px solid var(--c-bg-arrow);\n}\n\n.badge {\n  display: inline-block;\n  font-size: 14px;\n  height: 18px;\n  line-height: 18px;\n  border-radius: 3px;\n  padding: 0 6px;\n  color: var(--c-bg);\n  vertical-align: top;\n  transition: color var(--t-color), background-color var(--t-color);\n}\n.badge.tip {\n  background-color: var(--c-badge-tip);\n}\n.badge.warning {\n  background-color: var(--c-badge-warning);\n}\n.badge.danger {\n  background-color: var(--c-badge-danger);\n}\n.table-of-contents .badge {\n  vertical-align: middle;\n}\n.badge + .badge {\n  margin-left: 5px;\n}\n\ncode[class*=language-],\npre[class*=language-] {\n  color: #ccc;\n  background: none;\n  font-family: var(--font-family-code);\n  font-size: 1em;\n  text-align: left;\n  white-space: pre;\n  word-spacing: normal;\n  word-break: normal;\n  word-wrap: normal;\n  line-height: 1.5;\n  -moz-tab-size: 4;\n  -o-tab-size: 4;\n  tab-size: 4;\n  -webkit-hyphens: none;\n  -moz-hyphens: none;\n  -ms-hyphens: none;\n  hyphens: none;\n}\n\n/* Code blocks */\npre[class*=language-] {\n  padding: 1em;\n  margin: 0.5em 0;\n  overflow: auto;\n}\n\n:not(pre) > code[class*=language-],\npre[class*=language-] {\n  background: #2d2d2d;\n}\n\n/* Inline code */\n:not(pre) > code[class*=language-] {\n  padding: 0.1em;\n  border-radius: 0.3em;\n  white-space: normal;\n}\n\n.token.comment,\n.token.block-comment,\n.token.prolog,\n.token.doctype,\n.token.cdata {\n  color: #999;\n}\n\n.token.punctuation {\n  color: #ccc;\n}\n\n.token.tag,\n.token.attr-name,\n.token.namespace,\n.token.deleted {\n  color: #ec5975;\n}\n\n.token.function-name {\n  color: #6196cc;\n}\n\n.token.boolean,\n.token.number,\n.token.function {\n  color: #f08d49;\n}\n\n.token.property,\n.token.class-name,\n.token.constant,\n.token.symbol {\n  color: #f8c555;\n}\n\n.token.selector,\n.token.important,\n.token.atrule,\n.token.keyword,\n.token.builtin {\n  color: #cc99cd;\n}\n\n.token.string,\n.token.char,\n.token.attr-value,\n.token.regex,\n.token.variable {\n  color: #7ec699;\n}\n\n.token.operator,\n.token.entity,\n.token.url {\n  color: #67cdcc;\n}\n\n.token.important,\n.token.bold {\n  font-weight: bold;\n}\n\n.token.italic {\n  font-style: italic;\n}\n\n.token.entity {\n  cursor: help;\n}\n\n.token.inserted {\n  color: #3eaf7c;\n}\n\n.theme-default-content pre,\n.theme-default-content pre[class*=language-] {\n  line-height: 1.4;\n  padding: 1.25rem 1.5rem;\n  margin: 0.85rem 0;\n  border-radius: 6px;\n  overflow: auto;\n}\n.theme-default-content pre code,\n.theme-default-content pre[class*=language-] code {\n  color: #fff;\n  padding: 0;\n  background-color: transparent;\n  border-radius: 0;\n  -webkit-font-smoothing: auto;\n  -moz-osx-font-smoothing: auto;\n}\n.theme-default-content .line-number {\n  font-family: var(--font-family-code);\n}\n\ndiv[class*=language-] {\n  position: relative;\n  background-color: var(--code-bg-color);\n  border-radius: 6px;\n}\ndiv[class*=language-]::before {\n  position: absolute;\n  z-index: 3;\n  top: 0.8em;\n  right: 1em;\n  font-size: 0.75rem;\n  color: var(--code-ln-color);\n}\ndiv[class*=language-] pre,\ndiv[class*=language-] pre[class*=language-] {\n  background: transparent !important;\n  position: relative;\n  z-index: 1;\n}\ndiv[class*=language-] .highlight-lines {\n  user-select: none;\n  padding-top: 1.3rem;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  line-height: 1.4;\n}\ndiv[class*=language-] .highlight-lines .highlight-line {\n  background-color: var(--code-hl-bg-color);\n}\ndiv[class*=language-]:not(.line-numbers-mode) .line-numbers {\n  display: none;\n}\ndiv[class*=language-].line-numbers-mode .highlight-lines .highlight-line {\n  position: relative;\n}\ndiv[class*=language-].line-numbers-mode .highlight-lines .highlight-line::before {\n  content: " ";\n  position: absolute;\n  z-index: 2;\n  left: 0;\n  top: 0;\n  display: block;\n  width: var(--code-ln-wrapper-width);\n  height: 100%;\n}\ndiv[class*=language-].line-numbers-mode pre {\n  margin-left: var(--code-ln-wrapper-width);\n  padding-left: 1rem;\n  vertical-align: middle;\n}\ndiv[class*=language-].line-numbers-mode .line-numbers {\n  position: absolute;\n  top: 0;\n  width: var(--code-ln-wrapper-width);\n  text-align: center;\n  color: var(--code-ln-color);\n  padding-top: 1.25rem;\n  line-height: 1.4;\n}\ndiv[class*=language-].line-numbers-mode .line-numbers br {\n  user-select: none;\n}\ndiv[class*=language-].line-numbers-mode .line-numbers .line-number {\n  position: relative;\n  z-index: 3;\n  user-select: none;\n  font-size: 0.85em;\n}\ndiv[class*=language-].line-numbers-mode::after {\n  content: "";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: var(--code-ln-wrapper-width);\n  height: 100%;\n  border-radius: 6px 0 0 6px;\n  border-right: 1px solid var(--code-hl-bg-color);\n}\n\ndiv[class*=language-].ext-c:before {\n  content: "c";\n}\n\ndiv[class*=language-].ext-cpp:before {\n  content: "cpp";\n}\n\ndiv[class*=language-].ext-cs:before {\n  content: "cs";\n}\n\ndiv[class*=language-].ext-css:before {\n  content: "css";\n}\n\ndiv[class*=language-].ext-dart:before {\n  content: "dart";\n}\n\ndiv[class*=language-].ext-docker:before {\n  content: "docker";\n}\n\ndiv[class*=language-].ext-fs:before {\n  content: "fs";\n}\n\ndiv[class*=language-].ext-go:before {\n  content: "go";\n}\n\ndiv[class*=language-].ext-html:before {\n  content: "html";\n}\n\ndiv[class*=language-].ext-java:before {\n  content: "java";\n}\n\ndiv[class*=language-].ext-js:before {\n  content: "js";\n}\n\ndiv[class*=language-].ext-json:before {\n  content: "json";\n}\n\ndiv[class*=language-].ext-kt:before {\n  content: "kt";\n}\n\ndiv[class*=language-].ext-less:before {\n  content: "less";\n}\n\ndiv[class*=language-].ext-makefile:before {\n  content: "makefile";\n}\n\ndiv[class*=language-].ext-md:before {\n  content: "md";\n}\n\ndiv[class*=language-].ext-php:before {\n  content: "php";\n}\n\ndiv[class*=language-].ext-py:before {\n  content: "py";\n}\n\ndiv[class*=language-].ext-rb:before {\n  content: "rb";\n}\n\ndiv[class*=language-].ext-rs:before {\n  content: "rs";\n}\n\ndiv[class*=language-].ext-sass:before {\n  content: "sass";\n}\n\ndiv[class*=language-].ext-scss:before {\n  content: "scss";\n}\n\ndiv[class*=language-].ext-sh:before {\n  content: "sh";\n}\n\ndiv[class*=language-].ext-styl:before {\n  content: "styl";\n}\n\ndiv[class*=language-].ext-ts:before {\n  content: "ts";\n}\n\ndiv[class*=language-].ext-toml:before {\n  content: "toml";\n}\n\ndiv[class*=language-].ext-vue:before {\n  content: "vue";\n}\n\ndiv[class*=language-].ext-yml:before {\n  content: "yml";\n}\n\n@media (max-width: 419px) {\n  .theme-default-content div[class*=language-] {\n    margin: 0.85rem -1.5rem;\n    border-radius: 0;\n  }\n}\n/**\n * code-group\n */\n.code-group__nav {\n  margin-top: 0.85rem;\n  margin-bottom: calc(-1.7rem - 6px);\n  padding-bottom: calc(1.7rem - 6px);\n  padding-left: 10px;\n  padding-top: 10px;\n  border-top-left-radius: 6px;\n  border-top-right-radius: 6px;\n  background-color: var(--code-bg-color);\n}\n\n.code-group__ul {\n  margin: auto 0;\n  padding-left: 0;\n  display: inline-flex;\n  list-style: none;\n}\n\n.code-group__nav-tab {\n  border: 0;\n  padding: 5px;\n  cursor: pointer;\n  background-color: transparent;\n  font-size: 0.85em;\n  line-height: 1.4;\n  color: rgba(255, 255, 255, 0.9);\n  font-weight: 600;\n}\n\n.code-group__nav-tab:focus {\n  outline: none;\n}\n\n.code-group__nav-tab:focus-visible {\n  outline: 1px solid rgba(255, 255, 255, 0.9);\n}\n\n.code-group__nav-tab-active {\n  border-bottom: var(--c-brand) 1px solid;\n}\n\n@media (max-width: 419px) {\n  .code-group__nav {\n    margin-left: -1.5rem;\n    margin-right: -1.5rem;\n    border-radius: 0;\n  }\n}\n/**\n * code-group-item\n */\n.code-group-item {\n  display: none;\n}\n\n.code-group-item__active {\n  display: block;\n}\n\n.code-group-item > pre {\n  background-color: orange;\n}\n\n.custom-container {\n  transition: color var(--t-color), border-color var(--t-color), background-color var(--t-color);\n}\n.custom-container .custom-container-title {\n  font-weight: 600;\n  margin-bottom: -0.4rem;\n}\n.custom-container.tip, .custom-container.warning, .custom-container.danger {\n  padding: 0.1rem 1.5rem;\n  border-left-width: 0.5rem;\n  border-left-style: solid;\n  margin: 1rem 0;\n}\n.custom-container.tip {\n  border-color: var(--c-tip);\n  background-color: var(--c-tip-bg);\n  color: var(--c-tip-text);\n}\n.custom-container.tip .custom-container-title {\n  color: var(--c-tip-title);\n}\n.custom-container.tip a {\n  color: var(--c-tip-text-accent);\n}\n.custom-container.warning {\n  border-color: var(--c-warning);\n  background-color: var(--c-warning-bg);\n  color: var(--c-warning-text);\n}\n.custom-container.warning .custom-container-title {\n  color: var(--c-warning-title);\n}\n.custom-container.warning a {\n  color: var(--c-warning-text-accent);\n}\n.custom-container.danger {\n  border-color: var(--c-danger);\n  background-color: var(--c-danger-bg);\n  color: var(--c-danger-text);\n}\n.custom-container.danger .custom-container-title {\n  color: var(--c-danger-title);\n}\n.custom-container.danger a {\n  color: var(--c-danger-text-accent);\n}\n.custom-container.details {\n  display: block;\n  position: relative;\n  border-radius: 2px;\n  margin: 1.6em 0;\n  padding: 1.6em;\n  background-color: var(--c-details-bg);\n}\n.custom-container.details h4 {\n  margin-top: 0;\n}\n.custom-container.details figure:last-child,\n.custom-container.details p:last-child {\n  margin-bottom: 0;\n  padding-bottom: 0;\n}\n.custom-container.details summary {\n  outline: none;\n  cursor: pointer;\n}\n\n.dropdown-wrapper {\n  cursor: pointer;\n}\n.dropdown-wrapper .dropdown-title, .dropdown-wrapper .mobile-dropdown-title {\n  display: block;\n  font-size: 0.9rem;\n  font-family: inherit;\n  cursor: inherit;\n  padding: inherit;\n  line-height: 1.4rem;\n  background: transparent;\n  border: none;\n  font-weight: 500;\n  color: var(--c-text);\n}\n.dropdown-wrapper .dropdown-title:hover, .dropdown-wrapper .mobile-dropdown-title:hover {\n  border-color: transparent;\n}\n.dropdown-wrapper .dropdown-title .arrow, .dropdown-wrapper .mobile-dropdown-title .arrow {\n  vertical-align: middle;\n  margin-top: -1px;\n  margin-left: 0.4rem;\n}\n.dropdown-wrapper .mobile-dropdown-title {\n  display: none;\n  font-weight: 600;\n  font-size: inherit;\n}\n.dropdown-wrapper .mobile-dropdown-title:hover {\n  color: var(--c-text-accent);\n}\n.dropdown-wrapper .nav-dropdown .dropdown-item {\n  color: inherit;\n  line-height: 1.7rem;\n}\n.dropdown-wrapper .nav-dropdown .dropdown-item .dropdown-subtitle {\n  margin: 0.45rem 0 0;\n  border-top: 1px solid var(--c-border);\n  padding: 1rem 0 0.45rem 0;\n  font-size: 0.9rem;\n}\n.dropdown-wrapper .nav-dropdown .dropdown-item .dropdown-subtitle > span {\n  padding: 0 1.5rem 0 1.25rem;\n}\n.dropdown-wrapper .nav-dropdown .dropdown-item .dropdown-subtitle > a {\n  font-weight: inherit;\n}\n.dropdown-wrapper .nav-dropdown .dropdown-item .dropdown-subtitle > a.router-link-active::after {\n  display: none;\n}\n.dropdown-wrapper .nav-dropdown .dropdown-item .dropdown-subitem-wrapper {\n  padding: 0;\n  list-style: none;\n}\n.dropdown-wrapper .nav-dropdown .dropdown-item .dropdown-subitem-wrapper .dropdown-subitem {\n  font-size: 0.9em;\n}\n.dropdown-wrapper .nav-dropdown .dropdown-item a {\n  display: block;\n  line-height: 1.7rem;\n  position: relative;\n  border-bottom: none;\n  font-weight: 400;\n  margin-bottom: 0;\n  padding: 0 1.5rem 0 1.25rem;\n}\n.dropdown-wrapper .nav-dropdown .dropdown-item a:hover {\n  color: var(--c-text-accent);\n}\n.dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active {\n  color: var(--c-text-accent);\n}\n.dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after {\n  content: "";\n  width: 0;\n  height: 0;\n  border-left: 5px solid var(--c-text-accent);\n  border-top: 3px solid transparent;\n  border-bottom: 3px solid transparent;\n  position: absolute;\n  top: calc(50% - 2px);\n  left: 9px;\n}\n.dropdown-wrapper .nav-dropdown .dropdown-item:first-child .dropdown-subtitle {\n  margin-top: 0;\n  padding-top: 0;\n  border-top: 0;\n}\n\n@media (max-width: 719px) {\n  .dropdown-wrapper.open .dropdown-title, .dropdown-wrapper.open .mobile-dropdown-title {\n    margin-bottom: 0.5rem;\n  }\n  .dropdown-wrapper .dropdown-title, .dropdown-wrapper .mobile-dropdown-title {\n    display: none;\n  }\n  .dropdown-wrapper .mobile-dropdown-title {\n    display: block;\n  }\n  .dropdown-wrapper .nav-dropdown {\n    transition: height 0.1s ease-out;\n    overflow: hidden;\n  }\n  .dropdown-wrapper .nav-dropdown .dropdown-item .dropdown-subtitle {\n    border-top: 0;\n    margin-top: 0;\n    padding-top: 0;\n    padding-bottom: 0;\n  }\n  .dropdown-wrapper .nav-dropdown .dropdown-item .dropdown-subtitle, .dropdown-wrapper .nav-dropdown .dropdown-item > a {\n    font-size: 15px;\n    line-height: 2rem;\n  }\n  .dropdown-wrapper .nav-dropdown .dropdown-item .dropdown-subitem {\n    font-size: 14px;\n    padding-left: 1rem;\n  }\n}\n@media (min-width: 720px) {\n  .dropdown-wrapper {\n    height: 1.8rem;\n  }\n  .dropdown-wrapper:hover .nav-dropdown, .dropdown-wrapper.open .nav-dropdown {\n    display: block !important;\n  }\n  .dropdown-wrapper.open:blur {\n    display: none;\n  }\n  .dropdown-wrapper .nav-dropdown {\n    display: none;\n    height: auto !important;\n    box-sizing: border-box;\n    max-height: calc(100vh - 2.7rem);\n    overflow-y: auto;\n    position: absolute;\n    top: 100%;\n    right: 0;\n    background-color: var(--c-bg-navbar);\n    padding: 0.6rem 0;\n    border: 1px solid var(--c-border);\n    border-bottom-color: var(--c-border-dark);\n    text-align: left;\n    border-radius: 0.25rem;\n    white-space: nowrap;\n    margin: 0;\n  }\n}\n/**\n * transition\n */\n.dropdown-enter-from,\n.dropdown-leave-to {\n  height: 0 !important;\n}\n\n.home {\n  padding: var(--navbar-height) 2rem 0;\n  max-width: var(--homepage-width);\n  margin: 0px auto;\n  display: block;\n}\n.home .hero {\n  text-align: center;\n}\n.home .hero img {\n  max-width: 100%;\n  max-height: 280px;\n  display: block;\n  margin: 3rem auto 1.5rem;\n}\n.home .hero h1 {\n  font-size: 3rem;\n}\n.home .hero h1,\n.home .hero .description,\n.home .hero .actions {\n  margin: 1.8rem auto;\n}\n.home .hero .description {\n  max-width: 35rem;\n  font-size: 1.6rem;\n  line-height: 1.3;\n  color: var(--c-text-lightest);\n}\n.home .hero .action-button {\n  display: inline-block;\n  font-size: 1.2rem;\n  padding: 0.8rem 1.6rem;\n  border-width: 2px;\n  border-style: solid;\n  border-radius: 4px;\n  transition: background-color var(--t-color);\n  box-sizing: border-box;\n}\n.home .hero .action-button:not(:first-child) {\n  margin-left: 1.5rem;\n}\n.home .hero .action-button.primary {\n  color: var(--c-bg);\n  background-color: var(--c-brand);\n  border-color: var(--c-brand);\n}\n.home .hero .action-button.primary:hover {\n  background-color: var(--c-brand-light);\n}\n.home .hero .action-button.secondary {\n  color: var(--c-brand);\n  background-color: var(--c-bg);\n  border-color: var(--c-brand);\n}\n.home .hero .action-button.secondary:hover {\n  color: var(--c-bg);\n  background-color: var(--c-brand-light);\n}\n.home .features {\n  border-top: 1px solid var(--c-border);\n  transition: border-color var(--t-color);\n  padding: 1.2rem 0;\n  margin-top: 2.5rem;\n  display: flex;\n  flex-wrap: wrap;\n  align-items: flex-start;\n  align-content: stretch;\n  justify-content: space-between;\n}\n.home .feature {\n  flex-grow: 1;\n  flex-basis: 30%;\n  max-width: 30%;\n}\n.home .feature h2 {\n  font-size: 1.4rem;\n  font-weight: 500;\n  border-bottom: none;\n  padding-bottom: 0;\n  color: var(--c-text-light);\n}\n.home .feature p {\n  color: var(--c-text-lighter);\n}\n.home .footer {\n  padding: 2.5rem;\n  border-top: 1px solid var(--c-border);\n  text-align: center;\n  color: var(--c-text-lighter);\n  transition: border-color var(--t-color);\n}\n\n@media (max-width: 719px) {\n  .home .features {\n    flex-direction: column;\n  }\n  .home .feature {\n    max-width: 100%;\n    padding: 0 2.5rem;\n  }\n}\n@media (max-width: 419px) {\n  .home {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n  .home .hero img {\n    max-height: 210px;\n    margin: 2rem auto 1.2rem;\n  }\n  .home .hero h1 {\n    font-size: 2rem;\n  }\n  .home .hero h1,\n.home .hero .description,\n.home .hero .actions {\n    margin: 1.2rem auto;\n  }\n  .home .hero .description {\n    font-size: 1.2rem;\n  }\n  .home .hero .action-button {\n    font-size: 1rem;\n    padding: 0.6rem 1.2rem;\n  }\n  .home .feature h2 {\n    font-size: 1.25rem;\n  }\n}\n.theme-default-content:not(.custom) {\n  max-width: var(--content-width);\n  margin: 0 auto;\n  padding: 2rem 2.5rem;\n}\n@media (max-width: 959px) {\n  .theme-default-content:not(.custom) {\n    padding: 2rem;\n  }\n}\n@media (max-width: 419px) {\n  .theme-default-content:not(.custom) {\n    padding: 1.5rem;\n  }\n}\n\n.page {\n  padding-top: var(--navbar-height);\n  padding-left: var(--sidebar-width);\n}\n\n.navbar {\n  position: fixed;\n  z-index: 20;\n  top: 0;\n  left: 0;\n  right: 0;\n  height: var(--navbar-height);\n  box-sizing: border-box;\n  border-bottom: 1px solid var(--c-border);\n  background-color: var(--c-bg-navbar);\n  transition: background-color var(--t-color), border-color var(--t-color);\n}\n\n.sidebar {\n  font-size: 16px;\n  width: var(--sidebar-width);\n  position: fixed;\n  z-index: 10;\n  margin: 0;\n  top: var(--navbar-height);\n  left: 0;\n  bottom: 0;\n  box-sizing: border-box;\n  border-right: 1px solid var(--c-border);\n  overflow-y: auto;\n  scrollbar-width: thin;\n  scrollbar-color: var(--c-brand) var(--c-border);\n  background-color: var(--c-bg-sidebar);\n  transition: transform var(--t-transform), background-color var(--t-color), border-color var(--t-color);\n}\n.sidebar::-webkit-scrollbar {\n  width: 7px;\n}\n.sidebar::-webkit-scrollbar-track {\n  background-color: var(--c-border);\n}\n.sidebar::-webkit-scrollbar-thumb {\n  background-color: var(--c-brand);\n}\n\n.sidebar-mask {\n  position: fixed;\n  z-index: 9;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  display: none;\n}\n\n.theme-container.sidebar-open .sidebar-mask {\n  display: block;\n}\n.theme-container.sidebar-open .navbar > .toggle-sidebar-button .icon span:nth-child(1) {\n  transform: rotate(45deg) translate3d(5.5px, 5.5px, 0);\n}\n.theme-container.sidebar-open .navbar > .toggle-sidebar-button .icon span:nth-child(2) {\n  transform: scale3d(0, 1, 1);\n}\n.theme-container.sidebar-open .navbar > .toggle-sidebar-button .icon span:nth-child(3) {\n  transform: rotate(-45deg) translate3d(6px, -6px, 0);\n}\n.theme-container.sidebar-open .navbar > .toggle-sidebar-button .icon span:nth-child(1), .theme-container.sidebar-open .navbar > .toggle-sidebar-button .icon span:nth-child(3) {\n  transform-origin: center;\n}\n.theme-container.no-navbar .theme-default-content:not(.custom) > h1,\n.theme-container.no-navbar h2,\n.theme-container.no-navbar h3,\n.theme-container.no-navbar h4,\n.theme-container.no-navbar h5,\n.theme-container.no-navbar h6 {\n  margin-top: 1.5rem;\n  padding-top: 0;\n}\n.theme-container.no-navbar .page {\n  padding-top: 0;\n}\n.theme-container.no-navbar .sidebar {\n  top: 0;\n}\n\n@media (min-width: 720px) {\n  .theme-container.no-sidebar .sidebar {\n    display: none;\n  }\n  .theme-container.no-sidebar .page {\n    padding-left: 0;\n  }\n}\n.theme-default-content:not(.custom) > h1,\n.theme-default-content:not(.custom) > h2,\n.theme-default-content:not(.custom) > h3,\n.theme-default-content:not(.custom) > h4,\n.theme-default-content:not(.custom) > h5,\n.theme-default-content:not(.custom) > h6 {\n  margin-top: calc(0.5rem - var(--navbar-height));\n  padding-top: calc(1rem + var(--navbar-height));\n  margin-bottom: 0;\n}\n.theme-default-content:not(.custom) > h1:first-child,\n.theme-default-content:not(.custom) > h2:first-child,\n.theme-default-content:not(.custom) > h3:first-child,\n.theme-default-content:not(.custom) > h4:first-child,\n.theme-default-content:not(.custom) > h5:first-child,\n.theme-default-content:not(.custom) > h6:first-child {\n  margin-bottom: 1rem;\n}\n.theme-default-content:not(.custom) > h1:first-child + p,\n.theme-default-content:not(.custom) > h1:first-child + pre,\n.theme-default-content:not(.custom) > h1:first-child + .custom-container,\n.theme-default-content:not(.custom) > h2:first-child + p,\n.theme-default-content:not(.custom) > h2:first-child + pre,\n.theme-default-content:not(.custom) > h2:first-child + .custom-container,\n.theme-default-content:not(.custom) > h3:first-child + p,\n.theme-default-content:not(.custom) > h3:first-child + pre,\n.theme-default-content:not(.custom) > h3:first-child + .custom-container,\n.theme-default-content:not(.custom) > h4:first-child + p,\n.theme-default-content:not(.custom) > h4:first-child + pre,\n.theme-default-content:not(.custom) > h4:first-child + .custom-container,\n.theme-default-content:not(.custom) > h5:first-child + p,\n.theme-default-content:not(.custom) > h5:first-child + pre,\n.theme-default-content:not(.custom) > h5:first-child + .custom-container,\n.theme-default-content:not(.custom) > h6:first-child + p,\n.theme-default-content:not(.custom) > h6:first-child + pre,\n.theme-default-content:not(.custom) > h6:first-child + .custom-container {\n  margin-top: 2rem;\n}\n\n.theme-default-content:not(.custom) {\n  padding-top: 0;\n}\n.theme-default-content:not(.custom) a:hover {\n  text-decoration: underline;\n}\n.theme-default-content:not(.custom) img {\n  max-width: 100%;\n}\n\n.theme-default-content.custom {\n  padding: 0;\n  margin: 0;\n}\n.theme-default-content.custom img {\n  max-width: 100%;\n}\n\n@media (max-width: 959px) {\n  .sidebar {\n    font-size: 15px;\n    width: var(--sidebar-width-mobile);\n  }\n\n  .page {\n    padding-left: var(--sidebar-width-mobile);\n  }\n}\n@media (max-width: 719px) {\n  .sidebar {\n    top: 0;\n    padding-top: var(--navbar-height);\n    transform: translateX(-100%);\n  }\n\n  .page {\n    padding-left: 0;\n  }\n\n  .theme-container.sidebar-open .sidebar {\n    transform: translateX(0);\n  }\n  .theme-container.no-navbar .sidebar {\n    padding-top: 0;\n  }\n}\n@media (max-width: 419px) {\n  h1 {\n    font-size: 1.9rem;\n  }\n}\n.navbar {\n  --navbar-line-height: calc(\n    var(--navbar-height) - 2 * var(--navbar-padding-v)\n  );\n  padding: var(--navbar-padding-v) var(--navbar-padding-h);\n  line-height: var(--navbar-line-height);\n}\n.navbar .logo {\n  height: var(--navbar-line-height);\n  margin-right: var(--navbar-padding-v);\n  vertical-align: top;\n}\n.navbar .site-name {\n  font-size: 1.3rem;\n  font-weight: 600;\n  color: var(--c-text);\n  position: relative;\n}\n.navbar .navbar-links-wrapper {\n  display: flex;\n  position: absolute;\n  box-sizing: border-box;\n  top: var(--navbar-padding-v);\n  right: var(--navbar-padding-h);\n  height: var(--navbar-line-height);\n  padding-left: var(--navbar-padding-h);\n  white-space: nowrap;\n  font-size: 0.9rem;\n}\n.navbar .navbar-links-wrapper .search-box {\n  flex: 0 0 auto;\n  vertical-align: top;\n}\n\n@media (max-width: 719px) {\n  .navbar {\n    padding-left: 4rem;\n  }\n  .navbar .can-hide {\n    display: none;\n  }\n  .navbar .site-name {\n    width: calc(100vw - 9.4rem);\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n  }\n}\n/**\n * navbar-links\n */\n.navbar-links {\n  display: inline-block;\n}\n.navbar-links a {\n  display: inline-block;\n  line-height: 1.4rem;\n  color: inherit;\n}\n.navbar-links a:hover, .navbar-links a.router-link-active {\n  color: var(--c-text-accent);\n}\n.navbar-links .navbar-links-item {\n  position: relative;\n  display: inline-block;\n  margin-left: 1.5rem;\n  line-height: var(--navbar-line-height);\n}\n.navbar-links .navbar-links-item:first-child {\n  margin-left: 0;\n}\n\n@media (max-width: 719px) {\n  .navbar-links .navbar-links-item {\n    margin-left: 0;\n  }\n}\n@media (min-width: 719px) {\n  .navbar-links a:hover, .navbar-links a.router-link-active {\n    color: var(--c-text);\n  }\n\n  .navbar-links-item > a:not(.external):hover, .navbar-links-item > a:not(.external).router-link-active {\n    margin-bottom: -2px;\n    border-bottom: 2px solid var(--c-text-accent);\n  }\n}\n/**\n * toggle sidebar button\n */\n.toggle-sidebar-button {\n  position: absolute;\n  top: 0.6rem;\n  left: 1rem;\n  display: none;\n  padding: 0.6rem;\n  cursor: pointer;\n}\n\n.toggle-sidebar-button .icon {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  width: 1.25rem;\n  height: 1.25rem;\n  cursor: inherit;\n}\n.toggle-sidebar-button .icon span {\n  display: inline-block;\n  width: 100%;\n  height: 2px;\n  border-radius: 2px;\n  background-color: var(--c-text);\n  transition: transform var(--t-transform);\n}\n.toggle-sidebar-button .icon span:nth-child(2) {\n  margin: 6px 0;\n}\n\n@media screen and (max-width: 719px) {\n  .toggle-sidebar-button {\n    display: block;\n  }\n}\n/**\n * toggle dark button\n */\n.toggle-dark-button {\n  display: flex;\n  margin: auto;\n  margin-left: 1rem;\n  border: 0;\n  background: none;\n  color: var(--c-text);\n  opacity: 0.8;\n  cursor: pointer;\n}\n.toggle-dark-button:hover {\n  opacity: 1;\n}\n.toggle-dark-button .icon {\n  width: 1.25rem;\n  height: 1.25rem;\n}\n\n.page-nav, .page-meta {\n  max-width: var(--content-width);\n  margin: 0 auto;\n  padding: 2rem 2.5rem;\n}\n@media (max-width: 959px) {\n  .page-nav, .page-meta {\n    padding: 2rem;\n  }\n}\n@media (max-width: 419px) {\n  .page-nav, .page-meta {\n    padding: 1.5rem;\n  }\n}\n\n.page {\n  padding-bottom: 2rem;\n  display: block;\n}\n\n.page-meta {\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n  overflow: auto;\n}\n.page-meta .meta-item {\n  cursor: default;\n  margin-top: 0.8rem;\n}\n.page-meta .meta-item .meta-item-label {\n  font-weight: 500;\n  color: var(--c-text-lighter);\n}\n.page-meta .meta-item .meta-item-info {\n  font-weight: 400;\n  color: var(--c-text-quote);\n}\n.page-meta .edit-link {\n  display: inline-block;\n  margin-right: 0.25rem;\n}\n.page-meta .last-updated {\n  float: right;\n}\n\n@media (max-width: 719px) {\n  .page-meta .last-updated {\n    font-size: 0.8em;\n    float: none;\n  }\n  .page-meta .contributors {\n    font-size: 0.8em;\n  }\n}\n.page-nav {\n  padding-top: 1rem;\n  padding-bottom: 0;\n}\n.page-nav .inner {\n  min-height: 2rem;\n  margin-top: 0;\n  border-top: 1px solid var(--c-border);\n  transition: border-color var(--t-color);\n  padding-top: 1rem;\n  overflow: auto;\n}\n.page-nav .next {\n  float: right;\n}\n\n.sidebar ul {\n  padding: 0;\n  margin: 0;\n  list-style-type: none;\n}\n.sidebar a {\n  display: inline-block;\n}\n.sidebar .navbar-links {\n  display: none;\n  border-bottom: 1px solid var(--c-border);\n  transition: border-color var(--t-color);\n  padding: 0.5rem 0 0.75rem 0;\n}\n.sidebar .navbar-links a {\n  font-weight: 600;\n}\n.sidebar .navbar-links .navbar-links-item {\n  display: block;\n  line-height: 1.25rem;\n  font-size: 1.1em;\n  padding: 0.5rem 0 0.5rem 1.5rem;\n}\n.sidebar .sidebar-links {\n  padding: 1.5rem 0;\n}\n.sidebar .sidebar-links > li:not(:first-child) {\n  margin-top: 0.75rem;\n}\n.sidebar .sidebar-links .sidebar-sub-items {\n  padding-left: 1rem;\n  font-size: 0.95em;\n}\n\n@media (max-width: 719px) {\n  .sidebar .navbar-links {\n    display: block;\n  }\n  .sidebar .navbar-links .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after {\n    top: calc(1rem - 2px);\n  }\n  .sidebar .sidebar-links {\n    padding: 1rem 0;\n  }\n}\n.sidebar-heading {\n  color: var(--c-text);\n  transition: color 0.15s ease;\n  font-size: 1.1em;\n  font-weight: bold;\n  padding: 0.35rem 1.5rem 0.35rem 1.25rem;\n  width: 100%;\n  box-sizing: border-box;\n  margin: 0;\n  border-left: 0.25rem solid transparent;\n}\n.sidebar-heading .arrow {\n  position: relative;\n  top: -0.12em;\n  left: 0.5em;\n}\n\n.sidebar-item:not(.sidebar-heading) {\n  font-size: 1em;\n  font-weight: 400;\n  display: inline-block;\n  color: var(--c-text);\n  border-left: 0.25rem solid transparent;\n  margin: 0;\n  padding: 0.35rem 1rem 0.35rem 2rem;\n  line-height: 1.4;\n  width: 100%;\n  box-sizing: border-box;\n}\n.sidebar-links > .sidebar-item:not(.sidebar-heading):not(:first-child) {\n  margin-top: 0.75rem;\n}\n.sidebar-sub-items .sidebar-item:not(.sidebar-heading) {\n  padding: 0.25rem 1rem 0.25rem 1.75rem;\n}\n\n.sidebar-item {\n  cursor: default;\n}\n\na.sidebar-item {\n  cursor: pointer;\n}\na.sidebar-item:hover {\n  color: var(--c-text-accent);\n}\na.sidebar-item.active {\n  font-weight: 600;\n  color: var(--c-text-accent);\n  border-left-color: var(--c-text-accent);\n}\na.sidebar-item.sidebar-heading.active {\n  font-weight: bold;\n  border-left-color: transparent;\n}\n.sidebar-sub-items a.sidebar-item.active {\n  font-weight: 500;\n  border-left-color: transparent;\n}\n\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n  user-select: none;\n}\n\n.table-of-contents .badge {\n  vertical-align: middle;\n}\n\n.fade-slide-y-enter-active {\n  transition: all 0.3s ease;\n}\n\n.fade-slide-y-leave-active {\n  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);\n}\n\n.fade-slide-y-enter-from,\n.fade-slide-y-leave-to {\n  transform: translateY(10px);\n  opacity: 0;\n}\n\n:root {\n  --c-brand: #4569d4;\n  --c-brand-light: #4569d4d9;\n  --c-tip: #4569d4;\n  --c-text: #45526b;\n}\n\n:root {\n  --sidebar-width: 16rem;\n  --content-width: 50rem;\n}\n\n:root {\n  --code-bg-color: #eff4f9;\n}\n\n:root {\n  --pwa-popup-z-index: 10;\n  --pwa-popup-text-color: #2c3e50;\n  --pwa-popup-bg-color: #ffffff;\n  --pwa-popup-border-color: #4569d4;\n  --pwa-popup-shadow: 0 4px 16px var(--pwa-popup-border-color);\n  --pwa-popup-btn-text-color: #ffffff;\n  --pwa-popup-btn-bg-color: #4569d4;\n  --pwa-popup-btn-hover-bg-color: #4569d4;\n}\n\na {\n  font-weight: 400;\n}\n\n.sidebar-links .sidebar-heading {\n  font-weight: 400;\n}\n.sidebar-links a.sidebar-item.sidebar-heading.active {\n  font-weight: 400;\n}\n.sidebar-links a.sidebar-item.active {\n  font-weight: 400;\n}\n\n.navbar .site-name {\n  font-weight: 400;\n}\n\n.theme-default-content pre code,\n.theme-default-content pre[class*=language-] code {\n  color: #333;\n}\n\ncode[class*=language-],\npre[class*=language-] {\n  color: #ccc;\n  background: none;\n  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;\n  text-align: left;\n  white-space: pre;\n  word-spacing: normal;\n  word-break: normal;\n  word-wrap: normal;\n  line-height: 1.5;\n  -moz-tab-size: 4;\n  -o-tab-size: 4;\n  tab-size: 4;\n  -webkit-hyphens: none;\n  -moz-hyphens: none;\n  -ms-hyphens: none;\n  hyphens: none;\n}\n\n/* Code blocks */\npre[class*=language-] {\n  padding: 1em;\n  margin: 0.5em 0;\n  overflow: auto;\n}\n\n:not(pre) > code[class*=language-],\npre[class*=language-] {\n  background: #2d2d2d;\n}\n\n/* Inline code */\n:not(pre) > code[class*=language-] {\n  padding: 0.1em;\n  border-radius: 0.3em;\n  white-space: normal;\n}\n\n.token.comment,\n.token.block-comment,\n.token.prolog,\n.token.doctype,\n.token.cdata {\n  color: #888;\n}\n\n.token.punctuation {\n  color: #45526b;\n}\n\n.token.tag,\n.token.attr-name,\n.token.namespace,\n.token.deleted {\n  /* color: #3683d6; */\n  color: #6a46d1;\n}\n\n.token.function-name {\n  color: #6196cc;\n  /* color: red; */\n}\n\n.token.boolean,\n.token.number,\n.token.function {\n  color: #c25205;\n}\n\n.token.property,\n.token.class-name,\n.token.constant,\n.token.symbol {\n  color: #6a46d1;\n}\n\n.token.selector,\n.token.important,\n.token.atrule,\n.token.keyword,\n.token.builtin {\n  color: #b92dbc;\n}\n\n.token.string,\n.token.char,\n.token.attr-value,\n.token.regex,\n.token.variable {\n  color: #3683d6;\n  /* color:#DD1144; */\n}\n\n.token.operator,\n.token.entity,\n.token.url {\n  /* color: #45526b; */\n  color: #3683d6;\n}\n\n.token.important,\n.token.bold {\n  font-weight: bold;\n}\n\n.token.italic {\n  font-style: italic;\n}\n\n.token.entity {\n  cursor: help;\n}\n\n.token.inserted {\n  color: green;\n}';
+var index = "";
 var clientAppEnhance0 = defineClientAppEnhance(({ app, router }) => {
-  app.component("Badge", _sfc_main$1b);
+  app.component("Badge", _sfc_main$1m);
   app.component("CodeGroup", CodeGroup);
-  app.component("CodeGroupItem", _sfc_main$1a);
+  app.component("CodeGroupItem", _sfc_main$1l);
   delete app._context.components.OutboundLink;
-  app.component("OutboundLink", _sfc_main$19);
+  app.component("OutboundLink", _sfc_main$1k);
   app.component("NavbarSearch", () => {
     const SearchComponent = app.component("Docsearch") || app.component("SearchBox");
     if (SearchComponent) {
@@ -1218,8 +1280,8 @@ var clientAppEnhance0 = defineClientAppEnhance(({ app, router }) => {
     return scrollBehavior(...args);
   };
 });
-var vars$3 = ":root {\n  --medium-zoom-z-index: 100;\n  --medium-zoom-bg-color: #ffffff;\n  --medium-zoom-opacity: 1;\n}\n";
-var mediumZoom = ".medium-zoom-overlay {\n  /* override element style set by medium-zoom script */\n  background-color: var(--medium-zoom-bg-color) !important;\n  z-index: var(--medium-zoom-z-index);\n}\n\n.medium-zoom-overlay ~ img {\n  z-index: calc(var(--medium-zoom-z-index) + 1);\n}\n\n.medium-zoom--opened .medium-zoom-overlay {\n  opacity: var(--medium-zoom-opacity);\n}\n";
+var vars$3 = "";
+var mediumZoom = "";
 var clientAppEnhance1 = defineClientAppEnhance(({ app, router }) => {
   return;
 });
@@ -1357,6 +1419,13 @@ const searchIndex$1 = [
     "extraFields": []
   },
   {
+    "title": "",
+    "headers": [],
+    "path": "/pina/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Diff \u7B97\u6CD5\u4F18\u5316",
     "headers": [],
     "path": "/sourceCode/Diff.html",
@@ -1378,6 +1447,13 @@ const searchIndex$1 = [
     "extraFields": []
   },
   {
+    "title": "Introduction",
+    "headers": [],
+    "path": "/vite/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Vite",
     "headers": [
       {
@@ -1388,13 +1464,6 @@ const searchIndex$1 = [
       }
     ],
     "path": "/vite/application.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Introduction",
-    "headers": [],
-    "path": "/vite/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1437,9 +1506,23 @@ const searchIndex$1 = [
     "extraFields": []
   },
   {
-    "title": "\u6743\u9650",
-    "headers": [],
-    "path": "/vue3Basic/auth.html",
+    "title": "\u5904\u7406\u9759\u6001\u8D44\u6E90",
+    "headers": [
+      {
+        "level": 2,
+        "title": "\u56FE\u7247\u52A0\u8F7D",
+        "slug": "\u56FE\u7247\u52A0\u8F7D",
+        "children": [
+          {
+            "level": 3,
+            "title": "SVG \u7EC4\u4EF6\u65B9\u5F0F\u52A0\u8F7D",
+            "slug": "svg-\u7EC4\u4EF6\u65B9\u5F0F\u52A0\u8F7D",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/vite/%E5%A4%84%E7%90%86%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1472,6 +1555,53 @@ const searchIndex$1 = [
       }
     ],
     "path": "/vue3Basic/JSX.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Introduction",
+    "headers": [],
+    "path": "/vue3Basic/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Vue3 API",
+    "headers": [
+      {
+        "level": 2,
+        "title": "hooks",
+        "slug": "hooks",
+        "children": [
+          {
+            "level": 3,
+            "title": "vue2 mixins",
+            "slug": "vue2-mixins",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Vue3 hooks",
+            "slug": "vue3-hooks",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "react hooks",
+            "slug": "react-hooks",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/vue3Basic/Vue3Api.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "\u6743\u9650",
+    "headers": [],
+    "path": "/vue3Basic/auth.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1578,42 +1708,9 @@ const searchIndex$1 = [
     "extraFields": []
   },
   {
-    "title": "Introduction",
+    "title": "\u642D\u5EFA\u57FA\u4E8E vue3 \u7684\u524D\u7AEF\u67B6\u6784",
     "headers": [],
-    "path": "/vue3Basic/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Vue3 API",
-    "headers": [
-      {
-        "level": 2,
-        "title": "hooks",
-        "slug": "hooks",
-        "children": [
-          {
-            "level": 3,
-            "title": "vue2 mixins",
-            "slug": "vue2-mixins",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Vue3 hooks",
-            "slug": "vue3-hooks",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "react hooks",
-            "slug": "react-hooks",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/vue3Basic/Vue3Api.html",
+    "path": "/vue3Basic/vue3Project.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1707,9 +1804,9 @@ const searchIndex$1 = [
     "extraFields": []
   },
   {
-    "title": "\u642D\u5EFA\u57FA\u4E8E vue3 \u7684\u524D\u7AEF\u67B6\u6784",
+    "title": "Introduction",
     "headers": [],
-    "path": "/vue3Basic/vue3Project.html",
+    "path": "/vuePress/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1721,16 +1818,23 @@ const searchIndex$1 = [
     "extraFields": []
   },
   {
-    "title": "Introduction",
+    "title": "VuePress \u67B6\u6784\u8BBE\u8BA1",
     "headers": [],
-    "path": "/vuePress/",
+    "path": "/vuePress/sourceCode.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "VuePress \u67B6\u6784\u8BBE\u8BA1",
-    "headers": [],
-    "path": "/vuePress/sourceCode.html",
+    "title": "Introduction",
+    "headers": [
+      {
+        "level": 2,
+        "title": "vue2 Router",
+        "slug": "vue2-router",
+        "children": []
+      }
+    ],
+    "path": "/vueRouter/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1841,20 +1945,6 @@ const searchIndex$1 = [
     "title": "miniVueRouter",
     "headers": [],
     "path": "/vueRouter/miniVueRouter.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Introduction",
-    "headers": [
-      {
-        "level": 2,
-        "title": "vue2 Router",
-        "slug": "vue2-router",
-        "children": []
-      }
-    ],
-    "path": "/vueRouter/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1997,27 +2087,6 @@ const searchIndex$1 = [
     "extraFields": []
   },
   {
-    "title": "\u81EA\u5B9A\u4E49 Vuex",
-    "headers": [],
-    "path": "/vuex/miniVuex.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "vuex \u63D2\u4EF6",
-    "headers": [
-      {
-        "level": 2,
-        "title": "\u6301\u4E45\u5316\u5B58\u50A8\u63D2\u4EF6",
-        "slug": "\u6301\u4E45\u5316\u5B58\u50A8\u63D2\u4EF6",
-        "children": []
-      }
-    ],
-    "path": "/vuex/plugin.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "vuex \u7B14\u8BB0",
     "headers": [
       {
@@ -2050,34 +2119,62 @@ const searchIndex$1 = [
             "children": []
           }
         ]
-      },
-      {
-        "level": 2,
-        "title": "vuex \u6709\u5173\u7684\u95EE\u9898",
-        "slug": "vuex-\u6709\u5173\u7684\u95EE\u9898",
-        "children": [
-          {
-            "level": 3,
-            "title": "1. vuex \u4E2D\u4E3A\u4EC0\u4E48\u628A\u628A\u5F02\u6B65\u64CD\u4F5C\u5C01\u88C5\u5728 action\uFF0C\u628A\u540C\u6B65\u64CD\u4F5C\u653E\u5728 mutations\uFF1F",
-            "slug": "_1-vuex-\u4E2D\u4E3A\u4EC0\u4E48\u628A\u628A\u5F02\u6B65\u64CD\u4F5C\u5C01\u88C5\u5728-action-\u628A\u540C\u6B65\u64CD\u4F5C\u653E\u5728-mutations",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "2. state \u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957\uFF0C\u5982\u4F55\u5B9E\u73B0\u7684\uFF1F",
-            "slug": "_2-state-\u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957-\u5982\u4F55\u5B9E\u73B0\u7684",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "defineProperty \u4F55\u65F6\u6267\u884C",
-        "slug": "defineproperty-\u4F55\u65F6\u6267\u884C",
-        "children": []
       }
     ],
     "path": "/vuex/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "\u81EA\u5B9A\u4E49 Vuex",
+    "headers": [],
+    "path": "/vuex/miniVuex.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "vuex \u63D2\u4EF6",
+    "headers": [
+      {
+        "level": 2,
+        "title": "\u6301\u4E45\u5316\u5B58\u50A8\u63D2\u4EF6",
+        "slug": "\u6301\u4E45\u5316\u5B58\u50A8\u63D2\u4EF6",
+        "children": []
+      }
+    ],
+    "path": "/vuex/plugin.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "vuex \u6709\u5173\u7684\u95EE\u9898",
+    "headers": [
+      {
+        "level": 3,
+        "title": "action \u548C mutations",
+        "slug": "action-\u548C-mutations",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "state \u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957\uFF0C\u5982\u4F55\u5B9E\u73B0\u7684\uFF1F",
+        "slug": "state-\u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957-\u5982\u4F55\u5B9E\u73B0\u7684",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "defineProperty \u4F55\u65F6\u6267\u884C",
+        "slug": "defineproperty-\u4F55\u65F6\u6267\u884C",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "\u4E3A\u4EC0\u4E48 vuex store \u4E2D\u7684\u503C\u9700\u8981\u653E\u5230 computed \u4E2D",
+        "slug": "\u4E3A\u4EC0\u4E48-vuex-store-\u4E2D\u7684\u503C\u9700\u8981\u653E\u5230-computed-\u4E2D",
+        "children": []
+      }
+    ],
+    "path": "/vuex/q&a.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2329,6 +2426,187 @@ const searchIndex$1 = [
     "extraFields": []
   },
   {
+    "title": "useNamespace",
+    "headers": [],
+    "path": "/elementPlus/hooks/use-namespace.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "BEM",
+    "headers": [],
+    "path": "/elementPlus/theme-chalk/BEM.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "scss",
+    "headers": [
+      {
+        "level": 2,
+        "title": "\u53D8\u91CF",
+        "slug": "\u53D8\u91CF",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "\u6CE8\u91CA",
+        "slug": "\u6CE8\u91CA",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "At-rules",
+        "slug": "at-rules",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "@extend",
+        "slug": "extend",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "@mixin",
+        "slug": "mixin",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "@use",
+        "slug": "use",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "@forward",
+        "slug": "forward",
+        "children": [
+          {
+            "level": 3,
+            "title": "@forward \u6DFB\u52A0\u524D\u7F00",
+            "slug": "forward-\u6DFB\u52A0\u524D\u7F00",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "@content",
+        "slug": "content",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "@at-root",
+        "slug": "at-root",
+        "children": [
+          {
+            "level": 3,
+            "title": "@at-root\u548C&\u7684\u7ED3\u5408",
+            "slug": "at-root\u548C-\u7684\u7ED3\u5408",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "@at-root\u548C#{&}\u7ED3\u5408",
+            "slug": "at-root\u548C-\u7ED3\u5408",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "\u8D44\u6599",
+        "slug": "\u8D44\u6599",
+        "children": []
+      }
+    ],
+    "path": "/elementPlus/theme-chalk/scss.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "buildProps",
+    "headers": [
+      {
+        "level": 2,
+        "title": "\u6CDB\u578B",
+        "slug": "\u6CDB\u578B",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "\u5E26\u7EA6\u675F\u7684\u6CDB\u578B",
+        "slug": "\u5E26\u7EA6\u675F\u7684\u6CDB\u578B",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "buildProps \u8FD4\u56DE\u503C",
+        "slug": "buildprops-\u8FD4\u56DE\u503C",
+        "children": [
+          {
+            "level": 3,
+            "title": "[K in keyof Props]",
+            "slug": "k-in-keyof-props",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "\u503C\u5224\u65AD",
+            "slug": "\u503C\u5224\u65AD",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "buildProps \u51FD\u6570\u5B9E\u9645\u5185\u5BB9",
+        "slug": "buildprops-\u51FD\u6570\u5B9E\u9645\u5185\u5BB9",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "\u5C0F\u7ED3",
+        "slug": "\u5C0F\u7ED3",
+        "children": []
+      }
+    ],
+    "path": "/elementPlus/utils/buildProps.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Render function",
+    "headers": [],
+    "path": "/sourceCode/DeepDive/Render-function.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "creating a mini vue",
+    "headers": [],
+    "path": "/sourceCode/DeepDive/creating-a-mini-vue.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "mini vue",
+    "headers": [],
+    "path": "/sourceCode/DeepDive/miniVue.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "useFetch",
+    "headers": [],
+    "path": "/sourceCode/DeepDive/useFetch.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Setup",
     "headers": [
       {
@@ -2382,34 +2660,6 @@ const searchIndex$1 = [
       }
     ],
     "path": "/sourceCode/component/setup.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "creating a mini vue",
-    "headers": [],
-    "path": "/sourceCode/DeepDive/creating-a-mini-vue.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "mini vue",
-    "headers": [],
-    "path": "/sourceCode/DeepDive/miniVue.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Render function",
-    "headers": [],
-    "path": "/sourceCode/DeepDive/Render-function.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "useFetch",
-    "headers": [],
-    "path": "/sourceCode/DeepDive/useFetch.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2605,6 +2855,34 @@ const searchIndex$1 = [
       }
     ],
     "path": "/vite/sourceCode/indexHtmlMiddleware.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "\u4E3A\u4EC0\u4E48 vuex store \u4E2D\u7684\u503C\u9700\u8981\u653E\u5230 computed \u4E2D",
+    "headers": [],
+    "path": "/vue3Basic/QA/computed.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Proxy",
+    "headers": [],
+    "path": "/vue3Basic/QA/proxy.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/vue3Basic/QA/watch.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "card",
+    "headers": [],
+    "path": "/elementPlus/components/card/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2899,8 +3177,8 @@ const SearchBox = vue.defineComponent({
     ]);
   }
 });
-var vars$2 = ":root {\n  --search-bg-color: #ffffff;\n  --search-accent-color: #3eaf7c;\n  --search-text-color: #2c3e50;\n  --search-border-color: #eaecef;\n\n  --search-item-text-color: #5d81a5;\n  --search-item-focus-bg-color: #f3f4f5;\n\n  --search-input-width: 8rem;\n  --search-result-width: 20rem;\n}\n";
-var search = ".search-box {\n  display: inline-block;\n  position: relative;\n  margin-left: 1rem;\n}\n\n.search-box input {\n  cursor: text;\n  width: var(--search-input-width);\n  height: 2rem;\n  color: var(--search-text-color);\n  display: inline-block;\n  border: 1px solid var(--search-border-color);\n  border-radius: 2rem;\n  font-size: 0.9rem;\n  line-height: 2rem;\n  padding: 0 0.5rem 0 2rem;\n  outline: none;\n  transition: all ease 0.3s;\n  background: var(--search-bg-color) url('__VITE_ASSET__0782d0d1__') 0.6rem 0.5rem no-repeat;\n  background-size: 1rem;\n}\n\n.search-box input:focus {\n  cursor: auto;\n  border-color: var(--search-accent-color);\n}\n\n.search-box .suggestions {\n  background: var(--search-bg-color);\n  width: var(--search-result-width);\n  position: absolute;\n  top: 2rem;\n  right: 0;\n  border: 1px solid var(--search-border-color);\n  border-radius: 6px;\n  padding: 0.4rem;\n  list-style-type: none;\n}\n\n.search-box .suggestion {\n  line-height: 1.4;\n  padding: 0.4rem 0.6rem;\n  border-radius: 4px;\n  cursor: pointer;\n}\n\n.search-box .suggestion.focus {\n  background-color: var(--search-item-focus-bg-color);\n}\n\n.search-box .suggestion.focus a {\n  color: var(--search-accent-color);\n}\n\n.search-box .suggestion a {\n  white-space: normal;\n  color: var(--search-item-text-color);\n}\n\n.search-box .suggestion .page-title {\n  font-weight: 600;\n}\n\n.search-box .suggestion .page-header {\n  font-size: 0.9em;\n  margin-left: 0.25em;\n}\n\n@media (max-width: 720px) {\n  .search-box input {\n    cursor: pointer;\n    width: 0;\n    border-color: transparent;\n    position: relative;\n  }\n  .search-box input:focus {\n    cursor: text;\n    left: 0;\n    width: 10rem;\n  }\n}\n\n@media (max-width: 420px) {\n  .search-box input:focus {\n    width: 8rem;\n  }\n  .search-box .suggestions {\n    width: calc(100vw - 4rem);\n    right: -0.5rem;\n  }\n}\n";
+var vars$2 = "";
+var search = "";
 const locales = {};
 const hotKeys = ["s", "/"];
 const maxSuggestions = 5;
@@ -2955,8 +3233,8 @@ function r(r2, e, n) {
 }
 const getScrollTop = () => window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
-var vars$1 = ":root {\n  --back-to-top-z-index: 5;\n\n  --back-to-top-color: #3eaf7c;\n  --back-to-top-color-hover: #71cda3;\n}\n";
-var backToTop = ".back-to-top {\n  cursor: pointer;\n  position: fixed;\n  bottom: 2rem;\n  right: 2.5rem;\n  width: 2rem;\n  height: 1.2rem;\n  background-color: var(--back-to-top-color);\n  mask: url('__VITE_ASSET__8efcbe56__') no-repeat;\n  z-index: var(--back-to-top-z-index);\n}\n\n.back-to-top:hover {\n  background-color: var(--back-to-top-color-hover);\n}\n\n@media (max-width: 959px) {\n  .back-to-top {\n    display: none;\n  }\n}\n\n.back-to-top-enter-active,\n.back-to-top-leave-active {\n  transition: opacity 0.3s;\n}\n\n.back-to-top-enter-from,\n.back-to-top-leave-to {\n  opacity: 0;\n}\n";
+var vars$1 = "";
+var backToTop = "";
 const BackToTop = vue.defineComponent({
   name: "BackToTop",
   setup() {
@@ -2986,22 +3264,295 @@ var clientAppSetup0 = defineClientAppSetup(() => {
 var clientAppSetup1 = defineClientAppSetup(() => {
   return;
 });
-var vars = ":root {\n  --nprogress-color: #29d;\n  --nprogress-z-index: 1031;\n}\n";
-var nprogress = "#nprogress {\n  pointer-events: none;\n}\n\n#nprogress .bar {\n  background: var(--nprogress-color);\n  position: fixed;\n  z-index: var(--nprogress-z-index);\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 2px;\n}\n\n#nprogress .peg {\n  display: block;\n  position: absolute;\n  right: 0px;\n  width: 100px;\n  height: 100%;\n  box-shadow: 0 0 10px var(--nprogress-color), 0 0 5px var(--nprogress-color);\n  opacity: 1;\n  transform: rotate(3deg) translate(0px, -4px);\n}\n";
+var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
+var nprogress$1 = { exports: {} };
+/* NProgress, (c) 2013, 2014 Rico Sta. Cruz - http://ricostacruz.com/nprogress
+ * @license MIT */
+(function(module, exports2) {
+  (function(root, factory) {
+    {
+      module.exports = factory();
+    }
+  })(commonjsGlobal, function() {
+    var NProgress = {};
+    NProgress.version = "0.2.0";
+    var Settings = NProgress.settings = {
+      minimum: 0.08,
+      easing: "ease",
+      positionUsing: "",
+      speed: 200,
+      trickle: true,
+      trickleRate: 0.02,
+      trickleSpeed: 800,
+      showSpinner: true,
+      barSelector: '[role="bar"]',
+      spinnerSelector: '[role="spinner"]',
+      parent: "body",
+      template: '<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
+    };
+    NProgress.configure = function(options) {
+      var key, value;
+      for (key in options) {
+        value = options[key];
+        if (value !== void 0 && options.hasOwnProperty(key))
+          Settings[key] = value;
+      }
+      return this;
+    };
+    NProgress.status = null;
+    NProgress.set = function(n) {
+      var started = NProgress.isStarted();
+      n = clamp(n, Settings.minimum, 1);
+      NProgress.status = n === 1 ? null : n;
+      var progress = NProgress.render(!started), bar = progress.querySelector(Settings.barSelector), speed = Settings.speed, ease = Settings.easing;
+      progress.offsetWidth;
+      queue(function(next) {
+        if (Settings.positionUsing === "")
+          Settings.positionUsing = NProgress.getPositioningCSS();
+        css(bar, barPositionCSS(n, speed, ease));
+        if (n === 1) {
+          css(progress, {
+            transition: "none",
+            opacity: 1
+          });
+          progress.offsetWidth;
+          setTimeout(function() {
+            css(progress, {
+              transition: "all " + speed + "ms linear",
+              opacity: 0
+            });
+            setTimeout(function() {
+              NProgress.remove();
+              next();
+            }, speed);
+          }, speed);
+        } else {
+          setTimeout(next, speed);
+        }
+      });
+      return this;
+    };
+    NProgress.isStarted = function() {
+      return typeof NProgress.status === "number";
+    };
+    NProgress.start = function() {
+      if (!NProgress.status)
+        NProgress.set(0);
+      var work = function() {
+        setTimeout(function() {
+          if (!NProgress.status)
+            return;
+          NProgress.trickle();
+          work();
+        }, Settings.trickleSpeed);
+      };
+      if (Settings.trickle)
+        work();
+      return this;
+    };
+    NProgress.done = function(force) {
+      if (!force && !NProgress.status)
+        return this;
+      return NProgress.inc(0.3 + 0.5 * Math.random()).set(1);
+    };
+    NProgress.inc = function(amount) {
+      var n = NProgress.status;
+      if (!n) {
+        return NProgress.start();
+      } else {
+        if (typeof amount !== "number") {
+          amount = (1 - n) * clamp(Math.random() * n, 0.1, 0.95);
+        }
+        n = clamp(n + amount, 0, 0.994);
+        return NProgress.set(n);
+      }
+    };
+    NProgress.trickle = function() {
+      return NProgress.inc(Math.random() * Settings.trickleRate);
+    };
+    (function() {
+      var initial = 0, current = 0;
+      NProgress.promise = function($promise) {
+        if (!$promise || $promise.state() === "resolved") {
+          return this;
+        }
+        if (current === 0) {
+          NProgress.start();
+        }
+        initial++;
+        current++;
+        $promise.always(function() {
+          current--;
+          if (current === 0) {
+            initial = 0;
+            NProgress.done();
+          } else {
+            NProgress.set((initial - current) / initial);
+          }
+        });
+        return this;
+      };
+    })();
+    NProgress.render = function(fromStart) {
+      if (NProgress.isRendered())
+        return document.getElementById("nprogress");
+      addClass(document.documentElement, "nprogress-busy");
+      var progress = document.createElement("div");
+      progress.id = "nprogress";
+      progress.innerHTML = Settings.template;
+      var bar = progress.querySelector(Settings.barSelector), perc = fromStart ? "-100" : toBarPerc(NProgress.status || 0), parent = document.querySelector(Settings.parent), spinner;
+      css(bar, {
+        transition: "all 0 linear",
+        transform: "translate3d(" + perc + "%,0,0)"
+      });
+      if (!Settings.showSpinner) {
+        spinner = progress.querySelector(Settings.spinnerSelector);
+        spinner && removeElement(spinner);
+      }
+      if (parent != document.body) {
+        addClass(parent, "nprogress-custom-parent");
+      }
+      parent.appendChild(progress);
+      return progress;
+    };
+    NProgress.remove = function() {
+      removeClass(document.documentElement, "nprogress-busy");
+      removeClass(document.querySelector(Settings.parent), "nprogress-custom-parent");
+      var progress = document.getElementById("nprogress");
+      progress && removeElement(progress);
+    };
+    NProgress.isRendered = function() {
+      return !!document.getElementById("nprogress");
+    };
+    NProgress.getPositioningCSS = function() {
+      var bodyStyle = document.body.style;
+      var vendorPrefix = "WebkitTransform" in bodyStyle ? "Webkit" : "MozTransform" in bodyStyle ? "Moz" : "msTransform" in bodyStyle ? "ms" : "OTransform" in bodyStyle ? "O" : "";
+      if (vendorPrefix + "Perspective" in bodyStyle) {
+        return "translate3d";
+      } else if (vendorPrefix + "Transform" in bodyStyle) {
+        return "translate";
+      } else {
+        return "margin";
+      }
+    };
+    function clamp(n, min, max) {
+      if (n < min)
+        return min;
+      if (n > max)
+        return max;
+      return n;
+    }
+    function toBarPerc(n) {
+      return (-1 + n) * 100;
+    }
+    function barPositionCSS(n, speed, ease) {
+      var barCSS;
+      if (Settings.positionUsing === "translate3d") {
+        barCSS = { transform: "translate3d(" + toBarPerc(n) + "%,0,0)" };
+      } else if (Settings.positionUsing === "translate") {
+        barCSS = { transform: "translate(" + toBarPerc(n) + "%,0)" };
+      } else {
+        barCSS = { "margin-left": toBarPerc(n) + "%" };
+      }
+      barCSS.transition = "all " + speed + "ms " + ease;
+      return barCSS;
+    }
+    var queue = function() {
+      var pending = [];
+      function next() {
+        var fn = pending.shift();
+        if (fn) {
+          fn(next);
+        }
+      }
+      return function(fn) {
+        pending.push(fn);
+        if (pending.length == 1)
+          next();
+      };
+    }();
+    var css = function() {
+      var cssPrefixes = ["Webkit", "O", "Moz", "ms"], cssProps = {};
+      function camelCase(string) {
+        return string.replace(/^-ms-/, "ms-").replace(/-([\da-z])/gi, function(match, letter) {
+          return letter.toUpperCase();
+        });
+      }
+      function getVendorProp(name) {
+        var style = document.body.style;
+        if (name in style)
+          return name;
+        var i = cssPrefixes.length, capName = name.charAt(0).toUpperCase() + name.slice(1), vendorName;
+        while (i--) {
+          vendorName = cssPrefixes[i] + capName;
+          if (vendorName in style)
+            return vendorName;
+        }
+        return name;
+      }
+      function getStyleProp(name) {
+        name = camelCase(name);
+        return cssProps[name] || (cssProps[name] = getVendorProp(name));
+      }
+      function applyCss(element, prop, value) {
+        prop = getStyleProp(prop);
+        element.style[prop] = value;
+      }
+      return function(element, properties) {
+        var args = arguments, prop, value;
+        if (args.length == 2) {
+          for (prop in properties) {
+            value = properties[prop];
+            if (value !== void 0 && properties.hasOwnProperty(prop))
+              applyCss(element, prop, value);
+          }
+        } else {
+          applyCss(element, args[1], args[2]);
+        }
+      };
+    }();
+    function hasClass(element, name) {
+      var list = typeof element == "string" ? element : classList(element);
+      return list.indexOf(" " + name + " ") >= 0;
+    }
+    function addClass(element, name) {
+      var oldList = classList(element), newList = oldList + name;
+      if (hasClass(oldList, name))
+        return;
+      element.className = newList.substring(1);
+    }
+    function removeClass(element, name) {
+      var oldList = classList(element), newList;
+      if (!hasClass(element, name))
+        return;
+      newList = oldList.replace(" " + name + " ", " ");
+      element.className = newList.substring(1, newList.length - 1);
+    }
+    function classList(element) {
+      return (" " + (element.className || "") + " ").replace(/\s+/gi, " ");
+    }
+    function removeElement(element) {
+      element && element.parentNode && element.parentNode.removeChild(element);
+    }
+    return NProgress;
+  });
+})(nprogress$1);
+var vars = "";
+var nprogress = "";
 const useNprogress = () => {
   vue.onMounted(() => {
     const router = vueRouter.useRouter();
     const loadedPages = new Set();
     loadedPages.add(router.currentRoute.value.path);
-    nprogress__namespace.configure({ showSpinner: false });
+    nprogress$1.exports.configure({ showSpinner: false });
     router.beforeEach((to) => {
       if (!loadedPages.has(to.path)) {
-        nprogress__namespace.start();
+        nprogress$1.exports.start();
       }
     });
     router.afterEach((to) => {
       loadedPages.add(to.path);
-      nprogress__namespace.done();
+      nprogress$1.exports.done();
     });
   });
 };
@@ -3019,40 +3570,47 @@ const routeItems = [
   ["v-39d4ce89", "/elementPlus/tree.html", "tree", ["/elementPlus/tree", "/elementPlus/tree.md"]],
   ["v-c15a97d6", "/frontEndTool/rollup.html", "rollup \u914D\u7F6E", ["/frontEndTool/rollup", "/frontEndTool/rollup.md"]],
   ["v-5dd4be94", "/frontEndTool/skill.html", "\u6E90\u7801\u9605\u8BFB\u6280\u5DE7", ["/frontEndTool/skill", "/frontEndTool/skill.md"]],
+  ["v-151eacea", "/pina/", "", ["/pina/index.html", "/pina/README.md"]],
   ["v-303438b4", "/sourceCode/Diff.html", "Diff \u7B97\u6CD5\u4F18\u5316", ["/sourceCode/Diff", "/sourceCode/Diff.md"]],
   ["v-2c1b37ee", "/sourceCode/", "Introduction", ["/sourceCode/index.html", "/sourceCode/README.md"]],
   ["v-1ab18016", "/sourceCode/v-model.html", "v-model", ["/sourceCode/v-model", "/sourceCode/v-model.md"]],
-  ["v-22bb3a7b", "/vite/application.html", "Vite", ["/vite/application", "/vite/application.md"]],
   ["v-157350f2", "/vite/", "Introduction", ["/vite/index.html", "/vite/README.md"]],
+  ["v-22bb3a7b", "/vite/application.html", "Vite", ["/vite/application", "/vite/application.md"]],
   ["v-0f6b9545", "/vite/vue-dev-server.html", "vue-dev-server", ["/vite/vue-dev-server", "/vite/vue-dev-server.md"]],
-  ["v-508a9cca", "/vue3Basic/auth.html", "\u6743\u9650", ["/vue3Basic/auth", "/vue3Basic/auth.md"]],
+  ["v-5db951d1", "/vite/%E5%A4%84%E7%90%86%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90.html", "\u5904\u7406\u9759\u6001\u8D44\u6E90", ["/vite/\u5904\u7406\u9759\u6001\u8D44\u6E90.html", "/vite/%E5%A4%84%E7%90%86%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90", "/vite/\u5904\u7406\u9759\u6001\u8D44\u6E90.md", "/vite/%E5%A4%84%E7%90%86%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90.md"]],
   ["v-d618035e", "/vue3Basic/JSX.html", "JSX", ["/vue3Basic/JSX", "/vue3Basic/JSX.md"]],
-  ["v-3c9456e8", "/vue3Basic/reactivityAPI.html", "\u54CD\u5E94\u5F0F\u7CFB\u7EDF API", ["/vue3Basic/reactivityAPI", "/vue3Basic/reactivityAPI.md"]],
   ["v-29184f47", "/vue3Basic/", "Introduction", ["/vue3Basic/index.html", "/vue3Basic/README.md"]],
   ["v-bbe7f31a", "/vue3Basic/Vue3Api.html", "Vue3 API", ["/vue3Basic/Vue3Api", "/vue3Basic/Vue3Api.md"]],
-  ["v-7f6e4968", "/vue3Basic/vue3optimize.html", "Vue3 \u7684\u4F18\u5316", ["/vue3Basic/vue3optimize", "/vue3Basic/vue3optimize.md"]],
+  ["v-508a9cca", "/vue3Basic/auth.html", "\u6743\u9650", ["/vue3Basic/auth", "/vue3Basic/auth.md"]],
+  ["v-3c9456e8", "/vue3Basic/reactivityAPI.html", "\u54CD\u5E94\u5F0F\u7CFB\u7EDF API", ["/vue3Basic/reactivityAPI", "/vue3Basic/reactivityAPI.md"]],
   ["v-a42c4298", "/vue3Basic/vue3Project.html", "\u642D\u5EFA\u57FA\u4E8E vue3 \u7684\u524D\u7AEF\u67B6\u6784", ["/vue3Basic/vue3Project", "/vue3Basic/vue3Project.md"]],
-  ["v-2dedee22", "/vuePress/application.html", "VuePress \u7B14\u8BB0", ["/vuePress/application", "/vuePress/application.md"]],
+  ["v-7f6e4968", "/vue3Basic/vue3optimize.html", "Vue3 \u7684\u4F18\u5316", ["/vue3Basic/vue3optimize", "/vue3Basic/vue3optimize.md"]],
   ["v-3db83299", "/vuePress/", "Introduction", ["/vuePress/index.html", "/vuePress/README.md"]],
+  ["v-2dedee22", "/vuePress/application.html", "VuePress \u7B14\u8BB0", ["/vuePress/application", "/vuePress/application.md"]],
   ["v-6907e510", "/vuePress/sourceCode.html", "VuePress \u67B6\u6784\u8BBE\u8BA1", ["/vuePress/sourceCode", "/vuePress/sourceCode.md"]],
+  ["v-4244654e", "/vueRouter/", "Introduction", ["/vueRouter/index.html", "/vueRouter/README.md"]],
   ["v-d7f3ee3c", "/vueRouter/application.html", "Vue Router 4 \u65B0\u7279\u6027", ["/vueRouter/application", "/vueRouter/application.md"]],
   ["v-f66c67fe", "/vueRouter/browserRouter.html", "\u539F\u751F\u8DEF\u7531\u57FA\u7840", ["/vueRouter/browserRouter", "/vueRouter/browserRouter.md"]],
   ["v-00fc65d3", "/vueRouter/code.html", "vue-router v4.0.12", ["/vueRouter/code", "/vueRouter/code.md"]],
   ["v-438f331a", "/vueRouter/miniVueRouter.html", "miniVueRouter", ["/vueRouter/miniVueRouter", "/vueRouter/miniVueRouter.md"]],
-  ["v-4244654e", "/vueRouter/", "Introduction", ["/vueRouter/index.html", "/vueRouter/README.md"]],
   ["v-08959ab8", "/vueRouter/sourceCode.html", "Vue Router \u6E90\u7801\u89E3\u8BFB", ["/vueRouter/sourceCode", "/vueRouter/sourceCode.md"]],
+  ["v-15788f64", "/vuex/", "vuex \u7B14\u8BB0", ["/vuex/index.html", "/vuex/README.md"]],
   ["v-f5df4e28", "/vuex/miniVuex.html", "\u81EA\u5B9A\u4E49 Vuex", ["/vuex/miniVuex", "/vuex/miniVuex.md"]],
   ["v-81d9f8bc", "/vuex/plugin.html", "vuex \u63D2\u4EF6", ["/vuex/plugin", "/vuex/plugin.md"]],
-  ["v-15788f64", "/vuex/", "vuex \u7B14\u8BB0", ["/vuex/index.html", "/vuex/README.md"]],
+  ["v-c1f44ade", "/vuex/q&a.html", "vuex \u6709\u5173\u7684\u95EE\u9898", ["/vuex/q&a", "/vuex/q&a.md"]],
   ["v-73238b6e", "/vuex/sourceCode_v3.html", "vuex3 \u6E90\u7801", ["/vuex/sourceCode_v3", "/vuex/sourceCode_v3.md"]],
   ["v-6fb9da30", "/vuex/sourceCode_v4.html", "vuex4 \u6E90\u7801\u89E3\u8BFB", ["/vuex/sourceCode_v4", "/vuex/sourceCode_v4.md"]],
   ["v-dad5dad4", "/vuex/vuexCode.html", "vuex v4.0.2", ["/vuex/vuexCode", "/vuex/vuexCode.md"]],
   ["v-4ffb9324", "/elementPlus/hooks/use-attrs.html", "use-attrs", ["/elementPlus/hooks/use-attrs", "/elementPlus/hooks/use-attrs.md"]],
-  ["v-7359a5bc", "/sourceCode/component/setup.html", "Setup", ["/sourceCode/component/setup", "/sourceCode/component/setup.md"]],
+  ["v-592d0456", "/elementPlus/hooks/use-namespace.html", "useNamespace", ["/elementPlus/hooks/use-namespace", "/elementPlus/hooks/use-namespace.md"]],
+  ["v-1f48a459", "/elementPlus/theme-chalk/BEM.html", "BEM", ["/elementPlus/theme-chalk/BEM", "/elementPlus/theme-chalk/BEM.md"]],
+  ["v-b8062c82", "/elementPlus/theme-chalk/scss.html", "scss", ["/elementPlus/theme-chalk/scss", "/elementPlus/theme-chalk/scss.md"]],
+  ["v-5801bab2", "/elementPlus/utils/buildProps.html", "buildProps", ["/elementPlus/utils/buildProps", "/elementPlus/utils/buildProps.md"]],
+  ["v-1b208c8b", "/sourceCode/DeepDive/Render-function.html", "Render function", ["/sourceCode/DeepDive/Render-function", "/sourceCode/DeepDive/Render-function.md"]],
   ["v-312af42a", "/sourceCode/DeepDive/creating-a-mini-vue.html", "creating a mini vue", ["/sourceCode/DeepDive/creating-a-mini-vue", "/sourceCode/DeepDive/creating-a-mini-vue.md"]],
   ["v-5945442a", "/sourceCode/DeepDive/miniVue.html", "mini vue", ["/sourceCode/DeepDive/miniVue", "/sourceCode/DeepDive/miniVue.md"]],
-  ["v-1b208c8b", "/sourceCode/DeepDive/Render-function.html", "Render function", ["/sourceCode/DeepDive/Render-function", "/sourceCode/DeepDive/Render-function.md"]],
   ["v-154ce3f6", "/sourceCode/DeepDive/useFetch.html", "useFetch", ["/sourceCode/DeepDive/useFetch", "/sourceCode/DeepDive/useFetch.md"]],
+  ["v-7359a5bc", "/sourceCode/component/setup.html", "Setup", ["/sourceCode/component/setup", "/sourceCode/component/setup.md"]],
   ["v-57862f7c", "/sourceCode/parser/", "", ["/sourceCode/parser/index.html", "/sourceCode/parser/index.md"]],
   ["v-4800f6cd", "/sourceCode/reactivity/computed.html", "computed", ["/sourceCode/reactivity/computed", "/sourceCode/reactivity/computed.md"]],
   ["v-b3dbcc8c", "/sourceCode/reactivity/reactivity.cjs.html", "reactivity \u6E90\u7801", ["/sourceCode/reactivity/reactivity.cjs", "/sourceCode/reactivity/reactivity.cjs.md"]],
@@ -3064,6 +3622,10 @@ const routeItems = [
   ["v-16a9f525", "/vite/sourceCode/createServer.html", "createServer", ["/vite/sourceCode/createServer", "/vite/sourceCode/createServer.md"]],
   ["v-6818c89c", "/vite/sourceCode/http.html", "http", ["/vite/sourceCode/http", "/vite/sourceCode/http.md"]],
   ["v-2d7f1302", "/vite/sourceCode/indexHtmlMiddleware.html", "indexHtmlMiddleware", ["/vite/sourceCode/indexHtmlMiddleware", "/vite/sourceCode/indexHtmlMiddleware.md"]],
+  ["v-b5fb9518", "/vue3Basic/QA/computed.html", "\u4E3A\u4EC0\u4E48 vuex store \u4E2D\u7684\u503C\u9700\u8981\u653E\u5230 computed \u4E2D", ["/vue3Basic/QA/computed", "/vue3Basic/QA/computed.md"]],
+  ["v-78e6b6ba", "/vue3Basic/QA/proxy.html", "Proxy", ["/vue3Basic/QA/proxy", "/vue3Basic/QA/proxy.md"]],
+  ["v-2c83fee2", "/vue3Basic/QA/watch.html", "", ["/vue3Basic/QA/watch", "/vue3Basic/QA/watch.md"]],
+  ["v-256286d0", "/elementPlus/components/card/", "card", ["/elementPlus/components/card/index.html", "/elementPlus/components/card/index.md"]],
   ["v-07e8239c", "/elementPlus/components/form/async-validator.html", "async-validator", ["/elementPlus/components/form/async-validator", "/elementPlus/components/form/async-validator.md"]],
   ["v-6b1ab37e", "/elementPlus/components/form/form-item.html", "form-item", ["/elementPlus/components/form/form-item", "/elementPlus/components/form/form-item.md"]],
   ["v-3095eea6", "/elementPlus/components/form/rules.html", "validation", ["/elementPlus/components/form/rules", "/elementPlus/components/form/rules.md"]],
@@ -3168,8 +3730,14 @@ const createVueApp = async () => {
     router
   };
 };
-const _sfc_main$18 = {};
-function _sfc_ssrRender$W(_ctx, _push, _parent, _attrs) {
+var _export_sfc = (sfc, props) => {
+  for (const [key, val] of props) {
+    sfc[key] = val;
+  }
+  return sfc;
+};
+const _sfc_main$1j = {};
+function _sfc_ssrRender$15(_ctx, _push, _parent, _attrs) {
   const _component_OutboundLink = vue.resolveComponent("OutboundLink");
   _push(`<!--[--><h1 id="introduction" tabindex="-1"><a class="header-anchor" href="#introduction" aria-hidden="true">#</a> Introduction</h1><p>\u4E00\u4E9B Vue3 \u8D44\u6599\uFF1A</p><ul><li><a href="https://zhuanlan.zhihu.com/p/68477600" target="_blank" rel="noopener noreferrer">Vue Function-based API RFC`);
   _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
@@ -3199,41 +3767,41 @@ function _sfc_ssrRender$W(_ctx, _push, _parent, _attrs) {
   _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
   _push(`</a></li><li><a href="https://www.yuque.com/huajinbo/lxhzqg/susggx" target="_blank" rel="noopener noreferrer">Rollup + TS \u5E93\uFF08library\uFF09\u5F00\u53D1\u6307\u5357\uFF081\uFF09\u2014\u2014 \u5DE5\u7A0B\u642D\u5EFA`);
   _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
-  _push(`</a></li></ul><blockquote><p>\u5B66\u4E60\u77E5\u8BC6\u8981\u5584\u4E8E\u601D\u8003\uFF0C\u601D\u8003\uFF0C\u518D\u601D\u8003\u3002\u2014\u2014\u7231\u56E0\u65AF\u5766</p></blockquote><!--]-->`);
+  _push(`</a></li></ul><!--]-->`);
 }
-_sfc_main$18.ssrRender = _sfc_ssrRender$W;
-const _sfc_setup$18 = _sfc_main$18.setup;
-_sfc_main$18.setup = (props, ctx) => {
+const _sfc_setup$1j = _sfc_main$1j.setup;
+_sfc_main$1j.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/index.html.vue");
-  return _sfc_setup$18 ? _sfc_setup$18(props, ctx) : void 0;
+  return _sfc_setup$1j ? _sfc_setup$1j(props, ctx) : void 0;
 };
-var index_html$j = /* @__PURE__ */ Object.freeze({
+var index_html$y = /* @__PURE__ */ _export_sfc(_sfc_main$1j, [["ssrRender", _sfc_ssrRender$15]]);
+var index_html$z = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$18
+  "default": index_html$y
 });
-const _sfc_main$17 = {};
-function _sfc_ssrRender$V(_ctx, _push, _parent, _attrs) {
+const _sfc_main$1i = {};
+function _sfc_ssrRender$14(_ctx, _push, _parent, _attrs) {
   const _component_OutboundLink = vue.resolveComponent("OutboundLink");
   _push(`<!--[--><h1 id="introduction" tabindex="-1"><a class="header-anchor" href="#introduction" aria-hidden="true">#</a> Introduction</h1><ul><li><a href="https://juejin.cn/post/6914598983205847053" target="_blank" rel="noopener noreferrer">Vue 3 \u7EC4\u4EF6\u5E93\uFF1Aelement-plus \u6E90\u7801\u5206\u6790`);
   _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
   _push(`</a></li></ul><!--]-->`);
 }
-_sfc_main$17.ssrRender = _sfc_ssrRender$V;
-const _sfc_setup$17 = _sfc_main$17.setup;
-_sfc_main$17.setup = (props, ctx) => {
+const _sfc_setup$1i = _sfc_main$1i.setup;
+_sfc_main$1i.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/index.html.vue");
-  return _sfc_setup$17 ? _sfc_setup$17(props, ctx) : void 0;
+  return _sfc_setup$1i ? _sfc_setup$1i(props, ctx) : void 0;
 };
-var index_html$i = /* @__PURE__ */ Object.freeze({
+var index_html$w = /* @__PURE__ */ _export_sfc(_sfc_main$1i, [["ssrRender", _sfc_ssrRender$14]]);
+var index_html$x = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$17
+  "default": index_html$w
 });
-const _sfc_main$16 = {};
-function _sfc_ssrRender$U(_ctx, _push, _parent, _attrs) {
+const _sfc_main$1h = {};
+function _sfc_ssrRender$13(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="tree" tabindex="-1"><a class="header-anchor" href="#tree" aria-hidden="true">#</a> tree</h1><div class="language-vue ext-vue"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
     <span class="token attr-name">v-show</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>node.visible<span class="token punctuation">&quot;</span></span>
@@ -3314,20 +3882,20 @@ function _sfc_ssrRender$U(_ctx, _push, _parent, _attrs) {
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$16.ssrRender = _sfc_ssrRender$U;
-const _sfc_setup$16 = _sfc_main$16.setup;
-_sfc_main$16.setup = (props, ctx) => {
+const _sfc_setup$1h = _sfc_main$1h.setup;
+_sfc_main$1h.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/tree.html.vue");
-  return _sfc_setup$16 ? _sfc_setup$16(props, ctx) : void 0;
+  return _sfc_setup$1h ? _sfc_setup$1h(props, ctx) : void 0;
 };
-var tree_html$1 = /* @__PURE__ */ Object.freeze({
+var tree_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$1h, [["ssrRender", _sfc_ssrRender$13]]);
+var tree_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$16
+  "default": tree_html$1
 });
-const _sfc_main$15 = {};
-function _sfc_ssrRender$T(_ctx, _push, _parent, _attrs) {
+const _sfc_main$1g = {};
+function _sfc_ssrRender$12(_ctx, _push, _parent, _attrs) {
   const _component_OutboundLink = vue.resolveComponent("OutboundLink");
   _push(`<!--[--><h1 id="rollup-\u914D\u7F6E" tabindex="-1"><a class="header-anchor" href="#rollup-\u914D\u7F6E" aria-hidden="true">#</a> rollup \u914D\u7F6E</h1><p>\u4E00\u4E2A\u9AD8\u6548\u7684 ES Modules \u6253\u5305\u5668\uFF0C\u5145\u5206\u5229\u7528 ES Modules \u7684\u5404\u9879\u7279\u6027\uFF0C\u6784\u5EFA\u51FA\u7ED3\u6784\u6241\u5E73\uFF0C\u6027\u80FD\u51FA\u4F17\u7684\u7C7B\u5E93\u3002</p><h2 id="rollup-config-js" tabindex="-1"><a class="header-anchor" href="#rollup-config-js" aria-hidden="true">#</a> rollup.config.js</h2><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
   input<span class="token operator">:</span> <span class="token string">&#39;src/main.js&#39;</span><span class="token punctuation">,</span>
@@ -3367,75 +3935,90 @@ function _sfc_ssrRender$T(_ctx, _push, _parent, _attrs) {
   _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
   _push(`</a></p></li></ul><!--]-->`);
 }
-_sfc_main$15.ssrRender = _sfc_ssrRender$T;
-const _sfc_setup$15 = _sfc_main$15.setup;
-_sfc_main$15.setup = (props, ctx) => {
+const _sfc_setup$1g = _sfc_main$1g.setup;
+_sfc_main$1g.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/frontEndTool/rollup.html.vue");
-  return _sfc_setup$15 ? _sfc_setup$15(props, ctx) : void 0;
+  return _sfc_setup$1g ? _sfc_setup$1g(props, ctx) : void 0;
 };
-var rollup_html$1 = /* @__PURE__ */ Object.freeze({
+var rollup_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$1g, [["ssrRender", _sfc_ssrRender$12]]);
+var rollup_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$15
+  "default": rollup_html$1
 });
-const _sfc_main$14 = {};
-function _sfc_ssrRender$S(_ctx, _push, _parent, _attrs) {
+const _sfc_main$1f = {};
+function _sfc_ssrRender$11(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="\u6E90\u7801\u9605\u8BFB\u6280\u5DE7" tabindex="-1"><a class="header-anchor" href="#\u6E90\u7801\u9605\u8BFB\u6280\u5DE7" aria-hidden="true">#</a> \u6E90\u7801\u9605\u8BFB\u6280\u5DE7</h1><h2 id="vuex" tabindex="-1"><a class="header-anchor" href="#vuex" aria-hidden="true">#</a> vuex</h2><p>\u5728 <code>webpack.config.js</code> \u4E2D\u52A0 <code>source-map</code> \u6765\u8C03\u8BD5\u6E90\u7801</p><div class="language-javascript ext-js"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
   mode<span class="token operator">:</span> <span class="token string">&#39;development&#39;</span><span class="token punctuation">,</span>
   devtool<span class="token operator">:</span> <span class="token string">&#39;source-map&#39;</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$14.ssrRender = _sfc_ssrRender$S;
-const _sfc_setup$14 = _sfc_main$14.setup;
-_sfc_main$14.setup = (props, ctx) => {
+const _sfc_setup$1f = _sfc_main$1f.setup;
+_sfc_main$1f.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/frontEndTool/skill.html.vue");
-  return _sfc_setup$14 ? _sfc_setup$14(props, ctx) : void 0;
+  return _sfc_setup$1f ? _sfc_setup$1f(props, ctx) : void 0;
 };
-var skill_html$1 = /* @__PURE__ */ Object.freeze({
+var skill_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$1f, [["ssrRender", _sfc_ssrRender$11]]);
+var skill_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$14
+  "default": skill_html$1
 });
-const _sfc_main$13 = {};
-function _sfc_ssrRender$R(_ctx, _push, _parent, _attrs) {
+const _sfc_main$1e = {};
+function _sfc_ssrRender$10(_ctx, _push, _parent, _attrs) {
+}
+const _sfc_setup$1e = _sfc_main$1e.setup;
+_sfc_main$1e.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/pina/index.html.vue");
+  return _sfc_setup$1e ? _sfc_setup$1e(props, ctx) : void 0;
+};
+var index_html$u = /* @__PURE__ */ _export_sfc(_sfc_main$1e, [["ssrRender", _sfc_ssrRender$10]]);
+var index_html$v = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": index_html$u
+});
+const _sfc_main$1d = {};
+function _sfc_ssrRender$$(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="diff-\u7B97\u6CD5\u4F18\u5316" tabindex="-1"><a class="header-anchor" href="#diff-\u7B97\u6CD5\u4F18\u5316" aria-hidden="true">#</a> Diff \u7B97\u6CD5\u4F18\u5316</h1><p>Vue3 \u4E2D\u7684\u4E3B\u8981\u4F18\u5316\u70B9\u4E3A</p><ul><li>\u5728 updateChildren \u65F6\u53CC\u7AEF\u6BD4\u8F83 -&gt; \u6700\u957F\u9012\u589E\u5B50\u5E8F\u5217</li><li>\u5168\u91CF Diff -&gt; \u9759\u6001\u6807\u8BB0 + \u975E\u5168\u91CF Diff</li><li>\u9759\u6001\u63D0\u5347</li></ul><p>updateChildren</p><ul><li>Vue2 <ul><li>\u5934 - \u5934\u6BD4\u8F83</li><li>\u5C3E - \u5C3E\u6BD4\u8F83</li><li>\u5934 - \u5C3E\u6BD4\u8F83 -\u5C3E - \u5934\u6BD4\u8F83</li></ul></li><li>Vue3 <ul><li>\u5934 - \u5934\u6BD4\u8F83</li><li>\u5C3E - \u5C3E\u6BD4\u8F83</li><li>\u57FA\u4E8E\u6700\u957F\u9012\u589E\u5B50\u5E8F\u5217\u8FDB\u884C\u79FB\u52A8 / \u5220\u9664 / \u65B0\u589E</li></ul></li></ul><!--]-->`);
 }
-_sfc_main$13.ssrRender = _sfc_ssrRender$R;
-const _sfc_setup$13 = _sfc_main$13.setup;
-_sfc_main$13.setup = (props, ctx) => {
+const _sfc_setup$1d = _sfc_main$1d.setup;
+_sfc_main$1d.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/Diff.html.vue");
-  return _sfc_setup$13 ? _sfc_setup$13(props, ctx) : void 0;
+  return _sfc_setup$1d ? _sfc_setup$1d(props, ctx) : void 0;
 };
-var Diff_html$1 = /* @__PURE__ */ Object.freeze({
+var Diff_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$1d, [["ssrRender", _sfc_ssrRender$$]]);
+var Diff_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$13
+  "default": Diff_html$1
 });
-const _sfc_main$12 = {};
-function _sfc_ssrRender$Q(_ctx, _push, _parent, _attrs) {
+const _sfc_main$1c = {};
+function _sfc_ssrRender$_(_ctx, _push, _parent, _attrs) {
   const _component_OutboundLink = vue.resolveComponent("OutboundLink");
   _push(`<!--[--><h1 id="introduction" tabindex="-1"><a class="header-anchor" href="#introduction" aria-hidden="true">#</a> Introduction</h1><ul><li><a href="https://zhuanlan.zhihu.com/p/87409653" target="_blank" rel="noopener noreferrer">vue3 \u54CD\u5E94\u5F0F\u7CFB\u7EDF\u6E90\u7801\u89E3\u6790-Reactive \u7BC7`);
   _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
   _push(`</a></li></ul><!--]-->`);
 }
-_sfc_main$12.ssrRender = _sfc_ssrRender$Q;
-const _sfc_setup$12 = _sfc_main$12.setup;
-_sfc_main$12.setup = (props, ctx) => {
+const _sfc_setup$1c = _sfc_main$1c.setup;
+_sfc_main$1c.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/index.html.vue");
-  return _sfc_setup$12 ? _sfc_setup$12(props, ctx) : void 0;
+  return _sfc_setup$1c ? _sfc_setup$1c(props, ctx) : void 0;
 };
-var index_html$h = /* @__PURE__ */ Object.freeze({
+var index_html$s = /* @__PURE__ */ _export_sfc(_sfc_main$1c, [["ssrRender", _sfc_ssrRender$_]]);
+var index_html$t = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$12
+  "default": index_html$s
 });
-const _sfc_main$11 = {};
-function _sfc_ssrRender$P(_ctx, _push, _parent, _attrs) {
+const _sfc_main$1b = {};
+function _sfc_ssrRender$Z(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="v-model" tabindex="-1"><a class="header-anchor" href="#v-model" aria-hidden="true">#</a> v-model</h1><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> vModelText <span class="token operator">=</span> <span class="token punctuation">{</span>
   <span class="token function">created</span><span class="token punctuation">(</span><span class="token parameter">el<span class="token punctuation">,</span> <span class="token punctuation">{</span> modifiers<span class="token operator">:</span> <span class="token punctuation">{</span> lazy<span class="token punctuation">,</span> trim<span class="token punctuation">,</span> number <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> vnode</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     el<span class="token punctuation">.</span>_assign <span class="token operator">=</span> <span class="token function">getModelAssigner</span><span class="token punctuation">(</span>vnode<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3512,58 +4095,58 @@ function _sfc_ssrRender$P(_ctx, _push, _parent, _attrs) {
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$11.ssrRender = _sfc_ssrRender$P;
-const _sfc_setup$11 = _sfc_main$11.setup;
-_sfc_main$11.setup = (props, ctx) => {
+const _sfc_setup$1b = _sfc_main$1b.setup;
+_sfc_main$1b.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/v-model.html.vue");
-  return _sfc_setup$11 ? _sfc_setup$11(props, ctx) : void 0;
+  return _sfc_setup$1b ? _sfc_setup$1b(props, ctx) : void 0;
 };
-var vModel_html$1 = /* @__PURE__ */ Object.freeze({
+var vModel_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$1b, [["ssrRender", _sfc_ssrRender$Z]]);
+var vModel_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$11
+  "default": vModel_html$1
 });
-const _sfc_main$10 = {};
-function _sfc_ssrRender$O(_ctx, _push, _parent, _attrs) {
+const _sfc_main$1a = {};
+function _sfc_ssrRender$Y(_ctx, _push, _parent, _attrs) {
+  const _component_OutboundLink = vue.resolveComponent("OutboundLink");
+  _push(`<!--[--><h1 id="introduction" tabindex="-1"><a class="header-anchor" href="#introduction" aria-hidden="true">#</a> Introduction</h1><p><a href="https://vitejs.cn/vite3-cn/" target="_blank" rel="noopener noreferrer">vite3 \u4E2D\u6587\u7F51`);
+  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
+  _push(`</a></p><!--]-->`);
+}
+const _sfc_setup$1a = _sfc_main$1a.setup;
+_sfc_main$1a.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vite/index.html.vue");
+  return _sfc_setup$1a ? _sfc_setup$1a(props, ctx) : void 0;
+};
+var index_html$q = /* @__PURE__ */ _export_sfc(_sfc_main$1a, [["ssrRender", _sfc_ssrRender$Y]]);
+var index_html$r = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": index_html$q
+});
+const _sfc_main$19 = {};
+function _sfc_ssrRender$X(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="vite" tabindex="-1"><a class="header-anchor" href="#vite" aria-hidden="true">#</a> Vite</h1><h2 id="es-module" tabindex="-1"><a class="header-anchor" href="#es-module" aria-hidden="true">#</a> ES Module</h2><div class="language-html ext-html"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>module<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
   <span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">&#39;./index.js&#39;</span><span class="token punctuation">;</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><p>\u5F53\u9047\u89C1import\u4F9D\u8D56\u65F6\uFF0C\u4F1A\u76F4\u63A5\u53D1\u8D77http\u8BF7\u6C42\u5BF9\u5E94\u7684\u6A21\u5757\u6587\u4EF6\u3002</p><!--]-->`);
 }
-_sfc_main$10.ssrRender = _sfc_ssrRender$O;
-const _sfc_setup$10 = _sfc_main$10.setup;
-_sfc_main$10.setup = (props, ctx) => {
+const _sfc_setup$19 = _sfc_main$19.setup;
+_sfc_main$19.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vite/application.html.vue");
-  return _sfc_setup$10 ? _sfc_setup$10(props, ctx) : void 0;
+  return _sfc_setup$19 ? _sfc_setup$19(props, ctx) : void 0;
 };
-var application_html$5 = /* @__PURE__ */ Object.freeze({
+var application_html$7 = /* @__PURE__ */ _export_sfc(_sfc_main$19, [["ssrRender", _sfc_ssrRender$X]]);
+var application_html$8 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$10
+  "default": application_html$7
 });
-const _sfc_main$$ = {};
-function _sfc_ssrRender$N(_ctx, _push, _parent, _attrs) {
-  const _component_OutboundLink = vue.resolveComponent("OutboundLink");
-  _push(`<!--[--><h1 id="introduction" tabindex="-1"><a class="header-anchor" href="#introduction" aria-hidden="true">#</a> Introduction</h1><p><a href="https://vitejs.cn/" target="_blank" rel="noopener noreferrer">Vite \u4E2D\u6587\u7F51`);
-  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
-  _push(`</a></p><!--]-->`);
-}
-_sfc_main$$.ssrRender = _sfc_ssrRender$N;
-const _sfc_setup$$ = _sfc_main$$.setup;
-_sfc_main$$.setup = (props, ctx) => {
-  const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vite/index.html.vue");
-  return _sfc_setup$$ ? _sfc_setup$$(props, ctx) : void 0;
-};
-var index_html$g = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$$
-});
-const _sfc_main$_ = {};
-function _sfc_ssrRender$M(_ctx, _push, _parent, _attrs) {
+const _sfc_main$18 = {};
+function _sfc_ssrRender$W(_ctx, _push, _parent, _attrs) {
   const _component_RouterLink = vue.resolveComponent("RouterLink");
   const _component_OutboundLink = vue.resolveComponent("OutboundLink");
   _push(`<!--[--><h1 id="vue-dev-server" tabindex="-1"><a class="header-anchor" href="#vue-dev-server" aria-hidden="true">#</a> vue-dev-server</h1><nav class="table-of-contents"><ul><li>`);
@@ -3631,7 +4214,7 @@ function _sfc_ssrRender$M(_ctx, _push, _parent, _attrs) {
     }),
     _: 1
   }, _parent));
-  _push(`</li></ul></nav><p>vue-dev-server \u662F\u4E00\u4E2A\u73A9\u5177 vite\uFF0C\u4E00\u4E0B\u662F\u5B83\u7684\u4EE3\u7801\uFF1A</p><h2 id="vue-dev-server-1" tabindex="-1"><a class="header-anchor" href="#vue-dev-server-1" aria-hidden="true">#</a> vue-dev-server</h2><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token hashbang comment">#!/usr/bin/env node</span>
+  _push(`</li></ul></nav><p>vue-dev-server \u662F\u4E00\u4E2A\u73A9\u5177 vite\uFF0C\u4EE5\u4E0B\u662F\u5B83\u7684\u4EE3\u7801\uFF1A</p><h2 id="vue-dev-server-1" tabindex="-1"><a class="header-anchor" href="#vue-dev-server-1" aria-hidden="true">#</a> vue-dev-server</h2><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token hashbang comment">#!/usr/bin/env node</span>
 
 <span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&#39;express&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">const</span> <span class="token punctuation">{</span> vueMiddleware <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&#39;../middleware&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3854,75 +4437,65 @@ exports<span class="token punctuation">.</span>loadPkg <span class="token operat
   _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
   _push(`</a></li></ul><!--]-->`);
 }
-_sfc_main$_.ssrRender = _sfc_ssrRender$M;
-const _sfc_setup$_ = _sfc_main$_.setup;
-_sfc_main$_.setup = (props, ctx) => {
+const _sfc_setup$18 = _sfc_main$18.setup;
+_sfc_main$18.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vite/vue-dev-server.html.vue");
-  return _sfc_setup$_ ? _sfc_setup$_(props, ctx) : void 0;
+  return _sfc_setup$18 ? _sfc_setup$18(props, ctx) : void 0;
 };
-var vueDevServer_html$1 = /* @__PURE__ */ Object.freeze({
+var vueDevServer_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$18, [["ssrRender", _sfc_ssrRender$W]]);
+var vueDevServer_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$_
+  "default": vueDevServer_html$1
 });
-const _sfc_main$Z = {};
-function _sfc_ssrRender$L(_ctx, _push, _parent, _attrs) {
-  _push(`<!--[--><h1 id="\u6743\u9650" tabindex="-1"><a class="header-anchor" href="#\u6743\u9650" aria-hidden="true">#</a> \u6743\u9650</h1><p>\u9274\u6743\u7EC4\u4EF6</p><div class="language-html ext-html"><pre class="language-html"><code><span class="token comment">&lt;!-- \u5355\u6743\u9650\u9A8C\u8BC1 --&gt;</span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Auth</span> <span class="token attr-name">:value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&#39;</span>department.create<span class="token punctuation">&#39;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>\u4F60\u6709\u8BE5\u6743\u9650<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#no-auth</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>\u4F60\u6CA1\u6709\u8BE5\u6743\u9650<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Auth</span><span class="token punctuation">&gt;</span></span>
+const _sfc_main$17 = {};
+function _sfc_ssrRender$V(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1 id="\u5904\u7406\u9759\u6001\u8D44\u6E90" tabindex="-1"><a class="header-anchor" href="#\u5904\u7406\u9759\u6001\u8D44\u6E90" aria-hidden="true">#</a> \u5904\u7406\u9759\u6001\u8D44\u6E90</h1><h2 id="\u56FE\u7247\u52A0\u8F7D" tabindex="-1"><a class="header-anchor" href="#\u56FE\u7247\u52A0\u8F7D" aria-hidden="true">#</a> \u56FE\u7247\u52A0\u8F7D</h2><p>\u52A0\u8F7D\u56FE\u7247\u7684\u573A\u666F</p><div class="language-html ext-html"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>../../assets/a.png<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>img</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-css ext-css"><pre class="language-css"><code><span class="token property">background</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">&#39;../../assets/b.png&#39;</span><span class="token punctuation">)</span></span> norepeat<span class="token punctuation">;</span>
+</code></pre></div><div class="language-javascript ext-js"><pre class="language-javascript"><code>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&#39;hero-img&#39;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>src <span class="token operator">=</span> <span class="token string">&#39;../../assets/c.png&#39;</span><span class="token punctuation">;</span>
+</code></pre></div><p>vite \u4E2D\u914D\u7F6E</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token comment">// vite.config.ts</span>
+<span class="token keyword">import</span> path <span class="token keyword">from</span> <span class="token string">&#39;path&#39;</span><span class="token punctuation">;</span>
 
-<span class="token comment">&lt;!-- \u591A\u6743\u9650\u9A8C\u8BC1\uFF0C\u7528\u6237\u53EA\u8981\u5177\u5907\u5176\u4E2D\u4EFB\u4F55\u4E00\u4E2A\u6743\u9650\uFF0C\u5219\u9A8C\u8BC1\u901A\u8FC7 --&gt;</span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Auth</span> <span class="token attr-name">:value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[<span class="token punctuation">&#39;</span>department.create<span class="token punctuation">&#39;</span>, <span class="token punctuation">&#39;</span>department.edit<span class="token punctuation">&#39;</span>]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>\u4F60\u6709\u8BE5\u6743\u9650<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#no-auth</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>\u4F60\u6CA1\u6709\u8BE5\u6743\u9650<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Auth</span><span class="token punctuation">&gt;</span></span>
+<span class="token punctuation">{</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// \u522B\u540D\u914D\u7F6E</span>
+    alias<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&#39;@assets&#39;</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&#39;src/assets&#39;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="svg-\u7EC4\u4EF6\u65B9\u5F0F\u52A0\u8F7D" tabindex="-1"><a class="header-anchor" href="#svg-\u7EC4\u4EF6\u65B9\u5F0F\u52A0\u8F7D" aria-hidden="true">#</a> SVG \u7EC4\u4EF6\u65B9\u5F0F\u52A0\u8F7D</h3><ul><li>Vue2 \u9879\u76EE\u4E2D\u53EF\u4EE5\u4F7F\u7528 vite-plugin-vue2-svg \u63D2\u4EF6\u3002</li><li>Vue3 \u9879\u76EE\u4E2D\u53EF\u4EE5\u5F15\u5165 vite-svg-loader\u3002</li><li>React \u9879\u76EE\u4F7F\u7528 vite-plugin-svgr \u63D2\u4EF6\u3002</li></ul><p>\u914D\u7F6E</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token comment">// vite.config.ts</span>
+<span class="token keyword">import</span> svgr <span class="token keyword">from</span> <span class="token string">&#39;vite-plugin-svgr&#39;</span><span class="token punctuation">;</span>
 
-<span class="token comment">&lt;!-- \u591A\u6743\u9650\u9A8C\u8BC1\uFF0C\u7528\u6237\u5FC5\u987B\u5177\u5907\u5168\u90E8\u6743\u9650\uFF0C\u624D\u9A8C\u8BC1\u901A\u8FC7 --&gt;</span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AuthAll</span> <span class="token attr-name">:value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[<span class="token punctuation">&#39;</span>department.create<span class="token punctuation">&#39;</span>, <span class="token punctuation">&#39;</span>department.edit<span class="token punctuation">&#39;</span>]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>\u4F60\u6709\u8BE5\u6743\u9650<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#no-auth</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>\u4F60\u6CA1\u6709\u8BE5\u6743\u9650<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>AuthAll</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div><p>\u9274\u6743\u6307\u4EE4</p><div class="language-html ext-html"><pre class="language-html"><code><span class="token comment">&lt;!-- \u5355\u6743\u9650\u9A8C\u8BC1 --&gt;</span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">v-auth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&#39;</span>department.create<span class="token punctuation">&#39;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>\u65B0\u589E\u90E8\u95E8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-
-<span class="token comment">&lt;!-- \u591A\u6743\u9650\u9A8C\u8BC1\uFF0C\u7528\u6237\u53EA\u8981\u5177\u5907\u5176\u4E2D\u4EFB\u4F55\u4E00\u4E2A\u6743\u9650\uFF0C\u5219\u9A8C\u8BC1\u901A\u8FC7 --&gt;</span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">v-auth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[<span class="token punctuation">&#39;</span>department.create<span class="token punctuation">&#39;</span>, <span class="token punctuation">&#39;</span>department.edit<span class="token punctuation">&#39;</span>]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>\u65B0\u589E\u90E8\u95E8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-
-<span class="token comment">&lt;!-- \u591A\u6743\u9650\u9A8C\u8BC1\uFF0C\u7528\u6237\u5FC5\u987B\u5177\u5907\u5168\u90E8\u6743\u9650\uFF0C\u624D\u9A8C\u8BC1\u901A\u8FC7 --&gt;</span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">v-auth-all</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[<span class="token punctuation">&#39;</span>department.create<span class="token punctuation">&#39;</span>, <span class="token punctuation">&#39;</span>department.edit<span class="token punctuation">&#39;</span>]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>\u65B0\u589E\u90E8\u95E8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div><p>\u9274\u6743\u51FD\u6570</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token comment">// \u5355\u6743\u9650\u9A8C\u8BC1\uFF0C\u8FD4\u56DE true \u6216 false</span>
-<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$auth</span><span class="token punctuation">(</span><span class="token string">&#39;department.create&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-<span class="token comment">// \u591A\u6743\u9650\u9A8C\u8BC1\uFF0C\u7528\u6237\u53EA\u8981\u5177\u5907\u5176\u4E2D\u4EFB\u4F55\u4E00\u4E2A\u6743\u9650\uFF0C\u5219\u9A8C\u8BC1\u901A\u8FC7\uFF0C\u8FD4\u56DE true \u6216 false</span>
-<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$auth</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&#39;department.create&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;department.edit&#39;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-<span class="token comment">// \u591A\u6743\u9650\u9A8C\u8BC1\uFF0C\u7528\u6237\u5FC5\u987B\u5177\u5907\u5168\u90E8\u6743\u9650\uFF0C\u624D\u9A8C\u8BC1\u901A\u8FC7\uFF0C\u8FD4\u56DE true \u6216 false</span>
-<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$authAll</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&#39;department.create&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;department.edit&#39;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre></div><p>https://hooray.gitee.io/fantastic-admin/guide/permission.html#%E8%B7%AF%E7%94%B1%E6%9D%83%E9%99%90</p><!--]-->`);
+<span class="token punctuation">{</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// \u5176\u5B83\u63D2\u4EF6\u7701\u7565</span>
+    <span class="token function">svgr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>\u968F\u540E\u6CE8\u610F\u8981\u5728 tsconfig.json \u6DFB\u52A0\u5982\u4E0B\u914D\u7F6E\uFF0C\u5426\u5219\u4F1A\u6709\u7C7B\u578B\u9519\u8BEF:</p><div class="language-json ext-json"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;compilerOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// \u7701\u7565\u5176\u5B83\u914D\u7F6E</span>
+    <span class="token property">&quot;types&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;vite-plugin-svgr/client&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><!--]-->`);
 }
-_sfc_main$Z.ssrRender = _sfc_ssrRender$L;
-const _sfc_setup$Z = _sfc_main$Z.setup;
-_sfc_main$Z.setup = (props, ctx) => {
+const _sfc_setup$17 = _sfc_main$17.setup;
+_sfc_main$17.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vue3Basic/auth.html.vue");
-  return _sfc_setup$Z ? _sfc_setup$Z(props, ctx) : void 0;
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vite/\u5904\u7406\u9759\u6001\u8D44\u6E90.html.vue");
+  return _sfc_setup$17 ? _sfc_setup$17(props, ctx) : void 0;
 };
-var auth_html$1 = /* @__PURE__ */ Object.freeze({
+var _______html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$17, [["ssrRender", _sfc_ssrRender$V]]);
+var _______html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$Z
+  "default": _______html$1
 });
-const _sfc_main$Y = {};
-function _sfc_ssrRender$K(_ctx, _push, _parent, _attrs) {
+const _sfc_main$16 = {};
+function _sfc_ssrRender$U(_ctx, _push, _parent, _attrs) {
   const _component_OutboundLink = vue.resolveComponent("OutboundLink");
   _push(`<!--[--><h1 id="jsx" tabindex="-1"><a class="header-anchor" href="#jsx" aria-hidden="true">#</a> JSX</h1><p>\u4EE5\u4E00\u4E2A elform</p><h2 id="\u5728-render-\u4E2D\u8FD4\u56DE" tabindex="-1"><a class="header-anchor" href="#\u5728-render-\u4E2D\u8FD4\u56DE" aria-hidden="true">#</a> \u5728 render \u4E2D\u8FD4\u56DE</h2><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> defineComponent<span class="token punctuation">,</span> inject<span class="token punctuation">,</span> ref <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vue&#39;</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> ElForm <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;element-plus&#39;</span><span class="token punctuation">;</span>
@@ -3985,20 +4558,238 @@ function _sfc_ssrRender$K(_ctx, _push, _parent, _attrs) {
   _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
   _push(`</a></li></ul><!--]-->`);
 }
-_sfc_main$Y.ssrRender = _sfc_ssrRender$K;
-const _sfc_setup$Y = _sfc_main$Y.setup;
-_sfc_main$Y.setup = (props, ctx) => {
+const _sfc_setup$16 = _sfc_main$16.setup;
+_sfc_main$16.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vue3Basic/JSX.html.vue");
-  return _sfc_setup$Y ? _sfc_setup$Y(props, ctx) : void 0;
+  return _sfc_setup$16 ? _sfc_setup$16(props, ctx) : void 0;
 };
-var JSX_html$1 = /* @__PURE__ */ Object.freeze({
+var JSX_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$16, [["ssrRender", _sfc_ssrRender$U]]);
+var JSX_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$Y
+  "default": JSX_html$1
 });
-const _sfc_main$X = {};
-function _sfc_ssrRender$J(_ctx, _push, _parent, _attrs) {
+const _sfc_main$15 = {};
+function _sfc_ssrRender$T(_ctx, _push, _parent, _attrs) {
+  _push(`<h1${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "introduction",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#introduction" aria-hidden="true">#</a> Introduction</h1>`);
+}
+const _sfc_setup$15 = _sfc_main$15.setup;
+_sfc_main$15.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vue3Basic/index.html.vue");
+  return _sfc_setup$15 ? _sfc_setup$15(props, ctx) : void 0;
+};
+var index_html$o = /* @__PURE__ */ _export_sfc(_sfc_main$15, [["ssrRender", _sfc_ssrRender$T]]);
+var index_html$p = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": index_html$o
+});
+const _sfc_main$14 = {};
+function _sfc_ssrRender$S(_ctx, _push, _parent, _attrs) {
+  const _component_RouterLink = vue.resolveComponent("RouterLink");
+  _push(`<!--[--><h1 id="vue3-api" tabindex="-1"><a class="header-anchor" href="#vue3-api" aria-hidden="true">#</a> Vue3 API</h1><nav class="table-of-contents"><ul><li>`);
+  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#hooks" }, {
+    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`hooks`);
+      } else {
+        return [
+          vue.createTextVNode("hooks")
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`<ul><li>`);
+  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#vue2-mixins" }, {
+    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`vue2 mixins`);
+      } else {
+        return [
+          vue.createTextVNode("vue2 mixins")
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`</li><li>`);
+  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#vue3-hooks" }, {
+    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`Vue3 hooks`);
+      } else {
+        return [
+          vue.createTextVNode("Vue3 hooks")
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`</li><li>`);
+  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#react-hooks" }, {
+    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`react hooks`);
+      } else {
+        return [
+          vue.createTextVNode("react hooks")
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`</li></ul></li></ul></nav><h2 id="hooks" tabindex="-1"><a class="header-anchor" href="#hooks" aria-hidden="true">#</a> hooks</h2><h3 id="vue2-mixins" tabindex="-1"><a class="header-anchor" href="#vue2-mixins" aria-hidden="true">#</a> vue2 mixins</h3><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> mousePositionMixin <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      x<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      y<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&#39;mousemove&#39;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>update<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">destroyed</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">&#39;mousemove&#39;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>update<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">update</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">=</span> e<span class="token punctuation">.</span>pageX<span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> e<span class="token punctuation">.</span>pageY<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> mousePositionMixin<span class="token punctuation">;</span>
+</code></pre></div><p>\u5728\u7EC4\u4EF6\u4E2D\u4F7F\u7528\uFF1A</p><div class="language-vue ext-vue"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>Mouse position: x {{ x }} / y {{ y }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> mousePositionMixin <span class="token keyword">from</span> <span class="token string">&#39;./mouse&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  mixins<span class="token operator">:</span> <span class="token punctuation">[</span>mousePositionMixin<span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="vue3-hooks" tabindex="-1"><a class="header-anchor" href="#vue3-hooks" aria-hidden="true">#</a> Vue3 hooks</h3><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> ref<span class="token punctuation">,</span> onMounted<span class="token punctuation">,</span> onUnmounted <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vue&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">useMousePosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> y <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">update</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    x<span class="token punctuation">.</span>value <span class="token operator">=</span> e<span class="token punctuation">.</span>pageX<span class="token punctuation">;</span>
+    y<span class="token punctuation">.</span>value <span class="token operator">=</span> e<span class="token punctuation">.</span>pageY<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token function">onMounted</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&#39;mousemove&#39;</span><span class="token punctuation">,</span> update<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">onUnmounted</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">&#39;mousemove&#39;</span><span class="token punctuation">,</span> update<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span> x<span class="token punctuation">,</span> y <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>\u7EC4\u4EF6\u4E2D\u4F7F\u7528</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+    Mouse position<span class="token operator">:</span> x <span class="token punctuation">{</span><span class="token punctuation">{</span> x <span class="token punctuation">}</span><span class="token punctuation">}</span> <span class="token operator">/</span> y <span class="token punctuation">{</span><span class="token punctuation">{</span> y <span class="token punctuation">}</span><span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+  <span class="token keyword">import</span> useMousePosition <span class="token keyword">from</span> <span class="token string">&#39;./mouse&#39;</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> x<span class="token punctuation">,</span> y <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useMousePosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span> x<span class="token punctuation">,</span> y <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><h3 id="react-hooks" tabindex="-1"><a class="header-anchor" href="#react-hooks" aria-hidden="true">#</a> react hooks</h3><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">useWindowSize</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>x<span class="token punctuation">,</span> setX<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>y<span class="token punctuation">,</span> setY<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token function-variable function">update</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">setX</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>pageX<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">setY</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>pageY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&#39;mousemove&#39;</span><span class="token punctuation">,</span> update<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      window<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">&#39;mousemove&#39;</span><span class="token punctuation">,</span> update<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>vue3 hooks \u548C react hooks \u7684\u7528\u6CD5\u51E0\u4E4E\u4E00\u6837\u3002react \u6709\u5F88\u591A\u597D\u7528\u7684 react hooks \u5E93\uFF0Cvue3 \u5176\u5B9E\u4E5F\u53EF\u4EE5\u5C01\u88C5\u5F88\u591A\u6709\u7528\u7684 hooks \u5E93\u3002\u5728 vuepress 2.0 \u7684 <code>@vuepress/theme-default</code> \u63D2\u4EF6\u5C31\u6709\u5C01\u88C5\u7684 hooks,\u5728 composables \u6587\u4EF6\u4E0B\u3002</p><!--]-->`);
+}
+const _sfc_setup$14 = _sfc_main$14.setup;
+_sfc_main$14.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vue3Basic/Vue3Api.html.vue");
+  return _sfc_setup$14 ? _sfc_setup$14(props, ctx) : void 0;
+};
+var Vue3Api_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$14, [["ssrRender", _sfc_ssrRender$S]]);
+var Vue3Api_html$2 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Vue3Api_html$1
+});
+const _sfc_main$13 = {};
+function _sfc_ssrRender$R(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1 id="\u6743\u9650" tabindex="-1"><a class="header-anchor" href="#\u6743\u9650" aria-hidden="true">#</a> \u6743\u9650</h1><p>\u9274\u6743\u7EC4\u4EF6</p><div class="language-html ext-html"><pre class="language-html"><code><span class="token comment">&lt;!-- \u5355\u6743\u9650\u9A8C\u8BC1 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Auth</span> <span class="token attr-name">:value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&#39;</span>department.create<span class="token punctuation">&#39;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>\u4F60\u6709\u8BE5\u6743\u9650<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#no-auth</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>\u4F60\u6CA1\u6709\u8BE5\u6743\u9650<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Auth</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- \u591A\u6743\u9650\u9A8C\u8BC1\uFF0C\u7528\u6237\u53EA\u8981\u5177\u5907\u5176\u4E2D\u4EFB\u4F55\u4E00\u4E2A\u6743\u9650\uFF0C\u5219\u9A8C\u8BC1\u901A\u8FC7 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Auth</span> <span class="token attr-name">:value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[<span class="token punctuation">&#39;</span>department.create<span class="token punctuation">&#39;</span>, <span class="token punctuation">&#39;</span>department.edit<span class="token punctuation">&#39;</span>]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>\u4F60\u6709\u8BE5\u6743\u9650<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#no-auth</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>\u4F60\u6CA1\u6709\u8BE5\u6743\u9650<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Auth</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- \u591A\u6743\u9650\u9A8C\u8BC1\uFF0C\u7528\u6237\u5FC5\u987B\u5177\u5907\u5168\u90E8\u6743\u9650\uFF0C\u624D\u9A8C\u8BC1\u901A\u8FC7 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AuthAll</span> <span class="token attr-name">:value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[<span class="token punctuation">&#39;</span>department.create<span class="token punctuation">&#39;</span>, <span class="token punctuation">&#39;</span>department.edit<span class="token punctuation">&#39;</span>]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>\u4F60\u6709\u8BE5\u6743\u9650<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#no-auth</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>\u4F60\u6CA1\u6709\u8BE5\u6743\u9650<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>AuthAll</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>\u9274\u6743\u6307\u4EE4</p><div class="language-html ext-html"><pre class="language-html"><code><span class="token comment">&lt;!-- \u5355\u6743\u9650\u9A8C\u8BC1 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">v-auth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&#39;</span>department.create<span class="token punctuation">&#39;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>\u65B0\u589E\u90E8\u95E8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- \u591A\u6743\u9650\u9A8C\u8BC1\uFF0C\u7528\u6237\u53EA\u8981\u5177\u5907\u5176\u4E2D\u4EFB\u4F55\u4E00\u4E2A\u6743\u9650\uFF0C\u5219\u9A8C\u8BC1\u901A\u8FC7 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">v-auth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[<span class="token punctuation">&#39;</span>department.create<span class="token punctuation">&#39;</span>, <span class="token punctuation">&#39;</span>department.edit<span class="token punctuation">&#39;</span>]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>\u65B0\u589E\u90E8\u95E8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- \u591A\u6743\u9650\u9A8C\u8BC1\uFF0C\u7528\u6237\u5FC5\u987B\u5177\u5907\u5168\u90E8\u6743\u9650\uFF0C\u624D\u9A8C\u8BC1\u901A\u8FC7 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">v-auth-all</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[<span class="token punctuation">&#39;</span>department.create<span class="token punctuation">&#39;</span>, <span class="token punctuation">&#39;</span>department.edit<span class="token punctuation">&#39;</span>]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>\u65B0\u589E\u90E8\u95E8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>\u9274\u6743\u51FD\u6570</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token comment">// \u5355\u6743\u9650\u9A8C\u8BC1\uFF0C\u8FD4\u56DE true \u6216 false</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$auth</span><span class="token punctuation">(</span><span class="token string">&#39;department.create&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// \u591A\u6743\u9650\u9A8C\u8BC1\uFF0C\u7528\u6237\u53EA\u8981\u5177\u5907\u5176\u4E2D\u4EFB\u4F55\u4E00\u4E2A\u6743\u9650\uFF0C\u5219\u9A8C\u8BC1\u901A\u8FC7\uFF0C\u8FD4\u56DE true \u6216 false</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$auth</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&#39;department.create&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;department.edit&#39;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// \u591A\u6743\u9650\u9A8C\u8BC1\uFF0C\u7528\u6237\u5FC5\u987B\u5177\u5907\u5168\u90E8\u6743\u9650\uFF0C\u624D\u9A8C\u8BC1\u901A\u8FC7\uFF0C\u8FD4\u56DE true \u6216 false</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$authAll</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&#39;department.create&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;department.edit&#39;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>https://hooray.gitee.io/fantastic-admin/guide/permission.html#%E8%B7%AF%E7%94%B1%E6%9D%83%E9%99%90</p><!--]-->`);
+}
+const _sfc_setup$13 = _sfc_main$13.setup;
+_sfc_main$13.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vue3Basic/auth.html.vue");
+  return _sfc_setup$13 ? _sfc_setup$13(props, ctx) : void 0;
+};
+var auth_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$13, [["ssrRender", _sfc_ssrRender$R]]);
+var auth_html$2 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": auth_html$1
+});
+const _sfc_main$12 = {};
+function _sfc_ssrRender$Q(_ctx, _push, _parent, _attrs) {
   const _component_RouterLink = vue.resolveComponent("RouterLink");
   const _component_OutboundLink = vue.resolveComponent("OutboundLink");
   _push(`<!--[--><h1 id="\u54CD\u5E94\u5F0F\u7CFB\u7EDF-api" tabindex="-1"><a class="header-anchor" href="#\u54CD\u5E94\u5F0F\u7CFB\u7EDF-api" aria-hidden="true">#</a> \u54CD\u5E94\u5F0F\u7CFB\u7EDF API</h1><nav class="table-of-contents"><ul><li>`);
@@ -4416,183 +5207,47 @@ obj<span class="token punctuation">.</span>foo<span class="token operator">++</s
   _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
   _push(`</a></li></ul><!--]-->`);
 }
-_sfc_main$X.ssrRender = _sfc_ssrRender$J;
-const _sfc_setup$X = _sfc_main$X.setup;
-_sfc_main$X.setup = (props, ctx) => {
+const _sfc_setup$12 = _sfc_main$12.setup;
+_sfc_main$12.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vue3Basic/reactivityAPI.html.vue");
-  return _sfc_setup$X ? _sfc_setup$X(props, ctx) : void 0;
+  return _sfc_setup$12 ? _sfc_setup$12(props, ctx) : void 0;
 };
-var reactivityAPI_html$1 = /* @__PURE__ */ Object.freeze({
+var reactivityAPI_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$12, [["ssrRender", _sfc_ssrRender$Q]]);
+var reactivityAPI_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$X
+  "default": reactivityAPI_html$1
 });
-const _sfc_main$W = {};
-function _sfc_ssrRender$I(_ctx, _push, _parent, _attrs) {
-  _push(`<h1${serverRenderer.ssrRenderAttrs(vue.mergeProps({
-    id: "introduction",
-    tabindex: "-1"
-  }, _attrs))}><a class="header-anchor" href="#introduction" aria-hidden="true">#</a> Introduction</h1>`);
+const _sfc_main$11 = {};
+function _sfc_ssrRender$P(_ctx, _push, _parent, _attrs) {
+  const _component_OutboundLink = vue.resolveComponent("OutboundLink");
+  _push(`<!--[--><h1 id="\u642D\u5EFA\u57FA\u4E8E-vue3-\u7684\u524D\u7AEF\u67B6\u6784" tabindex="-1"><a class="header-anchor" href="#\u642D\u5EFA\u57FA\u4E8E-vue3-\u7684\u524D\u7AEF\u67B6\u6784" aria-hidden="true">#</a> \u642D\u5EFA\u57FA\u4E8E vue3 \u7684\u524D\u7AEF\u67B6\u6784</h1><ul><li><a href="https://juejin.cn/post/7025524870842679310" target="_blank" rel="noopener noreferrer">\u4ECE 16 \u4E2A\u65B9\u5411\u9010\u6B65\u642D\u5EFA\u57FA\u4E8E vue3 \u7684\u524D\u7AEF\u67B6\u6784`);
+  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
+  _push(`</a></li><li><a href="https://juejin.cn/post/6901466994478940168" target="_blank" rel="noopener noreferrer">\u57FA\u4E8E Vue \u7684\u524D\u7AEF\u67B6\u6784\uFF0C\u6211\u505A\u4E86\u8FD9 15 \u70B9`);
+  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
+  _push(`</a></li><li><a href="https://juejin.cn/post/6844903607855235079" target="_blank" rel="noopener noreferrer">\u642D\u5EFA\u81EA\u5DF1\u7684\u811A\u624B\u67B6\u2014\u201C\u4F18\u96C5\u201D\u751F\u6210\u524D\u7AEF\u5DE5\u7A0B`);
+  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
+  _push(`</a></li><li><a href="https://juejin.cn/post/6981356417064108062" target="_blank" rel="noopener noreferrer">Vuex4 \u5BF9 TypeScript \u5E76\u4E0D\u53CB\u597D\uFF0C\u6240\u4EE5\u6211\u9009\u62E9 Pinia`);
+  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
+  _push(`</a></li><li><a href="https://juejin.cn/post/7005001569879982087" target="_blank" rel="noopener noreferrer">\u524D\u7AEF\u811A\u624B\u67B6 webpack \u8FC1\u79FB Vite2 \u8E29\u5751\u5B9E\u8DF5`);
+  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
+  _push(`</a></li></ul><!--]-->`);
 }
-_sfc_main$W.ssrRender = _sfc_ssrRender$I;
-const _sfc_setup$W = _sfc_main$W.setup;
-_sfc_main$W.setup = (props, ctx) => {
+const _sfc_setup$11 = _sfc_main$11.setup;
+_sfc_main$11.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vue3Basic/index.html.vue");
-  return _sfc_setup$W ? _sfc_setup$W(props, ctx) : void 0;
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vue3Basic/vue3Project.html.vue");
+  return _sfc_setup$11 ? _sfc_setup$11(props, ctx) : void 0;
 };
-var index_html$f = /* @__PURE__ */ Object.freeze({
+var vue3Project_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$11, [["ssrRender", _sfc_ssrRender$P]]);
+var vue3Project_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$W
+  "default": vue3Project_html$1
 });
-const _sfc_main$V = {};
-function _sfc_ssrRender$H(_ctx, _push, _parent, _attrs) {
-  const _component_RouterLink = vue.resolveComponent("RouterLink");
-  _push(`<!--[--><h1 id="vue3-api" tabindex="-1"><a class="header-anchor" href="#vue3-api" aria-hidden="true">#</a> Vue3 API</h1><nav class="table-of-contents"><ul><li>`);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#hooks" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`hooks`);
-      } else {
-        return [
-          vue.createTextVNode("hooks")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`<ul><li>`);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#vue2-mixins" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`vue2 mixins`);
-      } else {
-        return [
-          vue.createTextVNode("vue2 mixins")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</li><li>`);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#vue3-hooks" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`Vue3 hooks`);
-      } else {
-        return [
-          vue.createTextVNode("Vue3 hooks")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</li><li>`);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#react-hooks" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`react hooks`);
-      } else {
-        return [
-          vue.createTextVNode("react hooks")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</li></ul></li></ul></nav><h2 id="hooks" tabindex="-1"><a class="header-anchor" href="#hooks" aria-hidden="true">#</a> hooks</h2><h3 id="vue2-mixins" tabindex="-1"><a class="header-anchor" href="#vue2-mixins" aria-hidden="true">#</a> vue2 mixins</h3><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> mousePositionMixin <span class="token operator">=</span> <span class="token punctuation">{</span>
-  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">{</span>
-      x<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
-      y<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&#39;mousemove&#39;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>update<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token function">destroyed</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    window<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">&#39;mousemove&#39;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>update<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
-    <span class="token function">update</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">=</span> e<span class="token punctuation">.</span>pageX<span class="token punctuation">;</span>
-      <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> e<span class="token punctuation">.</span>pageY<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> mousePositionMixin<span class="token punctuation">;</span>
-</code></pre></div><p>\u5728\u7EC4\u4EF6\u4E2D\u4F7F\u7528\uFF1A</p><div class="language-vue ext-vue"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>Mouse position: x {{ x }} / y {{ y }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
-<span class="token keyword">import</span> mousePositionMixin <span class="token keyword">from</span> <span class="token string">&#39;./mouse&#39;</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-  mixins<span class="token operator">:</span> <span class="token punctuation">[</span>mousePositionMixin<span class="token punctuation">]</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div><h3 id="vue3-hooks" tabindex="-1"><a class="header-anchor" href="#vue3-hooks" aria-hidden="true">#</a> Vue3 hooks</h3><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> ref<span class="token punctuation">,</span> onMounted<span class="token punctuation">,</span> onUnmounted <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vue&#39;</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">useMousePosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> y <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">update</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-    x<span class="token punctuation">.</span>value <span class="token operator">=</span> e<span class="token punctuation">.</span>pageX<span class="token punctuation">;</span>
-    y<span class="token punctuation">.</span>value <span class="token operator">=</span> e<span class="token punctuation">.</span>pageY<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token function">onMounted</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-    window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&#39;mousemove&#39;</span><span class="token punctuation">,</span> update<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token function">onUnmounted</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-    window<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">&#39;mousemove&#39;</span><span class="token punctuation">,</span> update<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">{</span> x<span class="token punctuation">,</span> y <span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre></div><p>\u7EC4\u4EF6\u4E2D\u4F7F\u7528</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
-  <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
-    Mouse position<span class="token operator">:</span> x <span class="token punctuation">{</span><span class="token punctuation">{</span> x <span class="token punctuation">}</span><span class="token punctuation">}</span> <span class="token operator">/</span> y <span class="token punctuation">{</span><span class="token punctuation">{</span> y <span class="token punctuation">}</span><span class="token punctuation">}</span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
-  <span class="token keyword">import</span> useMousePosition <span class="token keyword">from</span> <span class="token string">&#39;./mouse&#39;</span>
-  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-    <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">const</span> <span class="token punctuation">{</span> x<span class="token punctuation">,</span> y <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useMousePosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-      <span class="token keyword">return</span> <span class="token punctuation">{</span> x<span class="token punctuation">,</span> y <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
-</code></pre></div><h3 id="react-hooks" tabindex="-1"><a class="header-anchor" href="#react-hooks" aria-hidden="true">#</a> react hooks</h3><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">useWindowSize</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>x<span class="token punctuation">,</span> setX<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>y<span class="token punctuation">,</span> setY<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-    <span class="token keyword">const</span> <span class="token function-variable function">update</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-      <span class="token function">setX</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>pageX<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token function">setY</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>pageY<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-    window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&#39;mousemove&#39;</span><span class="token punctuation">,</span> update<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-      window<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">&#39;mousemove&#39;</span><span class="token punctuation">,</span> update<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre></div><p>vue3 hooks \u548C react hooks \u7684\u7528\u6CD5\u51E0\u4E4E\u4E00\u6837\u3002react \u6709\u5F88\u591A\u597D\u7528\u7684 react hooks \u5E93\uFF0Cvue3 \u5176\u5B9E\u4E5F\u53EF\u4EE5\u5C01\u88C5\u5F88\u591A\u6709\u7528\u7684 hooks \u5E93\u3002\u5728 vuepress 2.0 \u7684 <code>@vuepress/theme-default</code> \u63D2\u4EF6\u5C31\u6709\u5C01\u88C5\u7684 hooks,\u5728 composables \u6587\u4EF6\u4E0B\u3002</p><!--]-->`);
-}
-_sfc_main$V.ssrRender = _sfc_ssrRender$H;
-const _sfc_setup$V = _sfc_main$V.setup;
-_sfc_main$V.setup = (props, ctx) => {
-  const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vue3Basic/Vue3Api.html.vue");
-  return _sfc_setup$V ? _sfc_setup$V(props, ctx) : void 0;
-};
-var Vue3Api_html$1 = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$V
-});
-const _sfc_main$U = {};
-function _sfc_ssrRender$G(_ctx, _push, _parent, _attrs) {
+const _sfc_main$10 = {};
+function _sfc_ssrRender$O(_ctx, _push, _parent, _attrs) {
   const _component_RouterLink = vue.resolveComponent("RouterLink");
   const _component_OutboundLink = vue.resolveComponent("OutboundLink");
   _push(`<!--[--><h1 id="vue3-\u7684\u4F18\u5316" tabindex="-1"><a class="header-anchor" href="#vue3-\u7684\u4F18\u5316" aria-hidden="true">#</a> Vue3 \u7684\u4F18\u5316</h1><nav class="table-of-contents"><ul><li>`);
@@ -5026,104 +5681,97 @@ function _sfc_ssrRender$G(_ctx, _push, _parent, _attrs) {
 <span class="token punctuation">}</span>
 </code></pre></div><h3 id="tree-shaking" tabindex="-1"><a class="header-anchor" href="#tree-shaking" aria-hidden="true">#</a> tree-shaking</h3><!--]-->`);
 }
-_sfc_main$U.ssrRender = _sfc_ssrRender$G;
-const _sfc_setup$U = _sfc_main$U.setup;
-_sfc_main$U.setup = (props, ctx) => {
+const _sfc_setup$10 = _sfc_main$10.setup;
+_sfc_main$10.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vue3Basic/vue3optimize.html.vue");
-  return _sfc_setup$U ? _sfc_setup$U(props, ctx) : void 0;
+  return _sfc_setup$10 ? _sfc_setup$10(props, ctx) : void 0;
 };
-var vue3optimize_html$1 = /* @__PURE__ */ Object.freeze({
+var vue3optimize_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$10, [["ssrRender", _sfc_ssrRender$O]]);
+var vue3optimize_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$U
+  "default": vue3optimize_html$1
 });
-const _sfc_main$T = {};
-function _sfc_ssrRender$F(_ctx, _push, _parent, _attrs) {
-  const _component_OutboundLink = vue.resolveComponent("OutboundLink");
-  _push(`<!--[--><h1 id="\u642D\u5EFA\u57FA\u4E8E-vue3-\u7684\u524D\u7AEF\u67B6\u6784" tabindex="-1"><a class="header-anchor" href="#\u642D\u5EFA\u57FA\u4E8E-vue3-\u7684\u524D\u7AEF\u67B6\u6784" aria-hidden="true">#</a> \u642D\u5EFA\u57FA\u4E8E vue3 \u7684\u524D\u7AEF\u67B6\u6784</h1><ul><li><a href="https://juejin.cn/post/7025524870842679310" target="_blank" rel="noopener noreferrer">\u4ECE 16 \u4E2A\u65B9\u5411\u9010\u6B65\u642D\u5EFA\u57FA\u4E8E vue3 \u7684\u524D\u7AEF\u67B6\u6784`);
-  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
-  _push(`</a></li><li><a href="https://juejin.cn/post/6901466994478940168" target="_blank" rel="noopener noreferrer">\u57FA\u4E8E Vue \u7684\u524D\u7AEF\u67B6\u6784\uFF0C\u6211\u505A\u4E86\u8FD9 15 \u70B9`);
-  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
-  _push(`</a></li><li><a href="https://juejin.cn/post/6844903607855235079" target="_blank" rel="noopener noreferrer">\u642D\u5EFA\u81EA\u5DF1\u7684\u811A\u624B\u67B6\u2014\u201C\u4F18\u96C5\u201D\u751F\u6210\u524D\u7AEF\u5DE5\u7A0B`);
-  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
-  _push(`</a></li><li><a href="https://juejin.cn/post/6981356417064108062" target="_blank" rel="noopener noreferrer">Vuex4 \u5BF9 TypeScript \u5E76\u4E0D\u53CB\u597D\uFF0C\u6240\u4EE5\u6211\u9009\u62E9 Pinia`);
-  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
-  _push(`</a></li><li><a href="https://juejin.cn/post/7005001569879982087" target="_blank" rel="noopener noreferrer">\u524D\u7AEF\u811A\u624B\u67B6 webpack \u8FC1\u79FB Vite2 \u8E29\u5751\u5B9E\u8DF5`);
-  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
-  _push(`</a></li></ul><!--]-->`);
-}
-_sfc_main$T.ssrRender = _sfc_ssrRender$F;
-const _sfc_setup$T = _sfc_main$T.setup;
-_sfc_main$T.setup = (props, ctx) => {
-  const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vue3Basic/vue3Project.html.vue");
-  return _sfc_setup$T ? _sfc_setup$T(props, ctx) : void 0;
-};
-var vue3Project_html$1 = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$T
-});
-const _sfc_main$S = {};
-function _sfc_ssrRender$E(_ctx, _push, _parent, _attrs) {
-  _push(`<h1${serverRenderer.ssrRenderAttrs(vue.mergeProps({
-    id: "vuepress-\u7B14\u8BB0",
-    tabindex: "-1"
-  }, _attrs))}><a class="header-anchor" href="#vuepress-\u7B14\u8BB0" aria-hidden="true">#</a> VuePress \u7B14\u8BB0</h1>`);
-}
-_sfc_main$S.ssrRender = _sfc_ssrRender$E;
-const _sfc_setup$S = _sfc_main$S.setup;
-_sfc_main$S.setup = (props, ctx) => {
-  const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vuePress/application.html.vue");
-  return _sfc_setup$S ? _sfc_setup$S(props, ctx) : void 0;
-};
-var application_html$4 = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$S
-});
-const _sfc_main$R = {};
-function _sfc_ssrRender$D(_ctx, _push, _parent, _attrs) {
+const _sfc_main$$ = {};
+function _sfc_ssrRender$N(_ctx, _push, _parent, _attrs) {
   _push(`<h1${serverRenderer.ssrRenderAttrs(vue.mergeProps({
     id: "introduction",
     tabindex: "-1"
   }, _attrs))}><a class="header-anchor" href="#introduction" aria-hidden="true">#</a> Introduction</h1>`);
 }
-_sfc_main$R.ssrRender = _sfc_ssrRender$D;
-const _sfc_setup$R = _sfc_main$R.setup;
-_sfc_main$R.setup = (props, ctx) => {
+const _sfc_setup$$ = _sfc_main$$.setup;
+_sfc_main$$.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vuePress/index.html.vue");
-  return _sfc_setup$R ? _sfc_setup$R(props, ctx) : void 0;
+  return _sfc_setup$$ ? _sfc_setup$$(props, ctx) : void 0;
 };
-var index_html$e = /* @__PURE__ */ Object.freeze({
+var index_html$m = /* @__PURE__ */ _export_sfc(_sfc_main$$, [["ssrRender", _sfc_ssrRender$N]]);
+var index_html$n = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$R
+  "default": index_html$m
 });
-const _sfc_main$Q = {};
-function _sfc_ssrRender$C(_ctx, _push, _parent, _attrs) {
+const _sfc_main$_ = {};
+function _sfc_ssrRender$M(_ctx, _push, _parent, _attrs) {
+  _push(`<h1${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "vuepress-\u7B14\u8BB0",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#vuepress-\u7B14\u8BB0" aria-hidden="true">#</a> VuePress \u7B14\u8BB0</h1>`);
+}
+const _sfc_setup$_ = _sfc_main$_.setup;
+_sfc_main$_.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vuePress/application.html.vue");
+  return _sfc_setup$_ ? _sfc_setup$_(props, ctx) : void 0;
+};
+var application_html$5 = /* @__PURE__ */ _export_sfc(_sfc_main$_, [["ssrRender", _sfc_ssrRender$M]]);
+var application_html$6 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": application_html$5
+});
+const _sfc_main$Z = {};
+function _sfc_ssrRender$L(_ctx, _push, _parent, _attrs) {
   _push(`<h1${serverRenderer.ssrRenderAttrs(vue.mergeProps({
     id: "vuepress-\u67B6\u6784\u8BBE\u8BA1",
     tabindex: "-1"
   }, _attrs))}><a class="header-anchor" href="#vuepress-\u67B6\u6784\u8BBE\u8BA1" aria-hidden="true">#</a> VuePress \u67B6\u6784\u8BBE\u8BA1</h1>`);
 }
-_sfc_main$Q.ssrRender = _sfc_ssrRender$C;
-const _sfc_setup$Q = _sfc_main$Q.setup;
-_sfc_main$Q.setup = (props, ctx) => {
+const _sfc_setup$Z = _sfc_main$Z.setup;
+_sfc_main$Z.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vuePress/sourceCode.html.vue");
-  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
+  return _sfc_setup$Z ? _sfc_setup$Z(props, ctx) : void 0;
 };
-var sourceCode_html$3 = /* @__PURE__ */ Object.freeze({
+var sourceCode_html$4 = /* @__PURE__ */ _export_sfc(_sfc_main$Z, [["ssrRender", _sfc_ssrRender$L]]);
+var sourceCode_html$5 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$Q
+  "default": sourceCode_html$4
 });
-const _sfc_main$P = {};
-function _sfc_ssrRender$B(_ctx, _push, _parent, _attrs) {
+var _imports_0$3 = "/assets/vue2Router.42b64e9d.png";
+const _sfc_main$Y = {};
+function _sfc_ssrRender$K(_ctx, _push, _parent, _attrs) {
+  const _component_OutboundLink = vue.resolveComponent("OutboundLink");
+  _push(`<!--[--><h1 id="introduction" tabindex="-1"><a class="header-anchor" href="#introduction" aria-hidden="true">#</a> Introduction</h1><h2 id="vue2-router" tabindex="-1"><a class="header-anchor" href="#vue2-router" aria-hidden="true">#</a> vue2 Router</h2><p><img${serverRenderer.ssrRenderAttr("src", _imports_0$3)} alt="vue2Router"></p><ul><li><a href="https://next.router.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">Vue Router`);
+  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
+  _push(`</a></li></ul><!--]-->`);
+}
+const _sfc_setup$Y = _sfc_main$Y.setup;
+_sfc_main$Y.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vueRouter/index.html.vue");
+  return _sfc_setup$Y ? _sfc_setup$Y(props, ctx) : void 0;
+};
+var index_html$k = /* @__PURE__ */ _export_sfc(_sfc_main$Y, [["ssrRender", _sfc_ssrRender$K]]);
+var index_html$l = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": index_html$k
+});
+const _sfc_main$X = {};
+function _sfc_ssrRender$J(_ctx, _push, _parent, _attrs) {
   const _component_RouterLink = vue.resolveComponent("RouterLink");
   _push(`<!--[--><h1 id="vue-router-4-\u65B0\u7279\u6027" tabindex="-1"><a class="header-anchor" href="#vue-router-4-\u65B0\u7279\u6027" aria-hidden="true">#</a> Vue Router 4 \u65B0\u7279\u6027</h1><nav class="table-of-contents"><ul><li>`);
   _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#\u4F7F\u7528\u65B9\u6CD5" }, {
@@ -5231,20 +5879,20 @@ router<span class="token punctuation">.</span><span class="token function">befor
 router<span class="token punctuation">.</span><span class="token function">beforeEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> isAuthenticated<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><p>\u5BFC\u822A\u5B88\u536B\u53EF\u4EE5\u8FD4\u56DE\u503C\u800C\u4E0D\u662F next</p><!--]-->`);
 }
-_sfc_main$P.ssrRender = _sfc_ssrRender$B;
-const _sfc_setup$P = _sfc_main$P.setup;
-_sfc_main$P.setup = (props, ctx) => {
+const _sfc_setup$X = _sfc_main$X.setup;
+_sfc_main$X.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vueRouter/application.html.vue");
-  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
+  return _sfc_setup$X ? _sfc_setup$X(props, ctx) : void 0;
 };
-var application_html$3 = /* @__PURE__ */ Object.freeze({
+var application_html$3 = /* @__PURE__ */ _export_sfc(_sfc_main$X, [["ssrRender", _sfc_ssrRender$J]]);
+var application_html$4 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$P
+  "default": application_html$3
 });
-const _sfc_main$O = {};
-function _sfc_ssrRender$A(_ctx, _push, _parent, _attrs) {
+const _sfc_main$W = {};
+function _sfc_ssrRender$I(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="\u539F\u751F\u8DEF\u7531\u57FA\u7840" tabindex="-1"><a class="header-anchor" href="#\u539F\u751F\u8DEF\u7531\u57FA\u7840" aria-hidden="true">#</a> \u539F\u751F\u8DEF\u7531\u57FA\u7840</h1><h2 id="hash" tabindex="-1"><a class="header-anchor" href="#hash" aria-hidden="true">#</a> hash</h2><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">refreshData</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&#39;hashchange&#39;</span><span class="token punctuation">,</span> refreshData<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h2 id="history-\u6A21\u5F0F" tabindex="-1"><a class="header-anchor" href="#history-\u6A21\u5F0F" aria-hidden="true">#</a> history \u6A21\u5F0F</h2><ul><li>hostory \u6A21\u5F0F\u4E2D\u6709\u4E24\u4E2A\u91CD\u8981\u7684\u65B9\u6CD5\uFF0C<code>pushState</code> \u548C <code>replaceState</code>\uFF1B</li><li>\u8FD8\u6709\u4E00\u4E2A\u91CD\u8981\u7684\u4E8B\u4EF6\uFF0Cpopstate \u4E8B\u4EF6\u3002</li></ul><h3 id="pushstate" tabindex="-1"><a class="header-anchor" href="#pushstate" aria-hidden="true">#</a> pushState</h3><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">var</span> stateObj <span class="token operator">=</span> <span class="token punctuation">{</span> foo<span class="token operator">:</span> <span class="token string">&#39;bar&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
@@ -5267,20 +5915,20 @@ console<span class="token punctuation">.</span><span class="token function">log<
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>url<span class="token punctuation">.</span>origin<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// https://developer.mozilla.org</span>
 </code></pre></div><h2 id="\u5176\u5B83" tabindex="-1"><a class="header-anchor" href="#\u5176\u5B83" aria-hidden="true">#</a> \u5176\u5B83</h2><ul><li>\u5BF9 hash \u503C\u7684\u8BFB\u5199\u53EF\u4EE5\u901A\u8FC7 window.location.hash \u5B8C\u6210\u3002</li><li>\u5BF9 hash \u53EF\u4EE5\u4F7F\u7528 window.location.replace()\u65B9\u6CD5\u66FF\u6362\u8DEF\u7531\u3002</li></ul><!--]-->`);
 }
-_sfc_main$O.ssrRender = _sfc_ssrRender$A;
-const _sfc_setup$O = _sfc_main$O.setup;
-_sfc_main$O.setup = (props, ctx) => {
+const _sfc_setup$W = _sfc_main$W.setup;
+_sfc_main$W.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vueRouter/browserRouter.html.vue");
-  return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
+  return _sfc_setup$W ? _sfc_setup$W(props, ctx) : void 0;
 };
-var browserRouter_html$1 = /* @__PURE__ */ Object.freeze({
+var browserRouter_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$W, [["ssrRender", _sfc_ssrRender$I]]);
+var browserRouter_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$O
+  "default": browserRouter_html$1
 });
-const _sfc_main$N = {};
-function _sfc_ssrRender$z(_ctx, _push, _parent, _attrs) {
+const _sfc_main$V = {};
+function _sfc_ssrRender$H(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="vue-router-v4-0-12" tabindex="-1"><a class="header-anchor" href="#vue-router-v4-0-12" aria-hidden="true">#</a> vue-router v4.0.12</h1><p><code>vue-router.esm-browser.js</code></p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token comment">/*!
  * vue-router v4.0.12
  * (c) 2021 Eduardo San Martin Morote
@@ -9024,20 +9672,20 @@ function createRouter(options) {
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$N.ssrRender = _sfc_ssrRender$z;
-const _sfc_setup$N = _sfc_main$N.setup;
-_sfc_main$N.setup = (props, ctx) => {
+const _sfc_setup$V = _sfc_main$V.setup;
+_sfc_main$V.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vueRouter/code.html.vue");
-  return _sfc_setup$N ? _sfc_setup$N(props, ctx) : void 0;
+  return _sfc_setup$V ? _sfc_setup$V(props, ctx) : void 0;
 };
-var code_html$1 = /* @__PURE__ */ Object.freeze({
+var code_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$V, [["ssrRender", _sfc_ssrRender$H]]);
+var code_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$N
+  "default": code_html$1
 });
-const _sfc_main$M = {};
-function _sfc_ssrRender$y(_ctx, _push, _parent, _attrs) {
+const _sfc_main$U = {};
+function _sfc_ssrRender$G(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="minivuerouter" tabindex="-1"><a class="header-anchor" href="#minivuerouter" aria-hidden="true">#</a> miniVueRouter</h1><p>Vue3 \u4E2D\u662F\u5982\u4F55\u4F7F\u7528\u8DEF\u7531\u7684</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token comment">// router.js</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> createRouter<span class="token punctuation">,</span> createWebHashHistory <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vue-router&quot;</span><span class="token punctuation">;</span>
 
@@ -9131,40 +9779,20 @@ app<span class="token punctuation">.</span><span class="token function">use</spa
 <span class="token punctuation">}</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$M.ssrRender = _sfc_ssrRender$y;
-const _sfc_setup$M = _sfc_main$M.setup;
-_sfc_main$M.setup = (props, ctx) => {
+const _sfc_setup$U = _sfc_main$U.setup;
+_sfc_main$U.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vueRouter/miniVueRouter.html.vue");
-  return _sfc_setup$M ? _sfc_setup$M(props, ctx) : void 0;
+  return _sfc_setup$U ? _sfc_setup$U(props, ctx) : void 0;
 };
-var miniVueRouter_html$1 = /* @__PURE__ */ Object.freeze({
+var miniVueRouter_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$U, [["ssrRender", _sfc_ssrRender$G]]);
+var miniVueRouter_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$M
+  "default": miniVueRouter_html$1
 });
-var _imports_0$3 = "/assets/vue2Router.42b64e9d.png";
-const _sfc_main$L = {};
-function _sfc_ssrRender$x(_ctx, _push, _parent, _attrs) {
-  const _component_OutboundLink = vue.resolveComponent("OutboundLink");
-  _push(`<!--[--><h1 id="introduction" tabindex="-1"><a class="header-anchor" href="#introduction" aria-hidden="true">#</a> Introduction</h1><h2 id="vue2-router" tabindex="-1"><a class="header-anchor" href="#vue2-router" aria-hidden="true">#</a> vue2 Router</h2><p><img${serverRenderer.ssrRenderAttr("src", _imports_0$3)} alt="vue2Router"></p><ul><li><a href="https://next.router.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">Vue Router`);
-  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
-  _push(`</a></li></ul><!--]-->`);
-}
-_sfc_main$L.ssrRender = _sfc_ssrRender$x;
-const _sfc_setup$L = _sfc_main$L.setup;
-_sfc_main$L.setup = (props, ctx) => {
-  const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vueRouter/index.html.vue");
-  return _sfc_setup$L ? _sfc_setup$L(props, ctx) : void 0;
-};
-var index_html$d = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$L
-});
-const _sfc_main$K = {};
-function _sfc_ssrRender$w(_ctx, _push, _parent, _attrs) {
+const _sfc_main$T = {};
+function _sfc_ssrRender$F(_ctx, _push, _parent, _attrs) {
   const _component_RouterLink = vue.resolveComponent("RouterLink");
   const _component_OutboundLink = vue.resolveComponent("OutboundLink");
   _push(`<!--[--><h1 id="vue-router-\u6E90\u7801\u89E3\u8BFB" tabindex="-1"><a class="header-anchor" href="#vue-router-\u6E90\u7801\u89E3\u8BFB" aria-hidden="true">#</a> Vue Router \u6E90\u7801\u89E3\u8BFB</h1><nav class="table-of-contents"><ul><li>`);
@@ -10202,159 +10830,22 @@ app<span class="token punctuation">.</span><span class="token function">provide<
   _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
   _push(`</a></li></ul><!--]-->`);
 }
-_sfc_main$K.ssrRender = _sfc_ssrRender$w;
-const _sfc_setup$K = _sfc_main$K.setup;
-_sfc_main$K.setup = (props, ctx) => {
+const _sfc_setup$T = _sfc_main$T.setup;
+_sfc_main$T.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vueRouter/sourceCode.html.vue");
-  return _sfc_setup$K ? _sfc_setup$K(props, ctx) : void 0;
+  return _sfc_setup$T ? _sfc_setup$T(props, ctx) : void 0;
 };
-var sourceCode_html$2 = /* @__PURE__ */ Object.freeze({
+var sourceCode_html$2 = /* @__PURE__ */ _export_sfc(_sfc_main$T, [["ssrRender", _sfc_ssrRender$F]]);
+var sourceCode_html$3 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$K
-});
-const _sfc_main$J = {};
-function _sfc_ssrRender$v(_ctx, _push, _parent, _attrs) {
-  _push(`<!--[--><h1 id="\u81EA\u5B9A\u4E49-vuex" tabindex="-1"><a class="header-anchor" href="#\u81EA\u5B9A\u4E49-vuex" aria-hidden="true">#</a> \u81EA\u5B9A\u4E49 Vuex</h1><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">createStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-<span class="token keyword">const</span> <span class="token function-variable function">useStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-<span class="token keyword">export</span> <span class="token punctuation">{</span> createStore<span class="token punctuation">,</span> useStore <span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre></div><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  <span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">{</span>
-      count<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  mutations<span class="token operator">:</span> <span class="token punctuation">{</span>
-    <span class="token function">add</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      state<span class="token punctuation">.</span>count<span class="token operator">++</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre></div><p>createStore</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">createStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token punctuation">{</span>
-    <span class="token comment">// \u4F20\u5165\u7684state\u662F\u4E2A\u65B9\u6CD5\uFF0C\u6211\u4EEC\u771F\u6B63\u9700\u8981\u7684\u662F\u8FD4\u56DE\u7684\u7ED3\u679C</span>
-    state<span class="token operator">:</span> params<span class="token punctuation">.</span><span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-    mutations<span class="token operator">:</span> params<span class="token punctuation">.</span>mutations<span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre></div><p>state \u58F0\u660E\u6210\u54CD\u5E94\u5F0F</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">createStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token punctuation">{</span>
-    <span class="token comment">// state\u58F0\u660E\u6210\u54CD\u5E94\u5F0F</span>
-    state<span class="token operator">:</span> <span class="token function">reactive</span><span class="token punctuation">(</span>params<span class="token punctuation">.</span><span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-    mutations<span class="token operator">:</span> params<span class="token punctuation">.</span>mutations<span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre></div><p>\u589E\u52A0 install \u65B9\u6CD5\uFF0C\u5C06 store \u5B9E\u4F8B\u6CE8\u518C\u5230\u5168\u5C40</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> reactive<span class="token punctuation">,</span> provide<span class="token punctuation">,</span> inject <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
-<span class="token operator">...</span>
-<span class="token keyword">const</span> <span class="token function-variable function">createStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">{</span>
-        state<span class="token operator">:</span> <span class="token function">reactive</span><span class="token punctuation">(</span>params<span class="token punctuation">.</span><span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-        mutations<span class="token operator">:</span> params<span class="token punctuation">.</span>mutations<span class="token punctuation">,</span>
-        <span class="token function">install</span><span class="token punctuation">(</span><span class="token parameter">app</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            app<span class="token punctuation">.</span><span class="token function">provide</span><span class="token punctuation">(</span><span class="token string">&#39;STORE&#39;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre></div><p>useStore</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token comment">// \u8FD4\u56DEstore\u5B9E\u4F8B</span>
-<span class="token keyword">const</span> <span class="token function-variable function">useStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token function">inject</span><span class="token punctuation">(</span><span class="token string">&quot;STORE&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre></div><p>commit \u65B9\u6CD5</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">createStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token punctuation">{</span>
-    state<span class="token operator">:</span> <span class="token function">reactive</span><span class="token punctuation">(</span>params<span class="token punctuation">.</span><span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-    mutations<span class="token operator">:</span> params<span class="token punctuation">.</span>mutations<span class="token punctuation">,</span>
-    <span class="token comment">// commit\u7528\u6765\u6267\u884Cmutations\u4E0B\u7684\u65B9\u6CD5</span>
-    <span class="token function">commit</span><span class="token punctuation">(</span><span class="token parameter">fun<span class="token punctuation">,</span> payload</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token comment">// mutations\u4E0B\u7684\u65B9\u6CD5\u63A5\u53D7state\u4F5C\u4E3A\u53C2\u6570</span>
-      <span class="token keyword">this</span><span class="token punctuation">.</span>mutations<span class="token punctuation">[</span>fun<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">,</span> payload<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token function">install</span><span class="token punctuation">(</span><span class="token parameter">app</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      app<span class="token punctuation">.</span><span class="token function">provide</span><span class="token punctuation">(</span><span class="token string">&quot;STORE&quot;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre></div><p>\u7B80\u5355\u7248\u672C\u7684 Vuex</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> reactive<span class="token punctuation">,</span> inject <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
-
-<span class="token keyword">const</span> <span class="token function-variable function">createStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token punctuation">{</span>
-    state<span class="token operator">:</span> <span class="token function">reactive</span><span class="token punctuation">(</span>params<span class="token punctuation">.</span><span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-    mutations<span class="token operator">:</span> params<span class="token punctuation">.</span>mutations<span class="token punctuation">,</span>
-    <span class="token comment">// commit\u7528\u6765\u6267\u884Cmutations\u4E0B\u7684\u65B9\u6CD5</span>
-    <span class="token function">commit</span><span class="token punctuation">(</span><span class="token parameter">fun<span class="token punctuation">,</span> payload</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token comment">// mutations\u4E0B\u7684\u65B9\u6CD5\u63A5\u53D7state\u4F5C\u4E3A\u53C2\u6570</span>
-      <span class="token keyword">this</span><span class="token punctuation">.</span>mutations<span class="token punctuation">[</span>fun<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">,</span> payload<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token function">install</span><span class="token punctuation">(</span><span class="token parameter">app</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      app<span class="token punctuation">.</span><span class="token function">provide</span><span class="token punctuation">(</span><span class="token string">&quot;STORE&quot;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-<span class="token keyword">const</span> <span class="token function-variable function">useStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token function">inject</span><span class="token punctuation">(</span><span class="token string">&quot;STORE&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-<span class="token keyword">export</span> <span class="token punctuation">{</span> createStore<span class="token punctuation">,</span> useStore <span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre></div><!--]-->`);
-}
-_sfc_main$J.ssrRender = _sfc_ssrRender$v;
-const _sfc_setup$J = _sfc_main$J.setup;
-_sfc_main$J.setup = (props, ctx) => {
-  const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vuex/miniVuex.html.vue");
-  return _sfc_setup$J ? _sfc_setup$J(props, ctx) : void 0;
-};
-var miniVuex_html$1 = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$J
-});
-const _sfc_main$I = {};
-function _sfc_ssrRender$u(_ctx, _push, _parent, _attrs) {
-  _push(`<!--[--><h1 id="vuex-\u63D2\u4EF6" tabindex="-1"><a class="header-anchor" href="#vuex-\u63D2\u4EF6" aria-hidden="true">#</a> vuex \u63D2\u4EF6</h1><h2 id="\u6301\u4E45\u5316\u5B58\u50A8\u63D2\u4EF6" tabindex="-1"><a class="header-anchor" href="#\u6301\u4E45\u5316\u5B58\u50A8\u63D2\u4EF6" aria-hidden="true">#</a> \u6301\u4E45\u5316\u5B58\u50A8\u63D2\u4EF6</h2><p>saveiInLocal.js</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span><span class="token parameter">store</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-  <span class="token comment">// \u5982\u679C\u672C\u5730\u5B58\u50A8\u4E86state\uFF0C\u5C31\u628A\u8FD9\u4E2AstateJSON\u5B57\u7B26\u4E32\u8F6C\u6362\u6210\u5BF9\u8C61\uFF0C\u66FF\u6362\u5230\u5F53\u524Dstore\u5B9E\u4F8B\u7684state</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    store<span class="token punctuation">.</span><span class="token function">replaceState</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>state<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-  store<span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">mutation<span class="token punctuation">,</span> state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-    <span class="token comment">// \u63D0\u4EA4commit\u63D0\u4EA4mutation\u4E4B\u540E\u6267\u884C\u8FD9\u91CC\uFF0C\u628Astate\u8F6C\u6362\u6210JSON\u5B57\u7B26\u4E32\u50A8\u5B58\u5230localStorage\u7684state\u4E2D</span>
-    localStorage<span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre></div><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  state<span class="token punctuation">,</span>
-  getters<span class="token punctuation">,</span>
-  mutations<span class="token punctuation">,</span>
-  actions<span class="token punctuation">,</span>
-  modules<span class="token operator">:</span> <span class="token punctuation">{</span>
-    user<span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>saveiInLocal<span class="token punctuation">]</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre></div><!--]-->`);
-}
-_sfc_main$I.ssrRender = _sfc_ssrRender$u;
-const _sfc_setup$I = _sfc_main$I.setup;
-_sfc_main$I.setup = (props, ctx) => {
-  const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vuex/plugin.html.vue");
-  return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
-};
-var plugin_html$1 = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$I
+  "default": sourceCode_html$2
 });
 var _imports_0$2 = "/assets/vuex.804b3f17.png";
-const _sfc_main$H = {};
-function _sfc_ssrRender$t(_ctx, _push, _parent, _attrs) {
+const _sfc_main$S = {};
+function _sfc_ssrRender$E(_ctx, _push, _parent, _attrs) {
   const _component_RouterLink = vue.resolveComponent("RouterLink");
-  const _component_OutboundLink = vue.resolveComponent("OutboundLink");
   _push(`<!--[--><h1 id="vuex-\u7B14\u8BB0" tabindex="-1"><a class="header-anchor" href="#vuex-\u7B14\u8BB0" aria-hidden="true">#</a> vuex \u7B14\u8BB0</h1><blockquote><p>Flux \u67B6\u6784\u5C31\u50CF\u773C\u955C\uFF1A\u60A8\u81EA\u4F1A\u77E5\u9053\u4EC0\u4E48\u65F6\u5019\u9700\u8981\u5B83\u3002 \u2014\u2014 Redux \u7684\u4F5C\u8005 Dan Abramov</p></blockquote><nav class="table-of-contents"><ul><li>`);
   _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#vuex-\u5173\u7CFB\u56FE" }, {
     default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
@@ -10420,59 +10911,7 @@ function _sfc_ssrRender$t(_ctx, _push, _parent, _attrs) {
     }),
     _: 1
   }, _parent));
-  _push(`</li></ul></li><li>`);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#vuex-\u6709\u5173\u7684\u95EE\u9898" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`vuex \u6709\u5173\u7684\u95EE\u9898`);
-      } else {
-        return [
-          vue.createTextVNode("vuex \u6709\u5173\u7684\u95EE\u9898")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`<ul><li>`);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#_1-vuex-\u4E2D\u4E3A\u4EC0\u4E48\u628A\u628A\u5F02\u6B65\u64CD\u4F5C\u5C01\u88C5\u5728-action-\u628A\u540C\u6B65\u64CD\u4F5C\u653E\u5728-mutations" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`1. vuex \u4E2D\u4E3A\u4EC0\u4E48\u628A\u628A\u5F02\u6B65\u64CD\u4F5C\u5C01\u88C5\u5728 action\uFF0C\u628A\u540C\u6B65\u64CD\u4F5C\u653E\u5728 mutations\uFF1F`);
-      } else {
-        return [
-          vue.createTextVNode("1. vuex \u4E2D\u4E3A\u4EC0\u4E48\u628A\u628A\u5F02\u6B65\u64CD\u4F5C\u5C01\u88C5\u5728 action\uFF0C\u628A\u540C\u6B65\u64CD\u4F5C\u653E\u5728 mutations\uFF1F")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</li><li>`);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#_2-state-\u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957-\u5982\u4F55\u5B9E\u73B0\u7684" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`2. state \u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957\uFF0C\u5982\u4F55\u5B9E\u73B0\u7684\uFF1F`);
-      } else {
-        return [
-          vue.createTextVNode("2. state \u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957\uFF0C\u5982\u4F55\u5B9E\u73B0\u7684\uFF1F")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</li></ul></li><li>`);
-  _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#defineproperty-\u4F55\u65F6\u6267\u884C" }, {
-    default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`defineProperty \u4F55\u65F6\u6267\u884C`);
-      } else {
-        return [
-          vue.createTextVNode("defineProperty \u4F55\u65F6\u6267\u884C")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</li></ul></nav><h2 id="vuex-\u5173\u7CFB\u56FE" tabindex="-1"><a class="header-anchor" href="#vuex-\u5173\u7CFB\u56FE" aria-hidden="true">#</a> vuex \u5173\u7CFB\u56FE</h2><p><img${serverRenderer.ssrRenderAttr("src", _imports_0$2)} alt="vuex"></p><h2 id="\u793A\u4F8B" tabindex="-1"><a class="header-anchor" href="#\u793A\u4F8B" aria-hidden="true">#</a> \u793A\u4F8B</h2><p><code>/app.js</code></p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vue&#39;</span><span class="token punctuation">;</span>
+  _push(`</li></ul></li></ul></nav><h2 id="vuex-\u5173\u7CFB\u56FE" tabindex="-1"><a class="header-anchor" href="#vuex-\u5173\u7CFB\u56FE" aria-hidden="true">#</a> vuex \u5173\u7CFB\u56FE</h2><p><img${serverRenderer.ssrRenderAttr("src", _imports_0$2)} alt="vuex"></p><h2 id="\u793A\u4F8B" tabindex="-1"><a class="header-anchor" href="#\u793A\u4F8B" aria-hidden="true">#</a> \u793A\u4F8B</h2><p><code>/app.js</code></p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vue&#39;</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">&#39;./components/App.vue&#39;</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">&#39;./store&#39;</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> currency <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;./currency&#39;</span><span class="token punctuation">;</span>
@@ -10601,9 +11040,162 @@ computed<span class="token operator">:</span> <span class="token punctuation">{<
 computed<span class="token operator">:</span> <span class="token punctuation">{</span>
   <span class="token operator">...</span><span class="token function">mapModel</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&#39;message&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;age&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;username&#39;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
-</code></pre></div><p>\u4F9D\u7136\u6BD4\u8F83\u7E41\u7410\u3002\u5176\u5B9E\u5728 github vuex \u7684 Issues \u4E2D\u6709\u597D\u51E0\u4E2A\u7C7B\u4F3C\u7684\u95EE\u9898\uFF0C\u4F46\u89E3\u51B3\u65B9\u6848\u4F9D\u7136\u662F\u8FD9\u4E2A\u3002\u6700\u7B80\u5355\u7684\u529E\u6CD5\u5C31\u662F\u5C06 vuex \u8BBE\u7F6E\u6210\u975E\u4E25\u683C\u6A21\u5F0F\uFF0C\u76F4\u63A5\u4FEE\u6539 store \u7684\u503C\uFF0C\u5982\u679C\u8FD9\u6837\u4F7F\u7528\uFF0C\u53EF\u80FD\u4E0D\u7B26\u5408 vuex \u7684\u4E00\u4E9B\u8BBE\u8BA1\u539F\u5219\u3002</p><h2 id="vuex-\u6709\u5173\u7684\u95EE\u9898" tabindex="-1"><a class="header-anchor" href="#vuex-\u6709\u5173\u7684\u95EE\u9898" aria-hidden="true">#</a> vuex \u6709\u5173\u7684\u95EE\u9898</h2><h3 id="_1-vuex-\u4E2D\u4E3A\u4EC0\u4E48\u628A\u628A\u5F02\u6B65\u64CD\u4F5C\u5C01\u88C5\u5728-action-\u628A\u540C\u6B65\u64CD\u4F5C\u653E\u5728-mutations" tabindex="-1"><a class="header-anchor" href="#_1-vuex-\u4E2D\u4E3A\u4EC0\u4E48\u628A\u628A\u5F02\u6B65\u64CD\u4F5C\u5C01\u88C5\u5728-action-\u628A\u540C\u6B65\u64CD\u4F5C\u653E\u5728-mutations" aria-hidden="true">#</a> 1. <a href="https://www.zhihu.com/question/48759748?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=689440301193916416&amp;utm_content=group3_supplementQuestions&amp;utm_campaign=shareopn" target="_blank" rel="noopener noreferrer">vuex \u4E2D\u4E3A\u4EC0\u4E48\u628A\u628A\u5F02\u6B65\u64CD\u4F5C\u5C01\u88C5\u5728 action\uFF0C\u628A\u540C\u6B65\u64CD\u4F5C\u653E\u5728 mutations\uFF1F`);
+</code></pre></div><p>\u4F9D\u7136\u6BD4\u8F83\u7E41\u7410\u3002\u5176\u5B9E\u5728 github vuex \u7684 Issues \u4E2D\u6709\u597D\u51E0\u4E2A\u7C7B\u4F3C\u7684\u95EE\u9898\uFF0C\u4F46\u89E3\u51B3\u65B9\u6848\u4F9D\u7136\u662F\u8FD9\u4E2A\u3002\u6700\u7B80\u5355\u7684\u529E\u6CD5\u5C31\u662F\u5C06 vuex \u8BBE\u7F6E\u6210\u975E\u4E25\u683C\u6A21\u5F0F\uFF0C\u76F4\u63A5\u4FEE\u6539 store \u7684\u503C\uFF0C\u5982\u679C\u8FD9\u6837\u4F7F\u7528\uFF0C\u53EF\u80FD\u4E0D\u7B26\u5408 vuex \u7684\u4E00\u4E9B\u8BBE\u8BA1\u539F\u5219\u3002</p><!--]-->`);
+}
+const _sfc_setup$S = _sfc_main$S.setup;
+_sfc_main$S.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vuex/index.html.vue");
+  return _sfc_setup$S ? _sfc_setup$S(props, ctx) : void 0;
+};
+var index_html$i = /* @__PURE__ */ _export_sfc(_sfc_main$S, [["ssrRender", _sfc_ssrRender$E]]);
+var index_html$j = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": index_html$i
+});
+const _sfc_main$R = {};
+function _sfc_ssrRender$D(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1 id="\u81EA\u5B9A\u4E49-vuex" tabindex="-1"><a class="header-anchor" href="#\u81EA\u5B9A\u4E49-vuex" aria-hidden="true">#</a> \u81EA\u5B9A\u4E49 Vuex</h1><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">createStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">useStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span> createStore<span class="token punctuation">,</span> useStore <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      count<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">add</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>count<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>createStore</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">createStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token comment">// \u4F20\u5165\u7684state\u662F\u4E2A\u65B9\u6CD5\uFF0C\u6211\u4EEC\u771F\u6B63\u9700\u8981\u7684\u662F\u8FD4\u56DE\u7684\u7ED3\u679C</span>
+    state<span class="token operator">:</span> params<span class="token punctuation">.</span><span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    mutations<span class="token operator">:</span> params<span class="token punctuation">.</span>mutations<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>state \u58F0\u660E\u6210\u54CD\u5E94\u5F0F</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">createStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token comment">// state\u58F0\u660E\u6210\u54CD\u5E94\u5F0F</span>
+    state<span class="token operator">:</span> <span class="token function">reactive</span><span class="token punctuation">(</span>params<span class="token punctuation">.</span><span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    mutations<span class="token operator">:</span> params<span class="token punctuation">.</span>mutations<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>\u589E\u52A0 install \u65B9\u6CD5\uFF0C\u5C06 store \u5B9E\u4F8B\u6CE8\u518C\u5230\u5168\u5C40</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> reactive<span class="token punctuation">,</span> provide<span class="token punctuation">,</span> inject <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
+<span class="token operator">...</span>
+<span class="token keyword">const</span> <span class="token function-variable function">createStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        state<span class="token operator">:</span> <span class="token function">reactive</span><span class="token punctuation">(</span>params<span class="token punctuation">.</span><span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        mutations<span class="token operator">:</span> params<span class="token punctuation">.</span>mutations<span class="token punctuation">,</span>
+        <span class="token function">install</span><span class="token punctuation">(</span><span class="token parameter">app</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            app<span class="token punctuation">.</span><span class="token function">provide</span><span class="token punctuation">(</span><span class="token string">&#39;STORE&#39;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>useStore</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token comment">// \u8FD4\u56DEstore\u5B9E\u4F8B</span>
+<span class="token keyword">const</span> <span class="token function-variable function">useStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">inject</span><span class="token punctuation">(</span><span class="token string">&quot;STORE&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>commit \u65B9\u6CD5</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">createStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    state<span class="token operator">:</span> <span class="token function">reactive</span><span class="token punctuation">(</span>params<span class="token punctuation">.</span><span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    mutations<span class="token operator">:</span> params<span class="token punctuation">.</span>mutations<span class="token punctuation">,</span>
+    <span class="token comment">// commit\u7528\u6765\u6267\u884Cmutations\u4E0B\u7684\u65B9\u6CD5</span>
+    <span class="token function">commit</span><span class="token punctuation">(</span><span class="token parameter">fun<span class="token punctuation">,</span> payload</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// mutations\u4E0B\u7684\u65B9\u6CD5\u63A5\u53D7state\u4F5C\u4E3A\u53C2\u6570</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>mutations<span class="token punctuation">[</span>fun<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">,</span> payload<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">install</span><span class="token punctuation">(</span><span class="token parameter">app</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      app<span class="token punctuation">.</span><span class="token function">provide</span><span class="token punctuation">(</span><span class="token string">&quot;STORE&quot;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>\u7B80\u5355\u7248\u672C\u7684 Vuex</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> reactive<span class="token punctuation">,</span> inject <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">createStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    state<span class="token operator">:</span> <span class="token function">reactive</span><span class="token punctuation">(</span>params<span class="token punctuation">.</span><span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    mutations<span class="token operator">:</span> params<span class="token punctuation">.</span>mutations<span class="token punctuation">,</span>
+    <span class="token comment">// commit\u7528\u6765\u6267\u884Cmutations\u4E0B\u7684\u65B9\u6CD5</span>
+    <span class="token function">commit</span><span class="token punctuation">(</span><span class="token parameter">fun<span class="token punctuation">,</span> payload</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// mutations\u4E0B\u7684\u65B9\u6CD5\u63A5\u53D7state\u4F5C\u4E3A\u53C2\u6570</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>mutations<span class="token punctuation">[</span>fun<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">,</span> payload<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">install</span><span class="token punctuation">(</span><span class="token parameter">app</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      app<span class="token punctuation">.</span><span class="token function">provide</span><span class="token punctuation">(</span><span class="token string">&quot;STORE&quot;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">useStore</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">inject</span><span class="token punctuation">(</span><span class="token string">&quot;STORE&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span> createStore<span class="token punctuation">,</span> useStore <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><!--]-->`);
+}
+const _sfc_setup$R = _sfc_main$R.setup;
+_sfc_main$R.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vuex/miniVuex.html.vue");
+  return _sfc_setup$R ? _sfc_setup$R(props, ctx) : void 0;
+};
+var miniVuex_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$R, [["ssrRender", _sfc_ssrRender$D]]);
+var miniVuex_html$2 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": miniVuex_html$1
+});
+const _sfc_main$Q = {};
+function _sfc_ssrRender$C(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1 id="vuex-\u63D2\u4EF6" tabindex="-1"><a class="header-anchor" href="#vuex-\u63D2\u4EF6" aria-hidden="true">#</a> vuex \u63D2\u4EF6</h1><h2 id="\u6301\u4E45\u5316\u5B58\u50A8\u63D2\u4EF6" tabindex="-1"><a class="header-anchor" href="#\u6301\u4E45\u5316\u5B58\u50A8\u63D2\u4EF6" aria-hidden="true">#</a> \u6301\u4E45\u5316\u5B58\u50A8\u63D2\u4EF6</h2><p>saveiInLocal.js</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span><span class="token parameter">store</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// \u5982\u679C\u672C\u5730\u5B58\u50A8\u4E86state\uFF0C\u5C31\u628A\u8FD9\u4E2AstateJSON\u5B57\u7B26\u4E32\u8F6C\u6362\u6210\u5BF9\u8C61\uFF0C\u66FF\u6362\u5230\u5F53\u524Dstore\u5B9E\u4F8B\u7684state</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    store<span class="token punctuation">.</span><span class="token function">replaceState</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>state<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  store<span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">mutation<span class="token punctuation">,</span> state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// \u63D0\u4EA4commit\u63D0\u4EA4mutation\u4E4B\u540E\u6267\u884C\u8FD9\u91CC\uFF0C\u628Astate\u8F6C\u6362\u6210JSON\u5B57\u7B26\u4E32\u50A8\u5B58\u5230localStorage\u7684state\u4E2D</span>
+    localStorage<span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token punctuation">,</span>
+  getters<span class="token punctuation">,</span>
+  mutations<span class="token punctuation">,</span>
+  actions<span class="token punctuation">,</span>
+  modules<span class="token operator">:</span> <span class="token punctuation">{</span>
+    user<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>saveiInLocal<span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><!--]-->`);
+}
+const _sfc_setup$Q = _sfc_main$Q.setup;
+_sfc_main$Q.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vuex/plugin.html.vue");
+  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
+};
+var plugin_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$Q, [["ssrRender", _sfc_ssrRender$C]]);
+var plugin_html$2 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": plugin_html$1
+});
+const _sfc_main$P = {};
+function _sfc_ssrRender$B(_ctx, _push, _parent, _attrs) {
+  const _component_OutboundLink = vue.resolveComponent("OutboundLink");
+  _push(`<!--[--><h1 id="vuex-\u6709\u5173\u7684\u95EE\u9898" tabindex="-1"><a class="header-anchor" href="#vuex-\u6709\u5173\u7684\u95EE\u9898" aria-hidden="true">#</a> vuex \u6709\u5173\u7684\u95EE\u9898</h1><h3 id="action-\u548C-mutations" tabindex="-1"><a class="header-anchor" href="#action-\u548C-mutations" aria-hidden="true">#</a> action \u548C mutations</h3><p><a href="https://www.zhihu.com/question/48759748?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=689440301193916416&amp;utm_content=group3_supplementQuestions&amp;utm_campaign=shareopn" target="_blank" rel="noopener noreferrer">vuex \u4E2D\u4E3A\u4EC0\u4E48\u628A\u628A\u5F02\u6B65\u64CD\u4F5C\u5C01\u88C5\u5728 action\uFF0C\u628A\u540C\u6B65\u64CD\u4F5C\u653E\u5728 mutations\uFF1F`);
   _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
-  _push(`</a></h3><blockquote><p>\u533A\u5206 actions \u548C mutations \u5E76\u4E0D\u662F\u4E3A\u4E86\u89E3\u51B3\u7ADE\u6001\u95EE\u9898\uFF0C\u800C\u662F\u4E3A\u4E86\u80FD\u7528 devtools \u8FFD\u8E2A\u72B6\u6001\u53D8\u5316\u3002\u4E8B\u5B9E\u4E0A\u5728 vuex \u91CC\u9762 actions \u53EA\u662F\u4E00\u4E2A\u67B6\u6784\u6027\u7684\u6982\u5FF5\uFF0C\u5E76\u4E0D\u662F\u5FC5\u987B\u7684\uFF0C\u8BF4\u5230\u5E95\u53EA\u662F\u4E00\u4E2A\u51FD\u6570\uFF0C\u4F60\u5728\u91CC\u9762\u60F3\u5E72\u561B\u90FD\u53EF\u4EE5\uFF0C\u53EA\u8981\u6700\u540E\u89E6\u53D1 mutation \u5C31\u884C\u3002\u5F02\u6B65\u7ADE\u6001\u600E\u4E48\u5904\u7406\u90A3\u662F\u7528\u6237\u81EA\u5DF1\u7684\u4E8B\u60C5\u3002vuex \u771F\u6B63\u9650\u5236\u4F60\u7684\u53EA\u6709 mutation \u5FC5\u987B\u662F\u540C\u6B65\u7684\u8FD9\u4E00\u70B9\uFF08\u5728 redux \u91CC\u9762\u5C31\u597D\u50CF reducer \u5FC5\u987B\u540C\u6B65\u8FD4\u56DE\u4E0B\u4E00\u4E2A\u72B6\u6001\u4E00\u6837\uFF09\u3002\u540C\u6B65\u7684\u610F\u4E49\u5728\u4E8E\u8FD9\u6837\u6BCF\u4E00\u4E2A mutation \u6267\u884C\u5B8C\u6210\u540E\u90FD\u53EF\u4EE5\u5BF9\u5E94\u5230\u4E00\u4E2A\u65B0\u7684\u72B6\u6001\uFF08\u548C reducer \u4E00\u6837\uFF09\uFF0C\u8FD9\u6837 devtools \u5C31\u53EF\u4EE5\u6253\u4E2A snapshot \u5B58\u4E0B\u6765\uFF0C\u7136\u540E\u5C31\u53EF\u4EE5\u968F\u4FBF time-travel \u4E86\u3002\u5982\u679C\u4F60\u5F00\u7740 devtool \u8C03\u7528\u4E00\u4E2A\u5F02\u6B65\u7684 action\uFF0C\u4F60\u53EF\u4EE5\u6E05\u695A\u5730\u770B\u5230\u5B83\u6240\u8C03\u7528\u7684 mutation \u662F\u4F55\u65F6\u88AB\u8BB0\u5F55\u4E0B\u6765\u7684\uFF0C\u5E76\u4E14\u53EF\u4EE5\u7ACB\u523B\u67E5\u770B\u5B83\u4EEC\u5BF9\u5E94\u7684\u72B6\u6001\u3002\u5176\u5B9E\u6211\u6709\u4E2A\u70B9\u5B50\u4E00\u76F4\u6CA1\u65F6\u95F4\u505A\uFF0C\u90A3\u5C31\u662F\u628A\u8BB0\u5F55\u4E0B\u6765\u7684 mutations \u505A\u6210\u7C7B\u4F3C rx-marble \u90A3\u6837\u7684\u65F6\u95F4\u7EBF\u56FE\uFF0C\u5BF9\u4E8E\u7406\u89E3\u5E94\u7528\u7684\u5F02\u6B65\u72B6\u6001\u53D8\u5316\u5F88\u6709\u5E2E\u52A9\u3002</p><p>\u4F5C\u8005\uFF1A\u5C24\u96E8\u6EAA \u94FE\u63A5\uFF1Ahttps://www.zhihu.com/question/48759748/answer/112823337</p></blockquote><h3 id="_2-state-\u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957-\u5982\u4F55\u5B9E\u73B0\u7684" tabindex="-1"><a class="header-anchor" href="#_2-state-\u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957-\u5982\u4F55\u5B9E\u73B0\u7684" aria-hidden="true">#</a> 2. state \u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957\uFF0C\u5982\u4F55\u5B9E\u73B0\u7684\uFF1F</h3><p>\u5728 store \u6784\u9020\u65B9\u6CD5\u4E2D\u6709 makeLocalContext \u65B9\u6CD5\uFF0C\u6240\u6709 module \u90FD\u4F1A\u6709\u4E00\u4E2A local context\uFF0C\u6839\u636E\u914D\u7F6E\u65F6\u7684 path \u8FDB\u884C\u5339\u914D\u3002\u6240\u4EE5\u6267\u884C\u5982 <code>dispatch(&#39;submitOrder&#39;, payload)</code> \u8FD9\u7C7B action \u65F6\uFF0C\u9ED8\u8BA4\u7684\u62FF\u5230\u90FD\u662F module \u7684 local state\uFF0C\u5982\u679C\u8981\u8BBF\u95EE\u6700\u5916\u5C42\u6216\u8005\u662F\u5176\u4ED6 module \u7684 state\uFF0C\u53EA\u80FD\u4ECE rootState \u6309\u7167 path \u8DEF\u5F84\u9010\u6B65\u8FDB\u884C\u8BBF\u95EE\u3002</p><blockquote><p>https://tech.meituan.com/2017/04/27/vuex-code-analysis.html</p></blockquote><h2 id="defineproperty-\u4F55\u65F6\u6267\u884C" tabindex="-1"><a class="header-anchor" href="#defineproperty-\u4F55\u65F6\u6267\u884C" aria-hidden="true">#</a> defineProperty \u4F55\u65F6\u6267\u884C</h2><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">Archiver</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  _push(`</a></p><blockquote><p>\u533A\u5206 actions \u548C mutations \u5E76\u4E0D\u662F\u4E3A\u4E86\u89E3\u51B3\u7ADE\u6001\u95EE\u9898\uFF0C\u800C\u662F\u4E3A\u4E86\u80FD\u7528 devtools \u8FFD\u8E2A\u72B6\u6001\u53D8\u5316\u3002\u4E8B\u5B9E\u4E0A\u5728 vuex \u91CC\u9762 actions \u53EA\u662F\u4E00\u4E2A\u67B6\u6784\u6027\u7684\u6982\u5FF5\uFF0C\u5E76\u4E0D\u662F\u5FC5\u987B\u7684\uFF0C\u8BF4\u5230\u5E95\u53EA\u662F\u4E00\u4E2A\u51FD\u6570\uFF0C\u4F60\u5728\u91CC\u9762\u60F3\u5E72\u561B\u90FD\u53EF\u4EE5\uFF0C\u53EA\u8981\u6700\u540E\u89E6\u53D1 mutation \u5C31\u884C\u3002\u5F02\u6B65\u7ADE\u6001\u600E\u4E48\u5904\u7406\u90A3\u662F\u7528\u6237\u81EA\u5DF1\u7684\u4E8B\u60C5\u3002vuex \u771F\u6B63\u9650\u5236\u4F60\u7684\u53EA\u6709 mutation \u5FC5\u987B\u662F\u540C\u6B65\u7684\u8FD9\u4E00\u70B9\uFF08\u5728 redux \u91CC\u9762\u5C31\u597D\u50CF reducer \u5FC5\u987B\u540C\u6B65\u8FD4\u56DE\u4E0B\u4E00\u4E2A\u72B6\u6001\u4E00\u6837\uFF09\u3002\u540C\u6B65\u7684\u610F\u4E49\u5728\u4E8E\u8FD9\u6837\u6BCF\u4E00\u4E2A mutation \u6267\u884C\u5B8C\u6210\u540E\u90FD\u53EF\u4EE5\u5BF9\u5E94\u5230\u4E00\u4E2A\u65B0\u7684\u72B6\u6001\uFF08\u548C reducer \u4E00\u6837\uFF09\uFF0C\u8FD9\u6837 devtools \u5C31\u53EF\u4EE5\u6253\u4E2A snapshot \u5B58\u4E0B\u6765\uFF0C\u7136\u540E\u5C31\u53EF\u4EE5\u968F\u4FBF time-travel \u4E86\u3002\u5982\u679C\u4F60\u5F00\u7740 devtool \u8C03\u7528\u4E00\u4E2A\u5F02\u6B65\u7684 action\uFF0C\u4F60\u53EF\u4EE5\u6E05\u695A\u5730\u770B\u5230\u5B83\u6240\u8C03\u7528\u7684 mutation \u662F\u4F55\u65F6\u88AB\u8BB0\u5F55\u4E0B\u6765\u7684\uFF0C\u5E76\u4E14\u53EF\u4EE5\u7ACB\u523B\u67E5\u770B\u5B83\u4EEC\u5BF9\u5E94\u7684\u72B6\u6001\u3002\u5176\u5B9E\u6211\u6709\u4E2A\u70B9\u5B50\u4E00\u76F4\u6CA1\u65F6\u95F4\u505A\uFF0C\u90A3\u5C31\u662F\u628A\u8BB0\u5F55\u4E0B\u6765\u7684 mutations \u505A\u6210\u7C7B\u4F3C rx-marble \u90A3\u6837\u7684\u65F6\u95F4\u7EBF\u56FE\uFF0C\u5BF9\u4E8E\u7406\u89E3\u5E94\u7528\u7684\u5F02\u6B65\u72B6\u6001\u53D8\u5316\u5F88\u6709\u5E2E\u52A9\u3002</p><p>\u4F5C\u8005\uFF1A\u5C24\u96E8\u6EAA \u94FE\u63A5\uFF1Ahttps://www.zhihu.com/question/48759748/answer/112823337</p></blockquote><h3 id="state-\u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957-\u5982\u4F55\u5B9E\u73B0\u7684" tabindex="-1"><a class="header-anchor" href="#state-\u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957-\u5982\u4F55\u5B9E\u73B0\u7684" aria-hidden="true">#</a> state \u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957\uFF0C\u5982\u4F55\u5B9E\u73B0\u7684\uFF1F</h3><p>\u5728 store \u6784\u9020\u65B9\u6CD5\u4E2D\u6709 makeLocalContext \u65B9\u6CD5\uFF0C\u6240\u6709 module \u90FD\u4F1A\u6709\u4E00\u4E2A local context\uFF0C\u6839\u636E\u914D\u7F6E\u65F6\u7684 path \u8FDB\u884C\u5339\u914D\u3002\u6240\u4EE5\u6267\u884C\u5982 <code>dispatch(&#39;submitOrder&#39;, payload)</code> \u8FD9\u7C7B action \u65F6\uFF0C\u9ED8\u8BA4\u7684\u62FF\u5230\u90FD\u662F module \u7684 local state\uFF0C\u5982\u679C\u8981\u8BBF\u95EE\u6700\u5916\u5C42\u6216\u8005\u662F\u5176\u4ED6 module \u7684 state\uFF0C\u53EA\u80FD\u4ECE rootState \u6309\u7167 path \u8DEF\u5F84\u9010\u6B65\u8FDB\u884C\u8BBF\u95EE\u3002</p><blockquote><p>https://tech.meituan.com/2017/04/27/vuex-code-analysis.html</p></blockquote><h3 id="defineproperty-\u4F55\u65F6\u6267\u884C" tabindex="-1"><a class="header-anchor" href="#defineproperty-\u4F55\u65F6\u6267\u884C" aria-hidden="true">#</a> defineProperty \u4F55\u65F6\u6267\u884C</h3><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">Archiver</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">var</span> temperature <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
   <span class="token keyword">var</span> archive <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 
@@ -10638,22 +11230,51 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token comment">// set2</span>
 <span class="token comment">// set1</span>
 <span class="token comment">// set3</span>
-</code></pre></div><p>vuex \u4F7F\u7528 <code>this._committing</code> \u6765\u5224\u65AD\u662F\u5426\u662F\u7531 <code>_withCommit</code> \u89E6\u53D1\u7684</p><!--]-->`);
+</code></pre></div><p>vuex \u4F7F\u7528 <code>this._committing</code> \u6765\u5224\u65AD\u662F\u5426\u662F\u7531 <code>_withCommit</code> \u89E6\u53D1\u7684</p><h3 id="\u4E3A\u4EC0\u4E48-vuex-store-\u4E2D\u7684\u503C\u9700\u8981\u653E\u5230-computed-\u4E2D" tabindex="-1"><a class="header-anchor" href="#\u4E3A\u4EC0\u4E48-vuex-store-\u4E2D\u7684\u503C\u9700\u8981\u653E\u5230-computed-\u4E2D" aria-hidden="true">#</a> \u4E3A\u4EC0\u4E48 vuex store \u4E2D\u7684\u503C\u9700\u8981\u653E\u5230 computed \u4E2D</h3><div class="language-vue ext-vue"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    Clicked: {{ count }} times, count is {{ evenOrOdd }}.
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>increment<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>decrement<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>incrementIfOdd<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Increment if odd<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>incrementAsync<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Increment async<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> computed <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vue&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vuex&#39;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      count<span class="token operator">:</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>count<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      evenOrOdd<span class="token operator">:</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span>getters<span class="token punctuation">.</span>evenOrOdd<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">increment</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&#39;increment&#39;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">decrement</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&#39;decrement&#39;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">incrementIfOdd</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&#39;incrementIfOdd&#39;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">incrementAsync</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&#39;incrementAsync&#39;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>\u5982\u679C\u5C06 <code>computed(() =&gt; store.state.count)</code> \u76F4\u63A5\u5199\u6210 <code>store.state.count</code>\uFF0C\u70B9\u51FB\u9875\u9762\u65F6\u9875\u9762\u4E0D\u4F1A\u6709\u53D8\u5316\u3002</p><!--]-->`);
 }
-_sfc_main$H.ssrRender = _sfc_ssrRender$t;
-const _sfc_setup$H = _sfc_main$H.setup;
-_sfc_main$H.setup = (props, ctx) => {
+const _sfc_setup$P = _sfc_main$P.setup;
+_sfc_main$P.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vuex/index.html.vue");
-  return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vuex/q&a.html.vue");
+  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
 };
-var index_html$c = /* @__PURE__ */ Object.freeze({
+var q_a_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$P, [["ssrRender", _sfc_ssrRender$B]]);
+var q_a_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$H
+  "default": q_a_html$1
 });
-const _sfc_main$G = {};
-function _sfc_ssrRender$s(_ctx, _push, _parent, _attrs) {
+const _sfc_main$O = {};
+function _sfc_ssrRender$A(_ctx, _push, _parent, _attrs) {
   const _component_OutboundLink = vue.resolveComponent("OutboundLink");
   _push(`<!--[--><h1 id="vuex3-\u6E90\u7801" tabindex="-1"><a class="header-anchor" href="#vuex3-\u6E90\u7801" aria-hidden="true">#</a> vuex3 \u6E90\u7801</h1><p>Vuex \u4F7F\u7528\u6CE8\u5165\u4EE3\u7801\u7684\u65B9\u5F0F\uFF0C\u8C03\u7528\u4E86 applyMixin \u65B9\u6CD5\uFF0Cvuex3 \u8C03\u7528\u7684\u662F Vue.mixin\uFF0C\u5728\u6240\u6709\u7EC4\u4EF6\u7684 beforeCreate \u751F\u547D\u5468\u671F\u6CE8\u5165\u4E86\u8BBE\u7F6E this.$store \u8FD9\u6837\u4E00\u4E2A\u5BF9\u8C61\u3002</p><h2 id="vue-mixin" tabindex="-1"><a class="header-anchor" href="#vue-mixin" aria-hidden="true">#</a> Vue.mixin</h2><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token comment">// src/store.js</span>
 <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">install</span><span class="token punctuation">(</span><span class="token parameter">_Vue</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -10993,22 +11614,22 @@ function _sfc_ssrRender$s(_ctx, _push, _parent, _attrs) {
   _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
   _push(`</a></li></ul><!--]-->`);
 }
-_sfc_main$G.ssrRender = _sfc_ssrRender$s;
-const _sfc_setup$G = _sfc_main$G.setup;
-_sfc_main$G.setup = (props, ctx) => {
+const _sfc_setup$O = _sfc_main$O.setup;
+_sfc_main$O.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vuex/sourceCode_v3.html.vue");
-  return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
+  return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
 };
-var sourceCode_v3_html$1 = /* @__PURE__ */ Object.freeze({
+var sourceCode_v3_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["ssrRender", _sfc_ssrRender$A]]);
+var sourceCode_v3_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$G
+  "default": sourceCode_v3_html$1
 });
 var _imports_0$1 = "/assets/moduleCollection.f54da120.png";
 var _imports_1 = "/assets/components_provide.89199c09.png";
-const _sfc_main$F = {};
-function _sfc_ssrRender$r(_ctx, _push, _parent, _attrs) {
+const _sfc_main$N = {};
+function _sfc_ssrRender$z(_ctx, _push, _parent, _attrs) {
   const _component_RouterLink = vue.resolveComponent("RouterLink");
   const _component_OutboundLink = vue.resolveComponent("OutboundLink");
   _push(`<!--[--><h1 id="vuex4-\u6E90\u7801\u89E3\u8BFB" tabindex="-1"><a class="header-anchor" href="#vuex4-\u6E90\u7801\u89E3\u8BFB" aria-hidden="true">#</a> vuex4 \u6E90\u7801\u89E3\u8BFB</h1><nav class="table-of-contents"><ul><li>`);
@@ -11945,20 +12566,20 @@ function _sfc_ssrRender$r(_ctx, _push, _parent, _attrs) {
   _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
   _push(`</a></li></ul><!--]-->`);
 }
-_sfc_main$F.ssrRender = _sfc_ssrRender$r;
-const _sfc_setup$F = _sfc_main$F.setup;
-_sfc_main$F.setup = (props, ctx) => {
+const _sfc_setup$N = _sfc_main$N.setup;
+_sfc_main$N.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vuex/sourceCode_v4.html.vue");
-  return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
+  return _sfc_setup$N ? _sfc_setup$N(props, ctx) : void 0;
 };
-var sourceCode_v4_html$1 = /* @__PURE__ */ Object.freeze({
+var sourceCode_v4_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$N, [["ssrRender", _sfc_ssrRender$z]]);
+var sourceCode_v4_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$F
+  "default": sourceCode_v4_html$1
 });
-const _sfc_main$E = {};
-function _sfc_ssrRender$q(_ctx, _push, _parent, _attrs) {
+const _sfc_main$M = {};
+function _sfc_ssrRender$y(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="vuex-v4-0-2" tabindex="-1"><a class="header-anchor" href="#vuex-v4-0-2" aria-hidden="true">#</a> vuex v4.0.2</h1><p><code>vuex.esm-browser.js</code>\uFF0C\u4EE5\u4E0B\u4EE3\u7801\u6CA1\u6709\u7ECF\u8FC7\u7F16\u8BD1\u3002</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token comment">/*!
  * vuex v4.0.2
  * (c) 2021 Evan You
@@ -13488,20 +14109,20 @@ function _sfc_ssrRender$q(_ctx, _push, _parent, _attrs) {
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$E.ssrRender = _sfc_ssrRender$q;
-const _sfc_setup$E = _sfc_main$E.setup;
-_sfc_main$E.setup = (props, ctx) => {
+const _sfc_setup$M = _sfc_main$M.setup;
+_sfc_main$M.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vuex/vuexCode.html.vue");
-  return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
+  return _sfc_setup$M ? _sfc_setup$M(props, ctx) : void 0;
 };
-var vuexCode_html$1 = /* @__PURE__ */ Object.freeze({
+var vuexCode_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$M, [["ssrRender", _sfc_ssrRender$y]]);
+var vuexCode_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$E
+  "default": vuexCode_html$1
 });
-const _sfc_main$D = {};
-function _sfc_ssrRender$p(_ctx, _push, _parent, _attrs) {
+const _sfc_main$L = {};
+function _sfc_ssrRender$x(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="use-attrs" tabindex="-1"><a class="header-anchor" href="#use-attrs" aria-hidden="true">#</a> use-attrs</h1><h2 id="attrs-\u4E0E-attrs" tabindex="-1"><a class="header-anchor" href="#attrs-\u4E0E-attrs" aria-hidden="true">#</a> $attrs \u4E0E attrs</h2><div class="language-html ext-html"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
   <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[
      ...
@@ -13551,109 +14172,547 @@ function _sfc_ssrRender$p(_ctx, _push, _parent, _attrs) {
 <span class="token punctuation">}</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$D.ssrRender = _sfc_ssrRender$p;
-const _sfc_setup$D = _sfc_main$D.setup;
-_sfc_main$D.setup = (props, ctx) => {
+const _sfc_setup$L = _sfc_main$L.setup;
+_sfc_main$L.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/hooks/use-attrs.html.vue");
-  return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
+  return _sfc_setup$L ? _sfc_setup$L(props, ctx) : void 0;
 };
-var useAttrs_html$1 = /* @__PURE__ */ Object.freeze({
+var useAttrs_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$L, [["ssrRender", _sfc_ssrRender$x]]);
+var useAttrs_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$D
+  "default": useAttrs_html$1
 });
-const _sfc_main$C = {};
-function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs) {
-  const _component_OutboundLink = vue.resolveComponent("OutboundLink");
-  _push(`<!--[--><h1 id="setup" tabindex="-1"><a class="header-anchor" href="#setup" aria-hidden="true">#</a> Setup</h1><h2 id="\u521B\u5EFA\u548C\u8BBE\u7F6E\u7EC4\u4EF6\u5B9E\u4F8B" tabindex="-1"><a class="header-anchor" href="#\u521B\u5EFA\u548C\u8BBE\u7F6E\u7EC4\u4EF6\u5B9E\u4F8B" aria-hidden="true">#</a> \u521B\u5EFA\u548C\u8BBE\u7F6E\u7EC4\u4EF6\u5B9E\u4F8B</h2><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">mountComponent</span> <span class="token operator">=</span> <span class="token punctuation">(</span>
-  <span class="token parameter">initialVNode<span class="token punctuation">,</span>
-  container<span class="token punctuation">,</span>
-  anchor<span class="token punctuation">,</span>
-  parentComponent<span class="token punctuation">,</span>
-  parentSuspense<span class="token punctuation">,</span>
-  isSVG<span class="token punctuation">,</span>
-  optimized</span>
+const _sfc_main$K = {};
+function _sfc_ssrRender$w(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1 id="usenamespace" tabindex="-1"><a class="header-anchor" href="#usenamespace" aria-hidden="true">#</a> useNamespace</h1><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">export</span> <span class="token keyword">const</span> defaultNamespace <span class="token operator">=</span> <span class="token string">&#39;el&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> statePrefix <span class="token operator">=</span> <span class="token string">&#39;is-&#39;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">_bem</span> <span class="token operator">=</span> <span class="token punctuation">(</span>
+  namespace<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+  block<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+  blockSuffix<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+  element<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+  modifier<span class="token operator">:</span> <span class="token builtin">string</span>
 <span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-  <span class="token comment">// \u521B\u5EFA\u7EC4\u4EF6\u5B9E\u4F8B</span>
-  <span class="token keyword">const</span> instance <span class="token operator">=</span> <span class="token punctuation">(</span>initialVNode<span class="token punctuation">.</span>component <span class="token operator">=</span> <span class="token function">createComponentInstance</span><span class="token punctuation">(</span>
-    initialVNode<span class="token punctuation">,</span>
-    parentComponent<span class="token punctuation">,</span>
-    parentSuspense
-  <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token comment">// \u8BBE\u7F6E\u7EC4\u4EF6\u5B9E\u4F8B</span>
-  <span class="token function">setupComponent</span><span class="token punctuation">(</span>instance<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token comment">// \u8BBE\u7F6E\u5E76\u8FD0\u884C\u5E26\u526F\u4F5C\u7528\u7684\u6E32\u67D3\u51FD\u6570</span>
-  <span class="token function">setupRenderEffect</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> initialVNode<span class="token punctuation">,</span> container<span class="token punctuation">,</span> anchor<span class="token punctuation">,</span> parentSuspense<span class="token punctuation">,</span> isSVG<span class="token punctuation">,</span> optimized<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> cls <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">\`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span><span class="token keyword">namespace</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>block<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>blockSuffix<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    cls <span class="token operator">+=</span> <span class="token template-string"><span class="token template-punctuation string">\`</span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>blockSuffix<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>element<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    cls <span class="token operator">+=</span> <span class="token template-string"><span class="token template-punctuation string">\`</span><span class="token string">__</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>element<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>modifier<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    cls <span class="token operator">+=</span> <span class="token template-string"><span class="token template-punctuation string">\`</span><span class="token string">--</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>modifier<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> cls<span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre></div><h2 id="\u7EC4\u4EF6\u5B9E\u4F8B\u7684\u8BBE\u7F6E\u6D41\u7A0B" tabindex="-1"><a class="header-anchor" href="#\u7EC4\u4EF6\u5B9E\u4F8B\u7684\u8BBE\u7F6E\u6D41\u7A0B" aria-hidden="true">#</a> \u7EC4\u4EF6\u5B9E\u4F8B\u7684\u8BBE\u7F6E\u6D41\u7A0B</h2><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">setupComponent</span><span class="token punctuation">(</span><span class="token parameter">instance<span class="token punctuation">,</span> isSSR <span class="token operator">=</span> <span class="token boolean">false</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">{</span> props<span class="token punctuation">,</span> children<span class="token punctuation">,</span> shapeFlag <span class="token punctuation">}</span> <span class="token operator">=</span> instance<span class="token punctuation">.</span>vnode<span class="token punctuation">;</span>
-  <span class="token comment">// \u5224\u65AD\u662F\u5426\u662F\u4E00\u4E2A\u6709\u72B6\u6001\u7684\u7EC4\u4EF6</span>
-  <span class="token keyword">const</span> isStateful <span class="token operator">=</span> shapeFlag <span class="token operator">&amp;</span> <span class="token number">4</span><span class="token punctuation">;</span>
-  <span class="token comment">// \u521D\u59CB\u5316 props</span>
-  <span class="token function">initProps</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> props<span class="token punctuation">,</span> isStateful<span class="token punctuation">,</span> isSSR<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token comment">// \u521D\u59CB\u5316 \u63D2\u69FD</span>
-  <span class="token function">initSlots</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> children<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token comment">// \u8BBE\u7F6E\u6709\u72B6\u6001\u7684\u7EC4\u4EF6\u5B9E\u4F8B</span>
-  <span class="token keyword">const</span> setupResult <span class="token operator">=</span> isStateful <span class="token operator">?</span> <span class="token function">setupStatefulComponent</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> isSSR<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> setupResult<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre></div><p>\u6211\u4EEC\u4ECE\u7EC4\u4EF6 vnode \u4E2D\u83B7\u53D6\u4E86 props\u3001children\u3001shapeFlag \u7B49\u5C5E\u6027\uFF0C\u7136\u540E\u5206\u522B\u5BF9 props \u548C\u63D2\u69FD\u8FDB\u884C\u521D\u59CB\u5316\u3002</p><h2 id="setupstatefulcomponent" tabindex="-1"><a class="header-anchor" href="#setupstatefulcomponent" aria-hidden="true">#</a> setupStatefulComponent</h2><p>\u5B83\u4E3B\u8981\u505A\u4E86\u4E09\u4EF6\u4E8B\uFF1A\u521B\u5EFA\u6E32\u67D3\u4E0A\u4E0B\u6587\u4EE3\u7406\u3001\u5224\u65AD\u5904\u7406 setup \u51FD\u6570\u548C\u5B8C\u6210\u7EC4\u4EF6\u5B9E\u4F8B\u8BBE\u7F6E\u3002</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">setupStatefulComponent</span><span class="token punctuation">(</span><span class="token parameter">instance<span class="token punctuation">,</span> isSSR</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> Component <span class="token operator">=</span> instance<span class="token punctuation">.</span>type<span class="token punctuation">;</span>
-  <span class="token comment">// \u521B\u5EFA\u6E32\u67D3\u4EE3\u7406\u7684\u5C5E\u6027\u8BBF\u95EE\u7F13\u5B58</span>
-  instance<span class="token punctuation">.</span>accessCache <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token comment">// \u521B\u5EFA\u6E32\u67D3\u4E0A\u4E0B\u6587\u4EE3\u7406</span>
-  instance<span class="token punctuation">.</span>proxy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Proxy</span><span class="token punctuation">(</span>instance<span class="token punctuation">.</span>ctx<span class="token punctuation">,</span> PublicInstanceProxyHandlers<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token comment">// \u5224\u65AD\u5904\u7406 setup \u51FD\u6570</span>
-  <span class="token keyword">const</span> <span class="token punctuation">{</span> setup <span class="token punctuation">}</span> <span class="token operator">=</span> Component<span class="token punctuation">;</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>setup<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment">// \u5982\u679C setup \u51FD\u6570\u5E26\u53C2\u6570\uFF0C\u5219\u521B\u5EFA\u4E00\u4E2A setupContext</span>
-    <span class="token keyword">const</span> setupContext <span class="token operator">=</span> <span class="token punctuation">(</span>instance<span class="token punctuation">.</span>setupContext <span class="token operator">=</span>
-      setup<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">1</span> <span class="token operator">?</span> <span class="token function">createSetupContext</span><span class="token punctuation">(</span>instance<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token comment">// \u6267\u884C setup \u51FD\u6570\uFF0C\u83B7\u53D6\u7ED3\u679C</span>
-    <span class="token keyword">const</span> setupResult <span class="token operator">=</span> <span class="token function">callWithErrorHandling</span><span class="token punctuation">(</span>setup<span class="token punctuation">,</span> instance<span class="token punctuation">,</span> <span class="token number">0</span> <span class="token comment">/* SETUP_FUNCTION */</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
-      instance<span class="token punctuation">.</span>props<span class="token punctuation">,</span>
-      setupContext<span class="token punctuation">,</span>
-    <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token comment">// \u5904\u7406 setup \u6267\u884C\u7ED3\u679C</span>
-    <span class="token function">handleSetupResult</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> setupResult<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">useNamespace</span> <span class="token operator">=</span> <span class="token punctuation">(</span>block<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> namespace <span class="token operator">=</span> <span class="token function">useGlobalConfig</span><span class="token punctuation">(</span><span class="token string">&#39;namespace&#39;</span><span class="token punctuation">,</span> defaultNamespace<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> b <span class="token operator">=</span> <span class="token punctuation">(</span>blockSuffix <span class="token operator">=</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+    <span class="token function">_bem</span><span class="token punctuation">(</span>namespace<span class="token punctuation">.</span>value<span class="token punctuation">,</span> block<span class="token punctuation">,</span> blockSuffix<span class="token punctuation">,</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">e</span> <span class="token operator">=</span> <span class="token punctuation">(</span>element<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+    element <span class="token operator">?</span> <span class="token function">_bem</span><span class="token punctuation">(</span>namespace<span class="token punctuation">.</span>value<span class="token punctuation">,</span> block<span class="token punctuation">,</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">,</span> element<span class="token punctuation">,</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">m</span> <span class="token operator">=</span> <span class="token punctuation">(</span>modifier<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+    modifier <span class="token operator">?</span> <span class="token function">_bem</span><span class="token punctuation">(</span>namespace<span class="token punctuation">.</span>value<span class="token punctuation">,</span> block<span class="token punctuation">,</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">,</span> modifier<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">be</span> <span class="token operator">=</span> <span class="token punctuation">(</span>blockSuffix<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> element<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+    blockSuffix <span class="token operator">&amp;&amp;</span> element
+      <span class="token operator">?</span> <span class="token function">_bem</span><span class="token punctuation">(</span>namespace<span class="token punctuation">.</span>value<span class="token punctuation">,</span> block<span class="token punctuation">,</span> blockSuffix<span class="token punctuation">,</span> element<span class="token punctuation">,</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">)</span>
+      <span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">em</span> <span class="token operator">=</span> <span class="token punctuation">(</span>element<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> modifier<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+    element <span class="token operator">&amp;&amp;</span> modifier
+      <span class="token operator">?</span> <span class="token function">_bem</span><span class="token punctuation">(</span>namespace<span class="token punctuation">.</span>value<span class="token punctuation">,</span> block<span class="token punctuation">,</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">,</span> element<span class="token punctuation">,</span> modifier<span class="token punctuation">)</span>
+      <span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">bm</span> <span class="token operator">=</span> <span class="token punctuation">(</span>blockSuffix<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> modifier<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+    blockSuffix <span class="token operator">&amp;&amp;</span> modifier
+      <span class="token operator">?</span> <span class="token function">_bem</span><span class="token punctuation">(</span>namespace<span class="token punctuation">.</span>value<span class="token punctuation">,</span> block<span class="token punctuation">,</span> blockSuffix<span class="token punctuation">,</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">,</span> modifier<span class="token punctuation">)</span>
+      <span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">bem</span> <span class="token operator">=</span> <span class="token punctuation">(</span>blockSuffix<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> element<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> modifier<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+    blockSuffix <span class="token operator">&amp;&amp;</span> element <span class="token operator">&amp;&amp;</span> modifier
+      <span class="token operator">?</span> <span class="token function">_bem</span><span class="token punctuation">(</span>namespace<span class="token punctuation">.</span>value<span class="token punctuation">,</span> block<span class="token punctuation">,</span> blockSuffix<span class="token punctuation">,</span> element<span class="token punctuation">,</span> modifier<span class="token punctuation">)</span>
+      <span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token keyword">is</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">(</span>name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> state<span class="token operator">:</span> <span class="token builtin">boolean</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    <span class="token punctuation">(</span>name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token punctuation">(</span>name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token operator">...</span>args<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token builtin">boolean</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">]</span> <span class="token operator">|</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> state <span class="token operator">=</span> args<span class="token punctuation">.</span>length <span class="token operator">&gt;=</span> <span class="token number">1</span> <span class="token operator">?</span> args<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">!</span> <span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> name <span class="token operator">&amp;&amp;</span> state <span class="token operator">?</span> <span class="token template-string"><span class="token template-punctuation string">\`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>statePrefix<span class="token interpolation-punctuation punctuation">}</span></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">\`</span></span> <span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// for css var</span>
+  <span class="token comment">// --el-xxx: value;</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">cssVar</span> <span class="token operator">=</span> <span class="token punctuation">(</span>object<span class="token operator">:</span> Record<span class="token operator">&lt;</span><span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token builtin">string</span><span class="token operator">&gt;</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> styles<span class="token operator">:</span> Record<span class="token operator">&lt;</span><span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token builtin">string</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> key <span class="token keyword">in</span> object<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>object<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        styles<span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">\`</span><span class="token string">--</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>namespace<span class="token punctuation">.</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">]</span> <span class="token operator">=</span> object<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> styles<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// with block</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">cssVarBlock</span> <span class="token operator">=</span> <span class="token punctuation">(</span>object<span class="token operator">:</span> Record<span class="token operator">&lt;</span><span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token builtin">string</span><span class="token operator">&gt;</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> styles<span class="token operator">:</span> Record<span class="token operator">&lt;</span><span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token builtin">string</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> key <span class="token keyword">in</span> object<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>object<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        styles<span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">\`</span><span class="token string">--</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>namespace<span class="token punctuation">.</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>block<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">]</span> <span class="token operator">=</span> object<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> styles<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">cssVarName</span> <span class="token operator">=</span> <span class="token punctuation">(</span>name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token template-string"><span class="token template-punctuation string">\`</span><span class="token string">--</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>namespace<span class="token punctuation">.</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">cssVarBlockName</span> <span class="token operator">=</span> <span class="token punctuation">(</span>name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+    <span class="token template-string"><span class="token template-punctuation string">\`</span><span class="token string">--</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>namespace<span class="token punctuation">.</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>block<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">\${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    namespace<span class="token punctuation">,</span>
+    b<span class="token punctuation">,</span>
+    e<span class="token punctuation">,</span>
+    m<span class="token punctuation">,</span>
+    be<span class="token punctuation">,</span>
+    em<span class="token punctuation">,</span>
+    bm<span class="token punctuation">,</span>
+    bem<span class="token punctuation">,</span>
+    <span class="token keyword">is</span><span class="token punctuation">,</span>
+    <span class="token comment">// css</span>
+    cssVar<span class="token punctuation">,</span>
+    cssVarName<span class="token punctuation">,</span>
+    cssVarBlock<span class="token punctuation">,</span>
+    cssVarBlockName<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>bem \u683C\u5F0F\uFF1A <code>namespace-block-blockSuffix__element--modifier</code>\uFF0C<code>el-form-item__button--hover</code></p><ul><li>namespace: el</li><li>block: form</li><li>blockSuffix: item</li><li>button: element</li><li>modifier: hover</li></ul><p>namespace \u8FD4\u56DE\u7684\u65B9\u6CD5</p><ul><li>namespace: el,\u53EF\u81EA\u5B9A\u4E49</li><li>b: <code>namespace-block-blockSuffix</code> \u6216 <code>namespace-block</code></li><li>e: <code>namespace-block__element</code>,</li><li>m: <code>namespace-block--modifier</code>,</li><li>be\uFF1A <code>namespace-block-blockSuffix__element</code>,</li><li>em\uFF1A<code>namespace-block__element--modifier</code>,</li><li>bm\uFF1A<code>namespace-block-blockSuffix--modifier</code>,</li><li>bem: <code>namespace-block-blockSuffix__element--modifier</code>,</li><li>is: <code>is-link</code>,</li><li>cssVar,</li><li>cssVarName,</li><li>cssVarBlock,</li><li>cssVarBlockName,</li></ul><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">const</span> globalConfig <span class="token operator">=</span> <span class="token generic-function"><span class="token function">ref</span><span class="token generic class-name"><span class="token operator">&lt;</span>ConfigProviderContext<span class="token operator">&gt;</span></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token generic-function"><span class="token function">useGlobalConfig</span><span class="token generic class-name"><span class="token operator">&lt;</span>
+  <span class="token constant">K</span> <span class="token keyword">extends</span> <span class="token keyword">keyof</span> ConfigProviderContext<span class="token punctuation">,</span>
+  <span class="token constant">D</span> <span class="token keyword">extends</span> ConfigProviderContext<span class="token punctuation">[</span><span class="token constant">K</span><span class="token punctuation">]</span>
+<span class="token operator">&gt;</span></span></span><span class="token punctuation">(</span>
+  key<span class="token operator">:</span> <span class="token constant">K</span><span class="token punctuation">,</span>
+  defaultValue<span class="token operator">?</span><span class="token operator">:</span> <span class="token constant">D</span>
+<span class="token punctuation">)</span><span class="token operator">:</span> Ref<span class="token operator">&lt;</span>Exclude<span class="token operator">&lt;</span>ConfigProviderContext<span class="token punctuation">[</span><span class="token constant">K</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">undefined</span><span class="token operator">&gt;</span> <span class="token operator">|</span> <span class="token constant">D</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">useGlobalConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Ref<span class="token operator">&lt;</span>ConfigProviderContext<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">useGlobalConfig</span><span class="token punctuation">(</span>
+  key<span class="token operator">?</span><span class="token operator">:</span> <span class="token keyword">keyof</span> ConfigProviderContext<span class="token punctuation">,</span>
+  defaultValue <span class="token operator">=</span> <span class="token keyword">undefined</span>
+<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token function">getCurrentInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token operator">?</span> <span class="token function">inject</span><span class="token punctuation">(</span>configProviderContextKey<span class="token punctuation">,</span> globalConfig<span class="token punctuation">)</span>
+    <span class="token operator">:</span> globalConfig<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> config<span class="token punctuation">.</span>value<span class="token operator">?.</span><span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">??</span> defaultValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    <span class="token comment">// \u5B8C\u6210\u7EC4\u4EF6\u5B9E\u4F8B\u8BBE\u7F6E</span>
-    <span class="token function">finishComponentSetup</span><span class="token punctuation">(</span>instance<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> config<span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-</code></pre></div><h2 id="\u521B\u5EFA\u6E32\u67D3\u4E0A\u4E0B\u6587\u4EE3\u7406" tabindex="-1"><a class="header-anchor" href="#\u521B\u5EFA\u6E32\u67D3\u4E0A\u4E0B\u6587\u4EE3\u7406" aria-hidden="true">#</a> \u521B\u5EFA\u6E32\u67D3\u4E0A\u4E0B\u6587\u4EE3\u7406</h2><p>\u5230\u4E86 Vue.js 3.0\uFF0C\u4E3A\u4E86\u65B9\u4FBF\u7EF4\u62A4\uFF0C\u6211\u4EEC\u628A\u7EC4\u4EF6\u4E2D\u4E0D\u540C\u72B6\u6001\u7684\u6570\u636E\u5B58\u50A8\u5230\u4E0D\u540C\u7684\u5C5E\u6027\u4E2D\uFF0C\u6BD4\u5982\u5B58\u50A8\u5230 setupState\u3001ctx\u3001data\u3001props \u4E2D\u3002\u6211\u4EEC\u5728\u6267\u884C\u7EC4\u4EF6\u6E32\u67D3\u51FD\u6570\u7684\u65F6\u5019\uFF0C\u4E3A\u4E86\u65B9\u4FBF\u7528\u6237\u4F7F\u7528\uFF0C\u4F1A\u76F4\u63A5\u8BBF\u95EE\u6E32\u67D3\u4E0A\u4E0B\u6587 instance.ctx \u4E2D\u7684\u5C5E\u6027\uFF0C\u6240\u4EE5\u6211\u4EEC\u4E5F\u8981\u505A\u4E00\u5C42 proxy\uFF0C\u5BF9\u6E32\u67D3\u4E0A\u4E0B\u6587 instance.ctx \u5C5E\u6027\u7684\u8BBF\u95EE\u548C\u4FEE\u6539\uFF0C\u4EE3\u7406\u5230\u5BF9 setupState\u3001ctx\u3001data\u3001props \u4E2D\u7684\u6570\u636E\u7684\u8BBF\u95EE\u548C\u4FEE\u6539\u3002</p><ul><li>setupState \u5C31\u662F setup \u51FD\u6570\u8FD4\u56DE\u7684\u6570\u636E\uFF0C\u7A0D\u540E\u6211\u4EEC\u4F1A\u8BE6\u7EC6\u8BF4\uFF1B</li><li>ctx \u5305\u62EC\u4E86\u8BA1\u7B97\u5C5E\u6027\u3001\u7EC4\u4EF6\u65B9\u6CD5\u548C\u7528\u6237\u81EA\u5B9A\u4E49\u7684\u4E00\u4E9B\u6570\u636E\uFF1B</li></ul><h2 id="setup-\u8FD4\u56DE\u503C" tabindex="-1"><a class="header-anchor" href="#setup-\u8FD4\u56DE\u503C" aria-hidden="true">#</a> setup \u8FD4\u56DE\u503C</h2><p>setup \u4E0D\u4EC5\u4EC5\u652F\u6301\u8FD4\u56DE\u4E00\u4E2A\u5BF9\u8C61\uFF0C\u4E5F\u53EF\u4EE5\u8FD4\u56DE\u4E00\u4E2A\u51FD\u6570\u4F5C\u4E3A\u7EC4\u4EF6\u7684\u6E32\u67D3\u51FD\u6570\u3002</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> h <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vue&#39;</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-  props<span class="token operator">:</span> <span class="token punctuation">{</span>
-    msg<span class="token operator">:</span> String<span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token parameter">props<span class="token punctuation">,</span> <span class="token punctuation">{</span> emit <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">function</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">&#39;toggle&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token parameter">ctx</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-      <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token function">h</span><span class="token punctuation">(</span><span class="token string">&#39;p&#39;</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> ctx<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">&#39;button&#39;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> onClick<span class="token operator">:</span> onClick <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">&#39;Toggle&#39;</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre></div><h2 id="vue3-\u4E3A\u4EC0\u4E48\u8981\u4F7F\u7528-setup" tabindex="-1"><a class="header-anchor" href="#vue3-\u4E3A\u4EC0\u4E48\u8981\u4F7F\u7528-setup" aria-hidden="true">#</a> vue3 \u4E3A\u4EC0\u4E48\u8981\u4F7F\u7528 setup</h2><ul><li><a href="https://zhuanlan.zhihu.com/p/68477600" target="_blank" rel="noopener noreferrer">Vue Function-based API RFC`);
-  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
-  _push(`</a></li></ul><h2 id="\u8BBE\u8BA1\u52A8\u673A" tabindex="-1"><a class="header-anchor" href="#\u8BBE\u8BA1\u52A8\u673A" aria-hidden="true">#</a> \u8BBE\u8BA1\u52A8\u673A</h2><h3 id="\u903B\u8F91\u7EC4\u5408\u4E0E\u590D\u7528" tabindex="-1"><a class="header-anchor" href="#\u903B\u8F91\u7EC4\u5408\u4E0E\u590D\u7528" aria-hidden="true">#</a> \u903B\u8F91\u7EC4\u5408\u4E0E\u590D\u7528</h3><p><strong>\u7EC4\u4EF6 API \u8BBE\u8BA1\u6240\u9762\u5BF9\u7684\u6838\u5FC3\u95EE\u9898\u4E4B\u4E00\u5C31\u662F\u5982\u4F55\u7EC4\u7EC7\u903B\u8F91\uFF0C\u4EE5\u53CA\u5982\u4F55\u5728\u591A\u4E2A\u7EC4\u4EF6\u4E4B\u95F4\u62BD\u53D6\u548C\u590D\u7528\u903B\u8F91</strong></p><!--]-->`);
+</code></pre></div><!--]-->`);
 }
-_sfc_main$C.ssrRender = _sfc_ssrRender$o;
-const _sfc_setup$C = _sfc_main$C.setup;
-_sfc_main$C.setup = (props, ctx) => {
+const _sfc_setup$K = _sfc_main$K.setup;
+_sfc_main$K.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/component/setup.html.vue");
-  return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/hooks/use-namespace.html.vue");
+  return _sfc_setup$K ? _sfc_setup$K(props, ctx) : void 0;
 };
-var setup_html$1 = /* @__PURE__ */ Object.freeze({
+var useNamespace_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$K, [["ssrRender", _sfc_ssrRender$w]]);
+var useNamespace_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$C
+  "default": useNamespace_html$1
 });
-const _sfc_main$B = {};
-function _sfc_ssrRender$n(_ctx, _push, _parent, _attrs) {
+const _sfc_main$J = {};
+function _sfc_ssrRender$v(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1 id="bem" tabindex="-1"><a class="header-anchor" href="#bem" aria-hidden="true">#</a> BEM</h1><p>\u5728 <code>theme-chalk/src/mixins/config.scss</code> \u6587\u4EF6\u4E2D\uFF0C\u6709\u5BF9elment ui\u98CE\u683C\u7684\u57FA\u7840\u914D\u7F6E\u3002</p><div class="language-scss ext-scss"><pre class="language-scss"><code><span class="token property"><span class="token variable">$namespace</span></span><span class="token punctuation">:</span> <span class="token string">&#39;el&#39;</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$common-separator</span></span><span class="token punctuation">:</span> <span class="token string">&#39;-&#39;</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$element-separator</span></span><span class="token punctuation">:</span> <span class="token string">&#39;__&#39;</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$modifier-separator</span></span><span class="token punctuation">:</span> <span class="token string">&#39;--&#39;</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$state-prefix</span></span><span class="token punctuation">:</span> <span class="token string">&#39;is-&#39;</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+</code></pre></div><p>\u5728 <code>theme-chalk/src/mixins/mixins.scss</code> \u4E2D\uFF0C\u5219\u5B9A\u4E49\u4E86BEM\u7684\u6DF7\u5408\u65B9\u6CD5\u3002</p><div class="language-scss ext-scss"><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token function">b</span><span class="token punctuation">(</span><span class="token variable">$block</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+  <span class="token property"><span class="token variable">$B</span></span><span class="token punctuation">:</span> <span class="token variable">$namespace</span>+<span class="token string">&#39;-&#39;</span>+<span class="token variable">$block</span> !global<span class="token punctuation">;</span>
+
+  <span class="token selector">.<span class="token variable">#{$B}</span> </span><span class="token punctuation">{</span>
+    <span class="token keyword">@content</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">@mixin</span> <span class="token function">e</span><span class="token punctuation">(</span><span class="token variable">$element</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token property"><span class="token variable">$E</span></span><span class="token punctuation">:</span> <span class="token variable">$element</span> !global<span class="token punctuation">;</span>
+  <span class="token property"><span class="token variable">$selector</span></span><span class="token punctuation">:</span> &amp;<span class="token punctuation">;</span>
+  <span class="token property"><span class="token variable">$currentSelector</span></span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+  <span class="token keyword">@each</span> <span class="token selector"><span class="token variable">$unit</span> in <span class="token variable">$element</span> </span><span class="token punctuation">{</span>
+    <span class="token property"><span class="token variable">$currentSelector</span></span><span class="token punctuation">:</span> #<span class="token punctuation">{</span><span class="token variable">$currentSelector</span> <span class="token operator">+</span> <span class="token string">&quot;.&quot;</span> <span class="token operator">+</span> <span class="token variable">$B</span> <span class="token operator">+</span> <span class="token variable">$element-separator</span> <span class="token operator">+</span> <span class="token variable">$unit</span> <span class="token operator">+</span> <span class="token string">&quot;,&quot;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">@if</span> <span class="token function">hitAllSpecialNestRule</span><span class="token punctuation">(</span><span class="token variable">$selector</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token atrule"><span class="token rule">@at-root</span></span> <span class="token punctuation">{</span>
+      <span class="token selector"><span class="token variable">#{$selector}</span> </span><span class="token punctuation">{</span>
+        <span class="token selector"><span class="token variable">#{$currentSelector}</span> </span><span class="token punctuation">{</span>
+          <span class="token keyword">@content</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> <span class="token keyword">@else</span> <span class="token punctuation">{</span>
+    <span class="token atrule"><span class="token rule">@at-root</span></span> <span class="token punctuation">{</span>
+      <span class="token selector"><span class="token variable">#{$currentSelector}</span> </span><span class="token punctuation">{</span>
+        <span class="token keyword">@content</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">@mixin</span> <span class="token function">m</span><span class="token punctuation">(</span><span class="token variable">$modifier</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token property"><span class="token variable">$selector</span></span><span class="token punctuation">:</span> &amp;<span class="token punctuation">;</span>
+  <span class="token property"><span class="token variable">$currentSelector</span></span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+  <span class="token keyword">@each</span> <span class="token selector"><span class="token variable">$unit</span> in <span class="token variable">$modifier</span> </span><span class="token punctuation">{</span>
+    <span class="token property"><span class="token variable">$currentSelector</span></span><span class="token punctuation">:</span> #<span class="token punctuation">{</span><span class="token variable">$currentSelector</span> <span class="token operator">+</span> &amp; <span class="token operator">+</span> <span class="token variable">$modifier-separator</span> <span class="token operator">+</span> <span class="token variable">$unit</span> <span class="token operator">+</span> <span class="token string">&quot;,&quot;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token atrule"><span class="token rule">@at-root</span></span> <span class="token punctuation">{</span>
+    <span class="token selector"><span class="token variable">#{$currentSelector}</span> </span><span class="token punctuation">{</span>
+      <span class="token keyword">@content</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><!--]-->`);
+}
+const _sfc_setup$J = _sfc_main$J.setup;
+_sfc_main$J.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/theme-chalk/BEM.html.vue");
+  return _sfc_setup$J ? _sfc_setup$J(props, ctx) : void 0;
+};
+var BEM_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$J, [["ssrRender", _sfc_ssrRender$v]]);
+var BEM_html$2 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": BEM_html$1
+});
+const _sfc_main$I = {};
+function _sfc_ssrRender$u(_ctx, _push, _parent, _attrs) {
+  const _component_OutboundLink = vue.resolveComponent("OutboundLink");
+  _push(`<!--[--><h1 id="scss" tabindex="-1"><a class="header-anchor" href="#scss" aria-hidden="true">#</a> scss</h1><blockquote><p>\u5C0F\u77E5\u8BC6\uFF1A sass \u548C scss \u5176\u5B9E\u5C31\u662F\u540C\u4E00\u79CD\u4E1C\u897F\uFF0C\u6211\u4EEC\u5E73\u65F6\u90FD\u79F0\u4E4B\u4E3A sass \uFF0C\u5B83\u4EEC\u4FE9\u7684\u4E3B\u8981\u533A\u522B\u5728\u4E8E\u8BED\u6CD5\u4E0A\uFF0Csass \u662F\u7F29\u8FDB\u8BED\u6CD5\u4E3A\u4E3B\uFF0C\u5B8C\u5168\u7701\u7565\u82B1\u62EC\u53F7\uFF1Bscss \u662F\u4E00\u79CD CSS-like \u8BED\u6CD5\uFF0C\u5C31\u6BD4\u8F83\u63A5\u8FD1 CSS \uFF0C\u66F4\u52A0\u53CB\u597D\u548C\u53EF\u8BFB\u3002</p></blockquote><h2 id="\u53D8\u91CF" tabindex="-1"><a class="header-anchor" href="#\u53D8\u91CF" aria-hidden="true">#</a> \u53D8\u91CF</h2><div class="language-css ext-css"><pre class="language-css"><code>$<span class="token property">font-stack</span><span class="token punctuation">:</span>    Helvetica<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+$<span class="token property">primary-color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span>
+
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">font</span><span class="token punctuation">:</span> 100% $font-stack<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> $primary-color<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>\u53EF\u4EE5\u5728\u53D8\u91CF\u7684\u7ED3\u5C3E\u6DFB\u52A0 <code>!default</code>\uFF0C \u7ED9\u4E00\u4E2A\u672A\u901A\u8FC7 <code>!default</code> \u58F0\u660E\u8D4B\u503C\u7684\u53D8\u91CF\u8D4B\u503C\uFF0C\u6B64\u65F6\uFF0C\u5982\u679C\u53D8\u91CF\u5DF2\u7ECF\u88AB\u8D4B\u503C\uFF0C\u4E0D\u4F1A\u518D\u88AB\u91CD\u65B0\u8D4B\u503C\uFF0C\u4F46\u662F\u5982\u679C\u53D8\u91CF\u8FD8\u6CA1\u6709\u88AB\u8D4B\u503C\uFF0C\u5219\u4F1A\u88AB\u8D4B\u4E88\u65B0\u7684\u503C\u3002</p><div class="language-css ext-css"><pre class="language-css"><code>$<span class="token property">namespace</span><span class="token punctuation">:</span> <span class="token string">&#39;el&#39;</span> !default<span class="token punctuation">;</span>
+$<span class="token property">common-separator</span><span class="token punctuation">:</span> <span class="token string">&#39;-&#39;</span> !default<span class="token punctuation">;</span>
+$<span class="token property">element-separator</span><span class="token punctuation">:</span> <span class="token string">&#39;__&#39;</span> !default<span class="token punctuation">;</span>
+$<span class="token property">modifier-separator</span><span class="token punctuation">:</span> <span class="token string">&#39;--&#39;</span> !default<span class="token punctuation">;</span>
+$<span class="token property">state-prefix</span><span class="token punctuation">:</span> <span class="token string">&#39;is-&#39;</span> !default<span class="token punctuation">;</span>
+</code></pre></div><h2 id="\u6CE8\u91CA" tabindex="-1"><a class="header-anchor" href="#\u6CE8\u91CA" aria-hidden="true">#</a> \u6CE8\u91CA</h2><p>SASS\u5171\u6709\u4E24\u79CD\u6CE8\u91CA\u98CE\u683C\u3002</p><p>\u6807\u51C6\u7684CSS\u6CE8\u91CA <code>/* comment */</code> \uFF0C\u4F1A\u4FDD\u7559\u5230\u7F16\u8BD1\u540E\u7684\u6587\u4EF6\u3002</p><p>\u5355\u884C\u6CE8\u91CA <code>// comment</code>\uFF0C\u53EA\u4FDD\u7559\u5728SASS\u6E90\u6587\u4EF6\u4E2D\uFF0C\u7F16\u8BD1\u540E\u88AB\u7701\u7565\u3002</p><p>\u5728<code>/*</code>\u540E\u9762\u52A0\u4E00\u4E2A\u611F\u53F9\u53F7\uFF0C\u8868\u793A\u8FD9\u662F&quot;\u91CD\u8981\u6CE8\u91CA&quot;\u3002\u5373\u4F7F\u662F\u538B\u7F29\u6A21\u5F0F\u7F16\u8BD1\uFF0C\u4E5F\u4F1A\u4FDD\u7559\u8FD9\u884C\u6CE8\u91CA\uFF0C\u901A\u5E38\u53EF\u4EE5\u7528\u4E8E\u58F0\u660E\u7248\u6743\u4FE1\u606F\u3002</p><h2 id="at-rules" tabindex="-1"><a class="header-anchor" href="#at-rules" aria-hidden="true">#</a> At-rules</h2><ul><li>@use processes the mixins, functions, and variables from different Sass stylesheets together. It also combines CSS from various different stylesheets into one.</li><li>@forward processes a Sass stylesheet and makes its mixins, functions, and variables available for use with the @use rule.</li><li>@import expands the CSS at-rule to process styles, mixins, functions, and variables from other stylesheets.</li><li>@mixin and @include makes it easy to use the sections of styles again.</li><li>@function defines the custom functions to be used in Sass expressions.</li><li>@extend allows selectors to receive styles from one another.</li><li>@at-root puts styles in it to the root of the CSS document.</li><li>@error causes compilation to fail with a given error message, as used in the above example.</li><li>@warn prints the warning without completely stopping the compilation.</li><li>@debug prints the command for debugging purposes.</li><li>Flow control rules like @if, @each, @for, and @while control the number of emissions of styles.</li></ul><h2 id="extend" tabindex="-1"><a class="header-anchor" href="#extend" aria-hidden="true">#</a> @extend</h2><div class="language-css ext-css"><pre class="language-css"><code><span class="token selector">.class1</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #ddd<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.class2</span> <span class="token punctuation">{</span>
+  <span class="token atrule"><span class="token rule">@extend</span> .class1<span class="token punctuation">;</span></span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span>120%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="mixin" tabindex="-1"><a class="header-anchor" href="#mixin" aria-hidden="true">#</a> @mixin</h2><p>Mixin\u6709\u70B9\u50CFC\u8BED\u8A00\u7684\u5B8F\uFF08macro\uFF09\uFF0C\u662F\u53EF\u4EE5\u91CD\u7528\u7684\u4EE3\u7801\u5757\u3002</p><p>\u4F7F\u7528<code>@mixin</code>\u547D\u4EE4\uFF0C\u5B9A\u4E49\u4E00\u4E2A\u4EE3\u7801\u5757\u3002</p><div class="language-css ext-css"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@mixin</span> <span class="token function">link-colors</span><span class="token punctuation">(</span>$normal<span class="token punctuation">,</span> $hover<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> $normal<span class="token punctuation">;</span>
+    <span class="token selector">&amp;:hover</span> <span class="token punctuation">{</span> <span class="token property">color</span><span class="token punctuation">:</span> $hover<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="use" tabindex="-1"><a class="header-anchor" href="#use" aria-hidden="true">#</a> @use</h2><p>\u7531 @use \u52A0\u8F7D\u7684\u6837\u5F0F\u8868\u88AB\u79F0\u4E3A\u6A21\u5757\uFF08modules\uFF09\u3002</p><p>\u901A\u8FC7 @use \u52A0\u8F7D\u7684\u6A21\u5757\u4E0D\u7BA1\u88AB\u5F15\u7528\u4E86\u591A\u5C11\u6B21\uFF0C\u90FD\u53EA\u4F1A\u5728\u7F16\u8BD1\u540E\u8F93\u51FA\u4E00\u6B21\u5230 css \u4E2D\u3002\u4F46\u662F\u4F7F\u7528 @import \u591A\u6B21\u5F15\u5165\u540C\u4E00\u6A21\u5757\uFF0C\u4F1A\u53CD\u590D\u8F93\u51FA\u5230 css \u4E2D\u3002</p><p>// module.scss</p><div class="language-css ext-css"><pre class="language-css"><code><span class="token selector">.module</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #f00<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>// a.scss</p><div class="language-css ext-css"><pre class="language-css"><code>@use <span class="token string">&#39;./module.scss&#39;</span>
+</code></pre></div><p>// b.scss</p><div class="language-css ext-css"><pre class="language-css"><code>@use <span class="token string">&#39;./module.scss&#39;</span>
+</code></pre></div><p>// index.scss</p><div class="language-css ext-css"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@use</span> <span class="token string">&#39;./a.scss&#39;</span><span class="token punctuation">;</span></span>
+<span class="token atrule"><span class="token rule">@use</span> <span class="token string">&#39;./b.scss&#39;</span><span class="token punctuation">;</span></span>
+</code></pre></div><p>\u6700\u540E\u7F16\u8BD1</p><div class="language-css ext-css"><pre class="language-css"><code><span class="token selector">.module</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #f00<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="forward" tabindex="-1"><a class="header-anchor" href="#forward" aria-hidden="true">#</a> @forward</h2><p>@forward \u8BED\u53E5\u53EF\u4EE5\u5F15\u5165\u53E6\u4E00\u4E2A\u6A21\u5757\u7684\u6240\u6709\u53D8\u91CF\u3001mixins\u548C\u51FD\u6570\uFF0C\u5C06\u5B83\u4EEC\u76F4\u63A5\u4F5C\u4E3A\u5F53\u524D\u6A21\u5757\u7684 API \u66B4\u9732\u51FA\u53BB\uFF0C\u800C\u4E0D\u4F1A\u771F\u7684\u5728\u5F53\u524D\u6A21\u5757\u589E\u52A0\u4EE3\u7801\u3002\u8FD9\u6837\uFF0C\u5E93\u4F5C\u8005\u53EF\u4EE5\u66F4\u597D\u5730\u5728\u4E0D\u540C\u6E90\u6587\u4EF6\u4E4B\u95F4\u62C6\u5206\u4EE3\u7801\u3002\u4E0D\u540C\u4E8E @use\uFF0C @forward\u4E0D\u4F1A\u7ED9\u53D8\u91CF\u6DFB\u52A0\u547D\u540D\u7A7A\u95F4\u3002</p><p>// base.scss</p><div class="language-css ext-css"><pre class="language-css"><code>$<span class="token property">padding</span><span class="token punctuation">:</span>22px<span class="token punctuation">;</span>
+$<span class="token property">margin</span><span class="token punctuation">:</span>22px<span class="token punctuation">;</span>
+</code></pre></div><p>forward \u4E2D\u95F4\u8F6C\u53D1\u6587\u4EF6</p><div class="language-css ext-css"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@forward</span> <span class="token string">&quot;base.scss&quot;</span><span class="token punctuation">;</span></span>
+</code></pre></div><p>main.scss</p><div class="language-css ext-css"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@use</span> <span class="token string">&quot;forward&quot;</span><span class="token punctuation">;</span></span>
+<span class="token selector">p</span> <span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> forward.$padding<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="forward-\u6DFB\u52A0\u524D\u7F00" tabindex="-1"><a class="header-anchor" href="#forward-\u6DFB\u52A0\u524D\u7F00" aria-hidden="true">#</a> @forward \u6DFB\u52A0\u524D\u7F00</h3><div class="language-css ext-css"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@forward</span> <span class="token string">&quot;base.scss&quot;</span> as base-*<span class="token punctuation">;</span></span>
+</code></pre></div><div class="language-css ext-css"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@use</span> <span class="token string">&quot;forward&quot;</span><span class="token punctuation">;</span></span>
+<span class="token selector">p</span> <span class="token punctuation">{</span> <span class="token property">padding</span><span class="token punctuation">:</span> forward.$base-padding<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</code></pre></div><h2 id="content" tabindex="-1"><a class="header-anchor" href="#content" aria-hidden="true">#</a> @content</h2><div class="language-css ext-css"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@mixin</span> example</span> <span class="token punctuation">{</span>
+ <span class="token atrule"><span class="token rule">@content</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+<span class="token selector">body</span><span class="token punctuation">{</span>
+ <span class="token atrule"><span class="token rule">@include</span> example</span><span class="token punctuation">{</span> <span class="token property">color</span> <span class="token punctuation">:</span> white <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Output :</p><div class="language-css ext-css"><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-css ext-css"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@mixin</span> <span class="token function">sm</span><span class="token punctuation">(</span>$val<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+ <span class="token atrule"><span class="token rule">@media</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> $val<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+  <span class="token atrule"><span class="token rule">@content</span><span class="token punctuation">;</span></span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@include</span> <span class="token function">sm</span><span class="token punctuation">(</span>600px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+ <span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Output :</p><div class="language-css ext-css"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@media</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 600px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">body</span> <span class="token punctuation">{</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="at-root" tabindex="-1"><a class="header-anchor" href="#at-root" aria-hidden="true">#</a> @at-root</h2><p>\u6211\u4EECCSS\u4E2D\u6709\u4E00\u79CD\u547D\u540D\u65B9\u5F0F\u662FBEM,\u5982\uFF1A</p><div class="language-css ext-css"><pre class="language-css"><code><span class="token selector">.block</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token selector">.block__element</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token selector">.block--modifier</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><p>\u5199\u6210\u5D4C\u5957</p><div class="language-css ext-css"><pre class="language-css"><code><span class="token selector">.block</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+
+    <span class="token selector">#</span><span class="token punctuation">{</span>&amp;<span class="token punctuation">}</span><span class="token selector">__element</span> <span class="token punctuation">{</span>
+        <span class="token property">color</span><span class="token punctuation">:</span>blue<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">#</span><span class="token punctuation">{</span>&amp;<span class="token punctuation">}</span><span class="token selector">--modifier</span> <span class="token punctuation">{</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>\u7F16\u8BD1\u5B8C\u540E\u662F\uFF1A</p><div class="language-css ext-css"><pre class="language-css"><code><span class="token selector">.block</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">.block .block__element</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">.block .block--modifier</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><p>\u8FD9\u4E0D\u662F\u6211\u4EEC\u60F3\u8981\u7684\u4EE3\u7801\u3002\u4F46\u5728LESS\u548CStylus\u4E2D\uFF0C\u80FD\u5F88\u597D\u7684\u5B9E\u73B0BEM\u7C7B\u540D\u7684\u5F62\u5F0F\u3002\u6B64\u65F6\u5728\u60F3\uFF0C\u5728Sass\u4E2D\u6709\u6CA1\u6709\u8FD9\u6837\u7684\u529F\u80FD\u5462\uFF1F\u503C\u5F97\u5E78\u8FD0\u7684\u662F\uFF0C\u5728Sass3.3\u4E2D\u65B0\u589E\u52A0\u4E86@at-root\u7279\u6027,\u80FD\u5B9E\u73B0\u4E0A\u9762BEM\u7684\u7279\u6027\uFF1A</p><div class="language-css ext-css"><pre class="language-css"><code><span class="token selector">.block</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+
+    <span class="token atrule"><span class="token rule">@at-root</span> #</span><span class="token punctuation">{</span>&amp;<span class="token punctuation">}</span><span class="token selector">__element</span> <span class="token punctuation">{</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token atrule"><span class="token rule">@at-root</span> #</span><span class="token punctuation">{</span>&amp;<span class="token punctuation">}</span><span class="token selector">--modifier</span> <span class="token punctuation">{</span>
+        <span class="token property">color</span><span class="token punctuation">:</span>orange<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="at-root\u548C-\u7684\u7ED3\u5408" tabindex="-1"><a class="header-anchor" href="#at-root\u548C-\u7684\u7ED3\u5408" aria-hidden="true">#</a> @at-root\u548C&amp;\u7684\u7ED3\u5408</h3><div class="language-css ext-css"><pre class="language-css"><code><span class="token selector">.foo</span> <span class="token punctuation">{</span>
+    <span class="token atrule"><span class="token rule">@at-root</span> .bar &amp;</span> <span class="token punctuation">{</span>
+        <span class="token property">color</span><span class="token punctuation">:</span>gray<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-css ext-css"><pre class="language-css"><code><span class="token selector">.bar .foo</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> gray<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="at-root\u548C-\u7ED3\u5408" tabindex="-1"><a class="header-anchor" href="#at-root\u548C-\u7ED3\u5408" aria-hidden="true">#</a> <code>@at-root</code>\u548C<code>#{&amp;}</code>\u7ED3\u5408</h3><p>Sass\u6709\u811A\u672C\u6A21\u5F0F <code>#{}</code>\uFF0C\u4ED6\u548C<code>&amp;</code>\u4E0D\u540C\u4E4B\u5904\u662F\uFF0C<code>&amp;</code>\u53EA\u7528\u4F5C\u9009\u62E9\u5668</p><h2 id="\u8D44\u6599" tabindex="-1"><a class="header-anchor" href="#\u8D44\u6599" aria-hidden="true">#</a> \u8D44\u6599</h2><ul><li><a href="https://www.sass.hk/docs/" target="_blank" rel="noopener noreferrer">Sass\u4E2D\u6587\u7F51`);
+  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
+  _push(`</a></li><li><a href="https://www.sass.hk/skill/sass40.html" target="_blank" rel="noopener noreferrer">Sass\uFF20at-root`);
+  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
+  _push(`</a></li><li><a href="https://www.ruanyifeng.com/blog/2012/06/sass.html" target="_blank" rel="noopener noreferrer">SASS\u7528\u6CD5\u6307\u5357`);
+  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
+  _push(`</a></li><li><a href="https://www.lesscode.work/sections/621c2d75d20c1.html" target="_blank" rel="noopener noreferrer">SCSS \xB7 SASS \u6559\u7A0B`);
+  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
+  _push(`</a> \u6BD4\u8F83\u597D</li></ul><!--]-->`);
+}
+const _sfc_setup$I = _sfc_main$I.setup;
+_sfc_main$I.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/theme-chalk/scss.html.vue");
+  return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
+};
+var scss_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["ssrRender", _sfc_ssrRender$u]]);
+var scss_html$2 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": scss_html$1
+});
+const _sfc_main$H = {};
+function _sfc_ssrRender$t(_ctx, _push, _parent, _attrs) {
+  const _component_OutboundLink = vue.resolveComponent("OutboundLink");
+  _push(`<!--[--><h1 id="buildprops" tabindex="-1"><a class="header-anchor" href="#buildprops" aria-hidden="true">#</a> buildProps</h1><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">export</span> <span class="token keyword">const</span> buildProps <span class="token operator">=</span> <span class="token operator">&lt;</span>
+  Props <span class="token keyword">extends</span> <span class="token class-name">Record<span class="token operator">&lt;</span>
+    <span class="token builtin">string</span><span class="token punctuation">,</span>
+    <span class="token operator">|</span> <span class="token punctuation">{</span> <span class="token punctuation">[</span>epPropKey<span class="token punctuation">]</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span>
+    <span class="token operator">|</span> NativePropType
+    <span class="token operator">|</span> EpPropInput<span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token punctuation">,</span> <span class="token builtin">any</span><span class="token punctuation">,</span> <span class="token builtin">any</span><span class="token punctuation">,</span> <span class="token builtin">any</span><span class="token punctuation">,</span> <span class="token builtin">any</span><span class="token operator">&gt;</span>
+  <span class="token operator">&gt;</span></span>
+<span class="token operator">&gt;</span><span class="token punctuation">(</span>
+  props<span class="token operator">:</span> Props
+<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">[</span><span class="token constant">K</span> <span class="token keyword">in</span> <span class="token keyword">keyof</span> Props<span class="token punctuation">]</span><span class="token operator">:</span> IfEpProp<span class="token operator">&lt;</span>
+    Props<span class="token punctuation">[</span><span class="token constant">K</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    Props<span class="token punctuation">[</span><span class="token constant">K</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    IfNativePropType<span class="token operator">&lt;</span>Props<span class="token punctuation">[</span><span class="token constant">K</span><span class="token punctuation">]</span><span class="token punctuation">,</span> Props<span class="token punctuation">[</span><span class="token constant">K</span><span class="token punctuation">]</span><span class="token punctuation">,</span> EpPropConvert<span class="token operator">&lt;</span>Props<span class="token punctuation">[</span><span class="token constant">K</span><span class="token punctuation">]</span><span class="token operator">&gt;&gt;</span>
+  <span class="token operator">&gt;</span>
+<span class="token punctuation">}</span> <span class="token operator">=&gt;</span>
+  <span class="token function">fromPairs</span><span class="token punctuation">(</span>
+    Object<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">[</span>key<span class="token punctuation">,</span> option<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>
+      key<span class="token punctuation">,</span>
+      <span class="token function">buildProp</span><span class="token punctuation">(</span>option <span class="token keyword">as</span> <span class="token builtin">any</span><span class="token punctuation">,</span> key<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token builtin">any</span>
+</code></pre></div><h2 id="\u6CDB\u578B" tabindex="-1"><a class="header-anchor" href="#\u6CDB\u578B" aria-hidden="true">#</a> \u6CDB\u578B</h2><p>\u5148\u6765TS\u6CDB\u578B\u7684\u5E94\u7528</p><p>\u666E\u901A\u51FD\u6570\uFF1A</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">drinkMilk</span><span class="token punctuation">(</span><span class="token parameter">args</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>args<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><p>\u52A0\u4E0A\u6CDB\u578B\uFF1A\u5728\u53C2\u6570\u524D\u52A0 <code>&lt;T&gt;</code></p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">function</span> <span class="token generic-function"><span class="token function">drinkMilk</span><span class="token generic class-name"><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">(</span>args<span class="token operator">:</span><span class="token constant">T</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>args<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><p>\u5E26\u8FD4\u56DE\u503C\uFF1A\u5728\u53C2\u6570\u540E\u9762\u52A0 : T</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">function</span> <span class="token generic-function"><span class="token function">drinkMilk</span><span class="token generic class-name"><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">(</span>args<span class="token operator">:</span><span class="token constant">T</span><span class="token punctuation">)</span> \uFF1A<span class="token constant">T</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> args <span class="token punctuation">}</span>
+</code></pre></div><p>\u4F7F\u7528\u7BAD\u5934\u51FD\u6570 <code>=&gt;</code></p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">const</span> getMilk <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>args<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token constant">T</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> args<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</code></pre></div><p>\u7ED9\u6CDB\u578B T \u52A0\u4E0A\u7EA6\u675F\u6761\u4EF6</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">interface</span> <span class="token class-name">WithLength</span> <span class="token punctuation">{</span> 
+  length<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> getMilk <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token class-name">WithLength</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>args<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token constant">T</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+  <span class="token keyword">return</span> args<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="\u5E26\u7EA6\u675F\u7684\u6CDB\u578B" tabindex="-1"><a class="header-anchor" href="#\u5E26\u7EA6\u675F\u7684\u6CDB\u578B" aria-hidden="true">#</a> \u5E26\u7EA6\u675F\u7684\u6CDB\u578B</h2><blockquote><p>\u77E5\u8BC6\u70B9\uFF1ARecord&lt;key, value&gt;</p></blockquote><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">type</span> <span class="token class-name">Record<span class="token operator">&lt;</span><span class="token constant">K</span> <span class="token keyword">extends</span> <span class="token keyword">keyof</span> <span class="token builtin">any</span><span class="token punctuation">,</span> <span class="token constant">T</span><span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token constant">P</span> <span class="token keyword">in</span> <span class="token constant">K</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>\u53D6 K \u4E2D\u7684\u6BCF\u4E00\u4E2A\u5C5E\u6027\uFF0C\u8BE5\u5C5E\u6027\u7684\u503C\u662F T \u7C7B\u578B\u3002</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">type</span> <span class="token class-name">person</span> <span class="token operator">=</span> <span class="token string">&#39;man&#39;</span> <span class="token operator">|</span> <span class="token string">&#39;woman&#39;</span>
+<span class="token keyword">interface</span> <span class="token class-name">Info</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+    age<span class="token operator">:</span> <span class="token builtin">number</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">type</span> <span class="token class-name">personInfo</span> <span class="token operator">=</span> Record<span class="token operator">&lt;</span>person<span class="token punctuation">,</span> Info<span class="token operator">&gt;</span>
+</code></pre></div><p>Record \u53EF\u4EE5\u628A\u8D85\u80FD\u529B\u8D4B\u4E88\u6BCF\u4E00\u4E2A\u4EBA\u3002\u77AC\u95F4\u5C31\u8BA9 man \u548C woman \u62E5\u6709\u4E86 name \u548C age \u5C5E\u6027\u3002</p><p>\u518D\u6765\u770B Element Plus \u6E90\u7801\u4E2D\u7684\u90E8\u5206</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">type</span> <span class="token class-name">epValue</span> <span class="token operator">=</span> 
+    <span class="token operator">|</span> <span class="token punctuation">{</span> <span class="token punctuation">[</span>epPropKey<span class="token punctuation">]</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span>
+    <span class="token operator">|</span> NativePropType
+    <span class="token operator">|</span> EpPropInput<span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token punctuation">,</span> <span class="token builtin">any</span><span class="token punctuation">,</span> <span class="token builtin">any</span><span class="token punctuation">,</span> <span class="token builtin">any</span><span class="token punctuation">,</span> <span class="token builtin">any</span><span class="token operator">&gt;</span>
+    
+Props <span class="token keyword">extends</span> <span class="token class-name">Record<span class="token operator">&lt;</span><span class="token builtin">string</span><span class="token punctuation">,</span> epValue<span class="token operator">&gt;</span></span>
+</code></pre></div><p><code>Props extends Record</code>\uFF0C\u8868\u793A Props \u5E94\u7B26\u5408\u540E\u9762 Record \u7684\u7EA6\u675F\uFF0C\u5373\uFF1A Props \u9700\u8981\u662F string \u7C7B\u578B\u7684 key\uFF0CepValue \u90A3\u4E09\u79CD\u7C7B\u578B\u7684 value</p><ul><li>{ [&#39;__epPropKey&#39;] : true }</li><li>NativePropType : \u539F\u751F prop \u7C7B\u578B</li><li>EpPropInput : Element Plus \u5B9A\u4E49\u7684 Prop \u8F93\u5165\u7C7B\u578B</li></ul><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">type</span> <span class="token class-name">EpPropInput</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    type<span class="token operator">?</span><span class="token operator">:</span> StringConstructor <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+    required<span class="token operator">?</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+    values<span class="token operator">?</span><span class="token operator">:</span> <span class="token keyword">readonly</span> <span class="token string">&quot;a&quot;</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+    validator<span class="token operator">?</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>val<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token builtin">boolean</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>val<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> val <span class="token keyword">is</span> <span class="token builtin">never</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span><span class="token operator">?</span><span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>\u901A\u8FC7\u5BF9\u6CDB\u578B Props \u7684\u7EA6\u675F\uFF0C\u7ED3\u5408\u53C2\u6570 props: Props\uFF0C\u8868\u793A\u51FA\uFF1A\u8BE5\u51FD\u6570\u7684\u5165\u53C2\uFF0C\u5FC5\u987B\u6EE1\u8DB3 props \u7684 key \u662F string \u7C7B\u578B\uFF0Cvalue \u662F\u4E0A\u8FF0\u7684 epValue \u7684\u4E09\u79CD\u8054\u5408\u7C7B\u578B\u4E4B\u4E00\u3002</p><h2 id="buildprops-\u8FD4\u56DE\u503C" tabindex="-1"><a class="header-anchor" href="#buildprops-\u8FD4\u56DE\u503C" aria-hidden="true">#</a> buildProps \u8FD4\u56DE\u503C</h2><p>\u901A\u8FC7\u82B1\u62EC\u53F7 {}\uFF0C\u5224\u65AD\u8FD4\u56DE\u503C\u5E94\u8BE5\u662F\u4E00\u4E2A object</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token punctuation">{</span>
+  <span class="token punctuation">[</span><span class="token constant">K</span> <span class="token keyword">in</span> <span class="token keyword">keyof</span> Props<span class="token punctuation">]</span><span class="token operator">:</span> IfEpProp<span class="token operator">&lt;</span>
+    Props<span class="token punctuation">[</span><span class="token constant">K</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    Props<span class="token punctuation">[</span><span class="token constant">K</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    IfNativePropType<span class="token operator">&lt;</span>Props<span class="token punctuation">[</span><span class="token constant">K</span><span class="token punctuation">]</span><span class="token punctuation">,</span> Props<span class="token punctuation">[</span><span class="token constant">K</span><span class="token punctuation">]</span><span class="token punctuation">,</span> EpPropConvert<span class="token operator">&lt;</span>Props<span class="token punctuation">[</span><span class="token constant">K</span><span class="token punctuation">]</span><span class="token operator">&gt;&gt;</span>
+  <span class="token operator">&gt;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>\u5176 key \u662F [K in keyof Props]\uFF0Cvalue \u901A\u8FC7 IfEpProp \u7684\u8FD4\u56DE\u3002</p><p>IfEpProp</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">export</span> <span class="token keyword">type</span> <span class="token class-name">IfEpProp<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token punctuation">,</span> <span class="token constant">Y</span><span class="token punctuation">,</span> <span class="token constant">N</span><span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token punctuation">{</span> <span class="token punctuation">[</span>epPropKey<span class="token punctuation">]</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span> <span class="token operator">?</span> <span class="token constant">Y</span> <span class="token operator">:</span> <span class="token constant">N</span>
+</code></pre></div><p>IfNativePropType</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token doc-comment comment">/**
+ * \u539F\u751F prop \`\u7C7B\u578B\uFF0CBooleanConstructor\`\u3001\`StringConstructor\`\u3001\`null\`\u3001\`undefined\` \u7B49
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">type</span> <span class="token class-name">NativePropType</span> <span class="token operator">=</span>
+  <span class="token operator">|</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token builtin">any</span><span class="token punctuation">)</span>
+  <span class="token operator">|</span> <span class="token punctuation">{</span> <span class="token keyword">new</span> <span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">any</span> <span class="token punctuation">}</span>
+  <span class="token operator">|</span> <span class="token keyword">undefined</span>
+  <span class="token operator">|</span> <span class="token keyword">null</span>
+<span class="token keyword">export</span> <span class="token keyword">type</span> <span class="token class-name">IfNativePropType<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token punctuation">,</span> <span class="token constant">Y</span><span class="token punctuation">,</span> <span class="token constant">N</span><span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token constant">T</span><span class="token punctuation">]</span> <span class="token keyword">extends</span> <span class="token punctuation">[</span>NativePropType<span class="token punctuation">]</span> <span class="token operator">?</span> <span class="token constant">Y</span> <span class="token operator">:</span> <span class="token constant">N</span>
+</code></pre></div><p>EpPropConvert</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token doc-comment comment">/**
+ * \u5C06\u8F93\u5165\u8F6C\u6362\u4E3A\u8F93\u51FA
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">type</span> <span class="token class-name">EpPropConvert<span class="token operator">&lt;</span>Input<span class="token operator">&gt;</span></span> <span class="token operator">=</span> Input <span class="token keyword">extends</span> <span class="token class-name">EpPropInput<span class="token operator">&lt;</span>
+  <span class="token keyword">infer</span> Type<span class="token punctuation">,</span>
+  <span class="token keyword">infer</span> Value<span class="token punctuation">,</span>
+  <span class="token keyword">infer</span> Validator<span class="token punctuation">,</span>
+  <span class="token builtin">any</span><span class="token punctuation">,</span>
+  <span class="token keyword">infer</span> Required
+<span class="token operator">&gt;</span></span>
+  <span class="token operator">?</span> EpPropFinalized<span class="token operator">&lt;</span>Type<span class="token punctuation">,</span> Value<span class="token punctuation">,</span> Validator<span class="token punctuation">,</span> Input<span class="token punctuation">[</span><span class="token string">&#39;default&#39;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> Required<span class="token operator">&gt;</span>
+  <span class="token operator">:</span> <span class="token builtin">never</span>
+</code></pre></div><h3 id="k-in-keyof-props" tabindex="-1"><a class="header-anchor" href="#k-in-keyof-props" aria-hidden="true">#</a> [K in keyof Props]</h3><p>\u4E00\u4E2A\u4F8B\u5B50</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">function</span> <span class="token function">getValue</span><span class="token punctuation">(</span>obj<span class="token operator">:</span> object<span class="token punctuation">,</span> key<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token comment">// error</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>\u6211\u4EEC\u4F1A\u5F97\u5230\u4E00\u6BB5\u62A5\u9519\uFF0C\u8FD9\u662F\u65B0\u624B TypeScript \u5F00\u53D1\u8005\u5E38\u5E38\u72AF\u7684\u9519\u8BEF\uFF0C\u7F16\u8BD1\u5668\u544A\u8BC9\u6211\u4EEC\uFF0C\u53C2\u6570 obj \u5B9E\u9645\u4E0A\u662F {},\u56E0\u6B64\u540E\u9762\u7684 key \u662F\u65E0\u6CD5\u5728\u4E0A\u9762\u53D6\u5230\u4EFB\u4F55\u503C\u7684\u3002</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">function</span> <span class="token generic-function"><span class="token function">getValue</span><span class="token generic class-name"><span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token keyword">extends</span> object<span class="token operator">&gt;</span></span></span><span class="token punctuation">(</span>obj<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">,</span> key<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token comment">// error</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>\u8FD9\u4F9D\u7136\u89E3\u51B3\u4E0D\u4E86\u95EE\u9898\u3002\u56E0\u4E3A\u6211\u4EEC\u7B2C\u4E8C\u4E2A\u53C2\u6570 key \u662F\u4E0D\u662F\u5B58\u5728\u4E8E obj \u4E0A\u662F\u65E0\u6CD5\u786E\u5B9A\u7684\uFF0C\u56E0\u6B64\u6211\u4EEC\u9700\u8981\u5BF9\u8FD9\u4E2A key \u4E5F\u8FDB\u884C\u7EA6\u675F\uFF0C\u6211\u4EEC\u628A\u5B83\u7EA6\u675F\u4E3A\u53EA\u5B58\u5728\u4E8E obj \u5C5E\u6027\u7684\u7C7B\u578B\uFF0C\u8FD9\u4E2A\u65F6\u5019\u9700\u8981\u501F\u52A9\u5230\u7D22\u5F15\u7C7B\u578B\u8FDB\u884C\u5B9E\u73B0 <code>&lt;U extends keyof T&gt;</code></p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">function</span> <span class="token generic-function"><span class="token function">getValue</span><span class="token generic class-name"><span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token keyword">extends</span> object<span class="token punctuation">,</span> <span class="token constant">U</span> <span class="token keyword">extends</span> <span class="token keyword">keyof</span> <span class="token constant">T</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">(</span>obj<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">,</span> key<span class="token operator">:</span> <span class="token constant">U</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token comment">// ok</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="\u503C\u5224\u65AD" tabindex="-1"><a class="header-anchor" href="#\u503C\u5224\u65AD" aria-hidden="true">#</a> \u503C\u5224\u65AD</h3><p>\u6E90\u7801\u4E2D\u901A\u8FC7 IfEpProp, IfNativePropType, EpPropConvert \u4E09\u90E8\u5206\uFF0C\u5BF9 <code>Props[K]</code> \u505A\u4E86\u5224\u65AD\u3001\u8F6C\u6362\u3002</p><ul><li>IfEpProp: \u5982\u679C\u662F EpProp \u7C7B\u578B\uFF0C\u5219\u76F4\u63A5\u8F93\u51FA</li><li>IfNativePropType: \u5982\u679C\u662F\u539F\u751FProp\u7C7B\u578B\uFF0C\u5219\u76F4\u63A5\u8F93\u51FA</li><li>EpPropConvert: \u8F6C\u6362\u6210 EpPropFinalized \u8F93\u51FA</li></ul><h2 id="buildprops-\u51FD\u6570\u5B9E\u9645\u5185\u5BB9" tabindex="-1"><a class="header-anchor" href="#buildprops-\u51FD\u6570\u5B9E\u9645\u5185\u5BB9" aria-hidden="true">#</a> buildProps \u51FD\u6570\u5B9E\u9645\u5185\u5BB9</h2><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token function">fromPairs</span><span class="token punctuation">(</span>
+    Object<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">[</span>key<span class="token punctuation">,</span> option<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>
+      key<span class="token punctuation">,</span>
+      <span class="token function">buildProp</span><span class="token punctuation">(</span>option <span class="token keyword">as</span> <span class="token builtin">any</span><span class="token punctuation">,</span> key<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token builtin">any</span>
+</code></pre></div><p>\u5927\u81F4\u6D41\u7A0B\u5982\u4E0B:</p><ul><li>Object.entries \u5C06 props \u8F6C\u6362\u4E3A\u4E8C\u7EF4\u6570\u7EC4</li><li>\u5C06\u4E8C\u7EF4\u6570\u7EC4\u4EE5 key option \u7684\u5F62\u5F0F\u53D6\u51FA\uFF0C\u5B9E\u9645\u4E0A\u5C31\u662F\u62FF\u5230\u4E86 props \u4E2D\u7684\u53C2\u6570\u7684 key \u548C value</li><li>\u5C06 value \u901A\u8FC7 buildProp \u51FD\u6570\u5904\u7406\u4E00\u4E0B</li><li>fromPairs \u53C8\u5C06\u4E8C\u7EF4\u6570\u7EC4\u8F6C\u6362\u6210 object</li></ul><p>\u901A\u8FC7\u6E90\u7801\u4E2D\u6CE8\u91CA\u53EF\u4EE5\u77E5\u9053\uFF0CbuildProp \u662F\u4E3A\u4E86 \u201C\u751F\u6210 prop\uFF0C\u80FD\u66F4\u597D\u5730\u4F18\u5316\u7C7B\u578B\u201D\u3002\u6240\u4EE5\u6700\u7EC8\u7ED3\u8BBA\uFF0C\u5C31\u662F\u5BF9 props \u4E2D\u7684\u6240\u6709 value \u8FDB\u884C\u7C7B\u578B\u4F18\u5316\u3002</p><p>\u8FD9\u4E48\u8BF4\u6709\u70B9\u751F\u786C\u4E86\uFF0C\u4E3E\u4E2A\u4F8B\u5B50\uFF1A</p><p>\u6211\u4EEC\u7684 Props \u5982\u4E0B\uFF1A</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> String<span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&#39;sun&#39;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  age<span class="token operator">:</span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> Number<span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>\u7ECF\u8FC7 Object.entries \u540E\uFF0C\u8F6C\u6362\u4E3A</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token punctuation">[</span>
+ <span class="token punctuation">[</span><span class="token string">&#39;name&#39;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>type<span class="token operator">:</span>String<span class="token punctuation">,</span> <span class="token keyword">default</span><span class="token operator">:</span><span class="token string">&#39;sun&#39;</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+ <span class="token punctuation">[</span><span class="token string">&#39;age&#39;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>type<span class="token operator">:</span>Number<span class="token punctuation">,</span> <span class="token keyword">default</span><span class="token operator">:</span><span class="token number">18</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>\u901A\u8FC7 map \u904D\u5386\uFF0Ckey \u662F &#39;name&#39;, option \u662F {type:String, defalut: &#39;sun&#39;} \uFF0C\u518D\u901A\u8FC7 buildProp \u51FD\u6570\u5C06\u5176\u8F6C\u5316\u4E3A EpPropFinalized \u7C7B\u578B</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token punctuation">{</span>
+    <span class="token number">0</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token number">1</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;sun&quot;</span><span class="token punctuation">,</span>
+    required<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    type<span class="token operator">:</span> String<span class="token punctuation">,</span>
+    validator<span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+    __epPropKey<span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>\u904D\u5386\u7ED3\u675F\u540E\uFF0C\u901A\u8FC7 fromPairs \u8F6C\u56DE object\uFF0C\u6700\u7EC8\u8FD4\u56DE\u7ED3\u679C\u3002</p><h2 id="\u5C0F\u7ED3" tabindex="-1"><a class="header-anchor" href="#\u5C0F\u7ED3" aria-hidden="true">#</a> \u5C0F\u7ED3</h2><p>Element Plus \u7684 buildProps \u65B9\u6CD5\uFF0C\u8BF4\u767D\u4E86\u5C31\u662F\u5BF9 element \u7EC4\u4EF6\u5F00\u53D1\u8FC7\u7A0B\u4E2D\uFF0C\u5927\u5BB6\u7F16\u7801\u65F6\u7684 Props \u7684\u8BBE\u7F6E\uFF0C\u8FDB\u884C\u4E86\u7EDF\u4E00\u683C\u5F0F\u5316\uFF0C\u6216\u8005\u8BF4\u4F18\u5316\u7C7B\u578B\u3002</p><blockquote><p><a href="https://juejin.cn/post/7138061136112386079" target="_blank" rel="noopener noreferrer">https://juejin.cn/post/7138061136112386079`);
+  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
+  _push(`</a></p></blockquote><!--]-->`);
+}
+const _sfc_setup$H = _sfc_main$H.setup;
+_sfc_main$H.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/utils/buildProps.html.vue");
+  return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
+};
+var buildProps_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["ssrRender", _sfc_ssrRender$t]]);
+var buildProps_html$2 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": buildProps_html$1
+});
+const _sfc_main$G = {};
+function _sfc_ssrRender$s(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1 id="render-function" tabindex="-1"><a class="header-anchor" href="#render-function" aria-hidden="true">#</a> Render function</h1><p>Render function in Vue 2:</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">&#39;div&#39;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    attrs<span class="token operator">:</span> <span class="token punctuation">{</span>
+      id<span class="token operator">:</span> <span class="token string">&#39;foo&#39;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    on<span class="token operator">:</span> <span class="token punctuation">{</span>
+      click<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>onClick
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">&#39;hello&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Render function in Vue 3:</p><ul><li>Flat props structure</li><li>Globally imported <code>h</code> helper</li></ul><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> h <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vue&#39;</span><span class="token punctuation">;</span>
+
+<span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">&#39;div&#39;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    id<span class="token operator">:</span> <span class="token string">&#39;foo&#39;</span><span class="token punctuation">,</span>
+    onClick<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>onClick<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">&#39;hello&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><!--]-->`);
+}
+const _sfc_setup$G = _sfc_main$G.setup;
+_sfc_main$G.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/DeepDive/Render-function.html.vue");
+  return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
+};
+var RenderFunction_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$G, [["ssrRender", _sfc_ssrRender$s]]);
+var RenderFunction_html$2 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": RenderFunction_html$1
+});
+const _sfc_main$F = {};
+function _sfc_ssrRender$r(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="creating-a-mini-vue" tabindex="-1"><a class="header-anchor" href="#creating-a-mini-vue" aria-hidden="true">#</a> creating a mini vue</h1><div class="language-html ext-html"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
@@ -13858,20 +14917,20 @@ function _sfc_ssrRender$n(_ctx, _push, _parent, _attrs) {
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$B.ssrRender = _sfc_ssrRender$n;
-const _sfc_setup$B = _sfc_main$B.setup;
-_sfc_main$B.setup = (props, ctx) => {
+const _sfc_setup$F = _sfc_main$F.setup;
+_sfc_main$F.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/DeepDive/creating-a-mini-vue.html.vue");
-  return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
+  return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
 };
-var creatingAMiniVue_html$1 = /* @__PURE__ */ Object.freeze({
+var creatingAMiniVue_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["ssrRender", _sfc_ssrRender$r]]);
+var creatingAMiniVue_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$B
+  "default": creatingAMiniVue_html$1
 });
-const _sfc_main$A = {};
-function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs) {
+const _sfc_main$E = {};
+function _sfc_ssrRender$q(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="mini-vue" tabindex="-1"><a class="header-anchor" href="#mini-vue" aria-hidden="true">#</a> mini vue</h1><p>\u5C24\u96E8\u6EAA</p><div class="language-html ext-html"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
@@ -14088,54 +15147,20 @@ function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs) {
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$A.ssrRender = _sfc_ssrRender$m;
-const _sfc_setup$A = _sfc_main$A.setup;
-_sfc_main$A.setup = (props, ctx) => {
+const _sfc_setup$E = _sfc_main$E.setup;
+_sfc_main$E.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/DeepDive/miniVue.html.vue");
-  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
+  return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
 };
-var miniVue_html$1 = /* @__PURE__ */ Object.freeze({
+var miniVue_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["ssrRender", _sfc_ssrRender$q]]);
+var miniVue_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$A
+  "default": miniVue_html$1
 });
-const _sfc_main$z = {};
-function _sfc_ssrRender$l(_ctx, _push, _parent, _attrs) {
-  _push(`<!--[--><h1 id="render-function" tabindex="-1"><a class="header-anchor" href="#render-function" aria-hidden="true">#</a> Render function</h1><p>Render function in Vue 2:</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">&#39;div&#39;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
-    attrs<span class="token operator">:</span> <span class="token punctuation">{</span>
-      id<span class="token operator">:</span> <span class="token string">&#39;foo&#39;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    on<span class="token operator">:</span> <span class="token punctuation">{</span>
-      click<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>onClick
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">&#39;hello&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre></div><p>Render function in Vue 3:</p><ul><li>Flat props structure</li><li>Globally imported <code>h</code> helper</li></ul><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> h <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vue&#39;</span><span class="token punctuation">;</span>
-
-<span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">&#39;div&#39;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
-    id<span class="token operator">:</span> <span class="token string">&#39;foo&#39;</span><span class="token punctuation">,</span>
-    onClick<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>onClick<span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">&#39;hello&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre></div><!--]-->`);
-}
-_sfc_main$z.ssrRender = _sfc_ssrRender$l;
-const _sfc_setup$z = _sfc_main$z.setup;
-_sfc_main$z.setup = (props, ctx) => {
-  const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/DeepDive/Render-function.html.vue");
-  return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
-};
-var RenderFunction_html$1 = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$z
-});
-const _sfc_main$y = {};
-function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
+const _sfc_main$D = {};
+function _sfc_ssrRender$p(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="usefetch" tabindex="-1"><a class="header-anchor" href="#usefetch" aria-hidden="true">#</a> useFetch</h1><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> createApp<span class="token punctuation">,</span> ref<span class="token punctuation">,</span> watchEffect <span class="token punctuation">}</span> <span class="token operator">=</span> Vue<span class="token punctuation">;</span>
 
 <span class="token keyword">function</span> <span class="token function">useFetch</span><span class="token punctuation">(</span><span class="token parameter">getUrl</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -14206,35 +15231,124 @@ function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
 <span class="token function">createApp</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">&#39;#app&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$y.ssrRender = _sfc_ssrRender$k;
-const _sfc_setup$y = _sfc_main$y.setup;
-_sfc_main$y.setup = (props, ctx) => {
+const _sfc_setup$D = _sfc_main$D.setup;
+_sfc_main$D.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/DeepDive/useFetch.html.vue");
-  return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
+  return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
 };
-var useFetch_html$1 = /* @__PURE__ */ Object.freeze({
+var useFetch_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["ssrRender", _sfc_ssrRender$p]]);
+var useFetch_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$y
+  "default": useFetch_html$1
 });
-const _sfc_main$x = {};
-function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs) {
+const _sfc_main$C = {};
+function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs) {
+  const _component_OutboundLink = vue.resolveComponent("OutboundLink");
+  _push(`<!--[--><h1 id="setup" tabindex="-1"><a class="header-anchor" href="#setup" aria-hidden="true">#</a> Setup</h1><h2 id="\u521B\u5EFA\u548C\u8BBE\u7F6E\u7EC4\u4EF6\u5B9E\u4F8B" tabindex="-1"><a class="header-anchor" href="#\u521B\u5EFA\u548C\u8BBE\u7F6E\u7EC4\u4EF6\u5B9E\u4F8B" aria-hidden="true">#</a> \u521B\u5EFA\u548C\u8BBE\u7F6E\u7EC4\u4EF6\u5B9E\u4F8B</h2><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">mountComponent</span> <span class="token operator">=</span> <span class="token punctuation">(</span>
+  <span class="token parameter">initialVNode<span class="token punctuation">,</span>
+  container<span class="token punctuation">,</span>
+  anchor<span class="token punctuation">,</span>
+  parentComponent<span class="token punctuation">,</span>
+  parentSuspense<span class="token punctuation">,</span>
+  isSVG<span class="token punctuation">,</span>
+  optimized</span>
+<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// \u521B\u5EFA\u7EC4\u4EF6\u5B9E\u4F8B</span>
+  <span class="token keyword">const</span> instance <span class="token operator">=</span> <span class="token punctuation">(</span>initialVNode<span class="token punctuation">.</span>component <span class="token operator">=</span> <span class="token function">createComponentInstance</span><span class="token punctuation">(</span>
+    initialVNode<span class="token punctuation">,</span>
+    parentComponent<span class="token punctuation">,</span>
+    parentSuspense
+  <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// \u8BBE\u7F6E\u7EC4\u4EF6\u5B9E\u4F8B</span>
+  <span class="token function">setupComponent</span><span class="token punctuation">(</span>instance<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// \u8BBE\u7F6E\u5E76\u8FD0\u884C\u5E26\u526F\u4F5C\u7528\u7684\u6E32\u67D3\u51FD\u6570</span>
+  <span class="token function">setupRenderEffect</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> initialVNode<span class="token punctuation">,</span> container<span class="token punctuation">,</span> anchor<span class="token punctuation">,</span> parentSuspense<span class="token punctuation">,</span> isSVG<span class="token punctuation">,</span> optimized<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="\u7EC4\u4EF6\u5B9E\u4F8B\u7684\u8BBE\u7F6E\u6D41\u7A0B" tabindex="-1"><a class="header-anchor" href="#\u7EC4\u4EF6\u5B9E\u4F8B\u7684\u8BBE\u7F6E\u6D41\u7A0B" aria-hidden="true">#</a> \u7EC4\u4EF6\u5B9E\u4F8B\u7684\u8BBE\u7F6E\u6D41\u7A0B</h2><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">setupComponent</span><span class="token punctuation">(</span><span class="token parameter">instance<span class="token punctuation">,</span> isSSR <span class="token operator">=</span> <span class="token boolean">false</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> props<span class="token punctuation">,</span> children<span class="token punctuation">,</span> shapeFlag <span class="token punctuation">}</span> <span class="token operator">=</span> instance<span class="token punctuation">.</span>vnode<span class="token punctuation">;</span>
+  <span class="token comment">// \u5224\u65AD\u662F\u5426\u662F\u4E00\u4E2A\u6709\u72B6\u6001\u7684\u7EC4\u4EF6</span>
+  <span class="token keyword">const</span> isStateful <span class="token operator">=</span> shapeFlag <span class="token operator">&amp;</span> <span class="token number">4</span><span class="token punctuation">;</span>
+  <span class="token comment">// \u521D\u59CB\u5316 props</span>
+  <span class="token function">initProps</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> props<span class="token punctuation">,</span> isStateful<span class="token punctuation">,</span> isSSR<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// \u521D\u59CB\u5316 \u63D2\u69FD</span>
+  <span class="token function">initSlots</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> children<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// \u8BBE\u7F6E\u6709\u72B6\u6001\u7684\u7EC4\u4EF6\u5B9E\u4F8B</span>
+  <span class="token keyword">const</span> setupResult <span class="token operator">=</span> isStateful <span class="token operator">?</span> <span class="token function">setupStatefulComponent</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> isSSR<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> setupResult<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>\u6211\u4EEC\u4ECE\u7EC4\u4EF6 vnode \u4E2D\u83B7\u53D6\u4E86 props\u3001children\u3001shapeFlag \u7B49\u5C5E\u6027\uFF0C\u7136\u540E\u5206\u522B\u5BF9 props \u548C\u63D2\u69FD\u8FDB\u884C\u521D\u59CB\u5316\u3002</p><h2 id="setupstatefulcomponent" tabindex="-1"><a class="header-anchor" href="#setupstatefulcomponent" aria-hidden="true">#</a> setupStatefulComponent</h2><p>\u5B83\u4E3B\u8981\u505A\u4E86\u4E09\u4EF6\u4E8B\uFF1A\u521B\u5EFA\u6E32\u67D3\u4E0A\u4E0B\u6587\u4EE3\u7406\u3001\u5224\u65AD\u5904\u7406 setup \u51FD\u6570\u548C\u5B8C\u6210\u7EC4\u4EF6\u5B9E\u4F8B\u8BBE\u7F6E\u3002</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">setupStatefulComponent</span><span class="token punctuation">(</span><span class="token parameter">instance<span class="token punctuation">,</span> isSSR</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> Component <span class="token operator">=</span> instance<span class="token punctuation">.</span>type<span class="token punctuation">;</span>
+  <span class="token comment">// \u521B\u5EFA\u6E32\u67D3\u4EE3\u7406\u7684\u5C5E\u6027\u8BBF\u95EE\u7F13\u5B58</span>
+  instance<span class="token punctuation">.</span>accessCache <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token comment">// \u521B\u5EFA\u6E32\u67D3\u4E0A\u4E0B\u6587\u4EE3\u7406</span>
+  instance<span class="token punctuation">.</span>proxy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Proxy</span><span class="token punctuation">(</span>instance<span class="token punctuation">.</span>ctx<span class="token punctuation">,</span> PublicInstanceProxyHandlers<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// \u5224\u65AD\u5904\u7406 setup \u51FD\u6570</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> setup <span class="token punctuation">}</span> <span class="token operator">=</span> Component<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>setup<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// \u5982\u679C setup \u51FD\u6570\u5E26\u53C2\u6570\uFF0C\u5219\u521B\u5EFA\u4E00\u4E2A setupContext</span>
+    <span class="token keyword">const</span> setupContext <span class="token operator">=</span> <span class="token punctuation">(</span>instance<span class="token punctuation">.</span>setupContext <span class="token operator">=</span>
+      setup<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">1</span> <span class="token operator">?</span> <span class="token function">createSetupContext</span><span class="token punctuation">(</span>instance<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// \u6267\u884C setup \u51FD\u6570\uFF0C\u83B7\u53D6\u7ED3\u679C</span>
+    <span class="token keyword">const</span> setupResult <span class="token operator">=</span> <span class="token function">callWithErrorHandling</span><span class="token punctuation">(</span>setup<span class="token punctuation">,</span> instance<span class="token punctuation">,</span> <span class="token number">0</span> <span class="token comment">/* SETUP_FUNCTION */</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+      instance<span class="token punctuation">.</span>props<span class="token punctuation">,</span>
+      setupContext<span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// \u5904\u7406 setup \u6267\u884C\u7ED3\u679C</span>
+    <span class="token function">handleSetupResult</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> setupResult<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">// \u5B8C\u6210\u7EC4\u4EF6\u5B9E\u4F8B\u8BBE\u7F6E</span>
+    <span class="token function">finishComponentSetup</span><span class="token punctuation">(</span>instance<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="\u521B\u5EFA\u6E32\u67D3\u4E0A\u4E0B\u6587\u4EE3\u7406" tabindex="-1"><a class="header-anchor" href="#\u521B\u5EFA\u6E32\u67D3\u4E0A\u4E0B\u6587\u4EE3\u7406" aria-hidden="true">#</a> \u521B\u5EFA\u6E32\u67D3\u4E0A\u4E0B\u6587\u4EE3\u7406</h2><p>\u5230\u4E86 Vue.js 3.0\uFF0C\u4E3A\u4E86\u65B9\u4FBF\u7EF4\u62A4\uFF0C\u6211\u4EEC\u628A\u7EC4\u4EF6\u4E2D\u4E0D\u540C\u72B6\u6001\u7684\u6570\u636E\u5B58\u50A8\u5230\u4E0D\u540C\u7684\u5C5E\u6027\u4E2D\uFF0C\u6BD4\u5982\u5B58\u50A8\u5230 setupState\u3001ctx\u3001data\u3001props \u4E2D\u3002\u6211\u4EEC\u5728\u6267\u884C\u7EC4\u4EF6\u6E32\u67D3\u51FD\u6570\u7684\u65F6\u5019\uFF0C\u4E3A\u4E86\u65B9\u4FBF\u7528\u6237\u4F7F\u7528\uFF0C\u4F1A\u76F4\u63A5\u8BBF\u95EE\u6E32\u67D3\u4E0A\u4E0B\u6587 instance.ctx \u4E2D\u7684\u5C5E\u6027\uFF0C\u6240\u4EE5\u6211\u4EEC\u4E5F\u8981\u505A\u4E00\u5C42 proxy\uFF0C\u5BF9\u6E32\u67D3\u4E0A\u4E0B\u6587 instance.ctx \u5C5E\u6027\u7684\u8BBF\u95EE\u548C\u4FEE\u6539\uFF0C\u4EE3\u7406\u5230\u5BF9 setupState\u3001ctx\u3001data\u3001props \u4E2D\u7684\u6570\u636E\u7684\u8BBF\u95EE\u548C\u4FEE\u6539\u3002</p><ul><li>setupState \u5C31\u662F setup \u51FD\u6570\u8FD4\u56DE\u7684\u6570\u636E\uFF0C\u7A0D\u540E\u6211\u4EEC\u4F1A\u8BE6\u7EC6\u8BF4\uFF1B</li><li>ctx \u5305\u62EC\u4E86\u8BA1\u7B97\u5C5E\u6027\u3001\u7EC4\u4EF6\u65B9\u6CD5\u548C\u7528\u6237\u81EA\u5B9A\u4E49\u7684\u4E00\u4E9B\u6570\u636E\uFF1B</li></ul><h2 id="setup-\u8FD4\u56DE\u503C" tabindex="-1"><a class="header-anchor" href="#setup-\u8FD4\u56DE\u503C" aria-hidden="true">#</a> setup \u8FD4\u56DE\u503C</h2><p>setup \u4E0D\u4EC5\u4EC5\u652F\u6301\u8FD4\u56DE\u4E00\u4E2A\u5BF9\u8C61\uFF0C\u4E5F\u53EF\u4EE5\u8FD4\u56DE\u4E00\u4E2A\u51FD\u6570\u4F5C\u4E3A\u7EC4\u4EF6\u7684\u6E32\u67D3\u51FD\u6570\u3002</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> h <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vue&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    msg<span class="token operator">:</span> String<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token parameter">props<span class="token punctuation">,</span> <span class="token punctuation">{</span> emit <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">&#39;toggle&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token parameter">ctx</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token function">h</span><span class="token punctuation">(</span><span class="token string">&#39;p&#39;</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> ctx<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">&#39;button&#39;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> onClick<span class="token operator">:</span> onClick <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">&#39;Toggle&#39;</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="vue3-\u4E3A\u4EC0\u4E48\u8981\u4F7F\u7528-setup" tabindex="-1"><a class="header-anchor" href="#vue3-\u4E3A\u4EC0\u4E48\u8981\u4F7F\u7528-setup" aria-hidden="true">#</a> vue3 \u4E3A\u4EC0\u4E48\u8981\u4F7F\u7528 setup</h2><ul><li><a href="https://zhuanlan.zhihu.com/p/68477600" target="_blank" rel="noopener noreferrer">Vue Function-based API RFC`);
+  _push(serverRenderer.ssrRenderComponent(_component_OutboundLink, null, null, _parent));
+  _push(`</a></li></ul><h2 id="\u8BBE\u8BA1\u52A8\u673A" tabindex="-1"><a class="header-anchor" href="#\u8BBE\u8BA1\u52A8\u673A" aria-hidden="true">#</a> \u8BBE\u8BA1\u52A8\u673A</h2><h3 id="\u903B\u8F91\u7EC4\u5408\u4E0E\u590D\u7528" tabindex="-1"><a class="header-anchor" href="#\u903B\u8F91\u7EC4\u5408\u4E0E\u590D\u7528" aria-hidden="true">#</a> \u903B\u8F91\u7EC4\u5408\u4E0E\u590D\u7528</h3><p><strong>\u7EC4\u4EF6 API \u8BBE\u8BA1\u6240\u9762\u5BF9\u7684\u6838\u5FC3\u95EE\u9898\u4E4B\u4E00\u5C31\u662F\u5982\u4F55\u7EC4\u7EC7\u903B\u8F91\uFF0C\u4EE5\u53CA\u5982\u4F55\u5728\u591A\u4E2A\u7EC4\u4EF6\u4E4B\u95F4\u62BD\u53D6\u548C\u590D\u7528\u903B\u8F91</strong></p><!--]-->`);
 }
-_sfc_main$x.ssrRender = _sfc_ssrRender$j;
-const _sfc_setup$x = _sfc_main$x.setup;
-_sfc_main$x.setup = (props, ctx) => {
+const _sfc_setup$C = _sfc_main$C.setup;
+_sfc_main$C.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/component/setup.html.vue");
+  return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
+};
+var setup_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["ssrRender", _sfc_ssrRender$o]]);
+var setup_html$2 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": setup_html$1
+});
+const _sfc_main$B = {};
+function _sfc_ssrRender$n(_ctx, _push, _parent, _attrs) {
+}
+const _sfc_setup$B = _sfc_main$B.setup;
+_sfc_main$B.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/parser/index.html.vue");
-  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
+  return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
 };
-var index_html$b = /* @__PURE__ */ Object.freeze({
+var index_html$g = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["ssrRender", _sfc_ssrRender$n]]);
+var index_html$h = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$x
+  "default": index_html$g
 });
-const _sfc_main$w = {};
-function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs) {
+const _sfc_main$A = {};
+function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="computed" tabindex="-1"><a class="header-anchor" href="#computed" aria-hidden="true">#</a> computed</h1><nav class="table-of-contents"><ul></ul></nav><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token parameter">getterOrOptions</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// getter \u51FD\u6570</span>
   <span class="token keyword">let</span> getter<span class="token punctuation">;</span>
@@ -14299,20 +15413,20 @@ function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs) {
 <span class="token punctuation">}</span>
 </code></pre></div><p>computed \u8BA1\u7B97\u5C5E\u6027\u6709\u4E24\u4E2A\u7279\u70B9\uFF1A</p><ul><li>\u5EF6\u65F6\u8BA1\u7B97\uFF0C\u53EA\u6709\u5F53\u6211\u4EEC\u8BBF\u95EE\u8BA1\u7B97\u5C5E\u6027\u7684\u65F6\u5019\uFF0C\u5B83\u624D\u4F1A\u771F\u6B63\u8FD0\u884C computed getter \u51FD\u6570\u8BA1\u7B97\uFF1B</li><li>\u7F13\u5B58\uFF0C\u5B83\u7684\u5185\u90E8\u4F1A\u7F13\u5B58\u4E0A\u6B21\u7684\u8BA1\u7B97\u7ED3\u679C value\uFF0C\u800C\u4E14\u53EA\u6709 dirty \u4E3A true \u65F6\u624D\u4F1A\u91CD\u65B0\u8BA1\u7B97\u3002\u5982\u679C\u8BBF\u95EE\u8BA1\u7B97\u5C5E\u6027\u65F6 dirty \u4E3A false\uFF0C\u90A3\u4E48\u76F4\u63A5\u8FD4\u56DE\u8FD9\u4E2A value\u3002</li></ul><p>\u8BA1\u7B97\u5C5E\u6027\u7684\u4F18\u52BF\u662F\uFF1A\u53EA\u8981\u4F9D\u8D56\u4E0D\u53D8\u5316\uFF0C\u5C31\u53EF\u4EE5\u4F7F\u7528\u7F13\u5B58\u7684 value \u800C\u4E0D\u7528\u6BCF\u6B21\u5728\u6E32\u67D3\u7EC4\u4EF6\u7684\u65F6\u5019\u90FD\u6267\u884C\u51FD\u6570\u53BB\u8BA1\u7B97\uFF0C\u8FD9\u662F\u5178\u578B\u7684\u7A7A\u95F4\u6362\u65F6\u95F4\u7684\u4F18\u5316\u601D\u60F3\u3002</p><!--]-->`);
 }
-_sfc_main$w.ssrRender = _sfc_ssrRender$i;
-const _sfc_setup$w = _sfc_main$w.setup;
-_sfc_main$w.setup = (props, ctx) => {
+const _sfc_setup$A = _sfc_main$A.setup;
+_sfc_main$A.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/reactivity/computed.html.vue");
-  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
+  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
 };
-var computed_html$1 = /* @__PURE__ */ Object.freeze({
+var computed_html$4 = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["ssrRender", _sfc_ssrRender$m]]);
+var computed_html$5 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$w
+  "default": computed_html$4
 });
-const _sfc_main$v = {};
-function _sfc_ssrRender$h(_ctx, _push, _parent, _attrs) {
+const _sfc_main$z = {};
+function _sfc_ssrRender$l(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="reactivity-\u6E90\u7801" tabindex="-1"><a class="header-anchor" href="#reactivity-\u6E90\u7801" aria-hidden="true">#</a> reactivity \u6E90\u7801</h1><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token string">&#39;use strict&#39;</span><span class="token punctuation">;</span>
 
 Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>exports<span class="token punctuation">,</span> <span class="token string">&#39;__esModule&#39;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> value<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -15115,21 +16229,21 @@ exports<span class="token punctuation">.</span>unlock <span class="token operato
 exports<span class="token punctuation">.</span>unref <span class="token operator">=</span> unref<span class="token punctuation">;</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$v.ssrRender = _sfc_ssrRender$h;
-const _sfc_setup$v = _sfc_main$v.setup;
-_sfc_main$v.setup = (props, ctx) => {
+const _sfc_setup$z = _sfc_main$z.setup;
+_sfc_main$z.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/reactivity/reactivity.cjs.html.vue");
-  return _sfc_setup$v ? _sfc_setup$v(props, ctx) : void 0;
+  return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
 };
-var reactivity_cjs_html$1 = /* @__PURE__ */ Object.freeze({
+var reactivity_cjs_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["ssrRender", _sfc_ssrRender$l]]);
+var reactivity_cjs_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$v
+  "default": reactivity_cjs_html$1
 });
 var _imports_0 = "/assets/reactivity001.9a79781c.png";
-const _sfc_main$u = {};
-function _sfc_ssrRender$g(_ctx, _push, _parent, _attrs) {
+const _sfc_main$y = {};
+function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
   const _component_RouterLink = vue.resolveComponent("RouterLink");
   _push(`<!--[--><h1 id="\u624B\u5199reactivity" tabindex="-1"><a class="header-anchor" href="#\u624B\u5199reactivity" aria-hidden="true">#</a> \u624B\u5199reactivity</h1><nav class="table-of-contents"><ul><li>`);
   _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#basic" }, {
@@ -15686,20 +16800,20 @@ product<span class="token punctuation">.</span>name <span class="token operator"
 product<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&#39;Socks&#39;</span><span class="token punctuation">;</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$u.ssrRender = _sfc_ssrRender$g;
-const _sfc_setup$u = _sfc_main$u.setup;
-_sfc_main$u.setup = (props, ctx) => {
+const _sfc_setup$y = _sfc_main$y.setup;
+_sfc_main$y.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/reactivity/reactivity.html.vue");
-  return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
+  return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
 };
-var reactivity_html$1 = /* @__PURE__ */ Object.freeze({
+var reactivity_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["ssrRender", _sfc_ssrRender$k]]);
+var reactivity_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$u
+  "default": reactivity_html$1
 });
-const _sfc_main$t = {};
-function _sfc_ssrRender$f(_ctx, _push, _parent, _attrs) {
+const _sfc_main$x = {};
+function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="watch" tabindex="-1"><a class="header-anchor" href="#watch" aria-hidden="true">#</a> watch</h1><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">function</span> <span class="token function">doWatch</span><span class="token punctuation">(</span>
   source<span class="token operator">:</span> WatchSource <span class="token operator">|</span> WatchSource<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">|</span> WatchEffect <span class="token operator">|</span> object<span class="token punctuation">,</span>
   cb<span class="token operator">:</span> WatchCallback <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
@@ -15887,20 +17001,20 @@ function _sfc_ssrRender$f(_ctx, _push, _parent, _attrs) {
 <span class="token punctuation">}</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$t.ssrRender = _sfc_ssrRender$f;
-const _sfc_setup$t = _sfc_main$t.setup;
-_sfc_main$t.setup = (props, ctx) => {
+const _sfc_setup$x = _sfc_main$x.setup;
+_sfc_main$x.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/reactivity/watch.html.vue");
-  return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
+  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
 };
-var watch_html$1 = /* @__PURE__ */ Object.freeze({
+var watch_html$4 = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["ssrRender", _sfc_ssrRender$j]]);
+var watch_html$5 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$t
+  "default": watch_html$4
 });
-const _sfc_main$s = {};
-function _sfc_ssrRender$e(_ctx, _push, _parent, _attrs) {
+const _sfc_main$w = {};
+function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs) {
   const _component_RouterLink = vue.resolveComponent("RouterLink");
   _push(`<!--[--><h1 id="\u7EC4\u4EF6\u6E32\u67D3" tabindex="-1"><a class="header-anchor" href="#\u7EC4\u4EF6\u6E32\u67D3" aria-hidden="true">#</a> \u7EC4\u4EF6\u6E32\u67D3</h1><nav class="table-of-contents"><ul><li>`);
   _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: "#\u666E\u901A\u5143\u7D20\u8282\u70B9" }, {
@@ -16175,20 +17289,20 @@ function _sfc_ssrRender$e(_ctx, _push, _parent, _attrs) {
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre></div><p>\u53C2\u8003 element-plus message \u7EC4\u4EF6\u7684\u5B9E\u73B0\u65B9\u5F0F\u3002</p><!--]-->`);
 }
-_sfc_main$s.ssrRender = _sfc_ssrRender$e;
-const _sfc_setup$s = _sfc_main$s.setup;
-_sfc_main$s.setup = (props, ctx) => {
+const _sfc_setup$w = _sfc_main$w.setup;
+_sfc_main$w.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/renderer/componentRender.html.vue");
-  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
+  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
 };
-var componentRender_html$1 = /* @__PURE__ */ Object.freeze({
+var componentRender_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$i]]);
+var componentRender_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$s
+  "default": componentRender_html$1
 });
-const _sfc_main$r = {};
-function _sfc_ssrRender$d(_ctx, _push, _parent, _attrs) {
+const _sfc_main$v = {};
+function _sfc_ssrRender$h(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="createappapi" tabindex="-1"><a class="header-anchor" href="#createappapi" aria-hidden="true">#</a> createAppAPI</h1><p>\u4E0B\u9762\u662F\u9879\u76EE\u542F\u52A8\u7684\u4E00\u4E2A\u7B80\u5355\u4F8B\u5B50\uFF1A</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vue&#39;</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">&#39;./App.vue&#39;</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> router <span class="token keyword">from</span> <span class="token string">&#39;./router&#39;</span><span class="token punctuation">;</span>
@@ -16440,20 +17554,20 @@ app<span class="token punctuation">.</span><span class="token function">mount</s
 <span class="token punctuation">}</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$r.ssrRender = _sfc_ssrRender$d;
-const _sfc_setup$r = _sfc_main$r.setup;
-_sfc_main$r.setup = (props, ctx) => {
+const _sfc_setup$v = _sfc_main$v.setup;
+_sfc_main$v.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/renderer/createAppAPI.html.vue");
-  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+  return _sfc_setup$v ? _sfc_setup$v(props, ctx) : void 0;
 };
-var createAppAPI_html$1 = /* @__PURE__ */ Object.freeze({
+var createAppAPI_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["ssrRender", _sfc_ssrRender$h]]);
+var createAppAPI_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$r
+  "default": createAppAPI_html$1
 });
-const _sfc_main$q = {};
-function _sfc_ssrRender$c(_ctx, _push, _parent, _attrs) {
+const _sfc_main$u = {};
+function _sfc_ssrRender$g(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="\u6E32\u67D3\u5668\u4E0E\u54CD\u5E94\u5F0F\u7CFB\u7EDF\u7684\u7ED3\u5408" tabindex="-1"><a class="header-anchor" href="#\u6E32\u67D3\u5668\u4E0E\u54CD\u5E94\u5F0F\u7CFB\u7EDF\u7684\u7ED3\u5408" aria-hidden="true">#</a> \u6E32\u67D3\u5668\u4E0E\u54CD\u5E94\u5F0F\u7CFB\u7EDF\u7684\u7ED3\u5408</h1><p>\u5B9E\u73B0\u539F\u7406\uFF0C\u5C06 renderer \u5728\u526F\u4F5C\u7528\u4E2D\u6267\u884C\uFF0C\u624D\u4F1A\u88AB\u4F9D\u8D56\u6536\u96C6\u3002</p><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> effect<span class="token punctuation">,</span> ref <span class="token punctuation">}</span> <span class="token operator">=</span> VueReactivity<span class="token punctuation">;</span>
 
 <span class="token keyword">function</span> <span class="token function">renderer</span><span class="token punctuation">(</span><span class="token parameter">domString<span class="token punctuation">,</span> container</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -16604,20 +17718,20 @@ app<span class="token punctuation">.</span><span class="token function">mount</s
 <span class="token punctuation">}</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$q.ssrRender = _sfc_ssrRender$c;
-const _sfc_setup$q = _sfc_main$q.setup;
-_sfc_main$q.setup = (props, ctx) => {
+const _sfc_setup$u = _sfc_main$u.setup;
+_sfc_main$u.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/sourceCode/renderer/index.html.vue");
-  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
+  return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
 };
-var index_html$a = /* @__PURE__ */ Object.freeze({
+var index_html$e = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["ssrRender", _sfc_ssrRender$g]]);
+var index_html$f = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$q
+  "default": index_html$e
 });
-const _sfc_main$p = {};
-function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs) {
+const _sfc_main$t = {};
+function _sfc_ssrRender$f(_ctx, _push, _parent, _attrs) {
   const _component_RouterLink = vue.resolveComponent("RouterLink");
   const _component_OutboundLink = vue.resolveComponent("OutboundLink");
   _push(`<!--[--><h1 id="createserver" tabindex="-1"><a class="header-anchor" href="#createserver" aria-hidden="true">#</a> createServer</h1><nav class="table-of-contents"><ul><li>`);
@@ -16969,7 +18083,7 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs) {
   <span class="token doc-comment comment">/**
    * \u8DDF\u8E2A\u5BFC\u5165\u5173\u7CFB\u3001url \u5230\u6587\u4EF6\u6620\u5C04\u548C hmr \u72B6\u6001\u7684\u6A21\u5757\u56FE\u3002
    */</span>
-  <span class="token keyword">module</span>Graph<span class="token operator">:</span> ModuleGraph<span class="token punctuation">;</span>
+  moduleGraph<span class="token operator">:</span> ModuleGraph<span class="token punctuation">;</span>
   <span class="token doc-comment comment">/**
    * \u4EE5\u4EE3\u7801\u65B9\u5F0F\u89E3\u6790\u3001\u52A0\u8F7D\u548C\u8F6C\u6362 url \u5E76\u83B7\u53D6\u7ED3\u679C
    * \u800C\u4E0D\u9700\u8981\u901A\u8FC7 http \u8BF7\u6C42\u7BA1\u9053\u3002
@@ -17013,20 +18127,20 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs) {
 <span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$p.ssrRender = _sfc_ssrRender$b;
-const _sfc_setup$p = _sfc_main$p.setup;
-_sfc_main$p.setup = (props, ctx) => {
+const _sfc_setup$t = _sfc_main$t.setup;
+_sfc_main$t.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vite/sourceCode/createServer.html.vue");
-  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
+  return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
 };
-var createServer_html$1 = /* @__PURE__ */ Object.freeze({
+var createServer_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["ssrRender", _sfc_ssrRender$f]]);
+var createServer_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$p
+  "default": createServer_html$1
 });
-const _sfc_main$o = {};
-function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs) {
+const _sfc_main$s = {};
+function _sfc_ssrRender$e(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="http" tabindex="-1"><a class="header-anchor" href="#http" aria-hidden="true">#</a> http</h1><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">resolveHttpServer</span><span class="token punctuation">(</span>
   <span class="token parameter"><span class="token punctuation">{</span> proxy <span class="token punctuation">}</span><span class="token operator">:</span> ServerOptions<span class="token punctuation">,</span>
   app<span class="token operator">:</span> Connect<span class="token punctuation">.</span>Server<span class="token punctuation">,</span>
@@ -17052,20 +18166,20 @@ function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs) {
 <span class="token punctuation">}</span>
 </code></pre></div><p><code>require(&#39;http&#39;).createServer(app)</code>\u4E3A\u4EC0\u4E48\u5728 import \u7684\u8BED\u6CD5\u80FD\u8FD9\u6837\u4F7F\u7528</p><!--]-->`);
 }
-_sfc_main$o.ssrRender = _sfc_ssrRender$a;
-const _sfc_setup$o = _sfc_main$o.setup;
-_sfc_main$o.setup = (props, ctx) => {
+const _sfc_setup$s = _sfc_main$s.setup;
+_sfc_main$s.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vite/sourceCode/http.html.vue");
-  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
+  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
 };
-var http_html$1 = /* @__PURE__ */ Object.freeze({
+var http_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["ssrRender", _sfc_ssrRender$e]]);
+var http_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$o
+  "default": http_html$1
 });
-const _sfc_main$n = {};
-function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs) {
+const _sfc_main$r = {};
+function _sfc_ssrRender$d(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="indexhtmlmiddleware" tabindex="-1"><a class="header-anchor" href="#indexhtmlmiddleware" aria-hidden="true">#</a> indexHtmlMiddleware</h1><h2 id="indexhtml" tabindex="-1"><a class="header-anchor" href="#indexhtml" aria-hidden="true">#</a> indexHtml</h2><div class="language-javascript ext-js"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">indexHtmlMiddleware</span><span class="token punctuation">(</span>
   <span class="token parameter">server<span class="token operator">:</span> ViteDevServer</span>
 <span class="token punctuation">)</span><span class="token operator">:</span> Connect<span class="token punctuation">.</span>NextHandleFunction <span class="token punctuation">{</span>
@@ -17100,17 +18214,175 @@ function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs) {
 <span class="token punctuation">}</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$n.ssrRender = _sfc_ssrRender$9;
+const _sfc_setup$r = _sfc_main$r.setup;
+_sfc_main$r.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vite/sourceCode/indexHtmlMiddleware.html.vue");
+  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+};
+var indexHtmlMiddleware_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$d]]);
+var indexHtmlMiddleware_html$2 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": indexHtmlMiddleware_html$1
+});
+const _sfc_main$q = {};
+function _sfc_ssrRender$c(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1 id="\u4E3A\u4EC0\u4E48-vuex-store-\u4E2D\u7684\u503C\u9700\u8981\u653E\u5230-computed-\u4E2D" tabindex="-1"><a class="header-anchor" href="#\u4E3A\u4EC0\u4E48-vuex-store-\u4E2D\u7684\u503C\u9700\u8981\u653E\u5230-computed-\u4E2D" aria-hidden="true">#</a> \u4E3A\u4EC0\u4E48 vuex store \u4E2D\u7684\u503C\u9700\u8981\u653E\u5230 computed \u4E2D</h1><div class="language-vue ext-vue"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    Clicked: {{ count }} times, count is {{ evenOrOdd }}.
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>increment<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>decrement<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>incrementIfOdd<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Increment if odd<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>incrementAsync<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Increment async<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> computed <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vue&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vuex&#39;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      count<span class="token operator">:</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>count<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      evenOrOdd<span class="token operator">:</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span>getters<span class="token punctuation">.</span>evenOrOdd<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">increment</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&#39;increment&#39;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">decrement</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&#39;decrement&#39;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">incrementIfOdd</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&#39;incrementIfOdd&#39;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">incrementAsync</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&#39;incrementAsync&#39;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>\u5982\u679C\u5C06 count \u76F4\u63A5\u5199\u6210 store.state.count\uFF0C\u70B9\u51FB\u9875\u9762\u65F6\u9875\u9762\u4E0D\u4F1A\u6709\u53D8\u5316</p><!--]-->`);
+}
+const _sfc_setup$q = _sfc_main$q.setup;
+_sfc_main$q.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vue3Basic/QA/computed.html.vue");
+  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
+};
+var computed_html$2 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$c]]);
+var computed_html$3 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": computed_html$2
+});
+const _sfc_main$p = {};
+function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs) {
+  _push(`<h1${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "proxy",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#proxy" aria-hidden="true">#</a> Proxy</h1>`);
+}
+const _sfc_setup$p = _sfc_main$p.setup;
+_sfc_main$p.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vue3Basic/QA/proxy.html.vue");
+  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
+};
+var proxy_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["ssrRender", _sfc_ssrRender$b]]);
+var proxy_html$2 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": proxy_html$1
+});
+const _sfc_main$o = {};
+function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs) {
+}
+const _sfc_setup$o = _sfc_main$o.setup;
+_sfc_main$o.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vue3Basic/QA/watch.html.vue");
+  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
+};
+var watch_html$2 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$a]]);
+var watch_html$3 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": watch_html$2
+});
+const _sfc_main$n = {};
+function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1 id="card" tabindex="-1"><a class="header-anchor" href="#card" aria-hidden="true">#</a> card</h1><p>card.vue</p><div class="language-vue ext-vue"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[ns.b(), ns.is(\`\${shadow}-shadow\`)]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>$slots.header || header<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ns.e(<span class="token punctuation">&#39;</span>header<span class="token punctuation">&#39;</span>)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>header<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{ header }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ns.e(<span class="token punctuation">&#39;</span>body<span class="token punctuation">&#39;</span>)<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bodyStyle<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ts<span class="token punctuation">&quot;</span></span> <span class="token attr-name">setup</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useNamespace <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@element-plus/hooks&#39;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> cardProps <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;./card&#39;</span>
+
+<span class="token function">defineOptions</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">&#39;ElCard&#39;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token function">defineProps</span><span class="token punctuation">(</span>cardProps<span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> ns <span class="token operator">=</span> <span class="token function">useNamespace</span><span class="token punctuation">(</span><span class="token string">&#39;card&#39;</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>card.ts</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> buildProps<span class="token punctuation">,</span> definePropType <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@element-plus/utils&#39;</span>
+<span class="token keyword">import</span> <span class="token keyword">type</span> <span class="token punctuation">{</span> ExtractPropTypes<span class="token punctuation">,</span> StyleValue <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vue&#39;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> cardProps <span class="token operator">=</span> <span class="token function">buildProps</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token doc-comment comment">/**
+   * <span class="token keyword">@description</span> title of the card. Also accepts a DOM passed by \`slot#header\`
+   */</span>
+  header<span class="token operator">:</span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> String<span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token doc-comment comment">/**
+   * <span class="token keyword">@description</span> CSS style of card body
+   */</span>
+  bodyStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> <span class="token generic-function"><span class="token function">definePropType</span><span class="token generic class-name"><span class="token operator">&lt;</span>StyleValue<span class="token operator">&gt;</span></span></span><span class="token punctuation">(</span><span class="token punctuation">[</span>String<span class="token punctuation">,</span> Object<span class="token punctuation">,</span> <span class="token builtin">Array</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token doc-comment comment">/**
+   * <span class="token keyword">@description</span> when to show card shadows
+   */</span>
+  shadow<span class="token operator">:</span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> String<span class="token punctuation">,</span>
+    values<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&#39;always&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;hover&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;never&#39;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&#39;always&#39;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span> <span class="token keyword">as</span> <span class="token keyword">const</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">type</span> <span class="token class-name">CardProps</span> <span class="token operator">=</span> ExtractPropTypes<span class="token operator">&lt;</span><span class="token keyword">typeof</span> cardProps<span class="token operator">&gt;</span>
+</code></pre></div><p>instance.ts</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token keyword">type</span> <span class="token class-name">Card</span> <span class="token keyword">from</span> <span class="token string">&#39;./card.vue&#39;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">type</span> <span class="token class-name">CardInstance</span> <span class="token operator">=</span> InstanceType<span class="token operator">&lt;</span><span class="token keyword">typeof</span> Card<span class="token operator">&gt;</span>
+</code></pre></div><p>index.ts</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> withInstall <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@element-plus/utils&#39;</span>
+
+<span class="token keyword">import</span> Card <span class="token keyword">from</span> <span class="token string">&#39;./src/card.vue&#39;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> ElCard <span class="token operator">=</span> <span class="token function">withInstall</span><span class="token punctuation">(</span>Card<span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> ElCard
+
+<span class="token keyword">export</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token string">&#39;./src/card&#39;</span>
+<span class="token keyword">export</span> <span class="token keyword">type</span> <span class="token punctuation">{</span> CardInstance <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;./src/instance&#39;</span>
+
+</code></pre></div><!--]-->`);
+}
 const _sfc_setup$n = _sfc_main$n.setup;
 _sfc_main$n.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/vite/sourceCode/indexHtmlMiddleware.html.vue");
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/components/card/index.html.vue");
   return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
 };
-var indexHtmlMiddleware_html$1 = /* @__PURE__ */ Object.freeze({
+var index_html$c = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$9]]);
+var index_html$d = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$n
+  "default": index_html$c
 });
 const _sfc_main$m = {};
 function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs) {
@@ -17156,17 +18428,17 @@ validator
   <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$m.ssrRender = _sfc_ssrRender$8;
 const _sfc_setup$m = _sfc_main$m.setup;
 _sfc_main$m.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/components/form/async-validator.html.vue");
   return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
 };
-var asyncValidator_html$1 = /* @__PURE__ */ Object.freeze({
+var asyncValidator_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["ssrRender", _sfc_ssrRender$8]]);
+var asyncValidator_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$m
+  "default": asyncValidator_html$1
 });
 const _sfc_main$l = {};
 function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
@@ -17537,17 +18809,17 @@ function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$l.ssrRender = _sfc_ssrRender$7;
 const _sfc_setup$l = _sfc_main$l.setup;
 _sfc_main$l.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/components/form/form-item.html.vue");
   return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
 };
-var formItem_html$1 = /* @__PURE__ */ Object.freeze({
+var formItem_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["ssrRender", _sfc_ssrRender$7]]);
+var formItem_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$l
+  "default": formItem_html$1
 });
 const _sfc_main$k = {};
 function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
@@ -17567,17 +18839,17 @@ function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$k.ssrRender = _sfc_ssrRender$6;
 const _sfc_setup$k = _sfc_main$k.setup;
 _sfc_main$k.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/components/form/rules.html.vue");
   return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
 };
-var rules_html$1 = /* @__PURE__ */ Object.freeze({
+var rules_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["ssrRender", _sfc_ssrRender$6]]);
+var rules_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$k
+  "default": rules_html$1
 });
 const _sfc_main$j = {};
 function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
@@ -18067,17 +19339,17 @@ type TargetElement <span class="token operator">=</span> HTMLInputElement <span 
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$j.ssrRender = _sfc_ssrRender$5;
 const _sfc_setup$j = _sfc_main$j.setup;
 _sfc_main$j.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/components/input/input-code.html.vue");
   return _sfc_setup$j ? _sfc_setup$j(props, ctx) : void 0;
 };
-var inputCode_html$1 = /* @__PURE__ */ Object.freeze({
+var inputCode_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["ssrRender", _sfc_ssrRender$5]]);
+var inputCode_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$j
+  "default": inputCode_html$1
 });
 const _sfc_main$i = {};
 function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
@@ -18086,17 +19358,17 @@ function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
     tabindex: "-1"
   }, _attrs))}><a class="header-anchor" href="#input" aria-hidden="true">#</a> input</h1>`);
 }
-_sfc_main$i.ssrRender = _sfc_ssrRender$4;
 const _sfc_setup$i = _sfc_main$i.setup;
 _sfc_main$i.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/components/input/input.html.vue");
   return _sfc_setup$i ? _sfc_setup$i(props, ctx) : void 0;
 };
-var input_html$1 = /* @__PURE__ */ Object.freeze({
+var input_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["ssrRender", _sfc_ssrRender$4]]);
+var input_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$i
+  "default": input_html$1
 });
 const _sfc_main$h = {};
 function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
@@ -18150,33 +19422,33 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$h.ssrRender = _sfc_ssrRender$3;
 const _sfc_setup$h = _sfc_main$h.setup;
 _sfc_main$h.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/components/table/table-column.html.vue");
   return _sfc_setup$h ? _sfc_setup$h(props, ctx) : void 0;
 };
-var tableColumn_html$1 = /* @__PURE__ */ Object.freeze({
+var tableColumn_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["ssrRender", _sfc_ssrRender$3]]);
+var tableColumn_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$h
+  "default": tableColumn_html$1
 });
 const _sfc_main$g = {};
 function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h1 id="table" tabindex="-1"><a class="header-anchor" href="#table" aria-hidden="true">#</a> table</h1><nav class="table-of-contents"><ul></ul></nav><!--]-->`);
 }
-_sfc_main$g.ssrRender = _sfc_ssrRender$2;
 const _sfc_setup$g = _sfc_main$g.setup;
 _sfc_main$g.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/components/table/table.html.vue");
   return _sfc_setup$g ? _sfc_setup$g(props, ctx) : void 0;
 };
-var table_html$1 = /* @__PURE__ */ Object.freeze({
+var table_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["ssrRender", _sfc_ssrRender$2]]);
+var table_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$g
+  "default": table_html$1
 });
 const _sfc_main$f = {};
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
@@ -18195,34 +19467,34 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
 <span class="token punctuation">}</span>
 </code></pre></div><!--]-->`);
 }
-_sfc_main$f.ssrRender = _sfc_ssrRender$1;
 const _sfc_setup$f = _sfc_main$f.setup;
 _sfc_main$f.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/elementPlus/components/table/util.html.vue");
   return _sfc_setup$f ? _sfc_setup$f(props, ctx) : void 0;
 };
-var util_html$1 = /* @__PURE__ */ Object.freeze({
+var util_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["ssrRender", _sfc_ssrRender$1]]);
+var util_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$f
+  "default": util_html$1
 });
 const _sfc_main$e = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
 }
-_sfc_main$e.ssrRender = _sfc_ssrRender;
 const _sfc_setup$e = _sfc_main$e.setup;
 _sfc_main$e.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/404.html.vue");
   return _sfc_setup$e ? _sfc_setup$e(props, ctx) : void 0;
 };
-var _404_html$1 = /* @__PURE__ */ Object.freeze({
+var _404_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["ssrRender", _sfc_ssrRender]]);
+var _404_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": _sfc_main$e
+  "default": _404_html$1
 });
-const data$W = {
+const data$15 = {
   "key": "v-8daa1a0e",
   "path": "/",
   "title": "Introduction",
@@ -18234,24 +19506,19 @@ const data$W = {
   "git": {
     "contributors": [
       {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 8
-      },
-      {
         "name": "tanyp",
         "email": "759227027@qq.com",
-        "commits": 3
+        "commits": 1
       }
     ]
   }
 };
-var index_html$9 = /* @__PURE__ */ Object.freeze({
+var index_html$b = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$W
+  data: data$15
 });
-const data$V = {
+const data$14 = {
   "key": "v-00c059b2",
   "path": "/elementPlus/",
   "title": "Introduction",
@@ -18266,21 +19533,16 @@ const data$V = {
         "name": "tanyp",
         "email": "759227027@qq.com",
         "commits": 1
-      },
-      {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 1
       }
     ]
   }
 };
-var index_html$8 = /* @__PURE__ */ Object.freeze({
+var index_html$a = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$V
+  data: data$14
 });
-const data$U = {
+const data$13 = {
   "key": "v-39d4ce89",
   "path": "/elementPlus/tree.html",
   "title": "tree",
@@ -18294,7 +19556,7 @@ const data$U = {
       {
         "name": "tanyp",
         "email": "759227027@qq.com",
-        "commits": 2
+        "commits": 1
       }
     ]
   }
@@ -18302,9 +19564,9 @@ const data$U = {
 var tree_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$U
+  data: data$13
 });
-const data$T = {
+const data$12 = {
   "key": "v-c15a97d6",
   "path": "/frontEndTool/rollup.html",
   "title": "rollup \u914D\u7F6E",
@@ -18382,9 +19644,9 @@ const data$T = {
 var rollup_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$T
+  data: data$12
 });
-const data$S = {
+const data$11 = {
   "key": "v-5dd4be94",
   "path": "/frontEndTool/skill.html",
   "title": "\u6E90\u7801\u9605\u8BFB\u6280\u5DE7",
@@ -18413,9 +19675,33 @@ const data$S = {
 var skill_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$S
+  data: data$11
 });
-const data$R = {
+const data$10 = {
+  "key": "v-151eacea",
+  "path": "/pina/",
+  "title": "",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "pina/README.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var index_html$9 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$10
+});
+const data$$ = {
   "key": "v-303438b4",
   "path": "/sourceCode/Diff.html",
   "title": "Diff \u7B97\u6CD5\u4F18\u5316",
@@ -18437,9 +19723,9 @@ const data$R = {
 var Diff_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$R
+  data: data$$
 });
-const data$Q = {
+const data$_ = {
   "key": "v-2c1b37ee",
   "path": "/sourceCode/",
   "title": "Introduction",
@@ -18454,21 +19740,16 @@ const data$Q = {
         "name": "tanyp",
         "email": "759227027@qq.com",
         "commits": 1
-      },
-      {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 1
       }
     ]
   }
 };
-var index_html$7 = /* @__PURE__ */ Object.freeze({
+var index_html$8 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$Q
+  data: data$_
 });
-const data$P = {
+const data$Z = {
   "key": "v-1ab18016",
   "path": "/sourceCode/v-model.html",
   "title": "v-model",
@@ -18490,9 +19771,33 @@ const data$P = {
 var vModel_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$P
+  data: data$Z
 });
-const data$O = {
+const data$Y = {
+  "key": "v-157350f2",
+  "path": "/vite/",
+  "title": "Introduction",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "vite/README.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var index_html$7 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$Y
+});
+const data$X = {
   "key": "v-22bb3a7b",
   "path": "/vite/application.html",
   "title": "Vite",
@@ -18511,11 +19816,6 @@ const data$O = {
   "git": {
     "contributors": [
       {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 2
-      },
-      {
         "name": "tanyp",
         "email": "759227027@qq.com",
         "commits": 1
@@ -18526,38 +19826,9 @@ const data$O = {
 var application_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$O
+  data: data$X
 });
-const data$N = {
-  "key": "v-157350f2",
-  "path": "/vite/",
-  "title": "Introduction",
-  "lang": "en-US",
-  "frontmatter": {},
-  "excerpt": "",
-  "headers": [],
-  "filePathRelative": "vite/README.md",
-  "git": {
-    "contributors": [
-      {
-        "name": "tanyp",
-        "email": "759227027@qq.com",
-        "commits": 1
-      },
-      {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 1
-      }
-    ]
-  }
-};
-var index_html$6 = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  data: data$N
-});
-const data$M = {
+const data$W = {
   "key": "v-0f6b9545",
   "path": "/vite/vue-dev-server.html",
   "title": "vue-dev-server",
@@ -18602,7 +19873,7 @@ const data$M = {
       {
         "name": "tanyp",
         "email": "759227027@qq.com",
-        "commits": 2
+        "commits": 1
       }
     ]
   }
@@ -18610,17 +19881,31 @@ const data$M = {
 var vueDevServer_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$M
+  data: data$W
 });
-const data$L = {
-  "key": "v-508a9cca",
-  "path": "/vue3Basic/auth.html",
-  "title": "\u6743\u9650",
+const data$V = {
+  "key": "v-5db951d1",
+  "path": "/vite/%E5%A4%84%E7%90%86%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90.html",
+  "title": "\u5904\u7406\u9759\u6001\u8D44\u6E90",
   "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
-  "headers": [],
-  "filePathRelative": "vue3Basic/auth.md",
+  "headers": [
+    {
+      "level": 2,
+      "title": "\u56FE\u7247\u52A0\u8F7D",
+      "slug": "\u56FE\u7247\u52A0\u8F7D",
+      "children": [
+        {
+          "level": 3,
+          "title": "SVG \u7EC4\u4EF6\u65B9\u5F0F\u52A0\u8F7D",
+          "slug": "svg-\u7EC4\u4EF6\u65B9\u5F0F\u52A0\u8F7D",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "filePathRelative": "vite/\u5904\u7406\u9759\u6001\u8D44\u6E90.md",
   "git": {
     "contributors": [
       {
@@ -18631,12 +19916,12 @@ const data$L = {
     ]
   }
 };
-var auth_html = /* @__PURE__ */ Object.freeze({
+var _______html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$L
+  data: data$V
 });
-const data$K = {
+const data$U = {
   "key": "v-d618035e",
   "path": "/vue3Basic/JSX.html",
   "title": "JSX",
@@ -18683,9 +19968,109 @@ const data$K = {
 var JSX_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$K
+  data: data$U
 });
-const data$J = {
+const data$T = {
+  "key": "v-29184f47",
+  "path": "/vue3Basic/",
+  "title": "Introduction",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "vue3Basic/README.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var index_html$6 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$T
+});
+const data$S = {
+  "key": "v-bbe7f31a",
+  "path": "/vue3Basic/Vue3Api.html",
+  "title": "Vue3 API",
+  "lang": "en-US",
+  "frontmatter": {
+    "sidebarDepth": 1
+  },
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "hooks",
+      "slug": "hooks",
+      "children": [
+        {
+          "level": 3,
+          "title": "vue2 mixins",
+          "slug": "vue2-mixins",
+          "children": []
+        },
+        {
+          "level": 3,
+          "title": "Vue3 hooks",
+          "slug": "vue3-hooks",
+          "children": []
+        },
+        {
+          "level": 3,
+          "title": "react hooks",
+          "slug": "react-hooks",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "filePathRelative": "vue3Basic/Vue3Api.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var Vue3Api_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$S
+});
+const data$R = {
+  "key": "v-508a9cca",
+  "path": "/vue3Basic/auth.html",
+  "title": "\u6743\u9650",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "vue3Basic/auth.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var auth_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$R
+});
+const data$Q = {
   "key": "v-3c9456e8",
   "path": "/vue3Basic/reactivityAPI.html",
   "title": "\u54CD\u5E94\u5F0F\u7CFB\u7EDF API",
@@ -18794,9 +20179,9 @@ const data$J = {
   "git": {
     "contributors": [
       {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 4
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
       }
     ]
   }
@@ -18804,85 +20189,33 @@ const data$J = {
 var reactivityAPI_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$J
+  data: data$Q
 });
-const data$I = {
-  "key": "v-29184f47",
-  "path": "/vue3Basic/",
-  "title": "Introduction",
+const data$P = {
+  "key": "v-a42c4298",
+  "path": "/vue3Basic/vue3Project.html",
+  "title": "\u642D\u5EFA\u57FA\u4E8E vue3 \u7684\u524D\u7AEF\u67B6\u6784",
   "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [],
-  "filePathRelative": "vue3Basic/README.md",
+  "filePathRelative": "vue3Basic/vue3Project.md",
   "git": {
     "contributors": [
       {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
+        "name": "tanyp",
+        "email": "759227027@qq.com",
         "commits": 1
       }
     ]
   }
 };
-var index_html$5 = /* @__PURE__ */ Object.freeze({
+var vue3Project_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$I
+  data: data$P
 });
-const data$H = {
-  "key": "v-bbe7f31a",
-  "path": "/vue3Basic/Vue3Api.html",
-  "title": "Vue3 API",
-  "lang": "en-US",
-  "frontmatter": {
-    "sidebarDepth": 1
-  },
-  "excerpt": "",
-  "headers": [
-    {
-      "level": 2,
-      "title": "hooks",
-      "slug": "hooks",
-      "children": [
-        {
-          "level": 3,
-          "title": "vue2 mixins",
-          "slug": "vue2-mixins",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "Vue3 hooks",
-          "slug": "vue3-hooks",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "react hooks",
-          "slug": "react-hooks",
-          "children": []
-        }
-      ]
-    }
-  ],
-  "filePathRelative": "vue3Basic/Vue3Api.md",
-  "git": {
-    "contributors": [
-      {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 2
-      }
-    ]
-  }
-};
-var Vue3Api_html = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  data: data$H
-});
-const data$G = {
+const data$O = {
   "key": "v-7f6e4968",
   "path": "/vue3Basic/vue3optimize.html",
   "title": "Vue3 \u7684\u4F18\u5316",
@@ -18978,9 +20311,9 @@ const data$G = {
   "git": {
     "contributors": [
       {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 2
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
       }
     ]
   }
@@ -18988,17 +20321,17 @@ const data$G = {
 var vue3optimize_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$G
+  data: data$O
 });
-const data$F = {
-  "key": "v-a42c4298",
-  "path": "/vue3Basic/vue3Project.html",
-  "title": "\u642D\u5EFA\u57FA\u4E8E vue3 \u7684\u524D\u7AEF\u67B6\u6784",
+const data$N = {
+  "key": "v-3db83299",
+  "path": "/vuePress/",
+  "title": "Introduction",
   "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
   "headers": [],
-  "filePathRelative": "vue3Basic/vue3Project.md",
+  "filePathRelative": "vuePress/README.md",
   "git": {
     "contributors": [
       {
@@ -19009,12 +20342,12 @@ const data$F = {
     ]
   }
 };
-var vue3Project_html = /* @__PURE__ */ Object.freeze({
+var index_html$5 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$F
+  data: data$N
 });
-const data$E = {
+const data$M = {
   "key": "v-2dedee22",
   "path": "/vuePress/application.html",
   "title": "VuePress \u7B14\u8BB0",
@@ -19029,11 +20362,6 @@ const data$E = {
         "name": "tanyp",
         "email": "759227027@qq.com",
         "commits": 1
-      },
-      {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 1
       }
     ]
   }
@@ -19041,33 +20369,9 @@ const data$E = {
 var application_html$1 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$E
+  data: data$M
 });
-const data$D = {
-  "key": "v-3db83299",
-  "path": "/vuePress/",
-  "title": "Introduction",
-  "lang": "en-US",
-  "frontmatter": {},
-  "excerpt": "",
-  "headers": [],
-  "filePathRelative": "vuePress/README.md",
-  "git": {
-    "contributors": [
-      {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 1
-      }
-    ]
-  }
-};
-var index_html$4 = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  data: data$D
-});
-const data$C = {
+const data$L = {
   "key": "v-6907e510",
   "path": "/vuePress/sourceCode.html",
   "title": "VuePress \u67B6\u6784\u8BBE\u8BA1",
@@ -19082,11 +20386,6 @@ const data$C = {
         "name": "tanyp",
         "email": "759227027@qq.com",
         "commits": 1
-      },
-      {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 1
       }
     ]
   }
@@ -19094,9 +20393,40 @@ const data$C = {
 var sourceCode_html$1 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$C
+  data: data$L
 });
-const data$B = {
+const data$K = {
+  "key": "v-4244654e",
+  "path": "/vueRouter/",
+  "title": "Introduction",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "vue2 Router",
+      "slug": "vue2-router",
+      "children": []
+    }
+  ],
+  "filePathRelative": "vueRouter/README.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var index_html$4 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$K
+});
+const data$J = {
   "key": "v-d7f3ee3c",
   "path": "/vueRouter/application.html",
   "title": "Vue Router 4 \u65B0\u7279\u6027",
@@ -19129,11 +20459,6 @@ const data$B = {
       {
         "name": "tanyp",
         "email": "759227027@qq.com",
-        "commits": 2
-      },
-      {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
         "commits": 1
       }
     ]
@@ -19142,9 +20467,9 @@ const data$B = {
 var application_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$B
+  data: data$J
 });
-const data$A = {
+const data$I = {
   "key": "v-f66c67fe",
   "path": "/vueRouter/browserRouter.html",
   "title": "\u539F\u751F\u8DEF\u7531\u57FA\u7840",
@@ -19221,7 +20546,7 @@ const data$A = {
       {
         "name": "tanyp",
         "email": "759227027@qq.com",
-        "commits": 2
+        "commits": 1
       }
     ]
   }
@@ -19229,9 +20554,9 @@ const data$A = {
 var browserRouter_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$A
+  data: data$I
 });
-const data$z = {
+const data$H = {
   "key": "v-00fc65d3",
   "path": "/vueRouter/code.html",
   "title": "vue-router v4.0.12",
@@ -19253,9 +20578,9 @@ const data$z = {
 var code_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$z
+  data: data$H
 });
-const data$y = {
+const data$G = {
   "key": "v-438f331a",
   "path": "/vueRouter/miniVueRouter.html",
   "title": "miniVueRouter",
@@ -19267,7 +20592,7 @@ const data$y = {
   "git": {
     "contributors": [
       {
-        "name": "tanyplzu",
+        "name": "tanyp",
         "email": "759227027@qq.com",
         "commits": 1
       }
@@ -19277,40 +20602,9 @@ const data$y = {
 var miniVueRouter_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$y
+  data: data$G
 });
-const data$x = {
-  "key": "v-4244654e",
-  "path": "/vueRouter/",
-  "title": "Introduction",
-  "lang": "en-US",
-  "frontmatter": {},
-  "excerpt": "",
-  "headers": [
-    {
-      "level": 2,
-      "title": "vue2 Router",
-      "slug": "vue2-router",
-      "children": []
-    }
-  ],
-  "filePathRelative": "vueRouter/README.md",
-  "git": {
-    "contributors": [
-      {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 2
-      }
-    ]
-  }
-};
-var index_html$3 = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  data: data$x
-});
-const data$w = {
+const data$F = {
   "key": "v-08959ab8",
   "path": "/vueRouter/sourceCode.html",
   "title": "Vue Router \u6E90\u7801\u89E3\u8BFB",
@@ -19457,11 +20751,6 @@ const data$w = {
       {
         "name": "tanyp",
         "email": "759227027@qq.com",
-        "commits": 3
-      },
-      {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
         "commits": 1
       }
     ]
@@ -19470,64 +20759,9 @@ const data$w = {
 var sourceCode_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$w
+  data: data$F
 });
-const data$v = {
-  "key": "v-f5df4e28",
-  "path": "/vuex/miniVuex.html",
-  "title": "\u81EA\u5B9A\u4E49 Vuex",
-  "lang": "en-US",
-  "frontmatter": {},
-  "excerpt": "",
-  "headers": [],
-  "filePathRelative": "vuex/miniVuex.md",
-  "git": {
-    "contributors": [
-      {
-        "name": "tanyplzu",
-        "email": "759227027@qq.com",
-        "commits": 1
-      }
-    ]
-  }
-};
-var miniVuex_html = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  data: data$v
-});
-const data$u = {
-  "key": "v-81d9f8bc",
-  "path": "/vuex/plugin.html",
-  "title": "vuex \u63D2\u4EF6",
-  "lang": "en-US",
-  "frontmatter": {},
-  "excerpt": "",
-  "headers": [
-    {
-      "level": 2,
-      "title": "\u6301\u4E45\u5316\u5B58\u50A8\u63D2\u4EF6",
-      "slug": "\u6301\u4E45\u5316\u5B58\u50A8\u63D2\u4EF6",
-      "children": []
-    }
-  ],
-  "filePathRelative": "vuex/plugin.md",
-  "git": {
-    "contributors": [
-      {
-        "name": "tanyp",
-        "email": "759227027@qq.com",
-        "commits": 1
-      }
-    ]
-  }
-};
-var plugin_html = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  data: data$u
-});
-const data$t = {
+const data$E = {
   "key": "v-15788f64",
   "path": "/vuex/",
   "title": "vuex \u7B14\u8BB0",
@@ -19565,31 +20799,6 @@ const data$t = {
           "children": []
         }
       ]
-    },
-    {
-      "level": 2,
-      "title": "vuex \u6709\u5173\u7684\u95EE\u9898",
-      "slug": "vuex-\u6709\u5173\u7684\u95EE\u9898",
-      "children": [
-        {
-          "level": 3,
-          "title": "1. vuex \u4E2D\u4E3A\u4EC0\u4E48\u628A\u628A\u5F02\u6B65\u64CD\u4F5C\u5C01\u88C5\u5728 action\uFF0C\u628A\u540C\u6B65\u64CD\u4F5C\u653E\u5728 mutations\uFF1F",
-          "slug": "_1-vuex-\u4E2D\u4E3A\u4EC0\u4E48\u628A\u628A\u5F02\u6B65\u64CD\u4F5C\u5C01\u88C5\u5728-action-\u628A\u540C\u6B65\u64CD\u4F5C\u653E\u5728-mutations",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "2. state \u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957\uFF0C\u5982\u4F55\u5B9E\u73B0\u7684\uFF1F",
-          "slug": "_2-state-\u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957-\u5982\u4F55\u5B9E\u73B0\u7684",
-          "children": []
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "title": "defineProperty \u4F55\u65F6\u6267\u884C",
-      "slug": "defineproperty-\u4F55\u65F6\u6267\u884C",
-      "children": []
     }
   ],
   "filePathRelative": "vuex/README.md",
@@ -19598,22 +20807,121 @@ const data$t = {
       {
         "name": "tanyp",
         "email": "759227027@qq.com",
-        "commits": 3
-      },
-      {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
         "commits": 1
       }
     ]
   }
 };
-var index_html$2 = /* @__PURE__ */ Object.freeze({
+var index_html$3 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$t
+  data: data$E
 });
-const data$s = {
+const data$D = {
+  "key": "v-f5df4e28",
+  "path": "/vuex/miniVuex.html",
+  "title": "\u81EA\u5B9A\u4E49 Vuex",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "vuex/miniVuex.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var miniVuex_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$D
+});
+const data$C = {
+  "key": "v-81d9f8bc",
+  "path": "/vuex/plugin.html",
+  "title": "vuex \u63D2\u4EF6",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "\u6301\u4E45\u5316\u5B58\u50A8\u63D2\u4EF6",
+      "slug": "\u6301\u4E45\u5316\u5B58\u50A8\u63D2\u4EF6",
+      "children": []
+    }
+  ],
+  "filePathRelative": "vuex/plugin.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var plugin_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$C
+});
+const data$B = {
+  "key": "v-c1f44ade",
+  "path": "/vuex/q&a.html",
+  "title": "vuex \u6709\u5173\u7684\u95EE\u9898",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 3,
+      "title": "action \u548C mutations",
+      "slug": "action-\u548C-mutations",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "state \u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957\uFF0C\u5982\u4F55\u5B9E\u73B0\u7684\uFF1F",
+      "slug": "state-\u5185\u90E8\u652F\u6301\u6A21\u5757\u914D\u7F6E\u548C\u6A21\u5757\u5D4C\u5957-\u5982\u4F55\u5B9E\u73B0\u7684",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "defineProperty \u4F55\u65F6\u6267\u884C",
+      "slug": "defineproperty-\u4F55\u65F6\u6267\u884C",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "\u4E3A\u4EC0\u4E48 vuex store \u4E2D\u7684\u503C\u9700\u8981\u653E\u5230 computed \u4E2D",
+      "slug": "\u4E3A\u4EC0\u4E48-vuex-store-\u4E2D\u7684\u503C\u9700\u8981\u653E\u5230-computed-\u4E2D",
+      "children": []
+    }
+  ],
+  "filePathRelative": "vuex/q&a.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var q_a_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$B
+});
+const data$A = {
   "key": "v-73238b6e",
   "path": "/vuex/sourceCode_v3.html",
   "title": "vuex3 \u6E90\u7801",
@@ -19670,7 +20978,7 @@ const data$s = {
       {
         "name": "tanyp",
         "email": "759227027@qq.com",
-        "commits": 2
+        "commits": 1
       }
     ]
   }
@@ -19678,9 +20986,9 @@ const data$s = {
 var sourceCode_v3_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$s
+  data: data$A
 });
-const data$r = {
+const data$z = {
   "key": "v-6fb9da30",
   "path": "/vuex/sourceCode_v4.html",
   "title": "vuex4 \u6E90\u7801\u89E3\u8BFB",
@@ -19857,7 +21165,7 @@ const data$r = {
       {
         "name": "tanyp",
         "email": "759227027@qq.com",
-        "commits": 2
+        "commits": 1
       }
     ]
   }
@@ -19865,9 +21173,9 @@ const data$r = {
 var sourceCode_v4_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$r
+  data: data$z
 });
-const data$q = {
+const data$y = {
   "key": "v-dad5dad4",
   "path": "/vuex/vuexCode.html",
   "title": "vuex v4.0.2",
@@ -19881,7 +21189,7 @@ const data$q = {
       {
         "name": "tanyp",
         "email": "759227027@qq.com",
-        "commits": 2
+        "commits": 1
       }
     ]
   }
@@ -19889,9 +21197,9 @@ const data$q = {
 var vuexCode_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$q
+  data: data$y
 });
-const data$p = {
+const data$x = {
   "key": "v-4ffb9324",
   "path": "/elementPlus/hooks/use-attrs.html",
   "title": "use-attrs",
@@ -19924,6 +21232,323 @@ const data$p = {
   }
 };
 var useAttrs_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$x
+});
+const data$w = {
+  "key": "v-592d0456",
+  "path": "/elementPlus/hooks/use-namespace.html",
+  "title": "useNamespace",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "elementPlus/hooks/use-namespace.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var useNamespace_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$w
+});
+const data$v = {
+  "key": "v-1f48a459",
+  "path": "/elementPlus/theme-chalk/BEM.html",
+  "title": "BEM",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "elementPlus/theme-chalk/BEM.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var BEM_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$v
+});
+const data$u = {
+  "key": "v-b8062c82",
+  "path": "/elementPlus/theme-chalk/scss.html",
+  "title": "scss",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "\u53D8\u91CF",
+      "slug": "\u53D8\u91CF",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "\u6CE8\u91CA",
+      "slug": "\u6CE8\u91CA",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "At-rules",
+      "slug": "at-rules",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "@extend",
+      "slug": "extend",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "@mixin",
+      "slug": "mixin",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "@use",
+      "slug": "use",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "@forward",
+      "slug": "forward",
+      "children": [
+        {
+          "level": 3,
+          "title": "@forward \u6DFB\u52A0\u524D\u7F00",
+          "slug": "forward-\u6DFB\u52A0\u524D\u7F00",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "title": "@content",
+      "slug": "content",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "@at-root",
+      "slug": "at-root",
+      "children": [
+        {
+          "level": 3,
+          "title": "@at-root\u548C&\u7684\u7ED3\u5408",
+          "slug": "at-root\u548C-\u7684\u7ED3\u5408",
+          "children": []
+        },
+        {
+          "level": 3,
+          "title": "@at-root\u548C#{&}\u7ED3\u5408",
+          "slug": "at-root\u548C-\u7ED3\u5408",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "title": "\u8D44\u6599",
+      "slug": "\u8D44\u6599",
+      "children": []
+    }
+  ],
+  "filePathRelative": "elementPlus/theme-chalk/scss.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var scss_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$u
+});
+const data$t = {
+  "key": "v-5801bab2",
+  "path": "/elementPlus/utils/buildProps.html",
+  "title": "buildProps",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "\u6CDB\u578B",
+      "slug": "\u6CDB\u578B",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "\u5E26\u7EA6\u675F\u7684\u6CDB\u578B",
+      "slug": "\u5E26\u7EA6\u675F\u7684\u6CDB\u578B",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "buildProps \u8FD4\u56DE\u503C",
+      "slug": "buildprops-\u8FD4\u56DE\u503C",
+      "children": [
+        {
+          "level": 3,
+          "title": "[K in keyof Props]",
+          "slug": "k-in-keyof-props",
+          "children": []
+        },
+        {
+          "level": 3,
+          "title": "\u503C\u5224\u65AD",
+          "slug": "\u503C\u5224\u65AD",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "title": "buildProps \u51FD\u6570\u5B9E\u9645\u5185\u5BB9",
+      "slug": "buildprops-\u51FD\u6570\u5B9E\u9645\u5185\u5BB9",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "\u5C0F\u7ED3",
+      "slug": "\u5C0F\u7ED3",
+      "children": []
+    }
+  ],
+  "filePathRelative": "elementPlus/utils/buildProps.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var buildProps_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$t
+});
+const data$s = {
+  "key": "v-1b208c8b",
+  "path": "/sourceCode/DeepDive/Render-function.html",
+  "title": "Render function",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "sourceCode/DeepDive/Render-function.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var RenderFunction_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$s
+});
+const data$r = {
+  "key": "v-312af42a",
+  "path": "/sourceCode/DeepDive/creating-a-mini-vue.html",
+  "title": "creating a mini vue",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "sourceCode/DeepDive/creating-a-mini-vue.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var creatingAMiniVue_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$r
+});
+const data$q = {
+  "key": "v-5945442a",
+  "path": "/sourceCode/DeepDive/miniVue.html",
+  "title": "mini vue",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "sourceCode/DeepDive/miniVue.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var miniVue_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$q
+});
+const data$p = {
+  "key": "v-154ce3f6",
+  "path": "/sourceCode/DeepDive/useFetch.html",
+  "title": "useFetch",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "sourceCode/DeepDive/useFetch.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var useFetch_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   data: data$p
@@ -20005,102 +21630,6 @@ var setup_html = /* @__PURE__ */ Object.freeze({
   data: data$o
 });
 const data$n = {
-  "key": "v-312af42a",
-  "path": "/sourceCode/DeepDive/creating-a-mini-vue.html",
-  "title": "creating a mini vue",
-  "lang": "en-US",
-  "frontmatter": {},
-  "excerpt": "",
-  "headers": [],
-  "filePathRelative": "sourceCode/DeepDive/creating-a-mini-vue.md",
-  "git": {
-    "contributors": [
-      {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 1
-      }
-    ]
-  }
-};
-var creatingAMiniVue_html = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  data: data$n
-});
-const data$m = {
-  "key": "v-5945442a",
-  "path": "/sourceCode/DeepDive/miniVue.html",
-  "title": "mini vue",
-  "lang": "en-US",
-  "frontmatter": {},
-  "excerpt": "",
-  "headers": [],
-  "filePathRelative": "sourceCode/DeepDive/miniVue.md",
-  "git": {
-    "contributors": [
-      {
-        "name": "tanyp",
-        "email": "759227027@qq.com",
-        "commits": 1
-      }
-    ]
-  }
-};
-var miniVue_html = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  data: data$m
-});
-const data$l = {
-  "key": "v-1b208c8b",
-  "path": "/sourceCode/DeepDive/Render-function.html",
-  "title": "Render function",
-  "lang": "en-US",
-  "frontmatter": {},
-  "excerpt": "",
-  "headers": [],
-  "filePathRelative": "sourceCode/DeepDive/Render-function.md",
-  "git": {
-    "contributors": [
-      {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 1
-      }
-    ]
-  }
-};
-var RenderFunction_html = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  data: data$l
-});
-const data$k = {
-  "key": "v-154ce3f6",
-  "path": "/sourceCode/DeepDive/useFetch.html",
-  "title": "useFetch",
-  "lang": "en-US",
-  "frontmatter": {},
-  "excerpt": "",
-  "headers": [],
-  "filePathRelative": "sourceCode/DeepDive/useFetch.md",
-  "git": {
-    "contributors": [
-      {
-        "name": "tanyplzu",
-        "email": "48279933+tanyplzu@users.noreply.github.com",
-        "commits": 1
-      }
-    ]
-  }
-};
-var useFetch_html = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  data: data$k
-});
-const data$j = {
   "key": "v-57862f7c",
   "path": "/sourceCode/parser/",
   "title": "",
@@ -20119,12 +21648,12 @@ const data$j = {
     ]
   }
 };
-var index_html$1 = /* @__PURE__ */ Object.freeze({
+var index_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$j
+  data: data$n
 });
-const data$i = {
+const data$m = {
   "key": "v-4800f6cd",
   "path": "/sourceCode/reactivity/computed.html",
   "title": "computed",
@@ -20143,12 +21672,12 @@ const data$i = {
     ]
   }
 };
-var computed_html = /* @__PURE__ */ Object.freeze({
+var computed_html$1 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$i
+  data: data$m
 });
-const data$h = {
+const data$l = {
   "key": "v-b3dbcc8c",
   "path": "/sourceCode/reactivity/reactivity.cjs.html",
   "title": "reactivity \u6E90\u7801",
@@ -20170,9 +21699,9 @@ const data$h = {
 var reactivity_cjs_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$h
+  data: data$l
 });
-const data$g = {
+const data$k = {
   "key": "v-f2b64710",
   "path": "/sourceCode/reactivity/reactivity.html",
   "title": "\u624B\u5199reactivity",
@@ -20237,9 +21766,9 @@ const data$g = {
 var reactivity_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$g
+  data: data$k
 });
-const data$f = {
+const data$j = {
   "key": "v-38a137ae",
   "path": "/sourceCode/reactivity/watch.html",
   "title": "watch",
@@ -20258,12 +21787,12 @@ const data$f = {
     ]
   }
 };
-var watch_html = /* @__PURE__ */ Object.freeze({
+var watch_html$1 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$f
+  data: data$j
 });
-const data$e = {
+const data$i = {
   "key": "v-024bb864",
   "path": "/sourceCode/renderer/componentRender.html",
   "title": "\u7EC4\u4EF6\u6E32\u67D3",
@@ -20322,7 +21851,7 @@ const data$e = {
       {
         "name": "tanyp",
         "email": "759227027@qq.com",
-        "commits": 2
+        "commits": 1
       }
     ]
   }
@@ -20330,9 +21859,9 @@ const data$e = {
 var componentRender_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$e
+  data: data$i
 });
-const data$d = {
+const data$h = {
   "key": "v-5dd6cdc6",
   "path": "/sourceCode/renderer/createAppAPI.html",
   "title": "createAppAPI",
@@ -20354,9 +21883,9 @@ const data$d = {
 var createAppAPI_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$d
+  data: data$h
 });
-const data$c = {
+const data$g = {
   "key": "v-d8fea8c4",
   "path": "/sourceCode/renderer/",
   "title": "\u6E32\u67D3\u5668\u4E0E\u54CD\u5E94\u5F0F\u7CFB\u7EDF\u7684\u7ED3\u5408",
@@ -20375,12 +21904,12 @@ const data$c = {
     ]
   }
 };
-var index_html = /* @__PURE__ */ Object.freeze({
+var index_html$1 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$c
+  data: data$g
 });
-const data$b = {
+const data$f = {
   "key": "v-16a9f525",
   "path": "/vite/sourceCode/createServer.html",
   "title": "createServer",
@@ -20413,7 +21942,7 @@ const data$b = {
       {
         "name": "tanyp",
         "email": "759227027@qq.com",
-        "commits": 2
+        "commits": 1
       }
     ]
   }
@@ -20421,9 +21950,9 @@ const data$b = {
 var createServer_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$b
+  data: data$f
 });
-const data$a = {
+const data$e = {
   "key": "v-6818c89c",
   "path": "/vite/sourceCode/http.html",
   "title": "http",
@@ -20445,9 +21974,9 @@ const data$a = {
 var http_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$a
+  data: data$e
 });
-const data$9 = {
+const data$d = {
   "key": "v-2d7f1302",
   "path": "/vite/sourceCode/indexHtmlMiddleware.html",
   "title": "indexHtmlMiddleware",
@@ -20480,6 +22009,102 @@ const data$9 = {
   }
 };
 var indexHtmlMiddleware_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$d
+});
+const data$c = {
+  "key": "v-b5fb9518",
+  "path": "/vue3Basic/QA/computed.html",
+  "title": "\u4E3A\u4EC0\u4E48 vuex store \u4E2D\u7684\u503C\u9700\u8981\u653E\u5230 computed \u4E2D",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "vue3Basic/QA/computed.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var computed_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$c
+});
+const data$b = {
+  "key": "v-78e6b6ba",
+  "path": "/vue3Basic/QA/proxy.html",
+  "title": "Proxy",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "vue3Basic/QA/proxy.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var proxy_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$b
+});
+const data$a = {
+  "key": "v-2c83fee2",
+  "path": "/vue3Basic/QA/watch.html",
+  "title": "",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "vue3Basic/QA/watch.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var watch_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$a
+});
+const data$9 = {
+  "key": "v-256286d0",
+  "path": "/elementPlus/components/card/",
+  "title": "card",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "filePathRelative": "elementPlus/components/card/index.md",
+  "git": {
+    "contributors": [
+      {
+        "name": "tanyp",
+        "email": "759227027@qq.com",
+        "commits": 1
+      }
+    ]
+  }
+};
+var index_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   data: data$9
@@ -20707,7 +22332,7 @@ var _404_html = /* @__PURE__ */ Object.freeze({
   [Symbol.toStringTag]: "Module",
   data
 });
-var _sfc_main$d = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$d = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     var _a, _b, _c;
@@ -20844,7 +22469,7 @@ function setup(__props) {
     }
   };
 }
-var _sfc_main$c = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadValues({}, __default__), {
+const _sfc_main$c = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadValues({}, __default__), {
   __ssrInlineRender: true,
   props: {
     item: {
@@ -20860,7 +22485,7 @@ _sfc_main$c.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/NavLink.vue");
   return _sfc_setup$c ? _sfc_setup$c(props, ctx) : void 0;
 };
-var _sfc_main$b = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$b = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const frontmatter = usePageFrontmatter();
@@ -20999,7 +22624,7 @@ const resolveEditLink = ({ docsRepo, docsBranch, docsDir, filePathRelative, edit
     return null;
   return pattern.replace(/:repo/, shared.isLinkHttp(docsRepo) ? docsRepo : `https://github.com/${docsRepo}`).replace(/:branch/, docsBranch).replace(/:path/, shared.removeLeadingSlash(`${shared.removeEndingSlash(docsDir)}/${filePathRelative}`));
 };
-var _sfc_main$a = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$a = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
@@ -21013,7 +22638,7 @@ _sfc_main$a.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/DropdownTransition.vue");
   return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
 };
-var _sfc_main$9 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$9 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   props: {
     item: {
@@ -21115,7 +22740,7 @@ _sfc_main$9.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/DropdownLink.vue");
   return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : void 0;
 };
-var _sfc_main$8 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$8 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const useNavbarSelectLanguage = () => {
@@ -21239,7 +22864,7 @@ _sfc_main$8.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/NavbarLinks.vue");
   return _sfc_setup$8 ? _sfc_setup$8(props, ctx) : void 0;
 };
-var _sfc_main$7 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$7 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const themeLocale = useThemeLocaleData();
@@ -21258,7 +22883,7 @@ _sfc_main$7.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/ToggleDarkModeButton.vue");
   return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
 };
-var _sfc_main$6 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$6 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   emits: ["toggle"],
   setup(__props) {
@@ -21280,7 +22905,7 @@ _sfc_main$6.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/ToggleSidebarButton.vue");
   return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
 };
-var _sfc_main$5 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$5 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   emits: ["toggle-sidebar"],
   setup(__props) {
@@ -21391,7 +23016,7 @@ _sfc_main$5.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/Navbar.vue");
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
-var _sfc_main$4 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$4 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const useEditNavLink = () => {
@@ -21502,7 +23127,7 @@ _sfc_main$4.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/PageMeta.vue");
   return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
-var _sfc_main$3 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$3 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const resolveFromFrontmatterConfig = (conf) => {
@@ -21583,7 +23208,7 @@ _sfc_main$3.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/PageNav.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-var _sfc_main$2 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$2 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
@@ -21674,7 +23299,7 @@ SidebarChild.props = {
     required: false
   }
 };
-var _sfc_main$1 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$1 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const sidebarItems = useSidebarItems();
@@ -21701,7 +23326,7 @@ _sfc_main$1.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/Sidebar.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
-var _sfc_main = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const page = usePageData();
@@ -21731,60 +23356,61 @@ var _sfc_main = /* @__PURE__ */ vue.defineComponent({
     vue.onUnmounted(() => {
       unregisterRouterHook();
     });
-    const scrollPromise2 = useScrollPromise();
-    scrollPromise2.resolve;
-    scrollPromise2.pending;
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({
         class: ["theme-container", vue.unref(containerClass)]
       }, _attrs))}>`);
-      if (vue.unref(shouldShowNavbar)) {
-        _push(serverRenderer.ssrRenderComponent(_sfc_main$5, null, {
-          before: vue.withCtx((_, _push2, _parent2, _scopeId) => {
+      serverRenderer.ssrRenderSlot(_ctx.$slots, "navbar", {}, () => {
+        if (vue.unref(shouldShowNavbar)) {
+          _push(serverRenderer.ssrRenderComponent(_sfc_main$5, null, {
+            before: vue.withCtx((_, _push2, _parent2, _scopeId) => {
+              if (_push2) {
+                serverRenderer.ssrRenderSlot(_ctx.$slots, "navbar-before", {}, null, _push2, _parent2, _scopeId);
+              } else {
+                return [
+                  vue.renderSlot(_ctx.$slots, "navbar-before")
+                ];
+              }
+            }),
+            after: vue.withCtx((_, _push2, _parent2, _scopeId) => {
+              if (_push2) {
+                serverRenderer.ssrRenderSlot(_ctx.$slots, "navbar-after", {}, null, _push2, _parent2, _scopeId);
+              } else {
+                return [
+                  vue.renderSlot(_ctx.$slots, "navbar-after")
+                ];
+              }
+            }),
+            _: 3
+          }, _parent));
+        } else {
+          _push(`<!---->`);
+        }
+      }, _push, _parent);
+      _push(`<div class="sidebar-mask"></div>`);
+      serverRenderer.ssrRenderSlot(_ctx.$slots, "sidebar", {}, () => {
+        _push(serverRenderer.ssrRenderComponent(_sfc_main$1, null, {
+          top: vue.withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
-              serverRenderer.ssrRenderSlot(_ctx.$slots, "navbar-before", {}, null, _push2, _parent2, _scopeId);
+              serverRenderer.ssrRenderSlot(_ctx.$slots, "sidebar-top", {}, null, _push2, _parent2, _scopeId);
             } else {
               return [
-                vue.renderSlot(_ctx.$slots, "navbar-before")
+                vue.renderSlot(_ctx.$slots, "sidebar-top")
               ];
             }
           }),
-          after: vue.withCtx((_, _push2, _parent2, _scopeId) => {
+          bottom: vue.withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
-              serverRenderer.ssrRenderSlot(_ctx.$slots, "navbar-after", {}, null, _push2, _parent2, _scopeId);
+              serverRenderer.ssrRenderSlot(_ctx.$slots, "sidebar-bottom", {}, null, _push2, _parent2, _scopeId);
             } else {
               return [
-                vue.renderSlot(_ctx.$slots, "navbar-after")
+                vue.renderSlot(_ctx.$slots, "sidebar-bottom")
               ];
             }
           }),
           _: 3
         }, _parent));
-      } else {
-        _push(`<!---->`);
-      }
-      _push(`<div class="sidebar-mask"></div>`);
-      _push(serverRenderer.ssrRenderComponent(_sfc_main$1, null, {
-        top: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            serverRenderer.ssrRenderSlot(_ctx.$slots, "sidebar-top", {}, null, _push2, _parent2, _scopeId);
-          } else {
-            return [
-              vue.renderSlot(_ctx.$slots, "sidebar-top")
-            ];
-          }
-        }),
-        bottom: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            serverRenderer.ssrRenderSlot(_ctx.$slots, "sidebar-bottom", {}, null, _push2, _parent2, _scopeId);
-          } else {
-            return [
-              vue.renderSlot(_ctx.$slots, "sidebar-bottom")
-            ];
-          }
-        }),
-        _: 3
-      }, _parent));
+      }, _push, _parent);
       serverRenderer.ssrRenderSlot(_ctx.$slots, "page", {}, () => {
         if (vue.unref(frontmatter).home) {
           _push(serverRenderer.ssrRenderComponent(_sfc_main$b, null, null, _parent));
