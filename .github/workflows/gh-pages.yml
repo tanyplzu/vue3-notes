@@ -13,10 +13,7 @@ jobs:
       - uses: actions/setup-node@v3 # 第三方
         with:
           node-version: 16
-      - run: | # 多个需要竖线
-          node -v
-          npm -v
-          npm install
+      - run: npm install
 
       - name: Build
         run: npm run docs:build
