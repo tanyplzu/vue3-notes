@@ -9,8 +9,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2 # 拉去代码
-      - uses: actions/setup-node@v3 # 第三方
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: npm install
@@ -23,4 +23,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          cname: vue3.tanyp.site # cname
+          cname: vue3.tanyp.site
