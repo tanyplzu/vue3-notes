@@ -9,11 +9,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v2 # 拉去代码
+      - uses: actions/setup-node@v3 # 第三方
         with:
           node-version: 16
-      - run: npm install
+      - run: | # 多个需要竖线
+          node -v
+          npm -v
+          npm install
 
       - name: Build
         run: npm run build
